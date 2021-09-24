@@ -331,7 +331,11 @@ const decks = {
       ]
     },
     "Decidueye Vileplume": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "Pokemon": [
+        ["Decidueye GX", "", 4, 0, 3.00],
+        ["Dartrix", "", 4, 0, 0.4],
+        ["Rowlet", "", 4, 0, 0.3],
+      ], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
     },
     "Volcanion": { 
       "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
