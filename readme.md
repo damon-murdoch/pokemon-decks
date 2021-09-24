@@ -6,7 +6,7 @@
 New Repository for the Old Format Decks project.
 
 ### Version
-Thye latest revision for this software is 1.0.
+The latest revision for this software is 1.0.
 
 ### Language
 html/css/js
