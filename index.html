@@ -1,11 +1,69 @@
 <!doctype html>
 <html>
-  <head>
-    
+  <head id='head'>
+    <link rel="stylesheet" href="redist/bootstrap.min.css">
   </head>
-  <body>
-    <table>
-      
-    </table>
+  <body id='body'>
+
+    <!--
+      Page Header
+
+      Stays the same across pages
+    -->
+
+    <!-- Title Section -->
+    <div id='head'>
+      <!-- Site Logo -->
+      <div id='logo'>
+        <!-- Logo Goes Here -->
+        <img src='img/wallpaper.jpg' style='max-width:100%; max-height:100%; object-fit: fill;'>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div id='navbar' class='navbar navbar-expand-lg navbar-dark bg-dark'>
+      <a class='navbar-brand' href='#'>
+        Deck Collection Repository
+      </a>
+    </div>
+    
+    <!--
+      Page body, changes depending on page
+
+      Gets set in index.js
+    -->
+    <div id='main'>
+
+    </div>
+    
+    <!--
+      Page Footer
+
+      Stays the same across pages
+    -->
+    <div id='footer'>
+
+    </div>
   </body>
+  <div id='src'>
+    <!-- Bootstrap Js File -->
+    <script type='text/javascript' src='redist/bootstrap.min.js'>
+    </script>
+
+    <!-- Jquery Js File -->
+    <script type='text/javascript' src='redist/jquery.min.js'>
+    </script>
+
+    <!-- Deck Info Js File -->
+    <script type='text/javascript' src='src/deckinfo.js'>
+    </script>
+
+    <!-- Data Js File-->
+    <script type='text/javascript' src='data/decks.js'>
+    </script>
+
+    <!-- Main Js File -->
+    <script type='text/javascript' src='index.js'>
+    </script>
+  </div>
 </html>

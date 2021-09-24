@@ -7,23 +7,23 @@ const decks = {
   // XY Base Set to XY Steam Siege
   "XY-STS": {
     "Night March": {
-      "Pokemon": [
+      "pokemon": [
         ["Joltik", "PHF 26", 4, 0, 0.2],
         ["Pumpkaboo", "PHF 44", 4, 0, 0.2],
         ["Lampent", "PHF 42", 4, 0, 0.2],
         ["Shaymin Ex", "ROS 77", 0, 3, 9.0],
         ["Mew", "FCO 29", 1, 0, 2.29]
       ],
-      "Supporter": [
+      "supporter": [
         ["Professor Sycamore", "", 3, 0, 0.2],
         ["Lysandre", "", 2, 0, 0.2],
         ["Hex Maniac", "", 0, 2, 0.2],
-        ["N (Supporter)", "", 1, 0, 0.49],
+        ["N (supporter)", "", 1, 0, 0.49],
         ["Teammates", "", 1, 0, 0.2],
-        ["Pokemon Ranger", "", 1, 0, 0.2],
-        ["AZ (Supporter)", "", 1, 0, 0.2]
+        ["pokemon Ranger", "", 1, 0, 0.2],
+        ["AZ (supporter)", "", 1, 0, 0.2]
       ],
-      "Item": [
+      "item": [
         ["VS Seeker", "", 0, 4, 1.63],
         ["Ultra Ball", "", 4, 0, 0.2],
         ["Battle Compressor", "", 4, 0, 3.79],
@@ -34,19 +34,19 @@ const decks = {
         ["Target Whistle", "", 1, 0, 0.2],
         ["Escape Rope", "", 1, 0, 0.2]
       ],
-      "Tool": [
+      "tool": [
         ["Fighting Fury Belt", "", 2, 0, 0.68]
       ],
-      "Stadium": [
+      "stadium": [
         ["Dimension Valley", "", 3, 0, 0.88]
       ],
-      "Energy": [
-        ["Double Colorless Energy", "", 1, 3, 0.2],
-        ["Basic Psychic Energy", "", 1, 0, 0.01]
+      "energy": [
+        ["Double Colorless energy", "", 1, 3, 0.2],
+        ["Basic Psychic energy", "", 1, 0, 0.01]
       ]
     }, 
     "Vespiquen Vileplume": { 
-      "Pokemon": [
+      "pokemon": [
         ["Vileplume", "", 4, 0, 0.3], 
         ["Gloom", "", 4, 0, 0.22],
         ["Oddish", "", 4, 0, 0.2], 
@@ -54,12 +54,12 @@ const decks = {
         ["Combee", "", 4, 0, 0.2],
         ["Shaymin Ex", "ROS 77", 0, 4, 9.0]
       ], 
-      "Supporter": [
+      "supporter": [
         ["Professor Sycamore", "", 0, 3, 0.2],
-        ["AZ (Supporter)", 0, 1, 0.2], 
+        ["AZ (supporter)", 0, 1, 0.2], 
         ["Lysandre", 0, 1, 0.2], 
       ], 
-      "Item": [
+      "item": [
         ["Battle Compressor", "", 4, 0, 3.79],
         ["Ultra Ball", "", 0, 4, 0.2],
         ["Trainers' Mail", "", 0, 3, 1],
@@ -67,33 +67,33 @@ const decks = {
         ["Revitalizer", "", 0, 2, 0.2],
         ["Special Charge", "", 1, 0, 0.2]
       ], 
-      "Tool": [
+      "tool": [
         ["Float Stone", "", 2, 0, 2.0]
       ], 
-      "Stadium": [
+      "stadium": [
         ["Forest of Giant Plants", "", 4, 0, 0.35]
       ], 
-      "Energy": [
-        ["Double Colorless Energy", "", 0, 4, 0.2]
+      "energy": [
+        ["Double Colorless energy", "", 0, 4, 0.2]
       ]
     },
     "Talonflame Greninja": { 
-      "Pokemon": [
+      "pokemon": [
         ["Talonflame", "", 0, 4, 0.62],
         ["Greninja Break", "", 3, 0, 9.99],
-        ["Greninja", "BKP", "", 3, 0, 1.29],
-        ["Greninja", "XY", "", 1, 0, 4.99],
-        ["Frogadier", "XY", "", 4, 0, 0.2],
-        ["Froakie", "XY", "", 3, 0, 0.2]
+        ["Greninja", "BKP", 3, 0, 1.29],
+        ["Greninja", "XY", 1, 0, 4.99],
+        ["Frogadier", "XY", 4, 0, 0.2],
+        ["Froakie", "XY", 3, 0, 0.2]
       ], 
-      "Supporter": [
+      "supporter": [
         ["Professor Sycamore", "", 0, 4, 0.2],
-        ["N (Supporter)", "", 0, 4, 0.5],
+        ["N (supporter)", "", 0, 4, 0.5],
         ["Ace Trainer", "", 1, 0, 0.2],
         ["Fisherman", "", 1, 0, 0.2],
-        ["Pokemon Ranger", "", 1, 0, 0.2]
+        ["pokemon Ranger", "", 1, 0, 0.2]
       ], 
-      "Item": [
+      "item": [
         ["VS Seeker", "", 0, 4, 1.66],
         ["Dive Ball", "", 4, 0, 1.08],
         ["Level Ball", "", 2, 0, 0.88],
@@ -101,19 +101,19 @@ const decks = {
         ["Battle Compressor", "", 1, 0, 3.79],
         ["Startling Megaphone", "", 1, 0, 0.35]
       ], 
-      "Tool": [
+      "tool": [
         ["Bursting Balloon", "", 4, 0, 0.2]
       ], 
-      "Stadium": [
+      "stadium": [
         ["Rough Seas", "", 3, 0, 0.3]
       ], 
-      "Energy": [
-        ["Basic Water Energy", "", 8, 0, 0.01],
-        ["Splash Energy", "", 2, 0, 0.2]
+      "energy": [
+        ["Basic Water energy", "", 8, 0, 0.01],
+        ["Splash energy", "", 2, 0, 0.2]
       ]
     },
     "Mega Audino": { 
-      "Pokemon": [
+      "pokemon": [
         ["M Audino Ex", "", 3, 0, 2.49],
         ["Audino Ex", "", 4, 0, 2.49],
         ["Hoopa Ex", "", 0, 1, 3.3],
@@ -122,16 +122,16 @@ const decks = {
         ["Cobalion", "", 1, 0, 0.2],
         ["Absol", "", 0, 1, 0.88],
       ], 
-      "Supporter": [
+      "supporter": [
         ["Professor Sycamore", "", 0, 4, 0.2],
-        ["N (Supporter)", "", 0, 2, 0.49],
+        ["N (supporter)", "", 0, 2, 0.49],
         ["Lysandre", "", 0, 2, 0.2],
-        ["AZ (Supporter)", "", 2, 0, 0.2],
+        ["AZ (supporter)", "", 2, 0, 0.2],
         ["Hex Maniac", "", 1, 0, 0.2],
         ["Xerosic", "", 1, 0, 0.2],
-        ["Pokemon Center Lady", "", 1, 0, 0.2],
+        ["pokemon Center Lady", "", 1, 0, 0.2],
       ], 
-      "Item": [
+      "item": [
         ["VS Seeker", "", 0, 4, 1.63],
         ["Ultra Ball", "", 0, 4, 0.2],
         ["Trainers' Mail", "", 0, 4, 1.00],
@@ -140,20 +140,20 @@ const decks = {
         ["Super Rod", "", 1, 0, 0.49],
         ["Startling Megaphone", "", 1, 0, 0.2],
       ], 
-      "Tool": [
+      "tool": [
         ["Audino Spirit Link", "", 4, 0, 0.2],
         ["Float Stone", "", 2, 0, 1.66],
       ], 
-      "Stadium": [
+      "stadium": [
         ["Parallel City", "", 2, 0, 0.2]
       ], 
-      "Energy": [
-        ["Basic Metal Energy", "", 6, 0, 0.01],
-        ["Double Colorless Energy", "", 0, 4, 0.2],
+      "energy": [
+        ["Basic Metal energy", "", 6, 0, 0.01],
+        ["Double Colorless energy", "", 0, 4, 0.2],
       ]
     },
     "Mega Manectric": { 
-      "Pokemon": [
+      "pokemon": [
         ["M Manectric Ex", "", 0, 3, 4.89],
         ["Manectric Ex", "", 0, 3, 2.49],
         ["Wobbufet", "", 3, 0, 0.35],
@@ -163,34 +163,34 @@ const decks = {
         ["Hoopa Ex", "", 1, 0, 8.99],
         ["Jolteon Ex", "", 1, 0, 8.99],
       ], 
-      "Supporter": [
+      "supporter": [
         ["Professor Sycamore", "", 0, 4, 0.2], 
-        ["N (Supporter)", "", 2, 0, 0.49],
+        ["N (supporter)", "", 2, 0, 0.49],
         ["Lysandre", "", 2, 0, 0.2],
         ["Olympia", "", 1, 0, 0.2],
         ["AZ", "", 1, 0, 0.2],
       ], 
-      "Item": [
+      "item": [
         ["VS Seeker", "", 0, 4, 1.63],
         ["Ultra Ball", "", 0, 4, 0.2],
         ["Trainers' Mail", "", 0, 3, 1.0],
         ["Mega Turbo", "", 0, 2, 0.88],
         ["Battle Compressor", "", 1, 0, 3.45],
       ], 
-      "Tool": [
+      "tool": [
         ["Manectric Spirit Link", "", 0, 3, 0.35],
         ["Float Stone", "", 3, 0, 2.0],
       ], 
-      "Stadium": [
+      "stadium": [
         ["Rough Seas", "", 3, 0, 0.35]
       ], 
-      "Energy": [
-        ["Basic Lightning Energy", "", 6, 0, 0.01], 
-        ["Basic Psychic Energy", "", 4, 0, 0.01], 
+      "energy": [
+        ["Basic Lightning energy", "", 6, 0, 0.01], 
+        ["Basic Psychic energy", "", 4, 0, 0.01], 
       ]
     },
     "Lucario Crobat": { 
-      "Pokemon": [
+      "pokemon": [
         ["Lucario Ex", "", 3, 0, 8.99],
         ["Zubat", "", 4, 0, 0.2],
         ["Golbat", "", 4, 0, 0.35],
@@ -199,33 +199,33 @@ const decks = {
         ["Carbink", "", 2, 0, 0.2],
         ["Carbink Break", "", 1, 0, 2.36],
       ], 
-      "Supporter": [
+      "supporter": [
         ["Professor Sycamore", "", 3, 0, 0.2], 
-        ["N (Supporter)", "", 2, 0, 0.49],
+        ["N (supporter)", "", 2, 0, 0.49],
         ["Korrina", "", 2, 0, 1.28],
         ["Lysandre", "", 2, 0, 0.2],
         ["Hex Maniac", "", 2, 0, 0.2],
       ], 
-      "Item": [
+      "item": [
         ["VS Seeker", "", 0, 4, 1.64],
         ["Trainers' Mail", "", 0, 4, 1.00],
         ["Super Scoop Up", "", 4, 0, 0.2],
         ["Ultra Ball", "", 0, 4, 0.2],
         ["Level Ball", "", 2, 0, 0.89],
       ], 
-      "Tool": [
+      "tool": [
 
       ], 
-      "Stadium": [
-        ["Fighting Stadium", "", 2, 0, 0.2]
+      "stadium": [
+        ["Fighting stadium", "", 2, 0, 0.2]
       ], 
-      "Energy": [
-        ["Basic Fighting Energy", "", 6, 0, 0.01],
-        ["Strong Energy", "", 4, 0, 0.49]
+      "energy": [
+        ["Basic Fighting energy", "", 6, 0, 0.01],
+        ["Strong energy", "", 4, 0, 0.49]
       ]
     },
     "Water Seismitoad": { 
-      "Pokemon": [
+      "pokemon": [
         ["Seismitoad Ex", "", 4, 0, 3.45],
         ["Manaphy Ex", "", 1, 1, 2.99],
         ["Shaymin Ex", "", 0, 2, 8.99],
@@ -234,61 +234,61 @@ const decks = {
         ["Hoopa Ex", "", 0, 1, 3.99],
         ["Articuno", "", 0, 1, 1.25]
       ], 
-      "Supporter": [
+      "supporter": [
         ["Professor Sycamore", "", 4, 0, 0.2],
-        ["N (Supporter)", "", 3, 0, 0.49],
+        ["N (supporter)", "", 3, 0, 0.49],
         ["Lysandre", "", 2, 0, 0.2],
-        ["AZ (Supporter)", "", 1, 0, 0.2],
+        ["AZ (supporter)", "", 1, 0, 0.2],
         ["Xerosic", "", 1, 0, 0.2],
         ["Team Flare Grunt", "", 1, 0, 0.2],
         ["Hex Maniac", "", 1, 0, 0.2]
       ], 
-      "Item": [
+      "item": [
         ["VS Seeker", "", 0, 4, 1.59],
         ["Ultra Ball", "", 0, 4, 0.2],
         ["Max Elixir", "", 0, 3, 3.49],
-        ["Energy Switch", "", 3, 0, 0.2]
+        ["energy Switch", "", 3, 0, 0.2]
       ], 
-      "Tool": [
+      "tool": [
         ["Fighting Fury Belt", "", 3, 0, 0.59]
       ], 
-      "Stadium": [
+      "stadium": [
         ["Rough Seas", "", 3, 0, 0.35],
         ["Parallel City", "", 1, 0, 0.2],
       ], 
-      "Energy": [
-        ["Double Colorless Energy", "", 0, 4, 0.2],
-        ["Basic Water Energy", "", 0, 9, 0.01],
+      "energy": [
+        ["Double Colorless energy", "", 0, 4, 0.2],
+        ["Basic Water energy", "", 0, 9, 0.01],
       ]
     },
     "Volcanion": { 
-      "Pokemon": [
+      "pokemon": [
         ["Volcanion Ex", "", 0, 4, 2.49],
         ["Volcanion", "", 1, 3, 0.99],
         ["Shaymin Ex", "", 0, 2, 8.99],
         ["Hoopa Ex", "", 0, 1, 3.99],
       ], 
-      "Supporter": [
+      "supporter": [
         ["Professor Sycamore", "", 4, 0, 0.2],
-        ["N (Supporter)", "", 2, 0, 0.49],
+        ["N (supporter)", "", 2, 0, 0.49],
         ["Blacksmith", "", 2, 0, 2.29],
         ["Lysandre", "", 2, 0, 0.2],
-        ["Pokemon Ranger", "", 2, 0, 0.2],
+        ["pokemon Ranger", "", 2, 0, 0.2],
       ], 
-      "Item": [
+      "item": [
         ["VS Seeker", "", 0, 4, 1.63],
         ["Ultra Ball", "", 0, 4, 0.2],
         ["Acro Bike", "", 4, 0, 0.2],
-        ["Energy Retrieval", "", 4, 0, 0.2],
+        ["energy Retrieval", "", 4, 0, 0.2],
         ["Trainers' Mail", "", 0, 2, 1.0],
         ["Battle Compressor", "", 2, 0, 2.99],
-      ], "Tool": [
+      ], "tool": [
         ["Escape Rope", "", 2, 0, 0.2],
         ["Fighting Fury Belt", "", 3, 0, 0.59]
-      ], "Stadium": [
+      ], "stadium": [
 
-      ], "Energy": [
-        ["Basic Fire Energy", "", 12, 0, 0.01],
+      ], "energy": [
+        ["Basic Fire energy", "", 12, 0, 0.01],
       ]
     }
   },
@@ -297,20 +297,20 @@ const decks = {
   // XY Primal Clash to SM Base Set
   "PRC-SUM": {
     "Darkrai": { 
-      "Pokemon": [
+      "pokemon": [
         ["Darkrai Ex","",4,0,3.5],
         ["Hoopa Ex","",1,0,3.3],
         ["Shaymin Ex","",3,0,8.99],
         ["Yveltal","",2,0,0.39]
       ], 
-      "Supporter": [
+      "supporter": [
         ["Professor Sycamore", "", 4, 0, 0.2],
         ["Lysandre", "", 2, 0, 0.2],
-        ["N (Supporter)", "", 2, 0, 0.49],
+        ["N (supporter)", "", 2, 0, 0.49],
         ["Hex Maniac", "", 1, 0, 0.2],
         ["Delinquent", "", 1, 0, 0.2]
       ], 
-      "Item": [
+      "item": [
         ["VS Seeker", "", 4, 0, 1.64],
         ["Trainers' Mail", "", 4, 0, 1.0],
         ["Ultra Ball", "", 4, 0, 0.2],
@@ -318,42 +318,38 @@ const decks = {
         ["Escape Rope", "", 2, 0, 0.2],
         ["Switch", "", 1, 0, 0.2],
       ], 
-      "Tool": [
-        ["Exp. Share", "", 4, 0, 0.2],
-        ["Fighting Fury Belt", "", 4, 0, 0.59]
+      "tool": [
+        ["Exp. Share", "", 3, 0, 0.2],
+        ["Fighting Fury Belt", "", 3, 0, 0.59]
       ], 
-      "Stadium": [
+      "stadium": [
         ["Silent Lab", "", 2, 0, 0.77],
         ["Parallel City", "", 1, 0, 0.2],
       ], 
-      "Energy": [
-        ["Basic Darkness Energy", "", 12, 0, 0.01]
+      "energy": [
+        ["Basic Darkness energy", "", 12, 0, 0.01]
       ]
     },
     "Decidueye Vileplume": { 
-      "Pokemon": [
-        ["Decidueye GX", "", 4, 0, 3.00],
-        ["Dartrix", "", 4, 0, 0.4],
-        ["Rowlet", "", 4, 0, 0.3],
-      ], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Volcanion": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Mega Mewtwo": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Mega Rayquaza": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Mega Gardevoir": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Yveltal Garbodor": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Gyarados": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     }
   },
   
@@ -361,28 +357,28 @@ const decks = {
   // XY Breakthrough to SM Guardians Rising
   "BKT-GRI": {
     "Drampa Garbodor": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Gardevoir": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Golisopod Garbodor": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Zoroark Break": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Tapu Bulu Vikavolt": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Metagross": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Ho-oh Salazzle": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Xerneas Break": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     }
   },
 
@@ -390,28 +386,28 @@ const decks = {
   // XY Breakthrough to SM Forbidden Light
   "BKT-FLI": {
     "Buzzwole Lycanroc": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Zoroark Lycanroc": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Zoroark Golisopod": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Malamar Necrozma": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Zoroark Garbodor": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Zoroark Control": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Zoroark Lucario": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Ultra Malamar": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     }
   },
 
@@ -419,22 +415,22 @@ const decks = {
   // BW Base Set to SM Forbidden Light
   "BLW-FLI": {
     "Trevenant Break": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Zoroark Sky Field": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Night March": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Sableye Control": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Seismitoad": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Buzzwole Lycanroc": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     }
   },
 
@@ -442,28 +438,28 @@ const decks = {
   // SM Ultra Prism to SM Cosmic Eclipse
   "UPR-CEC": {
     "Mewtwo & Mew": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "ADP Keldeo": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Gardevoir & Sylveon": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Pidgeotto Control": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Pikachu & Zekrom": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Reshiram & Charizard": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Malamar Spread": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Pidgeotto Blacephalon": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     }
   },
 
@@ -471,10 +467,10 @@ const decks = {
   // SWSH Base Set to SWSH Evolving Skies
   "Standard": {
     "Zacian Inteleon": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Rapid Strike Inteleon": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     }
   }
 }
