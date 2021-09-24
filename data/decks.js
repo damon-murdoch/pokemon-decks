@@ -262,7 +262,34 @@ const decks = {
       ]
     },
     "Volcanion": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "Pokemon": [
+        ["Volcanion Ex", "", 0, 4, 2.49],
+        ["Volcanion", "", 1, 3, 0.99],
+        ["Shaymin Ex", "", 0, 2, 8.99],
+        ["Hoopa Ex", "", 0, 1, 3.99],
+      ], 
+      "Supporter": [
+        ["Professor Sycamore", "", 4, 0, 0.2],
+        ["N (Supporter)", "", 2, 0, 0.49],
+        ["Blacksmith", "", 2, 0, 2.29],
+        ["Lysandre", "", 2, 0, 0.2],
+        ["Pokemon Ranger", "", 2, 0, 0.2],
+      ], 
+      "Item": [
+        ["VS Seeker", "", 0, 4, 1.63],
+        ["Ultra Ball", "", 0, 4, 0.2],
+        ["Acro Bike", "", 4, 0, 0.2],
+        ["Energy Retrieval", "", 4, 0, 0.2],
+        ["Trainers' Mail", "", 0, 2, 1.0],
+        ["Battle Compressor", "", 2, 0, 2.99],
+      ], "Tool": [
+        ["Escape Rope", "", 2, 0, 0.2],
+        ["Fighting Fury Belt", "", 3, 0, 0.59]
+      ], "Stadium": [
+
+      ], "Energy": [
+        ["Basic Fire Energy", "", 12, 0, 0.01],
+      ]
     }
   },
 
@@ -270,7 +297,38 @@ const decks = {
   // XY Primal Clash to SM Base Set
   "PRC-SUM": {
     "Darkrai": { 
-      "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
+      "Pokemon": [
+        ["Darkrai Ex","",4,0,3.5],
+        ["Hoopa Ex","",1,0,3.3],
+        ["Shaymin Ex","",3,0,8.99],
+        ["Yveltal","",2,0,0.39]
+      ], 
+      "Supporter": [
+        ["Professor Sycamore", "", 4, 0, 0.2],
+        ["Lysandre", "", 2, 0, 0.2],
+        ["N (Supporter)", "", 2, 0, 0.49],
+        ["Hex Maniac", "", 1, 0, 0.2],
+        ["Delinquent", "", 1, 0, 0.2]
+      ], 
+      "Item": [
+        ["VS Seeker", "", 4, 0, 1.64],
+        ["Trainers' Mail", "", 4, 0, 1.0],
+        ["Ultra Ball", "", 4, 0, 0.2],
+        ["Max Elixir", "", 4, 0, 3.45],
+        ["Escape Rope", "", 2, 0, 0.2],
+        ["Switch", "", 1, 0, 0.2],
+      ], 
+      "Tool": [
+        ["Exp. Share", "", 4, 0, 0.2],
+        ["Fighting Fury Belt", "", 4, 0, 0.59]
+      ], 
+      "Stadium": [
+        ["Silent Lab", "", 2, 0, 0.77],
+        ["Parallel City", "", 1, 0, 0.2],
+      ], 
+      "Energy": [
+        ["Basic Darkness Energy", "", 12, 0, 0.01]
+      ]
     },
     "Decidueye Vileplume": { 
       "Pokemon": [], "Supporter": [], "Item": [], "Tool": [], "Stadium": [], "Energy": []
