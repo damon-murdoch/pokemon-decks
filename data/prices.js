@@ -11,7 +11,7 @@ const prices = {
     "Joltik": { "PHF 26": 0.19 },
     "Pumpkaboo": { "PHF 44": 0.19 },
     "Lampent": { "PHF 42": 0.19 },
-    "Shaymin Ex": { "ROS 77": 8.99 },
+    "Shaymin Ex": { "ROS 77": 8.99, "XY148": 8.99 },
     "Mew": { "FCO 29": 2.29 },
 
     "Vileplume": { "": 0.29 }, 
@@ -19,6 +19,7 @@ const prices = {
     "Oddish": { "": 0.19 }, 
     "Vespiquen": { "": 0.19 },
     "Combee": { "": 0.19 },
+    "Unown": { "": 0.19 },
 
     "Talonflame": { "": 0.59 },
     "Greninja Break": { "": 9.99 },
@@ -120,15 +121,15 @@ const prices = {
 
     // Enegy
 
-    "Basic Psychic energy": { "": 0.01 },
-    "Basic Lightning energy": { "": 0.01 },
-    "Basic Fighting energy": { "": 0.01 },
-    "Basic Metal energy": { "": 0.01 },
-    "Basic Water energy": { "": 0.01 },
-    "Basic Fire energy": { "": 0.01 },
-    "Basic Darkness energy": { "": 0.01 },
+    "Basic Psychic Energy": { "": 0.01 },
+    "Basic Lightning Energy": { "": 0.01 },
+    "Basic Fighting Energy": { "": 0.01 },
+    "Basic Metal Energy": { "": 0.01 },
+    "Basic Water Energy": { "": 0.01 },
+    "Basic Fire Energy": { "": 0.01 },
+    "Basic Darkness Energy": { "": 0.01 },
 
-    "Double Colorless energy": { "": 0.19 },
-    "Splash energy": { "": 0.19 },
-    "Strong energy": { "": 0.49 },
+    "Double Colorless Energy": { "": 0.19 },
+    "Splash Energy": { "": 0.19 },
+    "Strong Energy": { "": 0.49 },
 }
