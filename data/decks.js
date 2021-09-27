@@ -869,7 +869,41 @@ const decks = {
       "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Pikachu & Zekrom": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Jirachi", "", 4, 0],
+        ["Pikachu & Zekrom Tag Team Gx", "", 2, 0],
+        ["Dedenne Gx", "", 1, 1],
+        ["Raichu & Alolan Raichu Tag Team Gx", "", 1, 0],
+        ["Zeraora Gx", "", 1, 0],
+        ["Tapu Koko Prism Star", "", 1, 0],
+        ["Absol", "", 1, 0],
+        ["Marshadow", "", 1, 0],
+      ], "supporter": [
+        ["Volkner", "", 4, 0],
+        ["Cynthia", "", 1, 0],
+        ["Cynthia & Caitlyn Tag Team", "", 0, 1],
+        ["Mallow & Lana Tag Team", "", 1, 0],
+        ["Guzma & Hala Tag Team", "", 1, 0],
+      ], "item": [
+        ["Custom Catcher", "", 4, 0],
+        ["Electropower", "", 4, 0],
+        ["Switch", "", 3, 0],
+        ["Pokemon Communication", "", 3, 0],
+        ["Tag Call", "", 2, 0],
+        ["Reset Stamp", "", 2, 0],
+        ["Electromagnetic Radar", "", 2, 0],
+        ["Enegy Switch", "", 2, 0],
+        ["Great Catcher", "", 1, 0],
+        ["Stadium Nav", "", 1, 0],
+        ["Tag Switch", "", 1, 0],
+      ], "tool": [
+        ["Escape Board", "", 2, 0]
+      ], "stadium": [
+        ["Thunder Mountain Prism Star", "", 1, 0]
+      ], "energy": [
+        ["Basic Lightning Energy", "", 10, 0],
+        ["Unit Energy LPM", "", 0, 1],
+      ]
     },
     "Reshiram & Charizard": { 
       "pokemon": [
