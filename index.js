@@ -40,6 +40,9 @@ function getPageLink(format = null, deck = null)
 // all formats and other basic info
 function showPageHome()
 {
+  // Set the page title
+  document.getElementById('pagetitle').innerHTML = "Home Page"; 
+
   // Get the list of deck formats
   formats = Object.keys(decks);
 
@@ -69,6 +72,61 @@ function showPageHome()
 
   // Create the table body
   tbody = document.createElement('tbody');
+
+  // Create table row for the summary
+  title = document.createElement('tr');
+
+  // Get the overall collection summary
+  summary = getTotalProgress();
+
+  // Total format card value
+  total = ((summary.value.obtained + summary.value.missing) * USDAUD).toFixed(2);
+
+  // Total obtained cards value
+  obtained = (summary.value.obtained * USDAUD).toFixed(2);
+
+  // Total missing cards value
+  missing = (summary.value.missing * USDAUD).toFixed(2);
+
+  // If prices are not valid
+  if (summary.valid === false)
+  {
+    // Add asterisk to prices
+    obtained = obtained.toString() + '*';
+    missing = missing.toString() + '*';
+    total = total.toString() + '*';
+  }
+
+  // Create the standard parts of the title heading
+  title.innerHTML = "<th class='text-light' scope='row'> Summary </th>" + 
+  "<th class='text-light'>" + summary.total + "</th>" + 
+  "<th class='text-light'>" + summary.complete + "</th>";
+
+  // Calculate the colour for the progress
+
+  // If the progress is less than fifty
+  if (summary.progress < 50)
+  {
+    // Display the progress bar in red colouring
+    title.innerHTML += "<th class='text-danger'>" + summary.progress.toFixed(2) + "% </th>";
+  }
+  // If the progress is less than one hundred
+  else if (summary.progress < 100)
+  {
+    // Display the progress bar in yellow colouring
+    title.innerHTML += "<th class='text-warning'>" + summary.progress.toFixed(2) + "% </th>";
+  }
+  else // If the progress is complete
+  {
+    // Display the progress bar in green colouring
+    title.innerHTML += "<th class='text-success'>" + summary.progress.toFixed(2) + "% </th>";
+  }
+
+  title.innerHTML += "<th class='text-success'>$" + obtained + " AUD</th>" + 
+  "<th class='text-danger'>$" + missing + " AUD</th>" + 
+  "<th class='text-light'>$" + total + " AUD</th>";
+
+  tbody.appendChild(title);
 
   // Loop over all of the formats
   formats.forEach(format => {
@@ -149,6 +207,9 @@ function showPageHome()
 // a little bit of information about each deck.
 function showPageFormat(format)
 {
+  // Set the page title
+  document.getElementById('pagetitle').innerHTML = format + " Format Page"; 
+
   // Get the list of deck formats
   decklist = Object.keys(decks[format]);
 
@@ -331,6 +392,9 @@ function showPageFormat(format)
 // value, and other information about the deck.
 function showPageDeck(deck, format)
 {
+  // Set the page title
+  document.getElementById('pagetitle').innerHTML = format + ' - ' + deck; 
+
   // Get the list of deck formats
   //decklist = Object.keys(decks[format]);
   decklist = getDeck(deck, format);
@@ -400,12 +464,11 @@ function showPageDeck(deck, format)
     // Get the price of the current card
     price = getPrice(card[0], card[1]);
 
+    // If no price is found
     if (price === -1)
     {
       // Add asterisk to prices
-      obtained = obtained.toString() + '*';
-      missing = missing.toString() + '*';
-      total = total.toString() + '*';
+      obtained = missing = total = "N/A";
     }
     else
     {

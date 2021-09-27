@@ -143,7 +143,7 @@ function getDeckProgress(deck, format)
       if (price === -1)
       {
         // Log the missing price
-        console.log('Missing price for card "',card[0],'" with set "' + card[1] + '".')
+        // console.log('Missing price for card "',card[0],'" with set "' + card[1] + '".')
 
         // Set valid to false
         valid = false;
@@ -271,4 +271,48 @@ function getFormatProgress(format)
   {
     console.log("Format '" + format + "' could not be found !");
   }
+}
+
+// getTotalProgress(Void): Void
+function getTotalProgress()
+{
+  // Total Decks 
+  total = 0;
+
+  // Complete Decks
+  complete = 0;
+
+  // Overall progress
+  progress = 0;
+
+  // Card values
+  value = {
+    obtained: 0,
+    missing: 0,
+    valid: true
+  }
+
+  // Loop over each format
+  // Calculates the total decks, 
+  // completed decks, overall progress, 
+  // and obtained missing and total prices
+  // for the complete deck collection.
+  Object.keys(decks).forEach(format => {
+
+    // Get the progress for the format
+    data = getFormatProgress(format);
+
+  });
+
+  // Return the results
+  return {
+    // Total decks
+    total: total, 
+    // Decks Complete
+    complete: complete, 
+    // Overall Progress
+    progress: (progress / total), 
+    // Card Values
+    value: value
+  };
 }

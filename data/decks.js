@@ -365,7 +365,7 @@ const decks = {
         ["Volcanion Ex", "", 4, 0],
         ["Volcanion", "", 3, 0],
         ["Hoopa Ex", "", 1, 0],
-        ["Shaymin Ex", "", 2, 0],
+        ["Shaymin  Ex", "ROS 77", 2, 0],
         ["Salamence Ex", "", 1, 0],
       ], "supporter": [
         ["Professor Sycamore","",4,0],
@@ -462,7 +462,7 @@ const decks = {
         ["Gardevoir Ex", "", 3, 0],
         ["Hoopa Ex", "", 2, 0],
         ["Dragonite Ex", "", 2, 0],
-        ["Shaymin Ex", "", 4, 0],
+        ["Shaymin  Ex", "ROS 77", 4, 0],
         ["Ratatta", "", 2, 0]
       ], "supporter": [
         ["Professor Sycamore", "", 3, 0],
@@ -805,28 +805,272 @@ const decks = {
   // XY Breakthrough to SM Forbidden Light
   "BKT-FLI": {
     "Buzzwole Lycanroc": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Buzzwole", "", 3, 0],
+        ["Buzzwole Gx", "", 2, 0],
+        ["Lycanroc Gx", "", 2, 0],
+        ["Rockruff", "", 2, 0],
+        ["Octillery", "", 2, 0],
+        ["Remoraid", "", 2, 0],
+        ["Diancie Prism Star", "", 1, 0],
+        ["Tapu Lele Gx", "", 1, 0]
+      ], "supporter": [
+        ["Professor Sycamore", "", 4, 0],
+        ["Guzma", "", 4, 0],
+        ["Cynthia", "", 2, 0],
+        ["N (Supporter)", "", 2, 0]
+      ], "item": [
+        ["Ultra Ball", "", 4, 0],
+        ["Max Elixir", "", 4, 0],
+        ["Beast Ring", "", 3, 0],
+        ["Super Rod", "", 1, 0]
+      ], "tool": [
+        ["Choice Band", "", 3, 0],
+        ["Float Stone", "", 2, 0]
+      ], "stadium": [
+        ["Brooklet Hill", "", 2, 0]
+      ], "energy": [
+        ["Basic Fighting Energy", "", 9, 0],
+        ["Strong Energy", "", 4, 0],
+        ["Beast Energy Prism Star", "", 1, 0]
+      ]
     },
     "Zoroark Lycanroc": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Zoroark Gx", "", 4, 0],
+        ["Zorua", "", 4, 0],
+        ["Lycanroc Gx", "", 2, 0],
+        ["Rockruff", "FLI", 2, 0],
+        ["Rockruff", "GRI", 1, 0],
+        ["Tapu Lele Gx", "", 3, 0],
+        ["Mew Ex", "", 1, 0],
+        ["Mewtwo", "", 1, 0],
+        ["Buzzwole", "", 1, 0]
+      ], "supporter": [
+        ["N (Supporter)", "", 3, 0],
+        ["Brigette", "", 3, 0],
+        ["Guzma", "", 3, 0],
+        ["Professor Sycamore", "", 1, 0],
+        ["Mallow", "", 1, 0],
+        ["Cynthia", "", 1, 0]
+      ], "item": [
+        ["Ultra Ball", "", 4, 0],
+        ["Puzzle of Time", "", 4, 0],
+        ["Field Blower", "", 3, 0],
+        ["Enhanced Hammer", "", 1, 0],
+        ["Max Potion", "", 1, 0],
+        ["Multi Switch", "", 1, 0],
+        ["Evosoda", "", 1, 0]
+      ], "tool": [
+        ["Choice Band", "", 2, 0],
+        ["Float Stone", "", 1, 0]
+      ], "stadium": [
+        ["Parallel City", "", 2, 0],
+        ["Reverse Valley", "", 1, 0]
+      ], "energy": [
+        ["Double Colorless Energy", "", 4, 0],
+        ["Strong Energy", "", 4, 0]
+      ]
     },
     "Zoroark Golisopod": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Zoroark Gx", "", 4, 0],
+        ["Zorua", "", 4, 0],
+        ["Golisopod Gx", "", 2, 0],
+        ["Wimpod", "", 3, 0],
+        ["Tapu Lele Gx", "", 3, 0],
+        ["Mew Ex", "", 1, 0],
+        ["Mewtwo", "", 1, 0],
+        ["Latios", "", 1, 0],
+        ["Oranguru", "", 1, 0]
+      ], "supporter": [
+        ["N (Supporter)", "", 3, 0],
+        ["Guzma", "", 3, 0],
+        ["Brigette", "", 3, 0],
+        ["Professor Sycamore", "", 1, 0],
+        ["Cynthia", "", 1, 0],
+        ["Delinquent", "", 1, 0],
+        ["Acerola", "", 1, 0]
+      ], "item": [
+        ["Ultra Ball", "", 4, 0],
+        ["Puzzle of Time", "", 4, 0],
+        ["Field Blower", "", 3, 0],
+        ["Evosoda", "", 2, 0],
+        ["Enhanced Hammer", "", 1, 0]
+      ], "tool": [
+        ["Float Stone", "", 2, 0],
+        ["Choice Band", "", 2, 0]
+      ], "stadium": [
+        ["Parallel City", "", 2, 0]
+      ], "energy": [
+        ["Double Colorless Energy", "", 4, 0],
+        ["Basic Grass Energy", "", 3, 0],
+      ]
     },
     "Malamar Necrozma": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Malamar", "", 4, 0],
+        ["Inkay", "", 4, 0],
+        ["Necrozma Gx", "", 2, 0],
+        ["Dawn Wings Necrozma Gx", "", 2, 0],
+        ["Tapu Lele Gx", "", 2, 0],
+        ["Marshadow Gx", "", 1, 0],
+        ["Mewtwo Gx", "", 1, 0]
+      ], "supporter": [
+        ["Professor Sycamore", "", 4, 0],
+        ["Guzma", "", 4, 0],
+        ["Cynthia", "", 3, 0],
+        ["N (Supporter)", "", 2, 0],
+        ["Brigette", "", 1, 0]
+      ], "item": [
+        ["Mysterious Treasure", "", 4, 0],
+        ["Ultra Ball", "", 4, 0],
+        ["Max Elixir", "", 3, 0],
+        ["Field Blower", "", 2, 0],
+        ["Rescue Stretcher", "", 1, 0]
+      ], "tool": [
+        ["Float Stone", "", 4, 0]
+      ], "stadium": [
+        ["Parallel City", "", 2, 0]
+      ], "energy": [
+        ["Basic Psychic Energy", "", 10, 0]
+      ]
     },
     "Zoroark Garbodor": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Zoroark Gx", "", 4, 0],
+        ["Zorua", "", 4, 0],
+        ["Tapu Lele Gx", "", 3, 0],
+        ["Garbodor", "GRI", 2, 0],
+        ["Garbodor", "BKP", 1, 0],
+        ["Tribbish", "BKP", 3, 0],
+        ["Kartana Gx", "", 1, 0],
+        ["Latios", "", 1, 0]
+      ], "supporter": [
+        ["N (Supporter)", "", 4, 0],
+        ["Guzma", "", 3, 0],
+        ["Brigette", "", 2, 0],
+        ["Professor Sycamore", "", 1, 0],
+        ["Cynthia", "", 1, 0],
+        ["Acerola", "", 1, 0],
+      ], "item": [
+        ["Puzzle of Time", "", 4, 0],
+        ["Ultra Ball", "", 4, 0],
+        ["Field Blower", "", 3, 0],
+        ["Mysterious Treasure", "", 1, 0],
+        ["Enhanced Hammer", "", 1, 0],
+        ["Evosoda", "", 1, 0],
+        ["Rescue Stretcher", "", 1, 0],
+      ], "tool": [
+        ["Float Stone", "", 3, 0],
+        ["Choice Band", "", 2, 0]
+      ], "stadium": [
+        ["Parallel City", "", 2, 0]
+      ], "energy": [
+        ["Double Colorless Energy", "", 4, 0],
+        ["Unit Energy LPM", "", 3, 0],
+      ]
     },
     "Zoroark Control": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Zoroark Gx", "", 4, 0],
+        ["Zorua", "", 4, 0],
+        ["Tapu Lele Gx", "", 4, 0],
+        ["Mew Ex", "", 1, 0],
+        ["Oranguru", "", 1, 0]
+      ], "supporter": [
+        ["N (Supporter)", "", 3, 0],
+        ["Guzma", "", 3, 0],
+        ["Brigette", "", 3, 0],
+        ["Professor Sycamore", "", 1, 0],
+        ["Cynthia", "", 1, 0],
+        ["Mallow", "", 1, 0],
+        ["Acerola", "", 1, 0],
+        ["Team Flare Grunt", "", 1, 0],
+        ["Delinquent", "", 1, 0]
+      ], "item": [
+        ["Puzzle of Time", "", 4, 0],
+        ["Ultra Ball", "", 4, 0],
+        ["Evosoda", "", 3, 0],
+        ["Enhanced Hammer", "", 3, 0],
+        ["Field Blower", "", 2, 0],
+        ["Counter Catcher", "", 2, 0],
+        ["Max Potion", "", 2, 0],
+        ["Rescue Stretcher", "", 1, 0]
+      ], "tool": [
+        ["Weakness Policy", "", 2, 0],
+        ["Float Stone", "", 1, 0]
+      ], "stadium": [
+        ["Parallel City", "", 2, 0],
+        ["Reverse Valley", "", 1, 0]
+      ], "energy": [
+        ["Double Colorless Energy", "", 4, 0]
+      ]
     },
     "Zoroark Lucario": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Zoroark Gx", "", 4, 0],
+        ["Zorua", "", 4, 0],
+        ["Lucario Gx", "", 2, 0],
+        ["Riolu", "", 3, 0],
+        ["Tapu Lele Gx", "", 0, 3],
+        ["Diancie Prism Star", "", 1, 0],
+        ["Mew Ex", "", 0, 1],
+        ["Mewtwo", "", 1, 0]
+      ], "supporter": [
+        ["Guzma", "", 3, 0],
+        ["Brigette", "", 3, 0],
+        ["N (Supporter)", "", 3, 0],
+        ["Cynthia", "", 1, 0],
+        ["Acerola", "", 1, 0],
+        ["Professor Sycamore", "", 1, 0]
+      ], "item": [
+        ["Puzzle of Time", "", 0, 4],
+        ["Ultra Ball", "", 0, 4],
+        ["Field Blower", "", 0, 3],
+        ["Evosoda", "", 2, 0],
+        ["Enhanced Hammer", "", 1, 0]
+      ], "tool": [
+        ["Choice Band", "", 3, 0],
+        ["Float Stone", "", 2, 0]
+      ], "stadium": [
+        ["Parallel City", "", 2, 0]
+      ], "energy": [
+        ["Double Colorless Energy", "", 0, 4],
+        ["Strong Energy", "", 0, 4],
+      ]
     },
     "Ultra Malamar": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Malamar", "", 4, 0],
+        ["Inkay", "", 4, 0],
+        ["Ultra Necrozma Gx", "", 2, 0],
+        ["Dawn Wings Necrozma Gx", "", 0, 2],
+        ["Tapu Lele Gx", "", 0, 2],
+        ["Mew", "", 1, 0]
+      ], "supporter": [
+        ["Professor Sycamore", "", 4, 0],
+        ["Guzma", "", 3, 0],
+        ["Cynthia", "", 3, 0],
+        ["N (Supporter)", "", 2, 0],
+        ["Brigette", "", 1, 0]
+      ], "item": [
+        ["Mysterious Treasure", "", 4, 0],
+        ["Ultra Ball", "", 3, 0],
+        ["Field Blower", "", 3, 0],
+        ["Beast Ring", "", 2, 0],
+        ["Professor's Letter", "", 2, 0],
+        ["Super Rod", "", 1, 0]
+      ], "tool": [
+        ["Float Stone", "", 3, 0],
+        ["Choice Band", "", 2, 0],
+      ], "stadium": [
+
+      ], "energy": [
+        ["Basic Psychic Energy", "", 8, 0],
+        ["Basic Metal Energy", "", 3, 0],
+        ["Beast Energy Prism Star", "", 1, 0],
+      ]
     }
   },
 
@@ -834,22 +1078,223 @@ const decks = {
   // BW Base Set to SM Forbidden Light
   "BLW-FLI": {
     "Trevenant Break": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Trevenant Break", "", 3, 0],
+        ["Trevenant", "", 4, 0],
+        ["Phantump", "", 4, 0],
+        ["Tapu Lele Gx", "", 2, 0],
+        ["Espeon Ex", "", 1, 0],
+      ], "supporter": [
+        ["N (Supporter)", "", 3, 0],
+        ["Wally", "", 2, 0],
+        ["Cynthia", "", 2, 0],
+        ["Professor Juniper", "", 2, 0],
+        ["Guzma", "", 1, 0]
+      ], "item": [
+        ["Mysterious Treasure", "", 4, 0],
+        ["Trainers' Mail", "", 4, 0],
+        ["VS Seeker", "", 4, 0],
+        ["Enhanced Hammer", "", 3, 0],
+        ["Ultra Ball", "", 3, 0],
+        ["Counter Catcher", "", 1, 0],
+        ["Super Rod", "", 1, 0],
+        ["Scoop Up Cyclone Ace Spec", "", 1, 0]
+      ], "tool": [
+        ["Rescue Scarf", "", 2, 0]
+      ], "stadium": [
+        ["Dimension Valley", "", 4, 0]
+      ], "energy": [
+        ["Basic Psychic Energy", "", 5, 0],
+        ["Mystery Energy", "", 4, 0]
+      ]
     },
     "Zoroark Sky Field": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Zoroark Gx", "", 4, 0],
+        ["Zorua", "", 4, 0],
+        ["Shaymin  Ex", "ROS 77", 3, 0],
+        ["Exeggcute", "", 3, 0],
+        ["Tapu Lele Gx", "", 2, 0],
+        ["Mewtwo Ex", "", 1, 0],
+        ["Mr. Mime", "", 1, 0],
+        ["Oranguru", "", 1, 0],
+        ["Sudowoodo", "", 1, 0]
+      ], "supporter": [
+        ["Colress", "", 3, 0],
+        ["Brigette", "", 2, 0],
+        ["Hex Maniac", "", 2, 0],
+        ["Guzma", "", 1, 0]
+      ], "item": [
+        ["VS Seeker", "", 4, 0],
+        ["Ultra Ball", "", 4, 0],
+        ["Puzzle of Time", "", 4, 0],
+        ["Battle Compressor", "", 2, 0],
+        ["Red Card", "", 2, 0],
+        ["Field Blower", "", 1, 0],
+        ["Pokemon Communication", "", 1, 0],
+        ["Counter Catcher", "", 1, 0],
+        ["Rescue Stretcher", "", 1, 0],
+        ["Computer Search", "", 1, 0]
+      ], "tool": [
+        ["Float Stone", "", 2, 0],
+        ["Choice Band", "", 2, 0]
+      ], "stadium": [
+        ["Sky Field", "", 3, 0]
+      ], "energy": [
+        ["Double Colorless Energy", "", 4, 0]
+      ]
     },
     "Night March": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Joltik", "", 4, 0],
+        ["Pumpkaboo", "", 4, 0],
+        ["Lampent", "", 4, 0],
+        ["Shaymin  Ex", "ROS 77", 3, 0],
+        ["Marshadow Gx", "", 1, 0],
+        ["Mew", "", 1, 0],
+        ["Mr. Mime", "", 1, 0],
+        ["Oranguru", "", 1, 0],
+      ], "supporter": [
+        ["Professor Juniper", "", 2, 0],
+        ["N (Supporter)", "", 1, 0],
+        ["Teammates", "", 1, 0],
+        ["Guzma", "", 1, 0],
+        ["Hex Maniac", "", 1, 0],
+        ["Ghetsis", "", 1, 0],
+      ], "item": [
+        ["Puzzle of Time", "", 4, 0],
+        ["Battle Compressor", "", 4, 0],
+        ["Ultra Ball", "", 4, 0],
+        ["VS Seeker", "", 4, 0],
+        ["Trainers' Mail", "", 4, 0],
+        ["Field Blower", "", 1, 0],
+        ["Special Charge", "", 1, 0],
+        ["Target Whistle", "", 1, 0],
+        ["Dowsing Machine Ace Spec", "", 1, 0],
+      ], "tool": [
+        ["Choice Band", "", 2, 0],
+        ["Fighting Fury Belt", "", 1, 0],
+        ["Float Stone", "", 1, 0]
+      ], "stadium": [
+        ["Dimension Valley", "", 2, 0]
+      ], "energy": [
+        ["Double Colorless Energy", "", 4, 0]
+      ]
     },
     "Sableye Control": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Sableye", "", 0, 4],
+        ["Garbodor", "", 2, 0],
+        ["Trubbish", "", 0, 2],
+        ["Shaymin  Ex", "ROS 77", 0, 2]
+      ], "supporter": [
+        ["Professor Sycamore", "", 4, 0], 
+        ["N (Supporter)", "", 2, 0],
+        ["Lysandre", "", 2, 0],
+        ["Team Flare Grunt", "", 2, 0],
+        ["Pokemon Center Lady", "", 1, 0],
+        ["Team Rocket's Handiwork", "", 1, 0],
+        ["Xerosic", "", 1, 0],
+        ["Hex Maniac", "", 1, 0],
+        ["Delinquent", "", 1, 0],
+        ["AZ (Supporter)", "", 1, 0]
+      ], "item": [
+        ["Trainers' Mail", "", 0, 4],
+        ["Crushing Hammer", "", 3, 0],
+        ["Puzzle of Time", "", 0, 3],
+        ["Ultra Ball", "", 0, 3],
+        ["VS Seeker", "", 3, 0],
+        ["Trick Shovel", "", 2, 0],
+        ["Enhanced Hammer", "", 1, 0],
+        ["Super Rod", "", 1, 0],
+        ["Target Whistle", "", 1, 0],
+        ["Field Blower", "", 1, 0]
+      ], "tool": [
+        ["Float Stone", "", 2, 0],
+        ["Head Ringer", "", 1, 0],
+        ["Life Dew Ace Spec", "", 1, 0]
+      ], "stadium": [
+        ["Parallel City", "", 1, 0],
+        ["Team Aqua's Secret Base", "", 0, 1]
+      ], "energy": [
+        ["Basic Darkness Energy", "", 6, 0]
+      ]
     },
     "Seismitoad": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Seismitoad Ex", "", 4, 0],
+        ["Shaymin  Ex", "ROS 77", 0, 2],
+        ["Tapu Lele Gx", "", 0, 1],
+        ["Hoopa Ex", "", 0, 1],
+        ["Jirachi Ex", "", 1, 0],
+        ["Keldeo Ex", "", 0, 1],
+        ["Mewtwo Ex", "", 0, 1],
+        ["Sudowoodo", "", 1, 0],
+        ["Giratina", "", 1, 0],
+      ], "supporter": [
+        ["Professor Juniper", "", 2, 0],
+        ["N (Supporter)", "", 2, 0],
+        ["Lusamine", "", 2, 0],
+        ["Acerola", "", 2, 0],
+        ["Colress", "", 2, 0],
+        ["Team Skull Grunt", "", 1, 0],
+        ["Team Flare Grunt", "", 1, 0],
+        ["Shadow Triad", "", 1, 0],
+        ["Cynthia", "", 1, 0],
+        ["Guzma", "", 1, 0],
+        ["Karen", "", 1, 0],
+      ], "item": [
+        ["Hypnotoxic Lazer", "", 4, 0],
+        ["VS Seeker", "", 0, 4],
+        ["Ultra Ball", "", 0, 4],
+        ["Enhanced Hammer", "", 3, 0],
+        ["Field Blower", "", 0, 1],
+        ["Special Charge", "", 1, 0],
+      ], "tool": [
+        ["Fighting Fury Belt", "", 3, 0],
+        ["Float Stone", "", 2, 0],
+        ["Rock Guard Ace Spec", "", 1, 0]
+      ], "stadium": [
+        ["Virbank City Gym", "", 3, 0],
+        ["Parallel City", "", 1, 0],
+      ], "energy": [
+        ["Double Colorless Energy", "", 0, 4]
+      ]
     },
     "Buzzwole Lycanroc": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Buzzwole Gx", "", 0, 3],
+        ["Lycanroc Gx", "", 0, 2],
+        ["Rockruff", "", 2, 0],
+        ["Buzzwole", "", 1, 0],
+        ["Diancie Prism Star", "", 1, 0],
+        ["Octillery", "", 1, 0],
+        ["Remoraid", "", 1, 0],
+        ["Sudowoodo", "", 1, 0],
+        ["Tapu Lele Gx", "", 0, 1]
+      ], "supporter": [
+        ["Professor Juniper", "", 4, 0],
+        ["Guzma", "", 4, 0],
+        ["N (Supporter)", "", 2, 0],
+        ["Korrina", "", 0, 2],
+        ["Colress", "", 2, 0],
+        ["Ultra Ball", "", 0, 4],
+        ["Max Elixir", "", 0, 3],
+        ["Beast Ring", "", 3, 0]
+      ], "item": [
+        ["Float Stone", "", 2, 0],
+        ["Muscle Band", "", 2, 0],
+        ["Choice Band", "", 1, 0]
+      ], "tool": [
+        ["Super Rod", "", 1, 0],
+        ["Scramble Switch", "", 1, 0],
+      ], "stadium": [
+        ["Brooklet Hill", "", 3, 0]
+      ], "energy": [
+        ["Basic Fighting Energy", "", 9, 0],
+        ["Strong Energy", "", 3, 0],
+        ["Beast Energy Prism Star", "", 1, 0]
+      ]
     }
   },
 
@@ -857,16 +1302,139 @@ const decks = {
   // SM Ultra Prism to SM Cosmic Eclipse
   "UPR-CEC": {
     "Mewtwo & Mew": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Jirachi", "", 4, 0],
+        ["Mewtwo & Mew Tag Team Gx", "", 3, 0],
+        ["Dedenne Gx", "", 2, 0],
+        ["Lopunny & Jigglypuff Tag Team Gx", "", 1, 0],
+        ["Charizard & Braixen Tag Team Gx", "", 1, 0],
+        ["Espeon & Deoxys Tag Team Gx", "", 1, 0],
+        ["Charizard Gx", "", 1, 0],
+        ["Naganadel Gx", "", 1, 0],
+        ["Greninja Gx", "", 1, 0],
+        ["Solgaleo Gx", "", 1, 0],
+        ["Latios Gx", "", 1, 0],
+        ["Marshadow", "", 1, 0]
+      ], "supporter": [
+        ["Welder", "", 4, 0],
+        ["Guzma & Hala Tag Team", "", 2, 0],
+        ["Mallow & Lana Tag Team", "", 2, 0]
+      ], "item": [
+        ["Cherish Ball", "", 4, 0],
+        ["Tag Call", "", 3, 0],
+        ["Great Catcher", "", 3, 0],
+        ["Switch", "", 2, 0],
+        ["Mysterious Treasure", "", 2, 0],
+        ["Reset Stamp", "", 2, 0],
+      ], "tool": [
+        ["Escape Board", "", 2, 0],
+        ["Stealthy Hood", "", 1, 0],
+      ], "stadium": [
+        ["Giant Hearth", "", 3, 0]
+      ], "energy": [
+        ["Basic Fire Energy", "", 8, 0],
+        ["Rainbow Energy", "", 3, 0],
+        ["Weakness Guard Energy", "", 1, 0],
+      ]
     },
     "ADP Keldeo": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Jirachi", "", 4, 0],
+        ["Arceus, Dialga & Palkia Tag Team Gx", "", 2, 0],
+        ["Keldeo Gx", "", 2, 0],
+        ["Cryogonal", "", 2, 0],
+        ["Absol", "", 1, 0],
+        ["Girafarig", "", 1, 0],
+      ], "supporter": [
+        ["Cynthia", "", 4, 0],
+        ["Cynthia & Caitlyn Tag Team", "", 0, 2],
+        ["Mallow & Lana Tag Team", "", 2, 0],
+        ["Guzma & Hala Tag Team", "", 1, 0],
+        ["Rosa", "", 0, 1],
+      ], "item": [
+        ["Tag Call", "", 4, 0],
+        ["Custom Catcher", "", 4, 0],
+        ["Switch", "", 3, 0],
+        ["Reset Stamp", "", 3, 0],
+        ["Pokemon Communication", "", 2, 0],
+        ["Cherish Ball", "", 2, 0],
+        ["Great Catcher", "", 1, 0],
+      ], "tool": [
+        ["Escape Board", "", 2, 0],
+        ["Counter Gain", "", 1, 0],
+      ], "stadium": [
+        ["Chaotic Swell", "", 3, 0]
+      ], "energy": [
+        ["Basic Water Energy", "", 6, 0],
+        ["Basic Metal Energy", "", 5, 0],
+        ["Rainbow Energy", "", 2, 0],
+      ]
     },
     "Gardevoir & Sylveon": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Gardevoir & Sylveon Tag Team Gx", "", 4, 0],
+        ["Lugia Gx", "", 1, 0]
+      ], "supporter": [
+        ["Green's Exploration", "", 4, 0],
+        ["Coach Trainer", "", 4, 0],
+        ["Cynthia & Caitlyn Tag Team", "", 3, 0],
+        ["Mallow & Lana Tag Team", "", 2, 0],
+        ["Faba", "", 1, 0]
+      ], "item": [
+        ["Pokegear 3.0", "", 4, 0],
+        ["Switch", "", 4, 0],
+        ["Custom Catcher", "", 4, 0],
+        ["Reset Stamp", "", 3, 0],
+        ["Tag Call", "", 3, 0],
+        ["Tag Switch", "", 2, 0],
+        ["Energy Spinner", "", 2, 0],
+        ["Great Catcher", "", 1, 0]
+      ], "tool": [
+        ["Fairy Charm Lightning", "", 2, 0],
+        ["Fairy Charm Psychic", "", 2, 0]
+      ], "stadium": [
+        ["Power Plant", "", 4, 0],
+        ["Wondrous Labyrinth Prism Star", "", 1, 0]
+      ], "energy": [
+        ["Basic Fairy Energy", "", 9, 0]
+      ]
     },
     "Pidgeotto Control": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Pidgeotto", "", 4, 0],
+        ["Pidgey", "SHL 122", 3, 0],
+        ["Pidgey", "SHL 121", 1, 0],
+        ["Ditto Prism Star", "", 1, 0],
+        ["Oranguru", "", 4, 0],
+        ["Articuno Gx", "", 2, 0],
+        ["Girafarig", "", 1, 0],
+        ["Mew", "", 1, 0],
+      ], "supporter": [
+        ["Professor Elm's Lecture", "", 4, 0],
+        ["Tate & Liza", "", 2, 0],
+        ["Hapu", "", 2, 0],
+        ["Mars", "", 2, 0],
+        ["Lt. Surge's Strategy", "", 2, 0],
+        ["Bellelba & Brycen Man", "", 2, 0],
+        ["Misty & Lorelei", "", 1, 0],
+        ["Faba", "", 1, 0],
+        ["Jesse & James", "", 1, 0],
+      ], "item": [
+        ["Pokegear 3.0", "", 4, 0],
+        ["Crushing Hammer", "", 4, 0],
+        ["Acro Bike", "", 3, 0],
+        ["Custom Catcher", "", 3, 0],
+        ["Chip Chip Ice Axe", "", 2, 0],
+        ["Pal Pad", "", 1, 0]
+      ], "tool": [
+        ["U-Turn Board", "", 1, 0]
+      ], "stadium": [
+        ["Power Plant", "", 2, 0],
+        ["Sky Pillar", "", 1, 0]
+      ], "energy": [
+        ["Basic Water Energy", "", 4, 0],
+        ["Recycle Energy", "", 1, 0],
+      ]
     },
     "Pikachu & Zekrom": { 
       "pokemon": [
@@ -1016,13 +1584,13 @@ const decks = {
         ["Metal Saucer", "", 4, 0],
         ["Level Ball", "", 4, 0],
         ["Quick Ball", "", 4, 0],
-        ["Evolution Incense", "", 2, 0]
-        ["Switch", "", 2, 0]
-        ["Escape Rope", "", 1, 0]
+        ["Evolution Incense", "", 2, 0],
+        ["Switch", "", 2, 0],
+        ["Escape Rope", "", 1, 0],
         ["Energy Switch", "", 1, 0]
       ], "tool": [
         ["Rusted Sword", "", 2, 0],
-        ["Cape of Toughness", "", 1, 0],
+        ["Cape of Toughness", "", 1, 0]
       ], "stadium": [
         
       ], "energy": [
@@ -1051,9 +1619,9 @@ const decks = {
         ["Quick Ball", "", 4, 0],
         ["Evolution Incense", "", 4, 0],
         ["Escape Rope", "", 2, 0],
-        ["Fan of Waves", "", 0, 1],
+        ["Energy Search", "", 1, 0],
         ["Air Balloon", "", 1, 0],
-        ["Energy Search", "", 1, 0]
+        ["Switch", "", 1, 0]
       ], "tool": [
 
       ], "stadium": [
