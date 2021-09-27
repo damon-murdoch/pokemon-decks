@@ -743,10 +743,61 @@ const decks = {
       ]
     },
     "Ho-oh Salazzle": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Ho-oh Gx", "", 3, 0],
+        ["Salazzle Gx", "", 0, 2],
+        ["Salandit", "", 2, 0],
+        ["Tapu Lele Gx", "", 0, 3],
+        ["Volcanion Ex", "", 0, 2],
+        ["Turtonator Gx", "", 1, 0],
+        ["Oranguru", "", 1, 0]
+      ], "supporter": [
+        ["Professor Sycamore", "", 0, 4],
+        ["Guzma", "", 4, 0],
+        ["Kiawe", "", 3, 0],
+        ["N (Supporter)", "", 2, 0]
+      ], "item": [
+        ["Ultra Ball", "", 4, 0],
+        ["Max Elixir", "", 3, 0],
+        ["Switch", "", 2, 0],
+        ["Super Rod", "", 1, 0],
+        ["Nest Ball", "", 1, 0],
+        ["Field Blower", "", 1, 0]
+      ], "tool": [
+        ["Choice Band", "", 3, 0],
+        ["Float Stone", "", 2, 0],
+      ], "stadium": [
+        ["Scorched Earth", "", 2, 0]
+      ], "energy": [
+        ["Basic Fire Energy", "", 14, 0]
+      ]
     },
     "Xerneas Break": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Xerneas Break", "", 0, 3],
+        ["Xerneas", "", 4, 0],
+        ["Tapu Lele Gx", "", 0, 3],
+        ["Tapu Koko", "", 1, 0],
+        ["Oranguru", "", 1, 0],
+      ], "supporter": [
+        ["Professor Sycamore", "", 4, 0],
+        ["N (Supporter)", "", 4, 0],
+        ["Guzma", "", 3, 0],
+        ["Brigette", "", 2, 0],
+      ], "item": [
+        ["Ultra Ball", "", 0, 4],
+        ["Max Elixir", "", 0, 4],
+        ["Super Rod", "", 2, 0],
+        ["Rescue Stretcher", "", 1, 0],
+      ], "tool": [
+        ["Choice Band", "", 4, 0],
+        ["Exp. Share", "", 3, 0],
+      ], "stadium": [
+        ["Fairy Garden", "", 2, 0]
+      ], "energy": [
+        ["Basic Fairy Energy", "", 12, 0],
+        ["Double Colorless Energy", "", 0, 3]
+      ]
     }
   },
 
@@ -821,13 +872,91 @@ const decks = {
       "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
     },
     "Reshiram & Charizard": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Jirachi", "", 4, 0],
+        ["Dedenne Gx", "", 3, 0],
+        ["Ninetales", "", 2, 0],
+        ["Vulpix", "", 2, 0],
+        ["Zebstrika", "", 1, 0],
+        ["Ditto Prism Star", "", 1, 0],
+        ["Reshiram & Charizard Tag Team Gx", "", 1, 0],
+        ["Mega Lopunny & Jigglypuff Tag Team Gx", "", 1, 0],
+        ["Heatran Gx", "", 1, 0],
+        ["Victini Prism Star", "", 1, 0],
+        ["Turtonator", "", 1, 0]
+      ], "supporter": [
+        ["Welder", "", 4, 0]
+      ], "item": [
+        ["Pokemon Communication", "", 4, 0],
+        ["Cherish Ball", "", 4, 0],
+        ["Switch", "", 4, 0],
+        ["Escape Board", "", 2, 0],
+        ["Fiery Flint", "", 1, 0],
+        ["Pal Pad", "", 1, 0]
+      ], "tool": [
+
+      ], "stadium": [
+        ["Giant Hearth", "", 3, 0],
+        ["Heat Factory Prism Star", "", 1, 0]
+      ], "energy": [
+        ["Basic Fire Energy", "", 18, 0]
+      ]
     },
     "Malamar Spread": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Malamar", "", 4, 0],
+        ["Inkay", "", 4, 0],
+        ["Jirachi", "", 4, 0],
+        ["Ditto Prism Star", "", 1, 0],
+        ["Giratina", "", 2, 0],
+        ["Blacephalon", "", 1, 0],
+        ["Nihilego", "", 1, 0],
+        ["Mew", "", 1, 0],
+        ["Espurr", "", 1, 0],
+      ], "supporter": [
+        ["Lillie", "", 4, 0],
+        ["Cynthia", "", 4, 0],
+      ], "item": [
+        ["Mysterious Treasure", "", 4, 0],
+        ["Pokemon Communication", "", 4, 0],
+        ["Acro Bike", "", 4, 0],
+        ["Switch", "", 4, 0],
+      ], "tool": [
+        ["Spell Tag", "", 3, 0],
+        ["Escape Board", "", 2, 0]
+      ], "stadium": [
+        ["Viridian Forest", "", 4, 0]
+      ], "energy": [
+        ["Basic Psychic Energy", "", 7, 0],
+        ["Recycle Energy", "", 1, 0]
+      ]
     },
     "Pidgeotto Blacephalon": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Blacephalon", "", 4, 0],
+        ["Pidgeotto", "", 4, 0],
+        ["Pidgey", "", 4, 0],
+        ["Jirachi", "", 0, 4],
+        ["Victini Prism Star", "", 1, 0],
+        ["Ditto Prism Star", "", 1, 0]
+      ], "supporter": [
+        ["Professor Elm's Lecture", "", 4, 0],
+        ["Welder", "", 3, 1]
+      ], "item": [
+        ["Pokegear 3.0", "", 4, 0],
+        ["Fire Crystal", "", 4, 0],
+        ["Fiery Flint", "", 1, 3],
+        ["Escape Board", "", 2, 0],
+        ["Great Catcher", "", 2, 0],
+        ["Pal Pad", "", 1, 0],
+      ], "tool": [
+
+      ], "stadium": [
+        ["Ultra Space", "", 2, 0],
+        ["Heat Factory Prism Star", "", 1, 0]
+      ], "energy": [
+        ["Basic Fire Energy", "", 14, 0]
+      ]
     }
   },
 
@@ -835,10 +964,70 @@ const decks = {
   // SWSH Base Set to SWSH Evolving Skies
   "Standard": {
     "Zacian Inteleon": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Inteleon", "CRE", 2, 1],
+        ["Inteleon", "SSH", 1, 0],
+        ["Drizzile", "SSH", 3, 1],
+        ["Sobble", "CRE", 4, 0],
+        ["Zacian V", "", 4, 0],
+        ["Zamazenta V", "", 1, 0],
+        ["Medicham V", "", 1, 0],
+        ["Crobat V", "", 1, 0]
+      ], "supporter": [
+        ["Professor's Research", "", 4, 0],
+        ["Boss's Orders", "", 2, 0],
+        ["Marnie", "", 2, 0],
+        ["Raihan", "", 1, 0]
+      ], "item": [
+        ["Metal Saucer", "", 4, 0],
+        ["Level Ball", "", 4, 0],
+        ["Quick Ball", "", 4, 0],
+        ["Evolution Incense", "", 2, 0]
+        ["Switch", "", 2, 0]
+        ["Escape Rope", "", 1, 0]
+        ["Energy Switch", "", 1, 0]
+      ], "tool": [
+        ["Rusted Sword", "", 2, 0],
+        ["Cape of Toughness", "", 1, 0],
+      ], "stadium": [
+        
+      ], "energy": [
+        ["Basic Metal Energy", "", 11, 0]
+      ]
     },
     "Rapid Strike Inteleon": { 
-      "pokemon": [], "supporter": [], "item": [], "tool": [], "stadium": [], "energy": []
+      "pokemon": [
+        ["Inteleon", "CRE", 2, 1],
+        ["Inteleon", "SSH", 1, 0],
+        ["Drizzile", "SSH", 3, 1],
+        ["Sobble", "CRE", 4, 0],
+        ["Rapid Strike Urshifu Vmax", "CRE", 3, 0],
+        ["Rapid Strike Urshifu V", "CRE", 4, 0],
+        ["Medicham V", "CRE", 1, 0],
+        ["Crobat V", "CRE", 1, 0],
+        ["Passimian", "CRE", 1, 0]
+      ], "supporter": [
+        ["Professor's Research", "", 4, 0],
+        ["Marnie", "", 3, 0],
+        ["Raihan", "", 1, 1],
+        ["Boss's Orders", "", 1, 0],
+        ["Bird Catcher", "", 1, 0]
+      ], "item": [
+        ["Level Ball", "", 4, 0],
+        ["Quick Ball", "", 4, 0],
+        ["Evolution Incense", "", 4, 0],
+        ["Escape Rope", "", 2, 0],
+        ["Fan of Waves", "", 0, 1],
+        ["Air Balloon", "", 1, 0],
+        ["Energy Search", "", 1, 0]
+      ], "tool": [
+
+      ], "stadium": [
+        ["Tower of Waters", "", 1, 1]
+      ], "energy": [
+        ["Rapid Strike Energy", "", 4, 0],
+        ["Basic Fighting Energy", "", 4, 0]
+      ]
     }
   }
 }
