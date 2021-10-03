@@ -1569,7 +1569,7 @@ const decks = {
       "pokemon": [
         ["Inteleon", "CRE", 2, 1],
         ["Inteleon", "SSH", 1, 0],
-        ["Drizzile", "SSH", 3, 1],
+        ["Drizzile", "SSH", 4, 0],
         ["Sobble", "CRE", 4, 0],
         ["Zacian V", "", 4, 0],
         ["Zamazenta V", "", 1, 0],
@@ -1601,7 +1601,7 @@ const decks = {
       "pokemon": [
         ["Inteleon", "CRE", 2, 1],
         ["Inteleon", "SSH", 1, 0],
-        ["Drizzile", "SSH", 3, 1],
+        ["Drizzile", "SSH", 4, 0],
         ["Sobble", "CRE", 4, 0],
         ["Rapid Strike Urshifu Vmax", "CRE", 3, 0],
         ["Rapid Strike Urshifu V", "CRE", 4, 0],
@@ -1625,7 +1625,7 @@ const decks = {
       ], "tool": [
 
       ], "stadium": [
-        ["Tower of Waters", "", 1, 1]
+        ["Tower of Waters", "", 2, 0]
       ], "energy": [
         ["Rapid Strike Energy", "", 4, 0],
         ["Basic Fighting Energy", "", 4, 0]
