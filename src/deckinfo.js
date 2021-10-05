@@ -1,3 +1,27 @@
+// getPGFQuery(name: String, set: String): String
+// Given a card name and set number, generates a link which
+// can be followed to find the given card (or relevant results)
+// on the PokeGoldfish website.
+function getPGFQuery(name, set)
+{
+  // Generate the search query, should be card name followed by set number
+  let query = "https://www.pokegoldfish.com/q?query_string=" + encodeURIComponent(name) + " " + encodeURIComponent(set); 
+
+  // Sanitise the query, replacing any spaces with plus signs
+  query = query.replace(" ", "+");
+
+  // Sanitise the query, replacing any ' with %27
+  // For some reason, encodeURIComponent does not do this
+  // and it breaks the PokeGoldfish search queries
+  query = query.replace("'", "%27")
+
+  // Write the query to the screen
+  console.log(query);
+
+  // Return the generated query to the calling process
+  return query;
+}
+
 // getDeck(deck: String, format: String): Void
 // Given a deck and the format, verifies the deck
 // can be found and returns it from the json.
@@ -10,10 +34,10 @@ function getDeck(deck, format)
   if (data !== null)
   {
     // If the deck is found
-    if (data.hasOwnProperty(deck))
+    if (data.decks.hasOwnProperty(deck))
     {
       // Return the deck
-      return data[deck];
+      return data.decks[deck];
     }
   }
 
@@ -21,28 +45,6 @@ function getDeck(deck, format)
 
   // Return null
   return null;
-}
-
-// getPrice(card: String, set: String): Float
-// Given a card and the set it is from, finds 
-// the card and returns the price in the prices
-// data file. If it cannot be found, -1 is returned
-// to warn the user no price is recorded.
-function getPrice(card, set)
-{
-  // If the card is in the database
-  if (prices.hasOwnProperty(card))
-  {
-    // If the set number is in the database
-    if (prices[card].hasOwnProperty(set))
-    {
-      // Return the price for that card and set number
-      return prices[card][set];
-    }
-  }
-
-  // Either missing card / set number
-  return -1;
 }
 
 // Given a deck object, returns
@@ -100,33 +102,21 @@ function getFormat(format)
 function getDeckProgress(deck, format)
 {
   // If it is valid, get the deck from the json
-  data = getDeck(deck, format);
+  let data = getDeck(deck, format);
 
   // Deck is retrieved
   if (data !== null)
   {
     // Get a flattened list of cards
-    list = flattenCards(data);
+    let list = flattenCards(data);
 
     // Price and count 
     // for obtained cards
-    obtained =  {
-      count: 0,
-      price: 0
-    }
+    let obtained = 0;
 
     // Price and count
     // for missing cards
-    missing = {
-      count: 0,
-      price: 0
-    }
-
-    // Prices assumed valid by default
-    // Asterisk will be added to price
-    // And un-valued card will be logged
-    // to console if any prices are unset.
-    valid = true;
+    let missing = 0;
 
     // Loop over the cards
     list.forEach(card => {
@@ -136,36 +126,11 @@ function getDeckProgress(deck, format)
       // 2: Number Have
       // 3: Number Missing
 
-      // Attempt to get the value of the card
-      price = getPrice(card[0], card[1]);
-
-      // If no price was found
-      if (price === -1)
-      {
-        // Log the missing price
-        // console.log('Missing price for card "',card[0],'" with set "' + card[1] + '".')
-
-        // Set valid to false
-        valid = false;
-      }
-      else // Price is found
-      {
-        // If there are cards of this type obtained
-        if (card[2]) // Avoids multiplying if none are obtained
-          obtained.price += (price * card[2]); // Add to the obtained price
-
-
-        // If there are cards of this type missing
-        if (card[3]) // Avoids multiplying if none are missing
-          missing.price += (price * card[3]); // Add to the missing price
-      }
-
       // Add to the card count
-      obtained.count += card[2];
+      obtained += card[2];
 
       // Add to the missing count
-      missing.count += card[3];
-
+      missing += card[3];
     });
 
     // Return the total cards minus the missing cards
@@ -175,16 +140,7 @@ function getDeckProgress(deck, format)
       obtained: obtained,
       
       // Missing count / price
-      missing: missing, 
-
-      // Total count / price
-      total: {
-        count: obtained.count + missing.count,
-        price: obtained.price + missing.price
-      },
-
-      // Price validity
-      valid: valid
+      missing: missing
     }
   }
   else // No deck is found
@@ -207,49 +163,38 @@ function getFormatProgress(format)
   if (data !== null)
   {
     // Total Decks 
-    total = 0;
+    let total = 0;
 
     // Complete Decks
-    complete = 0;
+    let complete = 0;
 
-    // Overall progress
-    progress = 0;
+    // Missing Cards
+    let missing = 0;
 
-    value = {
-      obtained: 0,
-      missing: 0,
-      valid: true
-    }
+    // Obtained Cards
+    let obtained = 0;
 
     // Loop over each deck
-    Object.keys(data).forEach(deck => {
+    Object.keys(data.decks).forEach(deck => {
 
       // Get the progress of the current deck
       current = getDeckProgress(deck, format);
 
       // If there are exactly 60 cards in the deck
       // It is done, increment the complete counter
-      if (current.obtained.count === current.total.count)
+      if (current.missing == 0)
       {
         // Increment the complete counter
         complete++;
       }
-
-      // If the current deck's price is invalid
-      if (current.valid === false)
+      else // Some missing cards
       {
-        // Set format price validity to false
-        value.valid = false;
+        // Add to missing card counter
+        missing += current.missing;
       }
 
-      // Add the price of the obtained cards to the obtained value
-      value.obtained += current.obtained.price;
-
-      // Add the price of the missing cards to the missing value
-      value.missing += current.missing.price;
-
       // Increment the progress by the cards in the deck
-      progress += current.obtained.count;
+      obtained += current.obtained;
 
       // Increment the deck counter
       total++;
@@ -261,36 +206,93 @@ function getFormatProgress(format)
       total: total,
       // Decks Complete
       complete: complete,
+      // Obtained Cards
+      obtained: obtained,
+      // Missing Cards
+      missing: missing,      
       // Format Overall Progress
-      progress: (progress / total / 60 * 100),
-      // Format obtained / missing value
-      value: value
+      progress: (obtained / total / 60 * 100),
     };
   }
   else // Data is null
   {
     console.log("Format '" + format + "' could not be found !");
+
+    // Return empty object
+    return null;
   }
+}
+
+// getBuylist(Void): Void
+// Goes through all of the decks
+// in every format, and adds up
+// how many copies of each card
+// are missing 
+function getBuylist()
+{
+  // Hashtable of cards
+  let cards = {};
+
+  // Loop over all of the formats
+  Object.keys(decks).forEach(format => {
+
+    // Get the format data
+    data = getFormat(format);
+
+    // Loop over all of the decks
+    for (let deck in data.decks)
+    {
+      // Get all of the cards in the deck
+      let decklist = flattenCards(data.decks[deck]);
+
+      // Loop over all of the cards in the deck
+      decklist.forEach(card => {
+        
+        // If the card is missing (any number)
+        if (card[3] > 0)
+        {
+          // If the card is not in the cards list
+          if (!cards.hasOwnProperty(card[0]))
+          {
+            // Add the card to the cards list
+            cards[card[0]] = {}; 
+          }
+
+          // If the set is not in the card sets list
+          if (!cards[card[0]].hasOwnProperty(card[1]))
+          {
+            // Create a new value for it and assign it to zero
+            cards[card[0]][card[1]] = 0;
+          }
+
+          // Add the new number of missing cards to the existing number
+          cards[card[0]][card[1]] += card[3];
+        }
+      })
+    }
+  });
+
+  // Return the table of missing cards
+  return cards;
 }
 
 // getTotalProgress(Void): Void
 function getTotalProgress()
 {
   // Total Decks 
-  total = 0;
+  let total = 0;
 
   // Complete Decks
-  complete = 0;
+  let complete = 0;
+
+  // Obtained Cards
+  let obtained = 0;
+
+  // Missing Cards
+  let missing = 0;
 
   // Overall progress
-  progress = 0;
-
-  // Card values
-  value = {
-    obtained: 0,
-    missing: 0,
-    valid: true
-  }
+  let progress = 0;
 
   // Loop over each format
   // Calculates the total decks, 
@@ -302,6 +304,21 @@ function getTotalProgress()
     // Get the progress for the format
     data = getFormatProgress(format);
 
+    // Add to the total decks
+    total += data.total;
+
+    // Add to the total completed decks
+    complete += data.complete;
+
+    // Add to the total obtained
+    obtained += data.obtained;
+
+    // Add to the total missing
+    missing += data.missing;
+
+    // Add the progress (will be divided later)
+    progress += data.progress;
+
   });
 
   // Return the results
@@ -310,9 +327,11 @@ function getTotalProgress()
     total: total, 
     // Decks Complete
     complete: complete, 
+    // Obtained Cards
+    obtained: obtained,
+    // Missing Cards
+    missing: missing,
     // Overall Progress
-    progress: (progress / total), 
-    // Card Values
-    value: value
+    progress: (progress / Object.keys(decks).length)
   };
 }
