@@ -13,6 +13,11 @@ const decks = {
     "decks": {
 
       "Night March": {
+        "meta": {
+          "icons": [
+            // Pokedex number for Joltik, Pumpkaboo, Lampent
+          ]
+        },
         "pokemon": [
           ["Joltik", "PHF 26", 4, 0],
           ["Pumpkaboo", "PHF 44", 4, 0],
@@ -53,12 +58,12 @@ const decks = {
       }, 
       "Vespiquen Vileplume": { 
         "pokemon": [
-          ["Vileplume", "", 4, 0], 
-          ["Gloom", "", 4, 0],
-          ["Oddish", "", 4, 0], 
-          ["Vespiquen", "", 4, 0],
-          ["Combee", "", 4, 0],
-          ["Unown", "", 4, 0],
+          ["Vileplume", "AOR 3", 4, 0], 
+          ["Gloom", "AOR 2", 4, 0],
+          ["Oddish", "AOR 1", 4, 0], 
+          ["Vespiquen", "AOR 10", 4, 0],
+          ["Combee", "AOR 9", 4, 0],
+          ["Unown", "AOR 30", 4, 0],
           ["Shaymin-ex", "ROS 77", 0, 4]
         ], 
         "supporter": [
@@ -86,12 +91,12 @@ const decks = {
       },
       "Talonflame Greninja": { 
         "pokemon": [
-          ["Talonflame", "", 0, 4],
-          ["Greninja Break", "", 3, 0],
-          ["Greninja", "BKP", 3, 0],
-          ["Greninja", "XY", 1, 0],
-          ["Frogadier", "XY", 4, 0],
-          ["Froakie", "XY", 3, 0]
+          ["Talonflame", "STS 96", 0, 4],
+          ["Greninja Break", "BKP 41", 3, 0],
+          ["Greninja", "BKP 40", 3, 0],
+          ["Greninja", "XY 41", 1, 0],
+          ["Frogadier", "BKP 39", 4, 0],
+          ["Froakie", "BKP 38", 3, 0]
         ], 
         "supporter": [
           ["Professor Sycamore", "", 0, 4],
@@ -121,13 +126,13 @@ const decks = {
       },
       "Mega Audino": { 
         "pokemon": [
-          ["M Audino-ex", "", 3, 0],
-          ["Audino-ex", "", 4, 0],
-          ["Hoopa-ex", "", 0, 1],
+          ["M Audino-ex", "FCO 85", 3, 0],
+          ["Audino-ex", "FCO 84", 4, 0],
+          ["Hoopa-ex", "AOR 36", 0, 1],
           ["Shaymin-ex", "ROS 77", 0, 2],
-          ["Magearna-ex", "", 1, 0],
-          ["Cobalion", "", 1, 0],
-          ["Absol", "", 0, 1],
+          ["Magearna-ex", "STS 110", 1, 0],
+          ["Cobalion", "STS 74", 1, 0],
+          ["Absol", "ROS 40", 0, 1],
         ], 
         "supporter": [
           ["Professor Sycamore", "", 0, 4],
@@ -161,14 +166,14 @@ const decks = {
       },
       "Mega Manectric": { 
         "pokemon": [
-          ["M Manectric-ex", "", 0, 3],
-          ["Manectric-ex", "", 0, 3],
-          ["Wobbufet", "", 3, 0],
-          ["Trubbish", "", 2, 0],
-          ["Garbodor", "", 2, 0],
+          ["M Manectric-ex", "PHF 24", 0, 3],
+          ["Manectric-ex", "PHF 23", 0, 3],
+          ["Wobbuffet", "PHF 36", 3, 0],
+          ["Garbodor", "BKP 57", 2, 0],
+          ["Trubbish", "BKP 56", 2, 0],
           ["Shaymin-ex", "ROS 77", 0, 2],
-          ["Hoopa-ex", "", 1, 0],
-          ["Jolteon-ex", "", 1, 0],
+          ["Hoopa-ex", "AOR 36", 1, 0],
+          ["Jolteon-ex", "GEN 28", 1, 0],
         ], 
         "supporter": [
           ["Professor Sycamore", "", 0, 4], 
@@ -198,13 +203,13 @@ const decks = {
       },
       "Lucario Crobat": { 
         "pokemon": [
-          ["Lucario-ex", "", 3, 0],
-          ["Zubat", "", 4, 0],
-          ["Golbat", "", 4, 0],
-          ["Crobat", "", 3, 0],
+          ["Lucario-ex", "FFI 107", 3, 0],
+          ["Crobat", "PHF 33", 3, 0],
+          ["Golbat", "PHF 32", 4, 0],
+          ["Zubat", "PHF 31", 4, 0],
           ["Shaymin-ex", "ROS 77", 0, 2],
-          ["Carbink", "", 2, 0],
-          ["Carbink Break", "", 1, 0],
+          ["Carbink Break", "FCO 50", 1, 0],
+          ["Carbink", "FCO 49", 2, 0]
         ], 
         "supporter": [
           ["Professor Sycamore", "", 3, 0], 
@@ -232,13 +237,13 @@ const decks = {
       },
       "Water Seismitoad": { 
         "pokemon": [
-          ["Seismitoad-ex", "", 4, 0],
-          ["Manaphy-ex", "", 1, 1],
+          ["Seismitoad-ex", "FFI 20", 4, 0],
+          ["Manaphy-ex", "BKP 32", 1, 1],
           ["Shaymin-ex", "ROS 77", 0, 2],
           ["Shaymin-ex", "PR-XY XY148", 0, 1],
-          ["Glaceon-ex", "", 1, 0],
-          ["Hoopa-ex", "", 0, 1],
-          ["Articuno", "", 0, 1]
+          ["Glaceon-ex", "FCO 20", 1, 0],
+          ["Hoopa-ex", "AOR 36", 0, 1],
+          ["Articuno", "ROS 16", 0, 1]
         ], 
         "supporter": [
           ["Professor Sycamore", "", 4, 0],
@@ -269,10 +274,10 @@ const decks = {
       },
       "Volcanion": { 
         "pokemon": [
-          ["Volcanion-ex", "", 0, 4],
-          ["Volcanion", "", 1, 3],
+          ["Volcanion-ex", "PR-XY XY173", 0, 4],
+          ["Volcanion", "STS 25", 1, 3],
           ["Shaymin-ex", "ROS 77", 0, 2],
-          ["Hoopa-ex", "", 0, 1],
+          ["Hoopa-ex", "AOR 36", 0, 1],
         ], 
         "supporter": [
           ["Professor Sycamore", "", 4, 0],
@@ -310,10 +315,10 @@ const decks = {
     "decks": {
       "Darkrai": { 
         "pokemon": [
-          ["Darkrai-ex","",4,0],
-          ["Hoopa-ex","",1,0],
+          ["Darkrai-ex","BKP 74",4,0],
+          ["Hoopa-ex","AOR 36",1,0],
           ["Shaymin-ex","ROS 77",3,0],
-          ["Yveltal","",2,0,0]
+          ["Yveltal","BKT 94",2,0,0]
         ], 
         "supporter": [
           ["Professor Sycamore", "", 4, 0],
@@ -344,15 +349,15 @@ const decks = {
       },
       "Decidueye Vileplume": { 
         "pokemon": [
-          ["Decidueye-gx","",4,0],
-          ["Dartrix","",4,0],
-          ["Rowlet","",4,0],
-          ["Vileplume","",2,0],
-          ["Gloom","",2,0],
-          ["Oddish","",2,0],
+          ["Decidueye-gx","SUM 12",4,0],
+          ["Dartrix","SUM 11",4,0],
+          ["Rowlet","SUM 10",4,0],
+          ["Vileplume","AOR 3",2,0],
+          ["Gloom","AOR 2",2,0],
+          ["Oddish","AOR 1",2,0],
           ["Shaymin-ex","ROS 77",3,0],
-          ["Lugia-ex","",2,0],
-          ["Meowth","",1,0],
+          ["Lugia-ex","AOR 68",2,0],
+          ["Meowth","FCO 74",1,0],
         ], "supporter": [
           ["Professor Sycamore","",4,0],
           ["N (Supporter)","",3,0],
@@ -374,11 +379,11 @@ const decks = {
       },
       "Volcanion": { 
         "pokemon": [
-          ["Volcanion-ex", "", 4, 0],
-          ["Volcanion", "", 3, 0],
-          ["Hoopa-ex", "", 1, 0],
+          ["Volcanion-ex", "STS 26", 4, 0],
+          ["Volcanion", "STS 25", 3, 0],
+          ["Hoopa-ex", "AOR 36", 1, 0],
           ["Shaymin-ex", "ROS 77", 2, 0],
-          ["Salamence-ex", "", 1, 0],
+          ["Salamence-ex", "PR-XY XY170", 1, 0],
         ], "supporter": [
           ["Professor Sycamore","",4,0],
           ["N (Supporter)","",2,0],
@@ -404,15 +409,15 @@ const decks = {
       },
       "Mega Mewtwo": { 
         "pokemon": [
-          ["M Mewtwo-ex", "", 3, 0],
-          ["Mewtwo-ex", "", 3, 0],
-          ["Hoopa-ex", "", 1, 0],
+          ["M Mewtwo-ex", "BKT 64", 3, 0],
+          ["Mewtwo-ex", "BKT 62", 3, 0],
+          ["Hoopa-ex", "AOR 36", 1, 0],
           ["Shaymin-ex", "ROS 77", 2, 0],
-          ["Garbodor", "", 2, 0],
-          ["Trubbish", "", 2, 0],
-          ["Espeon-gx", "", 1, 0],
-          ["Eevee", "", 1, 0],
-          ["Wobbuffet", "", 1, 0],
+          ["Garbodor", "BKP 57", 2, 0],
+          ["Trubbish", "BKP 56", 2, 0],
+          ["Espeon-gx", "SUM 61", 1, 0],
+          ["Eevee", "SUM 101", 1, 0],
+          ["Wobbuffet", "PHF 36", 1, 0],
         ], "supporter": [
           ["Professor Sycamore", "", 4, 0],
           ["N (Supporter)", "", 2, 0],
@@ -439,7 +444,7 @@ const decks = {
         "pokemon": [
           ["M Rayquaza-ex", "", 3, 0],
           ["Rayquaza-ex", "", 3, 0],
-          ["Hoopa-ex", "", 2, 0],
+          ["Hoopa-ex", "AOR 36", 2, 0],
           ["Shaymin-ex", "ROS 77", 4, 0],
           ["Dragonite-ex", "", 2, 0],
           ["Jolteon-ex", "", 1, 0],
@@ -472,7 +477,7 @@ const decks = {
         "pokemon": [
           ["M Gardevoir-ex", "", 3, 0],
           ["Gardevoir-ex", "", 3, 0],
-          ["Hoopa-ex", "", 2, 0],
+          ["Hoopa-ex", "AOR 36", 2, 0],
           ["Dragonite-ex", "", 2, 0],
           ["Shaymin-ex", "ROS 77", 4, 0],
           ["Ratatta", "", 2, 0]
@@ -501,8 +506,8 @@ const decks = {
       "Yveltal Garbodor": { 
         "pokemon": [
           ["Yveltal-ex", "", 3, 0],
-          ["Garbodor", "", 2, 0],
-          ["Trubbish", "", 2, 0],
+          ["Garbodor", "BKP 57", 2, 0],
+          ["Trubbish", "BKP 56", 2, 0],
           ["Yveltal", "", 2, 0],
           ["Tauros-gx", "", 1, 0],
           ["Shaymin-ex", "ROS 77", 1, 0],
@@ -576,7 +581,7 @@ const decks = {
     "decks": {
       "Drampa Garbodor": { 
         "pokemon": [
-          ["Trubbish", "", 0, 4],
+          ["Trubbish", "BKP 56", 0, 4],
           ["Garbodor", "BKP", 2, 0],
           ["Garbodor", "GRI", 0, 2],
           ["Tapu Lele-gx", "GRI", 0, 3],
@@ -1214,8 +1219,8 @@ const decks = {
       "Sableye Control": { 
         "pokemon": [
           ["Sableye", "", 0, 4],
-          ["Garbodor", "", 2, 0],
-          ["Trubbish", "", 0, 2],
+          ["Garbodor", "BKP 57", 2, 0],
+          ["Trubbish", "BKP 56", 0, 2],
           ["Shaymin-ex", "ROS 77", 0, 2]
         ], "supporter": [
           ["Professor Sycamore", "", 4, 0], 
@@ -1255,7 +1260,7 @@ const decks = {
           ["Seismitoad-ex", "", 4, 0],
           ["Shaymin-ex", "ROS 77", 0, 2],
           ["Tapu Lele-gx", "", 0, 1],
-          ["Hoopa-ex", "", 0, 1],
+          ["Hoopa-ex", "AOR 36", 0, 1],
           ["Jirachi-ex", "", 1, 0],
           ["Keldeo-ex", "", 0, 1],
           ["Mewtwo-ex", "", 0, 1],
