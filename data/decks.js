@@ -243,7 +243,7 @@ const decks = {
           ["Shaymin-ex", "PR-XY XY148", 0, 1],
           ["Glaceon-ex", "FAC 20", 1, 0],
           ["Hoopa-ex", "AOR 36", 0, 1],
-          ["Articuno", "ROS 16", 0, 1]
+          ["Articuno", "ROS 17", 0, 1]
         ], 
         "supporter": [
           ["Professor Sycamore", "", 4, 0],
