@@ -29,10 +29,10 @@ const decks = {
           ["Professor Sycamore", "", 3, 0],
           ["Lysandre", "", 2, 0],
           ["Hex Maniac", "", 0, 2],
-          ["N (Supporter)", "", 1, 0],
+          ["N", "", 1, 0],
           ["Teammates", "", 1, 0],
           ["Pokemon Ranger", "", 1, 0],
-          ["AZ (Supporter)", "", 1, 0]
+          ["AZ", "", 1, 0]
         ],
         "item": [
           ["VS Seeker", "", 0, 4],
@@ -68,7 +68,7 @@ const decks = {
         ], 
         "supporter": [
           ["Professor Sycamore", "", 0, 3],
-          ["AZ (Supporter)", "", 0, 1], 
+          ["AZ", "", 0, 1], 
           ["Lysandre", "", 0, 1], 
         ], 
         "item": [
@@ -100,7 +100,7 @@ const decks = {
         ], 
         "supporter": [
           ["Professor Sycamore", "", 0, 4],
-          ["N (Supporter)", "", 0, 4],
+          ["N", "", 0, 4],
           ["Ace Trainer", "", 1, 0],
           ["Fisherman", "", 1, 0],
           ["Pokemon Ranger", "", 1, 0]
@@ -136,9 +136,9 @@ const decks = {
         ], 
         "supporter": [
           ["Professor Sycamore", "", 0, 4],
-          ["N (Supporter)", "", 0, 2],
+          ["N", "", 0, 2],
           ["Lysandre", "", 0, 2],
-          ["AZ (Supporter)", "", 2, 0],
+          ["AZ", "", 2, 0],
           ["Hex Maniac", "", 1, 0],
           ["Xerosic", "", 1, 0],
           ["Pokemon Center Lady", "", 1, 0],
@@ -177,10 +177,10 @@ const decks = {
         ], 
         "supporter": [
           ["Professor Sycamore", "", 0, 4], 
-          ["N (Supporter)", "", 2, 0],
+          ["N", "", 2, 0],
           ["Lysandre", "", 2, 0],
           ["Olympia", "", 1, 0],
-          ["AZ (Supporter)", "", 1, 0],
+          ["AZ", "", 1, 0],
         ], 
         "item": [
           ["VS Seeker", "", 0, 4],
@@ -213,7 +213,7 @@ const decks = {
         ], 
         "supporter": [
           ["Professor Sycamore", "", 3, 0], 
-          ["N (Supporter)", "", 2, 0],
+          ["N", "", 2, 0],
           ["Korrina", "", 2, 0],
           ["Lysandre", "", 2, 0],
           ["Hex Maniac", "", 2, 0],
@@ -247,9 +247,9 @@ const decks = {
         ], 
         "supporter": [
           ["Professor Sycamore", "", 4, 0],
-          ["N (Supporter)", "", 3, 0],
+          ["N", "", 3, 0],
           ["Lysandre", "", 2, 0],
-          ["AZ (Supporter)", "", 1, 0],
+          ["AZ", "", 1, 0],
           ["Xerosic", "", 1, 0],
           ["Team Flare Grunt", "", 1, 0],
           ["Hex Maniac", "", 1, 0]
@@ -281,7 +281,7 @@ const decks = {
         ], 
         "supporter": [
           ["Professor Sycamore", "", 4, 0],
-          ["N (Supporter)", "", 2, 0],
+          ["N", "", 2, 0],
           ["Blacksmith", "", 2, 0],
           ["Lysandre", "", 2, 0],
           ["Pokemon Ranger", "", 2, 0],
@@ -323,7 +323,7 @@ const decks = {
         "supporter": [
           ["Professor Sycamore", "", 4, 0],
           ["Lysandre", "", 2, 0],
-          ["N (Supporter)", "", 2, 0],
+          ["N", "", 2, 0],
           ["Hex Maniac", "", 1, 0],
           ["Delinquent", "", 1, 0]
         ], 
@@ -360,7 +360,7 @@ const decks = {
           ["Meowth","FAC 74",1,0],
         ], "supporter": [
           ["Professor Sycamore","",4,0],
-          ["N (Supporter)","",3,0],
+          ["N","",3,0],
           ["Lysandre","",2,0],
           ["Olympia","",1,0],
         ], "item": [
@@ -386,7 +386,7 @@ const decks = {
           ["Salamence-ex", "PR-XY XY170", 1, 0],
         ], "supporter": [
           ["Professor Sycamore","",4,0],
-          ["N (Supporter)","",2,0],
+          ["N","",2,0],
           ["Lysandre","",2,0],
           ["Olympia","",1,0],
         ], "item": [
@@ -420,7 +420,7 @@ const decks = {
           ["Wobbuffet", "PHF 36", 1, 0],
         ], "supporter": [
           ["Professor Sycamore", "", 4, 0],
-          ["N (Supporter)", "", 2, 0],
+          ["N", "", 2, 0],
           ["Lysandre", "", 2, 0],
           ["Olympia", "", 1, 0],
         ], "item": [
@@ -451,7 +451,7 @@ const decks = {
           ["Jirachi", "PR-XY XY67", 1, 0],
         ], "supporter": [
           ["Professor Sycamore", "", 3, 0],
-          ["N (Supporter)", "", 1, 0],
+          ["N", "", 1, 0],
           ["Lysandre", "", 1, 0],
           ["Skyla", "", 1, 0],
           ["Delinquent", "", 1, 0],
@@ -483,7 +483,7 @@ const decks = {
           ["Rattata", "EVO 66", 2, 0]
         ], "supporter": [
           ["Professor Sycamore", "", 3, 0],
-          ["N (Supporter)", "", 2, 0],
+          ["N", "", 2, 0],
           ["Lysandre", "", 2, 0],
           ["Hex Maniac", "", 2, 0],
           ["Olympia", "", 1, 0],
@@ -513,7 +513,7 @@ const decks = {
           ["Shaymin-ex", "ROS 77", 1, 0],
         ], "supporter": [
           ["Professor Sycamore", "", 4, 0],
-          ["N (Supporter)", "", 2, 0],
+          ["N", "", 2, 0],
           ["Lysandre", "", 2, 0],
           ["Olympia", "", 1, 0],
           ["Delinquent", "", 1, 0],
@@ -544,7 +544,7 @@ const decks = {
         ], "supporter": [
           ["Professor Sycamore", "", 4, 0],
           ["Teammates", "", 2, 0],
-          ["N (Supporter)", "", 1, 0],
+          ["N", "", 1, 0],
           ["Lysandre", "", 1, 0],
           ["Professor Kukui", "", 1, 0]
         ], "item": [
@@ -591,7 +591,7 @@ const decks = {
           ["Espeon-ex", "BKP 117", 1, 0]
         ], "supporter": [
           ["Professor Sycamore", "", 4, 0],
-          ["N (Supporter)", "", 4, 0],
+          ["N", "", 4, 0],
           ["Guzma", "", 4, 0],
           ["Bridgette", "", 1, 0]
         ], "item": [
@@ -622,7 +622,7 @@ const decks = {
           ["Alolan Vulpix", "BUS 27", 1, 0]
         ], "supporter": [
           ["Professor Sycamore", "", 4, 0],
-          ["N (Supporter)", "", 3, 0],
+          ["N", "", 3, 0],
           ["Guzma", "", 3, 0],
           ["Brigette", "", 2, 0],
           ["Acerola", "", 1, 0]
@@ -654,7 +654,7 @@ const decks = {
           ["Tapu Fini-gx", "BUS 39", 1, 0]
         ], "supporter": [
           ["Professor Sycamore", "", 4, 0],
-          ["N (Supporter)", "", 4, 0],
+          ["N", "", 4, 0],
           ["Guzma", "", 4, 0],
           ["Acerola", "", 3, 0],
           ["Brigette", "", 1, 0]
@@ -684,7 +684,7 @@ const decks = {
           ["Oranguru", "SUM 113", 1, 0],
         ], "supporter": [
           ["Professor Sycamore", "", 4, 0],
-          ["N (Supporter)", "", 4, 0],
+          ["N", "", 4, 0],
           ["Guzma", "", 4, 0],
           ["Brigette", "", 2, 0],
         ], "item": [
@@ -715,7 +715,7 @@ const decks = {
           ["Mew", "FAC 29", 1, 0]
         ], "supporter": [
           ["Professor Sycamore", "", 4, 0],
-          ["N (Supporter)", "", 4, 0],
+          ["N", "", 4, 0],
           ["Guzma", "", 4, 0],
           ["Skyla", "", 2, 0],
           ["Brigette", "", 1, 0],
@@ -746,7 +746,7 @@ const decks = {
           ["Alolan Vulpix", "BUS 27", 1, 0]
         ], "supporter": [
           ["Professor Sycamore", "", 4, 0],
-          ["N (Supporter)", "", 4, 0],
+          ["N", "", 4, 0],
           ["Guzma", "", 4, 0],
           ["Brigette", "", 2, 0],
           ["Skyla", "", 1, 0],
@@ -778,7 +778,7 @@ const decks = {
           ["Professor Sycamore", "", 0, 4],
           ["Guzma", "", 4, 0],
           ["Kiawe", "", 3, 0],
-          ["N (Supporter)", "", 2, 0]
+          ["N", "", 2, 0]
         ], "item": [
           ["Ultra Ball", "", 4, 0],
           ["Max Elixir", "", 3, 0],
@@ -804,7 +804,7 @@ const decks = {
           ["Oranguru", "SUM 113", 1, 0],
         ], "supporter": [
           ["Professor Sycamore", "", 4, 0],
-          ["N (Supporter)", "", 4, 0],
+          ["N", "", 4, 0],
           ["Guzma", "", 3, 0],
           ["Brigette", "", 2, 0],
         ], "item": [
@@ -847,7 +847,7 @@ const decks = {
           ["Professor Sycamore", "", 4, 0],
           ["Guzma", "", 4, 0],
           ["Cynthia", "", 2, 0],
-          ["N (Supporter)", "", 2, 0]
+          ["N", "", 2, 0]
         ], "item": [
           ["Ultra Ball", "", 4, 0],
           ["Max Elixir", "", 4, 0],
@@ -876,7 +876,7 @@ const decks = {
           ["Mewtwo", "EVO 51", 1, 0],
           ["Buzzwole", "FLI 77", 1, 0]
         ], "supporter": [
-          ["N (Supporter)", "", 3, 0],
+          ["N", "", 3, 0],
           ["Brigette", "", 3, 0],
           ["Guzma", "", 3, 0],
           ["Professor Sycamore", "", 1, 0],
@@ -913,7 +913,7 @@ const decks = {
           ["Latios", "SLG 41", 1, 0],
           ["Oranguru", "SUM 113", 1, 0]
         ], "supporter": [
-          ["N (Supporter)", "", 3, 0],
+          ["N", "", 3, 0],
           ["Guzma", "", 3, 0],
           ["Brigette", "", 3, 0],
           ["Professor Sycamore", "", 1, 0],
@@ -949,7 +949,7 @@ const decks = {
           ["Professor Sycamore", "", 4, 0],
           ["Guzma", "", 4, 0],
           ["Cynthia", "", 3, 0],
-          ["N (Supporter)", "", 2, 0],
+          ["N", "", 2, 0],
           ["Brigette", "", 1, 0]
         ], "item": [
           ["Mysterious Treasure", "", 4, 0],
@@ -976,7 +976,7 @@ const decks = {
           ["Kartana-gx", "CIN 70", 1, 0],
           ["Latios", "SLG 41", 1, 0]
         ], "supporter": [
-          ["N (Supporter)", "", 4, 0],
+          ["N", "", 4, 0],
           ["Guzma", "", 3, 0],
           ["Brigette", "", 2, 0],
           ["Professor Sycamore", "", 1, 0],
@@ -1008,7 +1008,7 @@ const decks = {
           ["Mew-ex", "LTR RC24", 1, 0],
           ["Oranguru", "UPR 114", 1, 0]
         ], "supporter": [
-          ["N (Supporter)", "", 3, 0],
+          ["N", "", 3, 0],
           ["Guzma", "", 3, 0],
           ["Brigette", "", 3, 0],
           ["Professor Sycamore", "", 1, 0],
@@ -1049,7 +1049,7 @@ const decks = {
         ], "supporter": [
           ["Guzma", "", 3, 0],
           ["Brigette", "", 3, 0],
-          ["N (Supporter)", "", 3, 0],
+          ["N", "", 3, 0],
           ["Cynthia", "", 1, 0],
           ["Acerola", "", 1, 0],
           ["Professor Sycamore", "", 1, 0]
@@ -1081,7 +1081,7 @@ const decks = {
           ["Professor Sycamore", "", 4, 0],
           ["Guzma", "", 3, 0],
           ["Cynthia", "", 3, 0],
-          ["N (Supporter)", "", 2, 0],
+          ["N", "", 2, 0],
           ["Brigette", "", 1, 0]
         ], "item": [
           ["Mysterious Treasure", "", 4, 0],
@@ -1120,7 +1120,7 @@ const decks = {
           ["Tapu Lele-gx", "GRI 60", 2, 0],
           ["Espeon-ex", "BKP 117", 1, 0],
         ], "supporter": [
-          ["N (Supporter)", "", 3, 0],
+          ["N", "", 3, 0],
           ["Wally", "", 2, 0],
           ["Cynthia", "", 2, 0],
           ["Professor Juniper", "", 2, 0],
@@ -1191,7 +1191,7 @@ const decks = {
           ["Oranguru", "UPR 114", 1, 0],
         ], "supporter": [
           ["Professor Juniper", "", 2, 0],
-          ["N (Supporter)", "", 1, 0],
+          ["N", "", 1, 0],
           ["Teammates", "", 1, 0],
           ["Guzma", "", 1, 0],
           ["Hex Maniac", "", 1, 0],
@@ -1224,7 +1224,7 @@ const decks = {
           ["Shaymin-ex", "ROS 77", 0, 2]
         ], "supporter": [
           ["Professor Sycamore", "", 4, 0], 
-          ["N (Supporter)", "", 2, 0],
+          ["N", "", 2, 0],
           ["Lysandre", "", 2, 0],
           ["Team Flare Grunt", "", 2, 0],
           ["Pokemon Center Lady", "", 1, 0],
@@ -1232,7 +1232,7 @@ const decks = {
           ["Xerosic", "", 1, 0],
           ["Hex Maniac", "", 1, 0],
           ["Delinquent", "", 1, 0],
-          ["AZ (Supporter)", "", 1, 0]
+          ["AZ", "", 1, 0]
         ], "item": [
           ["Trainers' Mail", "", 0, 4],
           ["Crushing Hammer", "", 3, 0],
@@ -1268,7 +1268,7 @@ const decks = {
           ["Giratina", "PR-XY XY184", 1, 0],
         ], "supporter": [
           ["Professor Juniper", "", 2, 0],
-          ["N (Supporter)", "", 2, 0],
+          ["N", "", 2, 0],
           ["Lusamine", "", 2, 0],
           ["Acerola", "", 2, 0],
           ["Colress", "", 2, 0],
@@ -1310,7 +1310,7 @@ const decks = {
         ], "supporter": [
           ["Professor Juniper", "", 4, 0],
           ["Guzma", "", 4, 0],
-          ["N (Supporter)", "", 2, 0],
+          ["N", "", 2, 0],
           ["Korrina", "", 0, 2],
           ["Colress", "", 2, 0],
           ["Ultra Ball", "", 0, 4],
