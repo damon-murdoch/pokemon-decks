@@ -459,10 +459,12 @@ function showPageBuylist()
     //////////// TODO: BUILD THE REST OF THE TABLE
     
     // Loop over all of the cards in the buylist
-    for(card in buylist)
+    // Sort ensures card names will be alphabetical
+    for(card of Object.keys(buylist).sort())
     {
       // Loop over all of the set numbers for the card
-      for (number in buylist[card])
+      // Sort ensures card names will be alphabetical
+      for (number of Object.keys(buylist[card]).sort())
       {
         // Create the table row for the row
         let trow = document.createElement('tr');
