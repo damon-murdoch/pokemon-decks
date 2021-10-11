@@ -1648,15 +1648,13 @@ const decks = {
           ["Sobble", "CRE 41", 4, 0],
           ["Rapid Strike Urshifu Vmax", "BST 88", 3, 0],
           ["Rapid Strike Urshifu V", "BST 87", 4, 0],
-          ["Medicham V", "EVS 83", 1, 0],
           ["Crobat V", "DAA 104", 1, 0],
           ["Passimian", "CRE 88", 1, 0]
         ], "supporter": [
           ["Professor's Research", "", 4, 0],
           ["Marnie", "", 3, 0],
           ["Raihan", "", 1, 1],
-          ["Boss's Orders", "", 1, 0],
-          ["Bird Catcher", "", 1, 0]
+          ["Boss's Orders", "", 1, 0]
         ], "item": [
           ["Level Ball", "", 4, 0],
           ["Quick Ball", "", 4, 0],
@@ -1670,8 +1668,8 @@ const decks = {
         ], "stadium": [
           ["Tower of Waters", "", 2, 0]
         ], "energy": [
+          ["Basic Fighting Energy", "", 5, 0]
           ["Rapid Strike Energy", "", 4, 0],
-          ["Basic Fighting Energy", "", 4, 0]
         ]
       }
     }
