@@ -23,7 +23,7 @@ const decks = {
         "supporter": [
           ["Professor Sycamore", "", 3, 0],
           ["Lysandre", "", 2, 0],
-          ["Hex Maniac", "", 0, 2],
+          ["Hex Maniac", "", 2, 0],
           ["N", "", 1, 0],
           ["Teammates", "", 1, 0],
           ["Pokemon Ranger", "", 1, 0],
@@ -62,9 +62,9 @@ const decks = {
           ["Shaymin-ex", "ROS 77", 4, 0]
         ], 
         "supporter": [
-          ["Professor Sycamore", "", 0, 3],
-          ["AZ", "", 0, 1], 
-          ["Lysandre", "", 0, 1], 
+          ["Professor Sycamore", "", 3, 0],
+          ["AZ", "", 1, 0], 
+          ["Lysandre", "", 1, 0], 
         ], 
         "item": [
           ["Battle Compressor", "", 4, 0],
@@ -86,7 +86,7 @@ const decks = {
       },
       "Greninja Talonflame": { 
         "pokemon": [
-          ["Talonflame", "STS 96", 0, 4],
+          ["Talonflame", "STS 96", 4, 0],
           ["Greninja Break", "BKP 41", 3, 0],
           ["Greninja", "BKP 40", 3, 0],
           ["Greninja", "XY 41", 1, 0],
@@ -95,7 +95,7 @@ const decks = {
         ], 
         "supporter": [
           ["Professor Sycamore", "", 0, 4],
-          ["N", "", 0, 4],
+          ["N", "", 4, 0],
           ["Ace Trainer", "", 1, 0],
           ["Fisherman", "", 1, 0],
           ["Pokemon Ranger", "", 1, 0]
@@ -131,8 +131,8 @@ const decks = {
         ], 
         "supporter": [
           ["Professor Sycamore", "", 0, 4],
-          ["N", "", 0, 2],
-          ["Lysandre", "", 0, 2],
+          ["N", "", 2, 0],
+          ["Lysandre", "", 2, 0],
           ["AZ", "", 2, 0],
           ["Hex Maniac", "", 1, 0],
           ["Xerosic", "", 1, 0],
@@ -235,7 +235,7 @@ const decks = {
           ["Seismitoad-ex", "FFI 20", 4, 0],
           ["Manaphy-ex", "BKP 32", 1, 1],
           ["Shaymin-ex", "ROS 77", 2, 0],
-          ["Shaymin-ex", "PR-XY XY148", 0, 1],
+          ["Shaymin-ex", "PR-XY XY148", 1, 0],
           ["Glaceon-ex", "FAC 20", 1, 0],
           ["Hoopa-ex", "AOR 36", 0, 1],
           ["Articuno", "ROS 17", 0, 1]
@@ -595,7 +595,7 @@ const decks = {
           ["Rescue Stretcher", "", 1, 0]
         ], "tool": [
           ["Float Stone", "", 0, 4],
-          ["Choice Band", "", 0, 4]
+          ["Choice Band", "", 4, 0]
         ], "stadium": [
           ["Po Town", "", 4, 0]
         ], "energy": [
@@ -684,7 +684,7 @@ const decks = {
           ["Brigette", "", 2, 0],
         ], "item": [
           ["Ultra Ball", "", 0, 4],
-          ["Evosoda", "", 0, 2],
+          ["Evosoda", "", 2, 0],
           ["Rescue Stretcher", "", 0, 2],
           ["Field Blower", "", 0, 2],
           ["Special Charge", "", 1, 0],
@@ -814,7 +814,7 @@ const decks = {
           ["Fairy Garden", "", 2, 0]
         ], "energy": [
           ["Basic Fairy Energy", "", 12, 0],
-          ["Double Colorless Energy", "", 0, 3]
+          ["Double Colorless Energy", "", 3, 0]
         ]
       }
     }
@@ -1061,7 +1061,7 @@ const decks = {
           ["Parallel City", "", 2, 0]
         ], "energy": [
           ["Double Colorless Energy", "", 0, 4],
-          ["Strong Energy", "", 0, 4],
+          ["Strong Energy", "", 2, 2],
         ]
       },
       "Ultra Malamar": { 
@@ -1069,7 +1069,7 @@ const decks = {
           ["Malamar", "FLI 51", 4, 0],
           ["Inkay", "FLI 50", 4, 0],
           ["Ultra Necrozma-gx", "FLI 95", 2, 0],
-          ["Dawn Wings Necrozma-gx", "UPR 63", 0, 2],
+          ["Dawn Wings Necrozma-gx", "UPR 63", 1, 1],
           ["Tapu Lele-gx", "GRI 60", 0, 2],
           ["Mew", "FAC 29", 1, 0]
         ], "supporter": [
@@ -1215,7 +1215,7 @@ const decks = {
         "pokemon": [
           ["Sableye", "DEX 62", 0, 4],
           ["Garbodor", "BKP 57", 2, 0],
-          ["Trubbish", "BKP 56", 0, 2],
+          ["Trubbish", "BKP 56", 2, 0],
           ["Shaymin-ex", "ROS 77", 0, 2]
         ], "supporter": [
           ["Professor Sycamore", "", 4, 0], 
@@ -1579,7 +1579,7 @@ const decks = {
         ], "item": [
           ["Pokegear 3.0", "", 4, 0],
           ["Fire Crystal", "", 4, 0],
-          ["Fiery Flint", "", 1, 3],
+          ["Fiery Flint", "", 4, 0],
           ["Escape Board", "", 2, 0],
           ["Great Catcher", "", 2, 0],
           ["Pal Pad", "", 1, 0],
