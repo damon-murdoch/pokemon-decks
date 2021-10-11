@@ -13,11 +13,6 @@ const decks = {
     "decks": {
 
       "Night March": {
-        "meta": {
-          "icons": [
-            // Pokedex number for Joltik, Pumpkaboo, Lampent
-          ]
-        },
         "pokemon": [
           ["Joltik", "PHF 26", 4, 0],
           ["Pumpkaboo", "PHF 44", 4, 0],
@@ -89,7 +84,7 @@ const decks = {
           ["Double Colorless Energy", "", 0, 4]
         ]
       },
-      "Talonflame Greninja": { 
+      "Greninja Talonflame": { 
         "pokemon": [
           ["Talonflame", "STS 96", 0, 4],
           ["Greninja Break", "BKP 41", 3, 0],
@@ -269,7 +264,7 @@ const decks = {
         ], 
         "energy": [
           ["Double Colorless Energy", "", 0, 4],
-          ["Basic Water Energy", "", 0, 9],
+          ["Basic Water Energy", "", 9, 0],
         ]
       },
       "Volcanion": { 
@@ -1041,7 +1036,7 @@ const decks = {
           ["Zoroark-gx", "SLG 53", 4, 0],
           ["Zorua", "SLG 52", 4, 0],
           ["Lucario-gx", "PR-SM SM100", 2, 0],
-          ["Riolu", "UPR 66", 0, 3],
+          ["Riolu", "UPR 66", 3, 0],
           ["Tapu Lele-gx", "GRI 60", 0, 3],
           ["Diancie", "FLI 74", 1, 0],
           ["Mew-ex", "LTR RC24", 0, 1],
@@ -1247,7 +1242,7 @@ const decks = {
         ], "tool": [
           ["Float Stone", "", 2, 0],
           ["Head Ringer", "", 1, 0],
-          ["Life Dew Ace Spec", "", 1, 0]
+          ["Life Dew", "", 0, 1]
         ], "stadium": [
           ["Parallel City", "", 1, 0],
           ["Team Aqua's Secret Base", "", 0, 1]
@@ -1259,10 +1254,10 @@ const decks = {
         "pokemon": [
           ["Seismitoad-ex", "FFI 20", 4, 0],
           ["Shaymin-ex", "ROS 77", 0, 2],
-          ["Tapu Lele-gx", "GRI 60", 0, 1],
-          ["Hoopa-ex", "AOR 36", 0, 1],
+          ["Tapu Lele-gx", "GRI 60", 1, 0],
+          ["Hoopa-ex", "AOR 36", 1, 0],
           ["Jirachi-ex", "PLB 60", 1, 0],
-          ["Keldeo-ex", "BCR 49", 0, 1],
+          ["Keldeo-ex", "PR-BW BW60", 1, 0],
           ["Mewtwo-ex", "NXD 54", 0, 1],
           ["Sudowoodo", "GRI 66", 1, 0],
           ["Giratina", "PR-XY XY184", 1, 0],
@@ -1298,15 +1293,15 @@ const decks = {
       },
       "Buzzwole Lycanroc": { 
         "pokemon": [
-          ["Buzzwole-gx", "CIN 57", 0, 3],
-          ["Lycanroc-gx", "GRI 74", 0, 2],
+          ["Buzzwole-gx", "CIN 57", 1, 2],
+          ["Lycanroc-gx", "GRI 74", 2, 0],
           ["Rockruff", "FLI 75", 2, 0],
           ["Buzzwole", "FLI 77", 1, 0],
           ["Diancie", "FLI 74", 1, 0],
           ["Octillery", "BKT 33", 1, 0],
           ["Remoraid", "BKT 31", 1, 0],
           ["Sudowoodo", "GRI 66", 1, 0],
-          ["Tapu Lele-gx", "GRI 60", 0, 1]
+          ["Tapu Lele-gx", "GRI 60", 1, 0]
         ], "supporter": [
           ["Professor Juniper", "", 4, 0],
           ["Guzma", "", 4, 0],
@@ -1608,59 +1603,28 @@ const decks = {
       "end": "Evolving_Skies"
     },
     "decks": {
-      "Zacian Inteleon": { 
-        "pokemon": [
-          ["Inteleon", "CRE 43", 2, 1],
-          ["Inteleon", "SSH 58", 1, 0],
-          ["Drizzile", "SSH 57", 4, 0],
-          ["Sobble", "CRE 41", 4, 0],
-          ["Zacian V", "SSH 138", 4, 0],
-          ["Zamazenta V", "SSH 139", 1, 0],
-          ["Medicham V", "EVS 83", 1, 0],
-          ["Crobat V", "DAA 104", 1, 0]
-        ], "supporter": [
-          ["Professor's Research", "", 4, 0],
-          ["Boss's Orders", "", 2, 0],
-          ["Marnie", "", 2, 0],
-          ["Raihan", "", 1, 0]
-        ], "item": [
-          ["Metal Saucer", "", 4, 0],
-          ["Level Ball", "", 4, 0],
-          ["Quick Ball", "", 4, 0],
-          ["Evolution Incense", "", 2, 0],
-          ["Switch", "", 2, 0],
-          ["Escape Rope", "", 1, 0],
-          ["Energy Switch", "", 1, 0]
-        ], "tool": [
-          ["Rusted Sword", "", 2, 0],
-          ["Cape of Toughness", "", 1, 0]
-        ], "stadium": [
-          
-        ], "energy": [
-          ["Basic Metal Energy", "", 11, 0]
-        ]
-      },
       "Rapid Strike Inteleon": { 
         "pokemon": [
-          ["Inteleon", "CRE 43", 2, 1],
+          ["Inteleon", "CRE 43", 3, 0],
           ["Inteleon", "SSH 58", 1, 0],
           ["Drizzile", "SSH 57", 4, 0],
           ["Sobble", "CRE 41", 4, 0],
-          ["Rapid Strike Urshifu Vmax", "BST 88", 3, 0],
-          ["Rapid Strike Urshifu V", "BST 87", 4, 0],
+          ["Rapid Strike Urshifu Vmax", "BST 88", 2, 0],
+          ["Rapid Strike Urshifu V", "BST 87", 3, 0],
+          ["Galarian Moltres V", "CRE 97", 3, 0],
           ["Crobat V", "DAA 104", 1, 0],
-          ["Passimian", "CRE 88", 1, 0]
         ], "supporter": [
           ["Professor's Research", "", 4, 0],
           ["Marnie", "", 3, 0],
-          ["Raihan", "", 1, 1],
-          ["Boss's Orders", "", 1, 0]
+          ["Boss's Orders", "", 2, 0],
+          ["Raihan", "", 1, 0]
         ], "item": [
           ["Level Ball", "", 4, 0],
-          ["Quick Ball", "", 4, 0],
           ["Evolution Incense", "", 4, 0],
-          ["Escape Rope", "", 2, 0],
+          ["Quick Ball", "", 3, 0],
+          ["Energy Switch", "", 2, 0],
           ["Energy Search", "", 1, 0],
+          ["Escape Rope", "", 1, 0],
           ["Air Balloon", "", 1, 0],
           ["Switch", "", 1, 0]
         ], "tool": [
@@ -1668,8 +1632,9 @@ const decks = {
         ], "stadium": [
           ["Tower of Waters", "", 2, 0]
         ], "energy": [
-          ["Basic Fighting Energy", "", 5, 0]
+          ["Basic Darkness Energy", "", 5, 0],
           ["Rapid Strike Energy", "", 4, 0],
+          ["Basic Fighting Energy", "", 1, 0]
         ]
       }
     }

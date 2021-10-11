@@ -152,8 +152,8 @@ function showPageHome()
     // Set the contents for the row
     trow.innerHTML = 
       // Deck Format
-      "<th scope='row'><img src='" + sprites.start + "'>" + 
-      "</img><a href='" + getPageLink(format) + "' class='text-light'>" + format + "</a>" + 
+      "<th scope='row' class='d-flex justify-content-center'><img src='" + sprites.start + "'>" + 
+      "</img><a href='" + getPageLink(format) + "' class='text-light px-2'>" + format + "</a>" + 
       "<img src='" + sprites.end + "'>" + 
       "</img></th><td class='text-light'>" + progress.total + "</td>" + 
       "<td class='text-light'>" + progress.complete + "</td>";
@@ -202,8 +202,14 @@ function showPageHome()
 // a little bit of information about each deck.
 function showPageFormat(format)
 {
+
+  // Get the format sprite information
+  sprites = getFormatLogos(decks[format].meta.start, decks[format].meta.end);
+
   // Set the page title
-  document.getElementById('pagetitle').innerHTML = format + " Format Page"; 
+  document.getElementById('pagetitle').innerHTML = "<th scope='row' class='d-flex justify-content-center'><img src='" + sprites.start + "'>" + 
+  "</img><a href='#' class='text-light px-2'>" + format + "</a>" + 
+  "<img src='" + sprites.end + "'>";
 
   // Get the list of deck formats
   decklist = Object.keys(decks[format].decks);
@@ -272,10 +278,10 @@ function showPageFormat(format)
   decklist.forEach(deck => {
 
     // Create the table row for the row
-    trow = document.createElement('tr');
+    let trow = document.createElement('tr');
 
     // Get the format progress information
-    progress = getDeckProgress(deck, format);
+    let progress = getDeckProgress(deck, format);
 
     // Set the contents for the row
     trow.innerHTML = 
@@ -284,7 +290,7 @@ function showPageFormat(format)
     "' class='text-light'>" + deck + "</a></th>";
 
     // Get the percentage of cards remaining
-    percentage = (progress.obtained / (progress.obtained + progress.missing) * 100).toFixed(2);
+    let percentage = (progress.obtained / (progress.obtained + progress.missing) * 100).toFixed(2);
 
     // If the deck has 60 cards (as required)
     if ((progress.obtained + progress.missing) == 60)
