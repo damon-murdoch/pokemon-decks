@@ -22,7 +22,7 @@ const decks = {
           ["Joltik", "PHF 26", 4, 0],
           ["Pumpkaboo", "PHF 44", 4, 0],
           ["Lampent", "PHF 42", 4, 0],
-          ["Shaymin-ex", "ROS 77", 0, 3],
+          ["Shaymin-ex", "ROS 77", 3, 0],
           ["Mew", "FAC 29", 1, 0]
         ],
         "supporter": [
@@ -64,7 +64,7 @@ const decks = {
           ["Vespiquen", "AOR 10", 4, 0],
           ["Combee", "AOR 9", 4, 0],
           ["Unown", "AOR 30", 4, 0],
-          ["Shaymin-ex", "ROS 77", 0, 4]
+          ["Shaymin-ex", "ROS 77", 4, 0]
         ], 
         "supporter": [
           ["Professor Sycamore", "", 0, 3],
@@ -129,7 +129,7 @@ const decks = {
           ["M Audino-ex", "FAC 85", 3, 0],
           ["Audino-ex", "FAC 84", 4, 0],
           ["Hoopa-ex", "AOR 36", 0, 1],
-          ["Shaymin-ex", "ROS 77", 0, 2],
+          ["Shaymin-ex", "ROS 77", 2, 0],
           ["Magearna-ex", "STS 110", 1, 0],
           ["Cobalion", "STS 74", 1, 0],
           ["Absol", "ROS 40", 0, 1],
@@ -207,7 +207,7 @@ const decks = {
           ["Crobat", "PHF 33", 3, 0],
           ["Golbat", "PHF 32", 4, 0],
           ["Zubat", "PHF 31", 4, 0],
-          ["Shaymin-ex", "ROS 77", 0, 2],
+          ["Shaymin-ex", "ROS 77", 2, 0],
           ["Carbink Break", "FAC 50", 1, 0],
           ["Carbink", "FAC 49", 2, 0]
         ], 
@@ -239,7 +239,7 @@ const decks = {
         "pokemon": [
           ["Seismitoad-ex", "FFI 20", 4, 0],
           ["Manaphy-ex", "BKP 32", 1, 1],
-          ["Shaymin-ex", "ROS 77", 0, 2],
+          ["Shaymin-ex", "ROS 77", 2, 0],
           ["Shaymin-ex", "PR-XY XY148", 0, 1],
           ["Glaceon-ex", "FAC 20", 1, 0],
           ["Hoopa-ex", "AOR 36", 0, 1],
@@ -276,7 +276,7 @@ const decks = {
         "pokemon": [
           ["Volcanion-ex", "PR-XY XY173", 0, 4],
           ["Volcanion", "STS 25", 1, 3],
-          ["Shaymin-ex", "ROS 77", 0, 2],
+          ["Shaymin-ex", "ROS 77", 2, 0],
           ["Hoopa-ex", "AOR 36", 0, 1],
         ], 
         "supporter": [

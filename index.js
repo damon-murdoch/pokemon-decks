@@ -35,6 +35,31 @@ function getPageLink(format = null, deck = null)
   return url.href;
 }
 
+// getFormatLogo(start: String, end: String): Object
+// Given a start and end format, gets the 
+// path of the start and end sprites and 
+// returns them to the calling process.
+function getFormatLogos(start, end)
+{
+  // getLogoPath(path: String): String
+  // Given a logo name, returns the file
+  // path of the logo.
+  function getLogoPath(path)
+  {
+    // Retrn the path to the 30px sprite for the format
+    return "img/symbol/30px/30px-SetSymbol" + path + ".webp";
+  }
+
+  // Return the start and end sprite paths
+  return {
+    // Format Starting Sprite
+    start: getLogoPath(start),
+
+    // Formad Ending Sprite
+    end: getLogoPath(end)
+  };
+}
+
 // showPageHome(Void): Void
 // Shows the home page, listing 
 // all formats and other basic info
@@ -121,12 +146,16 @@ function showPageHome()
     // Get the format progress information
     progress = getFormatProgress(format);
 
+    // Get the format sprite information
+    sprites = getFormatLogos(decks[format].meta.start, decks[format].meta.end);
+
     // Set the contents for the row
     trow.innerHTML = 
       // Deck Format
-      "<th scope='row'><a href='" + getPageLink(format) +
-      "' class='text-light'>" + format + "</a></th>" + 
-      "<td class='text-light'>" + progress.total + "</td>" + 
+      "<th scope='row'><img src='" + sprites.start + "'>" + 
+      "</img><a href='" + getPageLink(format) + "' class='text-light'>" + format + "</a>" + 
+      "<img src='" + sprites.end + "'>" + 
+      "</img></th><td class='text-light'>" + progress.total + "</td>" + 
       "<td class='text-light'>" + progress.complete + "</td>";
 
     // If the progress is less than fifty percent
