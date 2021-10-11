@@ -1037,7 +1037,7 @@ const decks = {
           ["Zorua", "SLG 52", 4, 0],
           ["Lucario-gx", "PR-SM SM100", 2, 0],
           ["Riolu", "UPR 66", 3, 0],
-          ["Tapu Lele-gx", "GRI 60", 0, 3],
+          ["Tapu Lele-gx", "GRI 60", 2, 1],
           ["Diancie", "FLI 74", 1, 0],
           ["Mew-ex", "LTR RC24", 0, 1],
           ["Mewtwo", "EVO 51", 1, 0]
