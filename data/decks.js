@@ -1253,8 +1253,8 @@ const decks = {
       "Seismitoad": { 
         "pokemon": [
           ["Seismitoad-ex", "FFI 20", 4, 0],
-          ["Shaymin-ex", "ROS 77", 0, 2],
-          ["Tapu Lele-gx", "GRI 60", 1, 0],
+          ["Shaymin-ex", "ROS 77", 2, 0],
+          ["Tapu Lele-gx", "GRI 60", 0, 1],
           ["Hoopa-ex", "AOR 36", 1, 0],
           ["Jirachi-ex", "PLB 60", 1, 0],
           ["Keldeo-ex", "PR-BW BW60", 1, 0],
@@ -1269,19 +1269,19 @@ const decks = {
           ["Colress", "", 2, 0],
           ["Team Skull Grunt", "", 1, 0],
           ["Team Flare Grunt", "", 1, 0],
-          ["Shadow Triad", "", 1, 0],
+          ["Shadow Triad", "", 0, 1],
           ["Cynthia", "", 1, 0],
           ["Guzma", "", 1, 0],
           ["Karen", "", 1, 0],
         ], "item": [
           ["Hypnotoxic Lazer", "", 4, 0],
-          ["VS Seeker", "", 0, 4],
-          ["Ultra Ball", "", 0, 4],
+          ["VS Seeker", "", 4, 0],
+          ["Ultra Ball", "", 4, 0],
           ["Enhanced Hammer", "", 3, 0],
-          ["Field Blower", "", 0, 1],
+          ["Field Blower", "", 1, 0],
           ["Special Charge", "", 1, 0],
         ], "tool": [
-          ["Fighting Fury Belt", "", 3, 0],
+          ["Fighting Fury Belt", "", 2, 1],
           ["Float Stone", "", 2, 0],
           ["Rock Guard Ace Spec", "", 1, 0]
         ], "stadium": [
