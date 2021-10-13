@@ -1582,7 +1582,7 @@ const decks = {
           ["Fiery Flint", "", 4, 0],
           ["Escape Board", "", 2, 0],
           ["Great Catcher", "", 2, 0],
-          ["Pal Pad", "", 1, 0],
+          ["Pal Pad", "", 1, 0]
         ], "tool": [
   
         ], "stadium": [
@@ -1591,7 +1591,163 @@ const decks = {
         ], "energy": [
           ["Basic Fire Energy", "", 14, 0]
         ]
-      }
+      },
+      "Garchomp & Giratina": {
+        "pokemon": [
+          ["Mismagius", "UNB 78", 3, 0],
+          ["Misdreavus", "UNB 77", 4, 0],
+          ["Garchomp & Giratina Tag Team Gx", "UNM 146", 1, 2],
+          ["Naganadel & Guzzlord Tag Team Gx", "CEC 158", 1, 0],
+          ["Blacephalon", "CEC 104", 1, 0]
+        ],
+        "supporter": [
+          ["Green's Exploration", "", 0, 4],
+          ["Guzma & Hala Tag Team", "", 2, 0],
+          ["Cynthia & Caitlyn Tag Team", "", 0, 1],
+          ["Mallow & Lana Tag Team", "", 1, 0],
+          ["Faba", "", 1, 0]
+        ],
+        "item": [
+          ["Pokegear 3.0", "", 0, 4],
+          ["Mysterious Treasure", "", 4, 0],
+          ["Reset Stamp", "", 3, 0],
+          ["Tag Call", "", 2, 0],
+          ["Custom Catcher", "", 2, 0],
+          ["Great Catcher", "", 1, 0],
+          ["Dusk Stone", "", 1, 0],
+          ["Switch", "", 1, 0],
+          ["Energy Spinner", "", 1, 0],
+          ["Beast Ring", "", 1, 0],
+          ["Wait and See Hammer", "", 1, 0]
+        ],
+        "tool": [
+          ["Counter Gain", "", 2, 0],
+          ["Karate Belt", "", 1, 0]
+        ],
+        "stadium": [
+          ["Power Plant", "", 4, 0]
+        ],
+        "energy": [
+          ["Basic Psychic Energy", "", 3, 0],
+          ["Rainbow Energy", "", 0, 2],
+          ["Unit Energy FDY", "", 0, 2],
+          ["Weakness Guard Energy", "", 0, 2],
+          ["Basic Fighting Energy", "", 1, 0],
+          ["Basic Darkness Energy", "", 1, 0]
+        ]
+      }, 
+      "Lucario & Melmetal": {
+        "pokemon": [
+          ["Lucario & Melmetal Tag Team Gx", "UNB 120", 1, 3], 
+          ["Mega Lopunny & Jigglypuff Tag Team Gx", "CEC 165", 0, 1], 
+          ["Omastar", "TEU 76", 0, 1]
+        ],
+        "supporter": [
+          ["Green's Exploration", "", 0, 4],
+          ["Welder", "", 0, 4],
+          ["Cynthia & Caitlyn Tag Team", "", 0, 2],
+          ["Mallow & Lana Tag Team", "", 2, 0],
+          ["Lusamine", "", 1, 0],
+          ["Faba", "", 1, 0]
+        ],
+        "item": [
+          ["Pokegear 3.0", "", 0, 4],
+          ["Custom Catcher", "",0, 4],
+          ["Tag Call", "",0, 3],
+          ["Reset Stamp", "",3, 0],
+          ["Switch", "",2, 0],
+          ["Great Catcher", "",0, 1],
+          ["Fiery Flint", "",0, 1],
+          ["Energy Spinner", "",1, 0],
+          ["Pokemon Communication", "",1, 0],
+          ["Unidentified Fossil", "",1, 0],
+          ["Rare Candy", "",1, 0]
+        ],
+        "tool": [
+          ["Metal Frying Pan", "",3, 0]
+        ],
+        "stadium": [
+          ["Power Plant", "", 0, 3],
+          ["Mt. Coronet", "", 1, 0]
+        ],
+        "energy": [
+          ["Basic Fire Energy", "", 6, 0],
+          ["Basic Metal Energy", "", 5, 0]
+        ]
+      },
+      "Naganadel & Guzzlord": {
+        "pokemon": [
+          ["Mismagius", "UNB 78", 1, 3],
+          ["Misdreavus", "UNB 77", 0, 4],
+          ["Naganadel & Guzzlord Tag Team Gx", "CEC 158", 3, 0]
+        ],
+        "supporter": [
+          ["Cynthia & Caitlyn Tag Team", "", 0, 3],
+          ["Bill's Analysis", "", 3, 0],
+          ["Lt. Surge's Strategy", "", 2, 0],
+          ["Mallow & Lana Tag Team", "", 2, 0],
+          ["Ultra Forest Kartenvoy", "", 1, 0]
+        ],
+        "item": [
+          ["Dusk Stone", "", 4, 0],
+          ["Order Pad", "", 4, 0],
+          ["Mysterious Treasure", "", 4, 0],
+          ["Tag Call", "", 4, 0],
+          ["Beast Ring", "", 4, 0],
+          ["Great Catcher", "", 3, 0],
+          ["Reset Stamp", "", 2, 0],
+          ["Acro Bike", "", 2, 0],
+          ["Energy Recycler", "", 1, 0]
+        ],
+        "tool": [
+          ["Beast Bringer", "", 2, 0]
+        ],
+        "stadium": [
+
+        ],
+        "energy": [
+          ["Basic Psychic Energy", "", 4, 0],
+          ["Basic Darkness Energy", "", 3, 0],
+          ["Beast Energy", "", 1, 0]
+        ]
+      }, 
+      "Florges Dolls": {
+        "pokemon": [
+          ["Jirachi", "TEU 99", 0, 4],
+          ["Florges", "CEC 152", 0, 4],
+          ["Flabebe", "CEC 149", 0, 4],
+          ["Munchlax", "UNM 173", 0, 2],
+          ["Spiritomb", "UNB 112", 0, 1],
+          ["Girafarig", "LOT 94", 1, 0],
+          ["Latios-Gx", "UNM 78", 0, 1],
+          ["Mew", "PR-SM SM215", 1, 0]
+        ],
+        "supporter": [
+          ["Professor Elm's Lecture", "", 4, 0],
+          ["Steven's Resolve", "", 0, 4],
+          ["Lusamine", "", 0, 3],
+          ["Bellelba & Brycen Man Tag Team", "", 2, 0],
+          ["Tate & Liza", "", 1, 0],
+          ["Faba", "", 1, 0],
+        ],
+        "item": [
+          ["Lillie's Poke Doll", "", 4, 0],
+          ["Pokegear 3.0", "", 0, 4],
+          ["Rare Candy", "", 3, 0],
+          ["Acro Bike", "", 4, 0],
+          ["Escape Board", "", 2, 0],
+          ["Pokemon Communication", "", 3, 0]
+        ],
+        "tool": [
+          ["Stealthy Hood", "", 3, 1]
+        ],
+        "stadium": [
+          ["Sky Pillar", "", 0, 2]
+        ],
+        "energy": [
+          ["Rainbow Energy", "", 1, 0]
+        ]
+      }, 
     }
   },
 
