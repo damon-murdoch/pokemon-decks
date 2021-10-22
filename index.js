@@ -69,16 +69,16 @@ function showPageHome()
   document.getElementById('pagetitle').innerHTML = "Home Page"; 
 
   // Get the list of deck formats
-  formats = Object.keys(decks);
+  let formats = Object.keys(decks);
 
   // Create a table element
-  table = document.createElement('table');
+  let table = document.createElement('table');
 
   // Specify the table classes
   table.className = "table table-dark bg-dark";
 
   // Create a table row for the header
-  thead = document.createElement('thead');
+  let thead = document.createElement('thead');
 
   // Specify the header classes
   thead.className = "";
@@ -96,44 +96,41 @@ function showPageHome()
   table.appendChild(thead);
 
   // Create the table body
-  tbody = document.createElement('tbody');
+  let tbody = document.createElement('tbody');
 
   // Create table row for the summary
-  title = document.createElement('tr');
+  let title = document.createElement('tr');
 
   // Get the overall collection summary
-  summary = getTotalProgress();
+  let summary = getTotalProgress();
 
   // Create the standard parts of the title heading
   title.innerHTML = "<th class='text-light' scope='row'> Summary </th>" + 
-  "<th class='text-light'>" + summary.total + "</th>" + 
-  "<th class='text-light'>" + summary.complete + "</th>";
+  "<th style='color: rgb(0, 255, 0)'>" + summary.total + "</th>";
 
   // Calculate the colour for the progress
+  let deckcolor = getProgressColor(summary.complete / summary.total);
 
-  // If the progress is less than fifty
-  if (summary.progress < 50)
-  {
-    // Display the progress bar in red colouring
-    title.innerHTML += "<th class='text-danger'>" + summary.obtained + "</th>";
-    title.innerHTML += "<th class='text-danger'>" + summary.missing + "</th>";
-    title.innerHTML += "<th class='text-danger'>" + summary.progress.toFixed(2) + "% </th>";
-  }
-  // If the progress is less than one hundred
-  else if (summary.progress < 100)
-  {
-    // Display the progress bar in yellow colouring
-    title.innerHTML += "<th class='text-warning'>" + summary.obtained + "</th>";
-    title.innerHTML += "<th class='text-warning'>" + summary.missing + "</th>";
-    title.innerHTML += "<th class='text-warning'>" + summary.progress.toFixed(2) + "% </th>";
-  }
-  else // If the progress is complete
-  {
-    // Display the progress bar in green colouring
-    title.innerHTML += "<th class='text-success'>" + summary.obtained + "</th>";
-    title.innerHTML += "<th class='text-success'>" + summary.missing + "</th>";
-    title.innerHTML += "<th class='text-success'>" + summary.progress.toFixed(2) + "% </th>";
-  }
+  // Calculate the style which should be applied to the completed decks
+  let deckstyle = 'color: rgb(' + deckcolor.r + ',' + deckcolor.g + ',' + deckcolor.b + ')';
+
+  // Add the number of completed decks to the form
+  title.innerHTML += "<th style='" + deckstyle + "'>" + summary.complete + "</th>";
+
+  // Percentage of total cards obtained (0-1)
+  let total = summary.obtained / (summary.obtained + summary.missing);
+
+  // Calculate the colour for the progress
+  let color = getProgressColor(total);
+
+  // Calculate the style to apply to the text
+  let style = 'color: rgb(' + color.r + ',' + color.g + ',' + color.b + ')';
+
+  // Display the progress bar in red colouring
+  
+  title.innerHTML += "<th style='" + style + "'>" + summary.obtained + "</th>";
+  title.innerHTML += "<th style='" + style + "'>" + summary.missing + "</th>";
+  title.innerHTML += "<th style='" + style + "'>" + summary.progress.toFixed(2) + "% </th>";
 
   tbody.appendChild(title);
 
@@ -141,13 +138,13 @@ function showPageHome()
   formats.forEach(format => {
 
     // Create the table row for the row
-    trow = document.createElement('tr');
+    let trow = document.createElement('tr');
 
     // Get the format progress information
-    progress = getFormatProgress(format);
+    let progress = getFormatProgress(format);
 
     // Get the format sprite information
-    sprites = getFormatLogos(decks[format].meta.start, decks[format].meta.end);
+    let sprites = getFormatLogos(decks[format].meta.start, decks[format].meta.end);
 
     // Set the contents for the row
     trow.innerHTML = 
@@ -155,32 +152,30 @@ function showPageHome()
       "<th scope='row' class='d-flex justify-content-center'><img src='" + sprites.start + "'>" + 
       "</img><a href='" + getPageLink(format) + "' class='text-light px-2'>" + format + "</a>" + 
       "<img src='" + sprites.end + "'>" + 
-      "</img></th><td class='text-light'>" + progress.total + "</td>" + 
-      "<td class='text-light'>" + progress.complete + "</td>";
+      "</img></th><td style='color: rgb(0, 255, 0)'>" + progress.total + "</td>"; 
+      
+      // Calculate the colour for the progress
+      let deckcolor = getProgressColor(progress.complete / progress.total);
 
-    // If the progress is less than fifty percent
-    if (progress.progress < 50)
-    {
-      // Display the progress text in red
-      trow.innerHTML += "<td class='text-danger'>" + progress.obtained + "</td>";
-      trow.innerHTML += "<th class='text-danger'>" + progress.missing + "</th>";
-      trow.innerHTML += "<th class='text-danger'>" + progress.progress.toFixed(2) + "% </th>";
-    }
-    // If the progress is between 50 and 99
-    else if (progress.progress < 100)
-    {
-      // Display the progress text in red
-      trow.innerHTML += "<td class='text-warning'>" + progress.obtained + "</td>";
-      trow.innerHTML += "<th class='text-warning'>" + progress.missing + "</th>";
-      trow.innerHTML += "<th class='text-warning'>" + progress.progress.toFixed(2) + "% </th>";
-    }
-    else // If the progress is complete
-    {
-      // Display the progress text in red
-      trow.innerHTML += "<td class='text-success'>" + progress.obtained + "</td>";
-      trow.innerHTML += "<th class='text-success'>" + progress.missing + "</th>";
-      trow.innerHTML += "<th class='text-success'>" + progress.progress.toFixed(2) + "% </th>";
-    }
+      // Calculate the style which should be applied to the completed decks
+      let deckstyle = 'color: rgb(' + deckcolor.r + ',' + deckcolor.g + ',' + deckcolor.b + ')';
+
+      // Add the number of completed decks to the form
+      trow.innerHTML += "<td style='" + deckstyle + "'>" + progress.complete + "</td>";
+
+    // Percentage of deck cards obtained (0-1)
+    total = progress.obtained / (progress.obtained + progress.missing);
+
+    // Calculate the colour for the progress
+    color = getProgressColor(total);
+
+    // Calculate the style to apply to the text
+    style = 'color: rgb(' + color.r + ',' + color.g + ',' + color.b + ')';
+
+    // Display the progress text in red
+    trow.innerHTML += "<td style='" + style + "'>" + progress.obtained + "</td>";
+    trow.innerHTML += "<th style='" + style + "'>" + progress.missing + "</th>";
+    trow.innerHTML += "<th style='" + style + "'>" + progress.progress.toFixed(2) + "% </th>";
 
     // Add the row to the table
     tbody.appendChild(trow);
@@ -190,7 +185,7 @@ function showPageHome()
   table.appendChild(tbody);
 
   // Get the main element from the page
-  const main = document.getElementById('main');
+  let main = document.getElementById('main');
 
   // Add the table to the main element
   main.appendChild(table);
@@ -202,7 +197,6 @@ function showPageHome()
 // a little bit of information about each deck.
 function showPageFormat(format)
 {
-
   // Get the format sprite information
   sprites = getFormatLogos(decks[format].meta.start, decks[format].meta.end);
 
@@ -252,25 +246,19 @@ function showPageFormat(format)
   "<th class='text-light'>-</th>" + 
   "<th class='text-light'>-</th>";
 
+  // Percentage of total cards obtained (0-1)
+  let total = summary.obtained / (summary.obtained + summary.missing);
+
+  // Calculate the colour for the progress
+  let color = getProgressColor(total);
+
+  // Calculate the style to apply to the text
+  let style = 'color: rgb(' + color.r + ',' + color.g + ',' + color.b + ')';
+
   // Calculate the colour for the progress
 
-  // If the progress is less than fifty
-  if (summary.progress < 50)
-  {
-    // Display the progress bar in red colouring
-    title.innerHTML += "<th class='text-danger'>" + summary.progress.toFixed(2) + "% </th>";
-  }
-  // If the progress is less than one hundred
-  else if (summary.progress < 100)
-  {
-    // Display the progress bar in yellow colouring
-    title.innerHTML += "<th class='text-warning'>" + summary.progress.toFixed(2) + "% </th>";
-  }
-  else // If the progress is complete
-  {
-    // Display the progress bar in green colouring
-    title.innerHTML += "<th class='text-success'>" + summary.progress.toFixed(2) + "% </th>";
-  }
+  // Display the progress bar in red colouring
+  title.innerHTML += "<th style='" + style + "'>" + summary.progress.toFixed(2) + "% </th>";
 
   tbody.appendChild(title);
 
@@ -296,35 +284,26 @@ function showPageFormat(format)
     if ((progress.obtained + progress.missing) == 60)
     {
       // Show the text in green
-      trow.innerHTML += "<td class='text-success'>" + (progress.obtained + progress.missing) + "</td>";
+      trow.innerHTML += "<td style='color: rgb(0, 255, 0)'>" + (progress.obtained + progress.missing) + "</td>";
     }
     else // Deck has more or less than 60 cards
     {
       // Show the text in red
-      trow.innerHTML += "<td class='text-danger'>" + (progress.obtained + progress.missing) + "</td>";
+      trow.innerHTML += "<td style='color: rgb(255, 0, 0)'>" + (progress.obtained + progress.missing) + "</td>";
     }
     
+    // Percentage of total cards obtained (0-1)
+    let total = progress.obtained / (progress.obtained + progress.missing);
 
-    // If the deck is <50% complete
-    if (percentage < 50)
-    {
-      trow.innerHTML += "<td class='text-danger'>" + progress.obtained + "</td>" + 
-      "<td class='text-danger'>" + progress.missing + "</td>" + 
-      "<td class='text-danger'>" + percentage + "%</td>";
-    }
-    // Deck is less than 100% complete
-    else if (percentage < 100)
-    {
-      trow.innerHTML += "<td class='text-warning'>" + progress.obtained + "</td>" + 
-      "<td class='text-warning'>" + progress.missing + "</td>" + 
-      "<td class='text-warning'>" + percentage + "%</td>";
-    }
-    else // Deck is 100% complete
-    {
-      trow.innerHTML += "<td class='text-success'>" + progress.obtained + "</td>" + 
-      "<td class='text-success'>" + progress.missing + "</td>" + 
-      "<td class='text-success'>" + percentage + "%</td>";
-    }
+    // Calculate the colour for the progress
+    let color = getProgressColor(total);
+    
+    // Calculate the style to apply to the text
+    let style = 'color: rgb(' + color.r + ',' + color.g + ',' + color.b + ')';
+    
+    trow.innerHTML += "<td style='" + style + "'>" + progress.obtained + "</td>" + 
+    "<td style='" + style + "'>" + progress.missing + "</td>" + 
+    "<td style='" + style + "'>" + percentage + "%</td>";
 
     // Add the row to the table
     tbody.appendChild(trow);

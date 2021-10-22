@@ -48,7 +48,7 @@ const decks = {
         ],
         "energy": [
           ["Double Colorless Energy", "", 1, 3],
-          ["Basic Psychic Energy", "", 1, 0]
+          ["Psychic Energy", "", 1, 0]
         ]
       }, 
       "Vespiquen Vileplume": { 
@@ -62,26 +62,26 @@ const decks = {
           ["Shaymin-ex", "ROS 77", 4, 0]
         ], 
         "supporter": [
-          ["Professor Sycamore", "", 2, 1],
+          ["Professor Sycamore", "", 3, 0],
           ["AZ", "", 1, 0], 
           ["Lysandre", "", 1, 0], 
         ], 
         "item": [
           ["Battle Compressor", "", 4, 0],
-          ["Ultra Ball", "", 0, 4],
-          ["Trainers' Mail", "", 0, 3, 1],
+          ["Ultra Ball", "", 4, 0],
+          ["Trainers' Mail", "", 3, 0],
           ["Acro Bike", "", 3, 0],
-          ["Revitalizer", "", 0, 2],
+          ["Revitalizer", "", 2, 0],
           ["Special Charge", "", 1, 0]
         ], 
         "tool": [
-          ["Float Stone", "", 2, 0]
+          ["Float Stone", "", 0, 2]
         ], 
         "stadium": [
-          ["Forest of Giant Plants", "", 4, 0]
+          ["Forest of Giant Plants", "", 0, 4]
         ], 
         "energy": [
-          ["Double Colorless Energy", "", 0, 4]
+          ["Double Colorless Energy", "", 1, 3]
         ]
       },
       "Greninja Talonflame": { 
@@ -115,7 +115,7 @@ const decks = {
           ["Rough Seas", "", 3, 0]
         ], 
         "energy": [
-          ["Basic Water Energy", "", 8, 0],
+          ["Water Energy", "XY 134", 3, 5],
           ["Splash Energy", "", 2, 0]
         ]
       },
@@ -155,7 +155,7 @@ const decks = {
           ["Parallel City", "", 2, 0]
         ], 
         "energy": [
-          ["Basic Metal Energy", "", 6, 0],
+          ["Metal Energy", "", 6, 0],
           ["Double Colorless Energy", "", 0, 4],
         ]
       },
@@ -192,8 +192,8 @@ const decks = {
           ["Rough Seas", "", 3, 0]
         ], 
         "energy": [
-          ["Basic Lightning Energy", "", 6, 0], 
-          ["Basic Psychic Energy", "", 4, 0], 
+          ["Lightning Energy", "", 6, 0], 
+          ["Psychic Energy", "", 4, 0], 
         ]
       },
       "Lucario Crobat": { 
@@ -226,7 +226,7 @@ const decks = {
           ["Fighting Stadium", "", 2, 0]
         ], 
         "energy": [
-          ["Basic Fighting Energy", "", 6, 0],
+          ["Fighting Energy", "", 6, 0],
           ["Strong Energy", "", 4, 0]
         ]
       },
@@ -264,7 +264,7 @@ const decks = {
         ], 
         "energy": [
           ["Double Colorless Energy", "", 0, 4],
-          ["Basic Water Energy", "", 9, 0],
+          ["Water Energy", "", 9, 0],
         ]
       },
       "Volcanion": { 
@@ -294,7 +294,7 @@ const decks = {
         ], "stadium": [
   
         ], "energy": [
-          ["Basic Fire Energy", "", 12, 0],
+          ["Fire Energy", "", 12, 0],
         ]
       }
     }
@@ -339,7 +339,7 @@ const decks = {
           ["Parallel City", "", 1, 0],
         ], 
         "energy": [
-          ["Basic Darkness Energy", "", 12, 0]
+          ["Darkness Energy", "", 12, 0]
         ]
       },
       "Decidueye Vileplume": { 
@@ -369,7 +369,7 @@ const decks = {
           ["Forest of Giant Plants","",4,0]
         ], "energy": [
           ["Double Colorless Energy","",4,0],
-          ["Basic Grass Energy","",4,0]
+          ["Grass Energy","",4,0]
         ]
       },
       "Volcanion": { 
@@ -399,7 +399,7 @@ const decks = {
           ["Scorched Earth", "", 2, 0],
           ["Sky Field", "", 1, 0]
         ], "energy": [
-          ["Basic Fire Energy", "", 12, 0]
+          ["Fire Energy", "", 12, 0]
         ]
       },
       "Mega Mewtwo": { 
@@ -431,7 +431,7 @@ const decks = {
           ["Shrine of Memories", "", 2, 0], 
           ["Parallel City", "", 1, 0]
         ], "energy": [
-          ["Basic Psychic Energy", "", 7, 0],
+          ["Psychic Energy", "", 7, 0],
           ["Double Colorless Energy", "", 4, 0]
         ]
       },
@@ -464,7 +464,7 @@ const decks = {
         ], "stadium": [
           ["Sky Field", "", 4, 0]
         ], "energy": [
-          ["Basic Lightning Energy", "", 4, 0],
+          ["Lightning Energy", "", 4, 0],
           ["Double Colorless Energy", "", 4, 0],
         ]
       },
@@ -495,7 +495,7 @@ const decks = {
         ], "stadium": [
           ["Sky Field", "", 4, 0]
         ], "energy": [
-          ["Basic Fairy Energy", "", 8, 0]
+          ["Fairy Energy", "", 8, 0]
         ]
       },
       "Yveltal Garbodor": { 
@@ -525,7 +525,7 @@ const decks = {
         ], "stadium": [
           ["Parallel City", "", 2, 0]
         ], "energy": [
-          ["Basic Darkness Energy", "", 9, 0],
+          ["Darkness Energy", "", 9, 0],
           ["Double Colorless Energy", "", 4, 0],
         ]
       },
@@ -577,21 +577,21 @@ const decks = {
       "Drampa Garbodor": { 
         "pokemon": [
           ["Trubbish", "BKP 56", 0, 4],
-          ["Garbodor", "BKP 57", 2, 0],
+          ["Garbodor", "BKP 57", 0, 2],
           ["Garbodor", "GRI 51", 0, 2],
           ["Tapu Lele-gx", "GRI 60", 0, 3],
           ["Drampa-gx", "GRI 115", 2, 0],
           ["Espeon-gx", "SUM 61", 1, 0],
           ["Eevee", "SUM 101", 1, 0],
-          ["Espeon-ex", "BKP 117", 1, 0]
+          ["Espeon-ex", "BKP 117", 0, 1]
         ], "supporter": [
-          ["Professor Sycamore", "", 4, 0],
-          ["N", "", 4, 0],
+          ["Professor Sycamore", "", 0, 4],
+          ["N", "", 0, 4],
           ["Guzma", "", 4, 0],
-          ["Bridgette", "", 1, 0]
+          ["Brigette", "", 0, 1]
         ], "item": [
           ["Ultra Ball", "", 0, 4],
-          ["Field Blower", "", 2, 0],
+          ["Field Blower", "", 0, 2],
           ["Rescue Stretcher", "", 1, 0]
         ], "tool": [
           ["Float Stone", "", 0, 4],
@@ -599,7 +599,7 @@ const decks = {
         ], "stadium": [
           ["Po Town", "", 4, 0]
         ], "energy": [
-          ["Basic Psychic Energy", "", 6, 0],
+          ["Psychic Energy", "", 6, 0],
           ["Double Colorless Energy", "", 0, 4],
           ["Rainbow Energy", "", 0, 2]
         ]
@@ -633,14 +633,14 @@ const decks = {
         ], "stadium": [
           ["Parallel City", "", 1, 0]
         ], "energy": [
-          ["Basic Fairy Energy", "", 8, 0],
+          ["Fairy Energy", "", 8, 0],
           ["Double Colorless Energy", "", 4, 0]
         ]
       },
       "Golisopod Garbodor": { 
         "pokemon": [
           ["Golisopod-gx", "BUS 17", 3, 0],
-          ["Wimpod", "BUS 16", 4, 0],
+          ["Wimpod", "BUS 16", 3, 1],
           ["Garbodor", "BKP 57", 0, 2],
           ["Garbodor", "GRI 51", 0, 1],
           ["Trubbish", "BKP 56", 0, 3],
@@ -648,25 +648,25 @@ const decks = {
           ["Tapu Koko", "PR-SM SM30", 1, 0],
           ["Tapu Fini-gx", "BUS 39", 1, 0]
         ], "supporter": [
-          ["Professor Sycamore", "", 4, 0],
-          ["N", "", 4, 0],
+          ["Professor Sycamore", "", 0, 4],
+          ["N", "", 0, 4],
           ["Guzma", "", 4, 0],
           ["Acerola", "", 3, 0],
-          ["Brigette", "", 1, 0]
+          ["Brigette", "", 0, 1]
         ], "item": [
-          ["Ultra Ball", "", 4, 0],
-          ["Field Blower", "", 2, 0],
+          ["Ultra Ball", "", 0, 4],
+          ["Field Blower", "", 0, 2],
           ["Rescue Stretcher", "", 1, 0],
           ["Heavy Ball", "", 1, 0],
         ], "tool": [
-          ["Float Stone", "", 4, 0],
+          ["Float Stone", "", 0, 4],
           ["Choice Band", "", 4, 0]
         ], "stadium": [
           ["Parallel City", "", 1, 0]
         ], "energy": [
-          ["Double Colorless Energy", "", 3, 0],
-          ["Rainbow Energy", "", 3, 0],
-          ["Basic Grass Energy", "", 3, 0],
+          ["Double Colorless Energy", "", 0, 3],
+          ["Rainbow Energy", "", 0, 3],
+          ["Grass Energy", "", 3, 0],
         ]
       },
       "Zoroark Break": { 
@@ -675,13 +675,13 @@ const decks = {
           ["Zoroark", "BKT 91", 1, 3],
           ["Zorua", "BKT 89", 4, 0],
           ["Tapu Lele-gx", "GRI 60", 0, 3],
-          ["Drampa-gx", "GRI 115", 0, 3],
+          ["Drampa-gx", "GRI 115", 1, 2],
           ["Oranguru", "SUM 113", 1, 0],
         ], "supporter": [
-          ["Professor Sycamore", "", 4, 0],
-          ["N", "", 4, 0],
+          ["Professor Sycamore", "", 0, 4],
+          ["N", "", 0, 4],
           ["Guzma", "", 4, 0],
-          ["Brigette", "", 2, 0],
+          ["Brigette", "", 0, 2],
         ], "item": [
           ["Ultra Ball", "", 0, 4],
           ["Evosoda", "", 2, 0],
@@ -690,13 +690,13 @@ const decks = {
           ["Special Charge", "", 1, 0],
         ], "tool": [
           ["Choice Band", "", 3, 0],
-          ["Float Stone", "", 2, 0]
+          ["Float Stone", "", 0, 2]
         ], "stadium": [
           ["Parallel City", "", 2, 0]
         ], "energy": [
-          ["Double Colorless Energy", "", 4, 0],
-          ["Basic Darkness Energy", "", 3, 0],
-          ["Rainbow Energy", "", 3, 0]
+          ["Double Colorless Energy", "", 0, 4],
+          ["Darkness Energy", "", 3, 0],
+          ["Rainbow Energy", "", 0, 3]
         ]
       },
       "Tapu Bulu Vikavolt": { 
@@ -709,11 +709,11 @@ const decks = {
           ["Tapu Koko", "PR-SM SM30", 1, 0],
           ["Mew", "FAC 29", 1, 0]
         ], "supporter": [
-          ["Professor Sycamore", "", 4, 0],
-          ["N", "", 4, 0],
+          ["Professor Sycamore", "", 0, 4],
+          ["N", "", 0, 4],
           ["Guzma", "", 4, 0],
           ["Skyla", "", 2, 0],
-          ["Brigette", "", 1, 0],
+          ["Brigette", "", 0, 1],
           ["Brock's Grit", "", 1, 0]
         ], "item": [
           ["Ultra Ball", "", 0, 4],
@@ -723,12 +723,12 @@ const decks = {
           ["Heavy Ball", "", 1, 0]
         ], "tool": [
           ["Choice Band", "", 3, 0],
-          ["Float Stone", "", 2, 0]
+          ["Float Stone", "", 0, 2]
         ], "stadium": [
           ["Aether Paradise Conservation Area", "", 2, 0]
         ], "energy": [
-          ["Basic Grass Energy", "", 6, 0],
-          ["Basic Lightning Energy", "", 4, 0],
+          ["Grass Energy", "", 6, 0],
+          ["Lightning Energy", "", 4, 0],
         ]
       },
       "Metagross": { 
@@ -740,10 +740,10 @@ const decks = {
           ["Necrozma-gx", "BUS 63", 1, 0],
           ["Alolan Vulpix", "BUS 27", 1, 0]
         ], "supporter": [
-          ["Professor Sycamore", "", 4, 0],
-          ["N", "", 4, 0],
+          ["Professor Sycamore", "", 0, 4],
+          ["N", "", 0, 4],
           ["Guzma", "", 4, 0],
-          ["Brigette", "", 2, 0],
+          ["Brigette", "", 0, 2],
           ["Skyla", "", 1, 0],
         ], "item": [
           ["Ultra Ball", "", 0, 4],
@@ -756,8 +756,8 @@ const decks = {
         ], "stadium": [
   
         ], "energy": [
-          ["Basic Metal Energy", "", 7, 0],
-          ["Basic Psychic Energy", "", 4, 0],
+          ["Metal Energy", "", 7, 0],
+          ["Psychic Energy", "", 4, 0],
         ]
       },
       "Ho-oh Salazzle": { 
@@ -773,39 +773,39 @@ const decks = {
           ["Professor Sycamore", "", 0, 4],
           ["Guzma", "", 4, 0],
           ["Kiawe", "", 3, 0],
-          ["N", "", 2, 0]
+          ["N", "", 0, 2]
         ], "item": [
-          ["Ultra Ball", "", 4, 0],
-          ["Max Elixir", "", 3, 0],
+          ["Ultra Ball", "", 0, 4],
+          ["Max Elixir", "", 0, 3],
           ["Switch", "", 2, 0],
-          ["Super Rod", "", 1, 0],
+          ["Super Rod", "", 0, 1],
           ["Nest Ball", "", 1, 0],
-          ["Field Blower", "", 1, 0]
+          ["Field Blower", "", 0, 1]
         ], "tool": [
           ["Choice Band", "", 3, 0],
-          ["Float Stone", "", 2, 0],
+          ["Float Stone", "", 0, 2],
         ], "stadium": [
           ["Scorched Earth", "", 2, 0]
         ], "energy": [
-          ["Basic Fire Energy", "", 14, 0]
+          ["Fire Energy", "", 14, 0]
         ]
       },
       "Xerneas Break": { 
         "pokemon": [
-          ["Xerneas Break", "STS 82", 0, 3],
+          ["Xerneas Break", "STS 82", 2, 1],
           ["Xerneas", "STS 81", 4, 0],
           ["Tapu Lele-gx", "GRI 60", 0, 3],
           ["Tapu Koko", "PR-SM SM30", 1, 0],
           ["Oranguru", "SUM 113", 1, 0],
         ], "supporter": [
-          ["Professor Sycamore", "", 4, 0],
-          ["N", "", 4, 0],
-          ["Guzma", "", 3, 0],
-          ["Brigette", "", 2, 0],
+          ["Professor Sycamore", "", 0, 4],
+          ["N", "", 0, 4],
+          ["Guzma", "", 0, 3],
+          ["Brigette", "", 0, 2],
         ], "item": [
           ["Ultra Ball", "", 0, 4],
           ["Max Elixir", "", 0, 4],
-          ["Super Rod", "", 2, 0],
+          ["Super Rod", "", 0, 2],
           ["Rescue Stretcher", "", 1, 0],
         ], "tool": [
           ["Choice Band", "", 4, 0],
@@ -813,8 +813,8 @@ const decks = {
         ], "stadium": [
           ["Fairy Garden", "", 2, 0]
         ], "energy": [
-          ["Basic Fairy Energy", "", 12, 0],
-          ["Double Colorless Energy", "", 3, 0]
+          ["Fairy Energy", "", 12, 0],
+          ["Double Colorless Energy", "", 0, 3]
         ]
       }
     }
@@ -854,7 +854,7 @@ const decks = {
         ], "stadium": [
           ["Brooklet Hill", "", 2, 0]
         ], "energy": [
-          ["Basic Fighting Energy", "", 9, 0],
+          ["Fighting Energy", "", 9, 0],
           ["Strong Energy", "", 4, 0],
           ["Beast Energy Prism Star", "", 1, 0]
         ]
@@ -928,7 +928,7 @@ const decks = {
           ["Parallel City", "", 2, 0]
         ], "energy": [
           ["Double Colorless Energy", "", 4, 0],
-          ["Basic Grass Energy", "", 3, 0],
+          ["Grass Energy", "", 3, 0],
         ]
       },
       "Malamar Necrozma": { 
@@ -957,7 +957,7 @@ const decks = {
         ], "stadium": [
           ["Parallel City", "", 2, 0]
         ], "energy": [
-          ["Basic Psychic Energy", "", 10, 0]
+          ["Psychic Energy", "", 10, 0]
         ]
       },
       "Zoroark Garbodor": { 
@@ -1043,7 +1043,7 @@ const decks = {
           ["Mewtwo", "EVO 51", 1, 0]
         ], "supporter": [
           ["Guzma", "", 3, 0],
-          ["Brigette", "", 3, 0],
+          ["Brigette", "", 0, 3],
           ["N", "", 3, 0],
           ["Cynthia", "", 1, 0],
           ["Acerola", "", 1, 0],
@@ -1051,7 +1051,7 @@ const decks = {
         ], "item": [
           ["Puzzle of Time", "", 0, 4],
           ["Ultra Ball", "", 0, 4],
-          ["Field Blower", "", 0, 3],
+          ["Field Blower", "", 3, 0],
           ["Evosoda", "", 2, 0],
           ["Enhanced Hammer", "", 1, 0]
         ], "tool": [
@@ -1060,8 +1060,8 @@ const decks = {
         ], "stadium": [
           ["Parallel City", "", 2, 0]
         ], "energy": [
-          ["Double Colorless Energy", "", 0, 4],
-          ["Strong Energy", "", 2, 2],
+          ["Double Colorless Energy", "", 2, 2],
+          ["Strong Energy", "", 4, 0],
         ]
       },
       "Ultra Malamar": { 
@@ -1083,16 +1083,15 @@ const decks = {
           ["Ultra Ball", "", 3, 0],
           ["Field Blower", "", 3, 0],
           ["Beast Ring", "", 2, 0],
-          ["Professor's Letter", "", 2, 0],
-          ["Super Rod", "", 1, 0]
+          ["Professor's Letter", "", 2, 0]
         ], "tool": [
           ["Float Stone", "", 3, 0],
           ["Choice Band", "", 2, 0],
         ], "stadium": [
-
+          ["Parallel City", "", 1, 0]
         ], "energy": [
-          ["Basic Psychic Energy", "", 8, 0],
-          ["Basic Metal Energy", "", 3, 0],
+          ["Psychic Energy", "", 8, 0],
+          ["Metal Energy", "", 3, 0],
           ["Beast Energy Prism Star", "", 1, 0],
         ]
       }
@@ -1134,7 +1133,7 @@ const decks = {
         ], "stadium": [
           ["Dimension Valley", "", 4, 0]
         ], "energy": [
-          ["Basic Psychic Energy", "", 5, 0],
+          ["Psychic Energy", "", 5, 0],
           ["Mystery Energy", "", 4, 0]
         ]
       },
@@ -1233,28 +1232,28 @@ const decks = {
           ["Crushing Hammer", "", 3, 0],
           ["Puzzle of Time", "", 0, 3],
           ["Ultra Ball", "", 0, 3],
-          ["VS Seeker", "", 3, 0],
+          ["VS Seeker", "", 0, 3],
           ["Trick Shovel", "", 2, 0],
           ["Enhanced Hammer", "", 1, 0],
-          ["Super Rod", "", 1, 0],
+          ["Super Rod", "", 0, 1],
           ["Target Whistle", "", 1, 0],
-          ["Field Blower", "", 1, 0]
+          ["Field Blower", "", 0, 1]
         ], "tool": [
           ["Float Stone", "", 1, 1],
           ["Head Ringer", "", 1, 0],
           ["Life Dew", "", 0, 1]
         ], "stadium": [
           ["Parallel City", "", 1, 0],
-          ["Team Aqua's Secret Base", "", 0, 1]
+          ["Team Aqua's Secret Base", "", 1, 0]
         ], "energy": [
-          ["Basic Darkness Energy", "", 6, 0]
+          ["Darkness Energy", "", 6, 0]
         ]
       },
       "Seismitoad": { 
         "pokemon": [
           ["Seismitoad-ex", "FFI 20", 4, 0],
           ["Shaymin-ex", "ROS 77", 2, 0],
-          ["Tapu Lele-gx", "GRI 60", 0, 1],
+          ["Tapu Lele-gx", "GRI 60", 1, 0],
           ["Hoopa-ex", "AOR 36", 1, 0],
           ["Jirachi-ex", "PLB 60", 1, 0],
           ["Keldeo-ex", "PR-BW BW60", 1, 0],
@@ -1282,13 +1281,13 @@ const decks = {
           ["Special Charge", "", 1, 0],
         ], "tool": [
           ["Fighting Fury Belt", "", 2, 1],
-          ["Float Stone", "", 0, 2],
+          ["Float Stone", "", 2, 0],
           ["Rock Guard Ace Spec", "", 1, 0]
         ], "stadium": [
           ["Virbank City Gym", "", 3, 0],
           ["Parallel City", "", 1, 0],
         ], "energy": [
-          ["Double Colorless Energy", "", 0, 4]
+          ["Double Colorless Energy", "", 3, 1]
         ]
       },
       "Buzzwole Lycanroc": { 
@@ -1310,19 +1309,19 @@ const decks = {
           ["Colress", "", 2, 0],
           ["Ultra Ball", "", 0, 4],
           ["Max Elixir", "", 3, 0],
-          ["Beast Ring", "", 3, 0]
+          ["Beast Ring", "", 2, 0]
         ], "item": [
           ["Float Stone", "", 0, 2],
           ["Muscle Band", "", 2, 0],
           ["Choice Band", "", 1, 0]
         ], "tool": [
-          ["Super Rod", "", 1, 0],
+          ["Super Rod", "", 0, 1],
           ["Scramble Switch", "", 1, 0],
         ], "stadium": [
           ["Brooklet Hill", "", 3, 0]
         ], "energy": [
-          ["Basic Fighting Energy", "", 9, 0],
-          ["Strong Energy", "", 3, 0],
+          ["Fighting Energy", "", 9, 0],
+          ["Strong Energy", "", 4, 0],
           ["Beast Energy Prism Star", "", 1, 0]
         ]
       }
@@ -1368,7 +1367,7 @@ const decks = {
         ], "stadium": [
           ["Giant Hearth", "", 3, 0]
         ], "energy": [
-          ["Basic Fire Energy", "", 8, 0],
+          ["Fire Energy", "", 8, 0],
           ["Rainbow Energy", "", 3, 0],
           ["Weakness Guard Energy", "", 1, 0],
         ]
@@ -1401,8 +1400,8 @@ const decks = {
         ], "stadium": [
           ["Chaotic Swell", "", 3, 0]
         ], "energy": [
-          ["Basic Water Energy", "", 6, 0],
-          ["Basic Metal Energy", "", 5, 0],
+          ["Water Energy", "", 6, 0],
+          ["Metal Energy", "", 5, 0],
           ["Rainbow Energy", "", 2, 0],
         ]
       },
@@ -1432,7 +1431,7 @@ const decks = {
           ["Power Plant", "", 4, 0],
           ["Wondrous Labyrinth Prism Star", "", 1, 0]
         ], "energy": [
-          ["Basic Fairy Energy", "", 9, 0]
+          ["Fairy Energy", "", 9, 0]
         ]
       },
       "Pidgeotto Control": { 
@@ -1468,7 +1467,7 @@ const decks = {
           ["Power Plant", "", 2, 0],
           ["Sky Pillar", "", 1, 0]
         ], "energy": [
-          ["Basic Water Energy", "", 4, 0],
+          ["Water Energy", "", 4, 0],
           ["Recycle Energy", "", 1, 0],
         ]
       },
@@ -1502,7 +1501,7 @@ const decks = {
           ["Power Plant", "", 2, 0],
           ["Thunder Mountain Prism Star", "", 1, 0]
         ], "energy": [
-          ["Basic Lightning Energy", "", 11, 0],
+          ["Lightning Energy", "", 11, 0],
         ]
       },
       "Reshiram & Charizard": { 
@@ -1533,7 +1532,7 @@ const decks = {
           ["Giant Hearth", "", 3, 0],
           ["Heat Factory Prism Star", "", 1, 0]
         ], "energy": [
-          ["Basic Fire Energy", "", 18, 0]
+          ["Fire Energy", "", 18, 0]
         ]
       },
       "Malamar Spread": { 
@@ -1561,7 +1560,7 @@ const decks = {
         ], "stadium": [
           ["Viridian Forest", "", 4, 0]
         ], "energy": [
-          ["Basic Psychic Energy", "", 7, 0],
+          ["Psychic Energy", "", 7, 0],
           ["Recycle Energy", "", 1, 0]
         ]
       },
@@ -1589,7 +1588,7 @@ const decks = {
           ["Ultra Space", "", 2, 0],
           ["Heat Factory Prism Star", "", 1, 0]
         ], "energy": [
-          ["Basic Fire Energy", "", 14, 0]
+          ["Fire Energy", "", 14, 0]
         ]
       },
       "Garchomp & Giratina": {
@@ -1628,12 +1627,12 @@ const decks = {
           ["Power Plant", "", 4, 0]
         ],
         "energy": [
-          ["Basic Psychic Energy", "", 3, 0],
+          ["Psychic Energy", "", 3, 0],
           ["Rainbow Energy", "", 0, 2],
           ["Unit Energy FDY", "", 0, 2],
           ["Weakness Guard Energy", "", 0, 2],
-          ["Basic Fighting Energy", "", 1, 0],
-          ["Basic Darkness Energy", "", 1, 0]
+          ["Fighting Energy", "", 1, 0],
+          ["Darkness Energy", "", 1, 0]
         ]
       }, 
       "Lucario & Melmetal": {
@@ -1671,8 +1670,8 @@ const decks = {
           ["Mt. Coronet", "", 1, 0]
         ],
         "energy": [
-          ["Basic Fire Energy", "", 6, 0],
-          ["Basic Metal Energy", "", 5, 0]
+          ["Fire Energy", "", 6, 0],
+          ["Metal Energy", "", 5, 0]
         ]
       },
       "Naganadel & Guzzlord": {
@@ -1706,8 +1705,8 @@ const decks = {
 
         ],
         "energy": [
-          ["Basic Psychic Energy", "", 4, 0],
-          ["Basic Darkness Energy", "", 3, 0],
+          ["Psychic Energy", "", 4, 0],
+          ["Darkness Energy", "", 3, 0],
           ["Beast Energy", "", 1, 0]
         ]
       }, 
@@ -1788,9 +1787,9 @@ const decks = {
         ], "stadium": [
           ["Tower of Waters", "", 2, 0]
         ], "energy": [
-          ["Basic Darkness Energy", "", 5, 0],
+          ["Darkness Energy", "", 5, 0],
           ["Rapid Strike Energy", "", 4, 0],
-          ["Basic Fighting Energy", "", 1, 0]
+          ["Fighting Energy", "", 1, 0]
         ]
       }
     }
