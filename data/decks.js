@@ -1328,28 +1328,77 @@ const decks = {
       }, 
       "Keldeo Blastoise": {
         "pokemon": [
-
+          ["Blastoise", "", 1, 1],
+          ["Exeggcute", "", 2, 0],
+          ["Keldeo Ex", "", 1, 1],
+          ["Articuno", "ROS 17", 0, 2],
+          ["Tapu Lele Gx", "GRI 60", 0, 2],
+          ["Shaymin Ex", "ROS 77", 0, 2],
+          ["Volcanion", "FLI 31", 1, 0],
+          ["Oranguru", "SUM 113", 1, 0],
         ], "supporter": [
-
+          ["Archie's Ace in the Hole", "", 2, 0],
+          ["Professor Juniper", "", 0, 2],
+          ["Guzma", "", 0, 1],
+          ["N", "", 0, 1],
         ], "item": [
-
+          ["VS Seeker", "", 0, 4],
+          ["Puzzle of Time", "", 0, 4],
+          ["Superior Energy Retrieval", "", 3, 1],
+          ["Trainers' Mail", "", 0, 4],
+          ["Battle Compressor", "", 4, 0],
+          ["Ultra Ball", "", 0, 4],
+          ["Field Blower", "", 0, 2],
+          ["Computer Search", "", 1, 0],
         ], "tool": [
+          ["Muscle Band", "", 0, 2],
+          ["Float Stone", "", 0, 1],
+        ], "stadium": [
 
         ], "energy": [
-
+          ["Water Energy", "", 10, 0]
         ]
       },
       "Primal Groudon": {
         "pokemon": [
-
+          ["Wobbufet", "RC11", 4, 0],
+          ["Primal Groudon Ex", "PRC 86", 1, 1],
+          ["Primal Groudon", "PRC 85", 0, 2],
+          ["Tapu Lele Gx", "GRI 60", 0, 2],
+          ["Buzzwole Gx", "", 0, 2],
+          ["Oranguru", "", 0, 2],
         ], "supporter": [
-
+          ["Korrina", "", 0, 4],
+          ["N", "", 0, 3],
+          ["Pokemon Center Lady", "", 2, 0],
+          ["Cynthia", "", 2, 0],
+          ["Lusamine", "", 0, 2],
+          ["Steven's Resolve", "", 0, 1],
+          ["Lysandre", "", 1, 0],
+          ["Guzma", "", 0, 1],
         ], "item": [
-
+          ["VS Seeker", "", 0, 4],
+          ["Switch", "", 1, 0],
+          ["Max Potion", "", 1, 0],
+          ["Beast Ring", "", 1, 0],
+          ["Ultra Ball", "", 1, 0],
+          ["Escape Rope", "", 1, 0],
+          ["Field Blower", "", 0, 1],
+          ["Wishful Baton", "", 1, 0],
+          ["Counter Catcher", "", 1, 0],
+          ["Enhanced Hammer", "", 1, 0],
+          ["Scramble Switch", "", 0, 1],
+          ["Professor's Letter", "", 1, 0],
         ], "tool": [
-
+          ["Focus Sash", "", 0, 2],
+          ["Float Stone", "", 0, 1],
+          ["Hard Charm", "", 0, 1],
+        ], "stadium": [
+          ["Tropical Beach", "", 0, 4]
         ], "energy": [
-          
+          ["Strong Energy", "", 0, 4],
+          ["Fighting Energy", "", 4, 0],
+          ["Psychic Energy", "", 1, 0],
         ]
       }
     }

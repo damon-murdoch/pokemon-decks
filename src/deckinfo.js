@@ -148,6 +148,8 @@ function getDeckProgress(deck, format)
     // Loop over the cards
     list.forEach(card => {
 
+      console.log(card);
+
       // 0: Name
       // 1: Set Number
       // 2: Number Have
