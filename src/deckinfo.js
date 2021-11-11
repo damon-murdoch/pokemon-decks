@@ -15,9 +15,6 @@ function getPGFQuery(name, set)
   // and it breaks the PokeGoldfish search queries
   query = query.replace("'", "%27")
 
-  // Write the query to the screen
-  console.log(query);
-
   // Return the generated query to the calling process
   return query;
 }
@@ -75,6 +72,36 @@ function flattenCards(deck_object)
   cards = cards.concat(deck_object.energy);
 
   // Return the cards list
+  return cards;
+}
+
+// getCategoryProgress(category: list): Object
+// Given a list of cards, returns the number of 
+// obtained, missing and total cards found in
+// the category.
+function getCategoryProgress(category)
+{
+  // Object to return 
+  let cards = {
+    obtained: 0, // Obtained Cards
+    missing: 0, // Missing Cards
+    total: 0 // Total Cards
+  }
+
+  // Loop over all of the cards in the category
+  for (let card of category)
+  {
+    // Add obtained cards to obtained total
+    cards.obtained += card[2];
+
+    // Add missing cards to missing total
+    cards.missing += card[3];
+    
+    // Add newly found cards to total
+    cards.total += card[2] + card[3];
+  }
+
+  // Return the cards object
   return cards;
 }
 
