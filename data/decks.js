@@ -1325,7 +1325,7 @@ const decks = {
           ["Strong Energy", "", 3, 0],
           ["Beast Energy Prism Star", "", 1, 0]
         ]
-      }
+      }, 
     }
   },
 
