@@ -1112,7 +1112,7 @@ const decks = {
           ["Trevenant", "XY 55", 4, 0],
           ["Phantump", "BKP 64", 4, 0],
           ["Tapu Lele-gx", "GRI 60", 2, 0],
-          ["Espeon-ex", "BKP 117", 1, 0],
+          ["Espeon-ex", "BKP 117", 1, 0]
         ], "supporter": [
           ["N", "", 3, 0],
           ["Wally", "", 2, 0],
@@ -1182,14 +1182,14 @@ const decks = {
           ["Marshadow-gx", "BUS 80", 1, 0],
           ["Mew", "FAC 29", 1, 0],
           ["Mr. Mime", "PLF 47", 1, 0],
-          ["Oranguru", "UPR 114", 1, 0],
+          ["Oranguru", "UPR 114", 1, 0]
         ], "supporter": [
           ["Professor Juniper", "", 2, 0],
           ["N", "", 1, 0],
           ["Teammates", "", 1, 0],
           ["Guzma", "", 1, 0],
           ["Hex Maniac", "", 1, 0],
-          ["Ghetsis", "", 1, 0],
+          ["Ghetsis", "", 1, 0]
         ], "item": [
           ["Puzzle of Time", "", 4, 0],
           ["Battle Compressor", "", 4, 0],
@@ -1199,7 +1199,7 @@ const decks = {
           ["Field Blower", "", 1, 0],
           ["Special Charge", "", 1, 0],
           ["Target Whistle", "", 1, 0],
-          ["Dowsing Machine Ace Spec", "", 1, 0],
+          ["Dowsing Machine Ace Spec", "", 1, 0]
         ], "tool": [
           ["Choice Band", "", 2, 0],
           ["Fighting Fury Belt", "", 1, 0],
@@ -1259,7 +1259,7 @@ const decks = {
           ["Keldeo-ex", "PR-BW BW60", 1, 0],
           ["Mewtwo-ex", "NXD 54", 0, 1],
           ["Sudowoodo", "GRI 66", 1, 0],
-          ["Giratina", "PR-XY XY184", 1, 0],
+          ["Giratina", "PR-XY XY184", 1, 0]
         ], "supporter": [
           ["Professor Juniper", "", 2, 0],
           ["N", "", 2, 0],
@@ -1271,21 +1271,21 @@ const decks = {
           ["Shadow Triad", "", 1, 0],
           ["Cynthia", "", 1, 0],
           ["Guzma", "", 1, 0],
-          ["Karen", "", 1, 0],
+          ["Karen", "", 1, 0]
         ], "item": [
           ["Hypnotoxic Lazer", "", 4, 0],
           ["VS Seeker", "", 4, 0],
           ["Ultra Ball", "", 4, 0],
           ["Enhanced Hammer", "", 3, 0],
           ["Field Blower", "", 1, 0],
-          ["Special Charge", "", 1, 0],
+          ["Special Charge", "", 1, 0]
         ], "tool": [
           ["Fighting Fury Belt", "", 2, 1],
           ["Float Stone", "", 2, 0],
           ["Rock Guard Ace Spec", "", 1, 0]
         ], "stadium": [
           ["Virbank City Gym", "", 3, 0],
-          ["Parallel City", "", 1, 0],
+          ["Parallel City", "", 1, 0]
         ], "energy": [
           ["Double Colorless Energy", "", 3, 1]
         ]
@@ -1317,7 +1317,7 @@ const decks = {
           ["Choice Band", "", 1, 0]
         ], "tool": [
           ["Super Rod", "", 0, 1],
-          ["Scramble Switch", "", 1, 0],
+          ["Scramble Switch", "", 1, 0]
         ], "stadium": [
           ["Brooklet Hill", "", 3, 0]
         ], "energy": [
