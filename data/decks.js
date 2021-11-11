@@ -1843,15 +1843,15 @@ const decks = {
           ["Crobat V", "SFH 44", 0, 1]
         ],
         "supporter": [
-          ["Boss's Orders", "", 4, 0],
           ["Professor's Research", "", 4, 0],
+          ["Boss's Orders", "", 3, 0],
           ["Marnie", "", 3, 0],
           ["Raihan", "", 1, 0]
         ],
         "item": [
           ["Metal Saucer", "", 4, 0],
           ["Switch", "", 4, 0],
-          ["Rotom Phone", "", 4, 0],
+          ["Rotom Phone", "", 0, 4],
           ["Quick Ball", "", 4, 0],
           ["Tool Scrapper", "", 2, 0]
         ],
