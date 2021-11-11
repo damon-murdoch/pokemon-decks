@@ -1268,7 +1268,7 @@ const decks = {
           ["Colress", "", 2, 0],
           ["Team Skull Grunt", "", 1, 0],
           ["Team Flare Grunt", "", 1, 0],
-          ["Shadow Triad", "", 0, 1],
+          ["Shadow Triad", "", 1, 0],
           ["Cynthia", "", 1, 0],
           ["Guzma", "", 1, 0],
           ["Karen", "", 1, 0],
@@ -1292,9 +1292,10 @@ const decks = {
       },
       "Buzzwole Lycanroc": { 
         "pokemon": [
-          ["Buzzwole-gx", "CIN 57", 2, 1],
+          ["Buzzwole-gx", "CIN 57", 3, 0],
           ["Lycanroc-gx", "GRI 74", 2, 0],
           ["Rockruff", "FLI 75", 2, 0],
+          ["Landorus Ex", "BCR 89", 2, 0],
           ["Buzzwole", "FLI 77", 1, 0],
           ["Diancie", "FLI 74", 1, 0],
           ["Octillery", "BKT 33", 1, 0],
@@ -1306,7 +1307,7 @@ const decks = {
           ["Guzma", "", 4, 0],
           ["N", "", 1, 1],
           ["Korrina", "", 2, 0],
-          ["Colress", "", 2, 0],
+          ["Colress", "", 1, 0],
           ["Ultra Ball", "", 0, 4],
           ["Max Elixir", "", 3, 0],
           ["Beast Ring", "", 2, 0]
@@ -1325,6 +1326,32 @@ const decks = {
           ["Beast Energy Prism Star", "", 1, 0]
         ]
       }, 
+      "Keldeo Blastoise": {
+        "pokemon": [
+
+        ], "supporter": [
+
+        ], "item": [
+
+        ], "tool": [
+
+        ], "energy": [
+
+        ]
+      },
+      "Primal Groudon": {
+        "pokemon": [
+
+        ], "supporter": [
+
+        ], "item": [
+
+        ], "tool": [
+
+        ], "energy": [
+          
+        ]
+      }
     }
   },
 
@@ -1758,38 +1785,67 @@ const decks = {
       "end": "Evolving_Skies"
     },
     "decks": {
+      "Zacian Zamazenta": {
+        "pokemon": [
+          ["Zacian V", "SSH 138", 4, 0],
+          ["Zamazenta V", "SSH 139", 1, 1],
+          ["Oranguru", "SSH 148", 1, 1],
+          ["Crobat V", "SFH 44", 0, 1]
+        ],
+        "supporter": [
+          ["Boss's Orders", "", 4, 0],
+          ["Professor's Research", "", 4, 0],
+          ["Marnie", "", 3, 0],
+          ["Raihan", "", 1, 0]
+        ],
+        "item": [
+          ["Metal Saucer", "", 4, 0],
+          ["Switch", "", 4, 0],
+          ["Rotom Phone", "", 4, 0],
+          ["Quick Ball", "", 4, 0],
+          ["Tool Scrapper", "", 2, 0]
+        ],
+        "tool": [
+          ["Cape of Toughness", "", 0, 3],
+          ["Air Balloon", "", 3, 0]
+        ],
+        "stadium": [
+          ["Crystal Cave", "", 0, 4]
+        ],
+        "energy": [
+          ["Metal Energy", "", 12, 0]
+        ]
+      },
       "Rapid Strike Inteleon": { 
         "pokemon": [
           ["Inteleon", "CRE 43", 3, 0],
           ["Inteleon", "SSH 58", 1, 0],
           ["Drizzile", "SSH 57", 4, 0],
           ["Sobble", "CRE 41", 4, 0],
-          ["Rapid Strike Urshifu Vmax", "BST 88", 2, 0],
-          ["Rapid Strike Urshifu V", "BST 87", 3, 0],
-          ["Galarian Moltres V", "CRE 97", 3, 0],
-          ["Crobat V", "DAA 104", 1, 0],
+          ["Rapid Strike Urshifu Vmax", "BST 88", 3, 0],
+          ["Rapid Strike Urshifu V", "BST 87", 4, 0],
+          ["Passimian", "CRE 88", 1, 0],
+          ["Crobat V", "DAA 104", 1, 0]
         ], "supporter": [
           ["Professor's Research", "", 4, 0],
           ["Marnie", "", 3, 0],
-          ["Boss's Orders", "", 2, 0],
-          ["Raihan", "", 1, 0]
+          ["Raihan", "", 3, 0],
+          ["Boss's Orders", "", 1, 0]
         ], "item": [
           ["Level Ball", "", 4, 0],
           ["Evolution Incense", "", 4, 0],
-          ["Quick Ball", "", 3, 0],
-          ["Energy Switch", "", 2, 0],
+          ["Quick Ball", "", 4, 0],
           ["Energy Search", "", 1, 0],
           ["Escape Rope", "", 1, 0],
           ["Air Balloon", "", 1, 0],
           ["Switch", "", 1, 0]
         ], "tool": [
-  
+          ["Telescopic Sight", "", 2, 0]
         ], "stadium": [
           ["Tower of Waters", "", 2, 0]
         ], "energy": [
-          ["Darkness Energy", "", 5, 0],
           ["Rapid Strike Energy", "", 4, 0],
-          ["Fighting Energy", "", 1, 0]
+          ["Fighting Energy", "", 4, 0]
         ]
       }
     }
