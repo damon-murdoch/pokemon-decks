@@ -269,10 +269,10 @@ const decks = {
       },
       "Volcanion": { 
         "pokemon": [
-          ["Volcanion-ex", "PR-XY XY173", 0, 4],
-          ["Volcanion", "STS 25", 1, 3],
+          ["Volcanion-ex", "PR-XY XY173", 4, 0],
+          ["Volcanion", "STS 25", 4, 0],
           ["Shaymin-ex", "ROS 77", 0, 2],
-          ["Hoopa-ex", "AOR 36", 0, 1],
+          ["Hoopa-ex", "AOR 36", 1, 0],
         ], 
         "supporter": [
           ["Professor Sycamore", "", 0, 4],
