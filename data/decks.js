@@ -1839,7 +1839,7 @@ const decks = {
         "pokemon": [
           ["Zacian V", "SSH 138", 4, 0],
           ["Zamazenta V", "SSH 139", 1, 1],
-          ["Oranguru", "SSH 148", 1, 1],
+          ["Oranguru", "SSH 148", 2, 0],
           ["Crobat V", "SFH 44", 0, 1]
         ],
         "supporter": [
