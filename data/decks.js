@@ -41,7 +41,7 @@ const decks = {
           ["Escape Rope", "", 1, 0]
         ],
         "tool": [
-          ["Fighting Fury Belt", "", 0, 2]
+          ["Fighting Fury Belt", "", 2, 0]
         ],
         "stadium": [
           ["Dimension Valley", "", 3, 0]
@@ -161,8 +161,8 @@ const decks = {
       },
       "Mega Manectric": { 
         "pokemon": [
-          ["M Manectric-ex", "PHF 24", 0, 3],
-          ["Manectric-ex", "PHF 23", 0, 3],
+          ["M Manectric-ex", "PHF 24", 1, 2],
+          ["Manectric-ex", "PHF 23", 2, 1],
           ["Wobbuffet", "PHF 36", 3, 0],
           ["Garbodor", "BKP 57", 2, 0],
           ["Trubbish", "BKP 56", 2, 0],
@@ -232,16 +232,16 @@ const decks = {
       },
       "Water Seismitoad": { 
         "pokemon": [
-          ["Seismitoad-ex", "FFI 20", 0, 4],
+          ["Seismitoad-ex", "FFI 20", 3, 0],
           ["Manaphy-ex", "BKP 32", 2, 0],
-          ["Shaymin-ex", "ROS 77", 0, 2],
+          ["Shaymin-ex", "ROS 77", 0, 3],
           ["Shaymin-ex", "PR-XY XY148", 1, 0],
           ["Glaceon-ex", "FAC 20", 1, 0],
           ["Hoopa-ex", "AOR 36", 0, 1],
           ["Articuno", "ROS 17", 0, 1]
         ], 
         "supporter": [
-          ["Professor Sycamore", "", 0, 4],
+          ["Professor Sycamore", "", 4, 0],
           ["N", "", 0, 3],
           ["Lysandre", "", 2, 0],
           ["AZ", "", 1, 0],
@@ -283,7 +283,7 @@ const decks = {
         ], 
         "item": [
           ["VS Seeker", "", 0, 4],
-          ["Ultra Ball", "", 0, 4],
+          ["Ultra Ball", "", 4, 0],
           ["Acro Bike", "", 4, 0],
           ["Energy Retrieval", "", 4, 0],
           ["Trainers' Mail", "", 0, 2],
@@ -778,7 +778,7 @@ const decks = {
           ["Ultra Ball", "", 0, 4],
           ["Max Elixir", "", 0, 3],
           ["Switch", "", 2, 0],
-          ["Super Rod", "", 0, 1],
+          ["Super Rod", "", 1, 0],
           ["Nest Ball", "", 1, 0],
           ["Field Blower", "", 0, 1]
         ], "tool": [
@@ -805,7 +805,7 @@ const decks = {
         ], "item": [
           ["Ultra Ball", "", 0, 4],
           ["Max Elixir", "", 0, 4],
-          ["Super Rod", "", 0, 2],
+          ["Super Rod", "", 2, 0],
           ["Rescue Stretcher", "", 1, 0],
         ], "tool": [
           ["Choice Band", "", 4, 0],
@@ -1039,7 +1039,7 @@ const decks = {
           ["Riolu", "UPR 66", 3, 0],
           ["Tapu Lele-gx", "GRI 60", 0, 3],
           ["Diancie", "FLI 74", 1, 0],
-          ["Mew-ex", "LTR RC24", 0, 1],
+          ["Mew-ex", "LTR RC24", 1, 0],
           ["Mewtwo", "EVO 51", 1, 0]
         ], "supporter": [
           ["Guzma", "", 3, 0],
@@ -1049,8 +1049,8 @@ const decks = {
           ["Acerola", "", 1, 0],
           ["Professor Sycamore", "", 1, 0]
         ], "item": [
-          ["Puzzle of Time", "", 0, 4],
-          ["Ultra Ball", "", 0, 4],
+          ["Puzzle of Time", "", 4, 0],
+          ["Ultra Ball", "", 4, 0],
           ["Field Blower", "", 3, 0],
           ["Evosoda", "", 2, 0],
           ["Enhanced Hammer", "", 1, 0]
@@ -1212,7 +1212,7 @@ const decks = {
       },
       "Sableye Control": { 
         "pokemon": [
-          ["Sableye", "DEX 62", 0, 4],
+          ["Sableye", "DEX 62", 4, 0],
           ["Garbodor", "BKP 57", 2, 0],
           ["Trubbish", "BKP 56", 2, 0],
           ["Shaymin-ex", "ROS 77", 2, 0]
@@ -1235,7 +1235,7 @@ const decks = {
           ["VS Seeker", "", 0, 3],
           ["Trick Shovel", "", 2, 0],
           ["Enhanced Hammer", "", 1, 0],
-          ["Super Rod", "", 0, 1],
+          ["Super Rod", "", 1, 0],
           ["Target Whistle", "", 1, 0],
           ["Field Blower", "", 0, 1]
         ], "tool": [
@@ -1253,7 +1253,7 @@ const decks = {
         "pokemon": [
           ["Seismitoad-ex", "FFI 20", 4, 0],
           ["Shaymin-ex", "ROS 77", 2, 0],
-          ["Tapu Lele-gx", "GRI 60", 1, 0],
+          ["Tapu Lele-gx", "GRI 60", 0, 1],
           ["Hoopa-ex", "AOR 36", 1, 0],
           ["Jirachi-ex", "PLB 60", 1, 0],
           ["Keldeo-ex", "PR-BW BW60", 1, 0],
@@ -1280,14 +1280,14 @@ const decks = {
           ["Field Blower", "", 1, 0],
           ["Special Charge", "", 1, 0]
         ], "tool": [
-          ["Fighting Fury Belt", "", 2, 1],
+          ["Fighting Fury Belt", "", 3, 0],
           ["Float Stone", "", 2, 0],
           ["Rock Guard Ace Spec", "", 1, 0]
         ], "stadium": [
           ["Virbank City Gym", "", 3, 0],
           ["Parallel City", "", 1, 0]
         ], "energy": [
-          ["Double Colorless Energy", "", 3, 1]
+          ["Double Colorless Energy", "", 4, 0]
         ]
       },
       "Buzzwole Lycanroc": { 
@@ -1295,7 +1295,7 @@ const decks = {
           ["Buzzwole-gx", "CIN 57", 3, 0],
           ["Lycanroc-gx", "GRI 74", 2, 0],
           ["Rockruff", "FLI 75", 2, 0],
-          ["Landorus Ex", "BCR 89", 1, 0],
+          ["Landorus-ex", "BCR 89", 1, 0],
           ["Buzzwole", "FLI 77", 1, 0],
           ["Diancie", "FLI 74", 1, 0],
           ["Octillery", "BKT 33", 1, 0],
@@ -1308,7 +1308,7 @@ const decks = {
           ["N", "", 1, 1],
           ["Korrina", "", 2, 0],
           ["Colress", "", 1, 0],
-          ["Ultra Ball", "", 0, 4],
+          ["Ultra Ball", "", 4, 0],
           ["Max Elixir", "", 3, 0],
           ["Beast Ring", "", 2, 0]
         ], "item": [
@@ -1316,7 +1316,7 @@ const decks = {
           ["Muscle Band", "", 2, 0],
           ["Choice Band", "", 1, 0]
         ], "tool": [
-          ["Super Rod", "", 0, 1],
+          ["Super Rod", "", 1, 0],
           ["Scramble Switch", "", 1, 0]
         ], "stadium": [
           ["Brooklet Hill", "", 3, 0]
@@ -1330,10 +1330,10 @@ const decks = {
         "pokemon": [
           ["Blastoise", "", 1, 1],
           ["Exeggcute", "", 2, 0],
-          ["Keldeo Ex", "", 1, 1],
+          ["Keldeo-ex", "", 1, 1],
           ["Articuno", "ROS 17", 0, 2],
-          ["Tapu Lele Gx", "GRI 60", 0, 2],
-          ["Shaymin Ex", "ROS 77", 0, 2],
+          ["Tapu Lele-gx", "GRI 60", 0, 2],
+          ["Shaymin-ex", "ROS 77", 0, 2],
           ["Volcanion", "FLI 31", 1, 0],
           ["Oranguru", "SUM 113", 1, 0],
         ], "supporter": [
@@ -1347,7 +1347,7 @@ const decks = {
           ["Superior Energy Retrieval", "", 3, 1],
           ["Trainers' Mail", "", 0, 4],
           ["Battle Compressor", "", 4, 0],
-          ["Ultra Ball", "", 0, 4],
+          ["Ultra Ball", "", 4, 0],
           ["Field Blower", "", 0, 2],
           ["Computer Search", "", 1, 0],
         ], "tool": [
@@ -1362,10 +1362,10 @@ const decks = {
       "Primal Groudon": {
         "pokemon": [
           ["Wobbufet", "RC11", 4, 0],
-          ["Primal Groudon Ex", "PRC 86", 1, 1],
-          ["Primal Groudon", "PRC 85", 0, 2],
-          ["Tapu Lele Gx", "GRI 60", 0, 1],
-          ["Buzzwole Gx", "", 0, 1],
+          ["Primal Groudon-ex", "PRC 86", 1, 1],
+          ["Groudon-ex", "PRC 85", 0, 2],
+          ["Tapu Lele-gx", "GRI 60", 0, 1],
+          ["Buzzwole-gx", "", 0, 1],
           ["Buzzwole", "", 0, 1],
           ["Oranguru", "", 0, 1],
         ], "supporter": [
@@ -1672,12 +1672,12 @@ const decks = {
         "pokemon": [
           ["Mismagius", "UNB 78", 3, 0],
           ["Misdreavus", "UNB 77", 4, 0],
-          ["Garchomp & Giratina Tag Team Gx", "UNM 146", 1, 2],
-          ["Naganadel & Guzzlord Tag Team Gx", "CEC 158", 1, 0],
+          ["Garchomp & Giratina Tag Team-gx", "UNM 146", 1, 2],
+          ["Naganadel & Guzzlord Tag Team-gx", "CEC 158", 1, 0],
           ["Blacephalon", "CEC 104", 1, 0]
         ],
         "supporter": [
-          ["Green's Exploration", "", 0, 4],
+          ["Green's-exploration", "", 0, 4],
           ["Guzma & Hala Tag Team", "", 2, 0],
           ["Cynthia & Caitlyn Tag Team", "", 0, 1],
           ["Mallow & Lana Tag Team", "", 1, 0],
@@ -1714,12 +1714,12 @@ const decks = {
       }, 
       "Lucario & Melmetal": {
         "pokemon": [
-          ["Lucario & Melmetal Tag Team Gx", "UNB 120", 1, 3], 
-          ["Mega Lopunny & Jigglypuff Tag Team Gx", "CEC 165", 0, 1], 
+          ["Lucario & Melmetal Tag Team-gx", "UNB 120", 1, 3], 
+          ["Mega Lopunny & Jigglypuff Tag Team-gx", "CEC 165", 0, 1], 
           ["Omastar", "TEU 76", 0, 1]
         ],
         "supporter": [
-          ["Green's Exploration", "", 0, 4],
+          ["Green's-exploration", "", 0, 4],
           ["Welder", "", 0, 4],
           ["Cynthia & Caitlyn Tag Team", "", 0, 2],
           ["Mallow & Lana Tag Team", "", 2, 0],
@@ -1755,7 +1755,7 @@ const decks = {
         "pokemon": [
           ["Mismagius", "UNB 78", 1, 3],
           ["Misdreavus", "UNB 77", 0, 4],
-          ["Naganadel & Guzzlord Tag Team Gx", "CEC 158", 3, 0]
+          ["Naganadel & Guzzlord Tag Team-gx", "CEC 158", 3, 0]
         ],
         "supporter": [
           ["Cynthia & Caitlyn Tag Team", "", 0, 3],
@@ -1815,7 +1815,7 @@ const decks = {
           ["Pokemon Communication", "", 3, 0]
         ],
         "tool": [
-          ["Stealthy Hood", "", 3, 1]
+          ["Stealthy Hood", "", 4, 0]
         ],
         "stadium": [
           ["Sky Pillar", "", 0, 2]
