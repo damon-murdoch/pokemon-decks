@@ -65,8 +65,11 @@ function getFormatLogos(start, end)
 // all formats and other basic info
 function showPageHome()
 {
+  // Assign the header to the title
+  document.title = config.title;
+
   // Set the page title
-  document.getElementById('pagetitle').innerHTML = "Home Page"; 
+  document.getElementById('pagetitle').innerHTML = config.title;
 
   // Get the list of deck formats
   let formats = Object.keys(decks);
@@ -200,6 +203,12 @@ function showPageHome()
 // a little bit of information about each deck.
 function showPageFormat(format)
 {
+  // Assign the header to the title
+  document.title = format;
+  
+  // Set the page title
+  document.getElementById('pagetitle').innerHTML = format; 
+
   // Get the format sprite information
   sprites = getFormatLogos(decks[format].meta.start, decks[format].meta.end);
 
@@ -335,8 +344,11 @@ function showPageDeck(deck, format)
   // Get the main element from the page
   let main = document.getElementById('main');
 
+  // Assign the header to the title
+  document.title = deck
+
   // Set the page title
-  document.getElementById('pagetitle').innerHTML = format + ' - ' + deck; 
+  document.getElementById('pagetitle').innerHTML = format + ' - ' + deck;
 
   // Get the list of deck formats
   //decklist = Object.keys(decks[format]);
@@ -996,7 +1008,7 @@ $(document).ready(function(){
       else // We are not on the buylist page
       {
         // Show the deck list
-        showPageDeck(format, deck);
+        showPageDeck(deck, format);
       }
     }
     else // No deck selected
