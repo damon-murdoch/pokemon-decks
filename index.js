@@ -90,6 +90,7 @@ function showPageHome()
     "<th scope='col'> Obtained Cards </th>" + 
     "<th scope='col'> Missing Cards </th>" + 
     "<th scope='col'> Progress </th>" + 
+    "<th scope='col'> Buylist </th>" + 
     "</tr>"
     
   // Add the table head to the table
@@ -131,6 +132,7 @@ function showPageHome()
   title.innerHTML += "<th style='" + style + "'>" + summary.obtained + "</th>";
   title.innerHTML += "<th style='" + style + "'>" + summary.missing + "</th>";
   title.innerHTML += "<th style='" + style + "'>" + summary.progress.toFixed(2) + "% </th>";
+  title.innerHTML += "<th style='" + style + "'><a class='text-muted' href='index.html?buylist'> Buylist </th>";
 
   tbody.appendChild(title);
 
@@ -176,6 +178,7 @@ function showPageHome()
     trow.innerHTML += "<td style='" + style + "'>" + progress.obtained + "</td>";
     trow.innerHTML += "<th style='" + style + "'>" + progress.missing + "</th>";
     trow.innerHTML += "<th style='" + style + "'>" + progress.progress.toFixed(2) + "% </th>";
+    trow.innerHTML += "<th style='" + style + "'><a class='text-muted' href='index.html?buylist&format=" + format + "'> Buylist </th>";
 
     // Add the row to the table
     tbody.appendChild(trow);
@@ -226,6 +229,7 @@ function showPageFormat(format)
     "<th scope='col'> Obtained Cards </th>" + 
     "<th scope='col'> Missing Cards </th>" + 
     "<th scope='col'> Progress </th>" + 
+    "<th scope='col'> Buylist </th>" + 
     "</tr>"
     
   // Add the table head to the table
@@ -258,7 +262,8 @@ function showPageFormat(format)
   // Calculate the colour for the progress
 
   // Display the progress bar in red colouring
-  title.innerHTML += "<th style='" + style + "'>" + summary.progress.toFixed(2) + "% </th>";
+  title.innerHTML += "<th style='" + style + "'>" + summary.progress.toFixed(2) + "% </th>" + 
+  "<td><a class='text-muted' href='index.html?buylist&format=" + format + "'> Format </a></td>";
 
   tbody.appendChild(title);
 
@@ -303,7 +308,8 @@ function showPageFormat(format)
     
     trow.innerHTML += "<td style='" + style + "'>" + progress.obtained + "</td>" + 
     "<td style='" + style + "'>" + progress.missing + "</td>" + 
-    "<td style='" + style + "'>" + percentage + "%</td>";
+    "<td style='" + style + "'>" + percentage + "%</td>" + 
+    "<td><a class='text-muted' href='index.html?buylist&format=" + format + "&deck=" + deck + "'> Deck </a></td>";
 
     // Add the row to the table
     tbody.appendChild(trow);
@@ -838,13 +844,42 @@ function showPageDeck(deck, format)
   main.appendChild(container);
 }
 
-function showPageBuylist()
+function showPageBuylist(format = null, deck = null)
 {
-  // Set the page title
-  document.getElementById('pagetitle').innerHTML = "Card Buylist";
+  // Get the page title object
+  let pagetitle = document.getElementById('pagetitle');
 
-  // Get all of the missing cards
-  let buylist = getBuylist();
+  // Set the page title
+  pagetitle.innerHTML = "Card Buylist"; 
+
+  // Buylist placeholder
+  let buylist;
+
+  // If a format is specified
+  if (format !== null)
+  {
+    // Add it to the title
+    pagetitle.innerHTML += " - " + format;
+
+    // If a deck is specified
+    if (deck !== null)
+    {
+      // Add it to the title
+      pagetitle.innerHTML += " - " + deck;
+
+      // Get the deck specific buylist
+      buylist = getDeckBuylist(deck, format);
+    }
+    else // No deck specified
+    {
+      // Get the format specific buylist
+      buylist = getFormatBuylist(format);
+    }
+  }
+  else // No deck nor format specified
+  {
+    buylist = getBuylist();
+  }
 
   // If the command is successful
   if (buylist)
@@ -875,16 +910,12 @@ function showPageBuylist()
     // Create the table body
     tbody = document.createElement('tbody');
 
-    // Get the deck progress
-    // For the title row
-    let progress = getTotalProgress();
-
     // Create a row for storing the deck summary
     let summary = document.createElement('tr');
 
     summary.innerHTML = "<th class='text-light' scope='row'> Summary </th>" + 
     "<th class='text-light'> - </th>" + 
-    "<th class='text-light'>" + progress.missing + "</th>" + 
+    "<th class='text-light'>" + getBuylistCount(buylist) + "</th>" + 
     "<th class='text-light'> - </th>";
 
     tbody.appendChild(summary);
@@ -931,33 +962,65 @@ function showPageBuylist()
 // Runs once the page loads
 $(document).ready(function(){
 
+  // Set the page title/subtitle
+  document.getElementById('sitetitle').innerHTML = config.title;
+  document.getElementById('sitesubtitle').innerHTML = config.subtitle;
+
   // Get the page's query string
   const query = window.location.search;
 
   // Retrieve the params from the string
   const params = new URLSearchParams(query);
 
+  // Placeholder deck / format
+  let deck = null, format = null;
+
   // Check if a format is selected
   if (params.has('format'))
   {
+    // Get the format from the params
+    format = params.get('format');
+
     // Check if a deck is selected
     if (params.has('deck'))
     {
       // Show the page for the deck, given the deck and format
-      showPageDeck(params.get('deck'), params.get('format'));
+      deck = params.get('deck');
+
+      // If we are on the buylist page
+      if (params.has('buylist'))
+      {
+        // Show the deck buy list
+        showPageBuylist(format, deck);
+      }
+      else // We are not on the buylist page
+      {
+        // Show the deck list
+        showPageDeck(format, deck);
+      }
     }
-    else // No deck is selected
+    else // No deck selected
     {
-      // Show the page for the format
-      showPageFormat(params.get('format'));
+      // If we are on the buylist page
+      if (params.has('buylist'))
+      {
+        // Show the format buy list
+        showPageBuylist(format);
+      }
+      else // We are not on the buylist page
+      {
+        // Show the format page
+        showPageFormat(format);
+      }
     }
   }
-  // If the buylist button is pressed
+  // If we are on the buylist page
   else if (params.has('buylist'))
   {
+    // Show the buylist page
     showPageBuylist();
   }
-  else // No format is selected
+  else // We are not on the buylist page
   {
     // Show the home page
     showPageHome();

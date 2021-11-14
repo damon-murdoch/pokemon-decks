@@ -148,8 +148,6 @@ function getDeckProgress(deck, format)
     // Loop over the cards
     list.forEach(card => {
 
-      console.log(card);
-
       // 0: Name
       // 1: Set Number
       // 2: Number Have
@@ -252,6 +250,90 @@ function getFormatProgress(format)
   }
 }
 
+function getDeckBuylist(deck, format)
+{
+  // Hashtable of cards
+  let cards = {};
+
+  // Get the format data
+  data = getFormat(format);
+
+  // Get all of the cards in the deck
+  let decklist = flattenCards(data.decks[deck]);
+
+  // Loop over all of the cards in the deck
+  decklist.forEach(card => {
+    
+    // If the card is missing (any number)
+    if (card[3] > 0)
+    {
+      // If the card is not in the cards list
+      if (!cards.hasOwnProperty(card[0]))
+      {
+        // Add the card to the cards list
+        cards[card[0]] = {}; 
+      }
+
+      // If the set is not in the card sets list
+      if (!cards[card[0]].hasOwnProperty(card[1]))
+      {
+        // Create a new value for it and assign it to zero
+        cards[card[0]][card[1]] = 0;
+      }
+
+      // Add the new number of missing cards to the existing number
+      cards[card[0]][card[1]] += card[3];
+    }
+  });
+
+  // Return the cards list
+  return cards;
+}
+
+function getFormatBuylist(format)
+{
+  // Hashtable of cards
+  let cards = {};
+
+  // Get the format data
+  data = getFormat(format);
+
+  // Loop over all of the decks
+  for (let deck in data.decks)
+  {
+    // Get all of the cards in the deck
+    let decklist = flattenCards(data.decks[deck]);
+
+    // Loop over all of the cards in the deck
+    decklist.forEach(card => {
+      
+      // If the card is missing (any number)
+      if (card[3] > 0)
+      {
+        // If the card is not in the cards list
+        if (!cards.hasOwnProperty(card[0]))
+        {
+          // Add the card to the cards list
+          cards[card[0]] = {}; 
+        }
+
+        // If the set is not in the card sets list
+        if (!cards[card[0]].hasOwnProperty(card[1]))
+        {
+          // Create a new value for it and assign it to zero
+          cards[card[0]][card[1]] = 0;
+        }
+
+        // Add the new number of missing cards to the existing number
+        cards[card[0]][card[1]] += card[3];
+      }
+    });
+  }
+
+  // Return the data object
+  return cards;
+}
+
 // getBuylist(Void): Void
 // Goes through all of the decks
 // in every format, and adds up
@@ -297,12 +379,35 @@ function getBuylist()
           // Add the new number of missing cards to the existing number
           cards[card[0]][card[1]] += card[3];
         }
-      })
+      });
     }
   });
 
   // Return the table of missing cards
   return cards;
+}
+
+// getBuylistCount(buylist): int
+// Returns the total number of cards
+// missing from the provided buylist.
+function getBuylistCount(buylist)
+{
+  // Total cards missing
+  let count = 0;
+
+  // Loop over all of the cards in the buylist
+  Object.keys(buylist).forEach(card => {
+
+    // Loop over all of the prints in the buylist
+    Object.keys(buylist[card]).forEach(print => {
+
+      // Add the number of the missing print to the count
+      count += buylist[card][print];
+    });
+  });
+
+  // Return the counter
+  return count;
 }
 
 // getTotalProgress(Void): Void

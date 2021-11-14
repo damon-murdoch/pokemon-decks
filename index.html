@@ -2,7 +2,6 @@
 <meta charset="utf-8">
 <html>
   <head id='head'>
-    <title> Deck Collection </title>
     <link rel="stylesheet" href="redist/bootstrap.min.css">
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
   </head>
@@ -19,16 +18,16 @@
       <!-- Site Logo -->
       <div id='logo'>
         <!-- Logo Goes Here -->
-        <img class='rounded' src='img/wallpaper.jpg' style='max-width:100%; max-height:100%; object-fit: fill;'>
+        <img class='rounded' src='img/header.jpg' style='max-width:100%; max-height:100%; object-fit: fill;'>
       </div>
     </div>
 
     <div id='title' class='text-center text-justify text-light bg-dark'>
-      <p class='h1'>
-        Pokémon Deck Collection
+      <p class='h1' id='sitetitle'>
+        <!-- Site Title Inserted Here -->
       </p>
-      <p class='h4'>
-        Created by Damon Murdoch
+      <p class='h4' id='sitesubtitle'>
+        <!-- Site Subtitle Inserted Here -->
       </p>
       <div class='d-flex justify-content-center'>
         <a class='text-muted' id='homelnk' href='index.html'> Home </a>
@@ -80,6 +79,10 @@
 
     <!-- Deck Data Js File-->
     <script type='text/javascript' src='data/decks.js'>
+    </script>
+
+    <!-- Config Js File-->
+    <script type='text/javascript' src='config.js'>
     </script>
 
     <!-- Main Js File -->

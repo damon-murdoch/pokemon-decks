@@ -1098,7 +1098,7 @@ const decks = {
     }
   },
 
-  // Pre-Puzzle Ban-expanded
+  // Pre-Ban Expanded
   // BW Base Set to SM Forbidden Light
   "BLW-FLI": {
     "meta": {
@@ -1838,9 +1838,9 @@ const decks = {
       "Zacian Zamazenta": {
         "pokemon": [
           ["Zacian V", "SSH 138", 4, 0],
-          ["Zamazenta V", "SSH 139", 1, 1],
+          ["Zamazenta V", "SSH 139", 2, 0],
           ["Oranguru", "SSH 148", 2, 0],
-          ["Crobat V", "SFH 44", 0, 1]
+          ["Crobat V", "SFH 44", 1, 0]
         ],
         "supporter": [
           ["Professor's Research", "", 4, 0],
@@ -1860,7 +1860,7 @@ const decks = {
           ["Air Balloon", "", 3, 0]
         ],
         "stadium": [
-          ["Crystal Cave", "", 0, 4]
+          ["Crystal Cave", "", 4, 0]
         ],
         "energy": [
           ["Metal Energy", "", 12, 0]
