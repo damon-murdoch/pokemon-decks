@@ -1447,7 +1447,7 @@ const decks = {
           ["Hoopa-ex", "AOR 36", 1, 0],
           ["Jirachi-ex", "PLB 60", 1, 0],
           ["Keldeo-ex", "PR-BW BW60", 1, 0],
-          ["Mewtwo-ex", "NXD 54", 0, 1],
+          ["Mewtwo-ex", "NXD 54", 1, 0],
           ["Sudowoodo", "GRI 66", 1, 0],
           ["Giratina", "PR-XY XY184", 1, 0]
         ], "supporter": [
