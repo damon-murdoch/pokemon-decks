@@ -1137,8 +1137,8 @@ const decks = {
       "Buzzwole Garbodor": {
         "pokemon": [
           ["Buzzwole", "", 0, 4],
-          ["Trubbish", "", 0, 4],
-          ["Garbodor", "", 0, 3],
+          ["Trubbish", "", 0, 3],
+          ["Garbodor", "", 0, 2],
           ["Garbodor", "", 0, 1],
           ["Remoraid", "", 1, 0],
           ["Octillery", "", 1, 0],
@@ -1147,7 +1147,7 @@ const decks = {
         ], "supporter": [
           ["Professor Sycamore", "", 0, 4],
           ["Cynthia", "", 4, 0],
-          ["Guzma", "", 0, 3],
+          ["Guzma", "", 0, 4],
           ["N", "", 0, 3],
         ], "item": [
           ["Ultra Ball", "", 0, 4],
@@ -1156,7 +1156,7 @@ const decks = {
           ["Rescue Stretcher", "", 2, 0],
           ["Special Charge", "", 1, 0],
         ], "tool": [
-          ["Float Stone", "", 0, 3],
+          ["Float Stone", "", 0, 4],
           ["Choice Band", "", 0, 3]
         ], "stadium": [
           ["Shrine of Punishment", "", 3, 1],

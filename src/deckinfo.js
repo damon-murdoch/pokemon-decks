@@ -44,6 +44,54 @@ function getDeck(deck, format)
   return null;
 }
 
+// Given a deck object, returns all
+// of the cards in the deck formatted
+// as a string. This string can be 
+// copied to the clipboard.
+function exportDecklist(deck_object)
+{
+  // Process each card name, removing
+  // '-' from the name and ensuring
+  // the first letter of each word is 
+  // capitalised.
+  function toCapitalCase(name)
+  {
+    // Convert dashes to spaces, and split on them
+    let words = name.replace('-', ' ').split(' ');
+
+    // Loop over each word in the new split
+    for (let word=0; word < words.length; word++)
+    {
+      // Un-Capitalise the letters in the word
+      words[word] = words[word].toLowerCase();
+
+      // Capitalise the first letter of the word
+      // words[word][0] = words[word][0].toUpperCase();
+      words[word] = words[word][0].toUpperCase() + words[word].substr(1);
+    }
+
+    // Return the joined array on the space
+    return words.join(" ");
+  }
+
+  // Will contain deck list string
+  let decklist = "";
+
+  // Get all of the cards in the deck as a list
+  for (let card of flattenCards(deck_object))
+  {
+    // Add the card info to the string
+    // Card Quantity (Missing + Obtained) + Card Name + Card Set / Set Number + newline
+    // E.g. 4 Shaymin-ex ROS 77
+    decklist += "" + (card[2] + card[3]).toString() + // Card Quantity
+      " " + toCapitalCase(card[0]) + // Card Name in capital case
+      " " + card[1] + "\n"; // Card Set Number + newline
+  }
+
+  // Return decklist to the caller
+  return decklist;
+}
+
 // Given a deck object, returns
 // a flattened version of the 
 // card list as a single list

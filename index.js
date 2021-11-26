@@ -351,8 +351,52 @@ function showPageDeck(deck, format)
   document.getElementById('pagetitle').innerHTML = format + ' - ' + deck;
 
   // Get the list of deck formats
-  //decklist = Object.keys(decks[format]);
   let decklist = getDeck(deck, format);
+
+  // Populate and create the copy link for the deck list
+  
+  // Get the empty a tag for the copy link
+  let deckCopy = document.getElementById('deckcopy');
+
+  // Populate the a tag with the text
+  deckCopy.innerHTML = "Copy Decklist";
+
+  // Add the copy click event to the link
+  deckCopy.addEventListener('click', async function(){
+
+    // If the client's browser has the clipboard module
+    if (navigator.clipboard)
+    {
+      // Get the string for the decklist
+      let content = exportDecklist(decklist);
+
+      // If a decklist is generated
+      if (content !== "")
+      {
+        try
+        {
+          // Copy the string to the clipboard
+          await navigator.clipboard.writeText(content);
+        }
+        catch (err) // Failed clipboard write
+        {
+          // Report the failure to the error console
+          console.error('Failed to copy content "' + content + '"! Reason: "' + err + '"');
+        }
+      }
+      else // Failed to export decklist
+      {
+        console.error("Failed to export decklist for deck '" + deck + "' of format '" + format + "'!")
+      }
+
+
+    }
+    else // Clipboard module is not available
+		{
+			// Report failure to console, continue
+			console.error('Clipboard interaction not supported by browser.');
+		}
+  });
 
   // Create a new div to serve as a container
   let container = document.createElement('div');
