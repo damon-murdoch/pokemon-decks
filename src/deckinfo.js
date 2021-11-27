@@ -1,3 +1,24 @@
+// getPGFQuery(name: String, set: String): String
+// Given a card name and set number, generates a link which
+// can be followed to find the given card (or relevant results)
+// on the PokeGoldfish website.
+function getPGFQuery(name, set)
+{
+  // Generate the search query, should be card name followed by set number
+  let query = "https://www.pokegoldfish.com/q?query_string=" + encodeURIComponent(name) + " " + encodeURIComponent(set); 
+
+  // Sanitise the query, replacing any spaces with plus signs
+  query = query.replace(" ", "+");
+
+  // Sanitise the query, replacing any ' with %27
+  // For some reason, encodeURIComponent does not do this
+  // and it breaks the PokeGoldfish search queries
+  query = query.replace("'", "%27")
+
+  // Return the generated query to the calling process
+  return query;
+}
+
 // getDeck(deck: String, format: String): Void
 // Given a deck and the format, verifies the deck
 // can be found and returns it from the json.
@@ -277,9 +298,6 @@ function getFormatProgress(format)
   }
 }
 
-// getDeckBuylist(deck: String, format: String): Object
-// Given a deck and a format, retrieves the full list of
-// cards in the deck which are missing.
 function getDeckBuylist(deck, format)
 {
   // Hashtable of cards
