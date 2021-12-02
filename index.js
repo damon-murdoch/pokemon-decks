@@ -1015,70 +1015,66 @@ function showPageBuylist(format = null, deck = null)
   }
 }
 
-// Runs once the page loads
-$(document).ready(function(){
+// Set the page title/subtitle
+document.getElementById('sitetitle').innerHTML = config.title;
+document.getElementById('sitesubtitle').innerHTML = config.subtitle;
 
-  // Set the page title/subtitle
-  document.getElementById('sitetitle').innerHTML = config.title;
-  document.getElementById('sitesubtitle').innerHTML = config.subtitle;
+// Get the page's query string
+const query = window.location.search;
 
-  // Get the page's query string
-  const query = window.location.search;
+// Retrieve the params from the string
+const params = new URLSearchParams(query);
 
-  // Retrieve the params from the string
-  const params = new URLSearchParams(query);
+// Placeholder deck / format
+let deck = null, format = null;
 
-  // Placeholder deck / format
-  let deck = null, format = null;
+// Check if a format is selected
+if (params.has('format'))
+{
+  // Get the format from the params
+  format = params.get('format');
 
-  // Check if a format is selected
-  if (params.has('format'))
+  // Check if a deck is selected
+  if (params.has('deck'))
   {
-    // Get the format from the params
-    format = params.get('format');
+    // Show the page for the deck, given the deck and format
+    deck = params.get('deck');
 
-    // Check if a deck is selected
-    if (params.has('deck'))
+    // If we are on the buylist page
+    if (params.has('buylist'))
     {
-      // Show the page for the deck, given the deck and format
-      deck = params.get('deck');
-
-      // If we are on the buylist page
-      if (params.has('buylist'))
-      {
-        // Show the deck buy list
-        showPageBuylist(format, deck);
-      }
-      else // We are not on the buylist page
-      {
-        // Show the deck list
-        showPageDeck(deck, format);
-      }
+      // Show the deck buy list
+      showPageBuylist(format, deck);
     }
-    else // No deck selected
+    else // We are not on the buylist page
     {
-      // If we are on the buylist page
-      if (params.has('buylist'))
-      {
-        // Show the format buy list
-        showPageBuylist(format);
-      }
-      else // We are not on the buylist page
-      {
-        // Show the format page
-        showPageFormat(format);
-      }
+      // Show the deck list
+      showPageDeck(deck, format);
     }
   }
-  // If we are on the buylist page
-  else if (params.has('buylist'))
+  else // No deck selected
   {
-    // Show the buylist page
-    showPageBuylist();
+    // If we are on the buylist page
+    if (params.has('buylist'))
+    {
+      // Show the format buy list
+      showPageBuylist(format);
+    }
+    else // We are not on the buylist page
+    {
+      // Show the format page
+      showPageFormat(format);
+    }
   }
-  else // We are not on the buylist page
-  {
-    // Show the home page
-    showPageHome();
-  }
-});
+}
+// If we are on the buylist page
+else if (params.has('buylist'))
+{
+  // Show the buylist page
+  showPageBuylist();
+}
+else // We are not on the buylist page
+{
+  // Show the home page
+  showPageHome();
+}
