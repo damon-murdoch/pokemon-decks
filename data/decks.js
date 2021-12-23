@@ -1233,7 +1233,7 @@ const decks = {
           ["Zorua", "SLG 52", 4, 0],
           ["Lucario-gx", "PR-SM SM100", 2, 0],
           ["Riolu", "UPR 66", 3, 0],
-          ["Tapu Lele-gx", "GRI 60", 0, 3],
+          ["Tapu Lele-gx", "GRI 60", 3, 0],
           ["Diancie", "FLI 74", 1, 0],
           ["Mew-ex", "LTR RC24", 1, 0],
           ["Mewtwo", "EVO 51", 1, 0]
@@ -1270,20 +1270,20 @@ const decks = {
           ["Zorua", "", 4, 0],
           ["Gardevoir-gx", "", 2, 0],
           ["Gallade", "", 1, 0],
-          ["Tapu Lele-gx", "", 0, 3],
+          ["Tapu Lele-gx", "", 1, 2],
           ["Mew-ex", "LTR RC24", 1, 0],
           ["Mewtwo", "EVO 51", 1, 0]
         ], 
         "supporter": [
           ["Brigette", "", 0, 3],
-          ["Guzma", "", 0, 3],
-          ["N", "", 0, 3],
+          ["Guzma", "", 3, 0],
+          ["N", "", 1, 2],
           ["Cynthia", "", 1, 0],
           ["Acerola", "", 1, 0],
           ["Professor Sycamore", "", 1, 0]
         ], 
         "item": [
-          ["Ultra Ball", "", 0, 4],
+          ["Ultra Ball", "", 4, 0],
           ["Puzzle of Time", "", 0, 4],
           ["Field Blower", "", 3, 0],
           ["Rare Candy", "", 3, 0],
