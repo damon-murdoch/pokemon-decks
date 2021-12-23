@@ -336,8 +336,8 @@ const decks = {
         },
         "pokemon": [
           ["M Manectric-ex", "PHF 24", 3, 0],
-          ["Manectric-ex", "PHF 23", 4, 0],
-          ["Shaymin-ex", "ROS 77", 0, 2],
+          ["Manectric-ex", "PHF 23", 3, 1],
+          ["Shaymin-ex", "ROS 77", 1, 1],
           ["Hoopa-ex", "AOR 36", 1, 0],
           ["Jolteon-ex", "GEN 28", 1, 0],
         ], 
@@ -357,7 +357,7 @@ const decks = {
           ["Super Rod", "", 1, 0],
         ], 
         "tool": [
-          ["Manectric Spirit Link", "", 1, 3],
+          ["Manectric Spirit Link", "", 2, 2],
         ], 
         "stadium": [
           ["Rough Seas", "", 4, 0]
@@ -373,15 +373,13 @@ const decks = {
         },
         "pokemon": [
           ["Lucario-ex", "FFI 107", 3, 0],
-          ["Crobat", "PHF 33", 3, 0],
-          ["Golbat", "PHF 32", 4, 0],
+          ["Crobat", "PHF 33", 2, 0],
+          ["Golbat", "PHF 32", 3, 0],
           ["Zubat", "PHF 31", 4, 0],
           ["Shaymin-ex", "ROS 77", 0, 2],
-          ["Carbink Break", "FAC 50", 0, 1],
-          ["Carbink", "FAC 49", 1, 1]
         ], 
         "supporter": [
-          ["Professor Sycamore", "", 0, 3], 
+          ["Professor Sycamore", "", 0, 4], 
           ["N", "", 0, 2],
           ["Korrina", "", 1, 1],
           ["Lysandre", "", 2, 0],
@@ -393,8 +391,10 @@ const decks = {
           ["Super Scoop Up", "", 4, 0],
           ["Ultra Ball", "", 0, 4],
           ["Level Ball", "", 2, 0],
+          ["Escape Rope", "", 2, 0],
         ], 
         "tool": [
+          ["Muscle Band", "", 2, 0]
         ], 
         "stadium": [
           ["Fighting Stadium", "", 2, 0]
@@ -410,16 +410,16 @@ const decks = {
           "sleeves": false
         },
         "pokemon": [
-          ["Seismitoad-ex", "FFI 20", 3, 0],
+          ["Seismitoad-ex", "FFI 20", 3, 1],
           ["Manaphy-ex", "BKP 32", 2, 0],
-          ["Shaymin-ex", "ROS 77", 3, 0],
+          ["Shaymin-ex", "ROS 77", 2, 0],
           ["Shaymin-ex", "PR-XY XY148", 1, 0],
           ["Glaceon-ex", "FAC 20", 1, 0],
           ["Hoopa-ex", "AOR 36", 0, 1],
           ["Articuno", "ROS 17", 1, 0]
         ], 
         "supporter": [
-          ["Professor Sycamore", "", 4, 0],
+          ["Professor Sycamore", "", 0, 4],
           ["N", "", 0, 3],
           ["Lysandre", "", 2, 0],
           ["AZ", "", 1, 0],
@@ -1010,7 +1010,7 @@ const decks = {
           ["Skyla", "", 1, 0],
         ], "item": [
           ["Ultra Ball", "", 0, 4],
-          ["Rare Candy", "", 0, 4],
+          ["Rare Candy", "", 4, 0],
           ["Max Potion", "", 3, 0],
           ["Field Blower", "", 0, 3],
           ["Rescue Stretcher", "", 1, 0],
@@ -1496,7 +1496,7 @@ const decks = {
         ], "item": [
           ["Nest Ball", "", 4, 0],
           ["Max Elixir", "", 0, 4],
-          ["Super Rod", "", 0, 2],
+          ["Super Rod", "", 2, 0],
           ["Pal Pad", "", 1, 0],
           ["Rescue Stretcher", "", 1, 0],
           ["Special Charge", "", 1, 0],
@@ -2131,7 +2131,7 @@ const decks = {
           ["Mixed Herbs", "",4, 0],
           ["Pokegear 3.0", "", 0, 4],
           ["Custom Catcher", "",0, 4],
-          ["Reset Stamp", "",3, 0],
+          ["Reset Stamp", "",0, 3],
           ["Tag Call", "",3, 0],
           ["Switch", "",2, 0],
           ["Fire Crystal", "",2, 0],
@@ -2262,13 +2262,13 @@ const decks = {
         "item": [
           ["Metal Saucer", "", 4, 0],
           ["Switch", "", 4, 0],
-          ["Rotom Phone", "", 0, 4],
+          ["Rotom Phone", "", 4, 0],
           ["Quick Ball", "", 4, 0],
           ["Tool Scrapper", "", 2, 0]
         ],
         "tool": [
-          ["Cape of Toughness", "", 0, 3],
-          ["Air Balloon", "", 3, 0]
+          ["Cape of Toughness", "", 4, 0],
+          ["Air Balloon", "", 2, 0]
         ],
         "stadium": [
           ["Crystal Cave", "", 4, 0]
