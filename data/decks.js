@@ -2113,47 +2113,42 @@ const decks = {
           ["Darkness Energy", "", 1, 0]
         ]
       }, 
-      "Lucario & Melmetal": {
+      "Green's ReshiZard": {
         "meta": {
           "deckbox": false,
           "sleeves": false
         },
         "pokemon": [
-          ["Lucario & Melmetal Tag Team-gx", "UNB 120", 1, 3], 
-          ["Mega Lopunny & Jigglypuff Tag Team-gx", "CEC 165", 0, 1], 
-          ["Omastar", "TEU 76", 0, 1]
+          ["Volcanion", "UNB 25", 4, 0],
+          ["Reshiram & Charizard Tag Team-gx", "PR-SM SM201", 3, 0]
         ],
         "supporter": [
-          ["Green's-exploration", "", 0, 4],
-          ["Welder", "", 0, 4],
-          ["Cynthia & Caitlyn Tag Team", "", 0, 2],
-          ["Mallow & Lana Tag Team", "", 2, 0],
-          ["Lusamine", "", 1, 0],
-          ["Faba", "", 1, 0]
+          ["Green's-exploration", "", 4, 0],
+          ["Welder", "", 3, 1],
         ],
         "item": [
+          ["Great Potion", "",4, 0],
+          ["Mixed Herbs", "",4, 0],
           ["Pokegear 3.0", "", 0, 4],
           ["Custom Catcher", "",0, 4],
-          ["Tag Call", "",0, 3],
           ["Reset Stamp", "",3, 0],
+          ["Tag Call", "",3, 0],
           ["Switch", "",2, 0],
+          ["Fire Crystal", "",2, 0],
           ["Great Catcher", "",0, 1],
           ["Fiery Flint", "",0, 1],
           ["Energy Spinner", "",1, 0],
-          ["Pokemon Communication", "",1, 0],
-          ["Unidentified Fossil", "",1, 0],
-          ["Rare Candy", "",1, 0]
         ],
         "tool": [
-          ["Metal Frying Pan", "",3, 0]
+
         ],
         "stadium": [
-          ["Power Plant", "", 0, 3],
-          ["Mt. Coronet", "", 1, 0]
+          ["Power Plant", "", 2, 0],
+          ["Shrine of Punishment", "", 1, 0],
+          ["Heat Factory Prism Star", "", 0, 1],
         ],
         "energy": [
-          ["Fire Energy", "", 6, 0],
-          ["Metal Energy", "", 5, 0]
+          ["Fire Energy", "", 12, 0],
         ]
       },
       "Naganadel & Guzzlord": {
@@ -2162,25 +2157,25 @@ const decks = {
           "sleeves": false
         },
         "pokemon": [
-          ["Mismagius", "UNB 78", 1, 3],
-          ["Misdreavus", "UNB 77", 0, 4],
+          ["Mismagius", "UNB 78", 4, 0],
+          ["Misdreavus", "UNB 77", 4, 0],
           ["Naganadel & Guzzlord Tag Team-gx", "CEC 158", 3, 0]
         ],
         "supporter": [
           ["Cynthia & Caitlyn Tag Team", "", 0, 3],
-          ["Bill's Analysis", "", 3, 0],
+          ["Bill's Analysis", "", 1, 2],
           ["Lt. Surge's Strategy", "", 2, 0],
           ["Mallow & Lana Tag Team", "", 2, 0],
-          ["Ultra Forest Kartenvoy", "", 1, 0]
+          ["Ultra Forest Kartenvoy", "", 0, 1]
         ],
         "item": [
           ["Dusk Stone", "", 4, 0],
           ["Order Pad", "", 4, 0],
           ["Mysterious Treasure", "", 4, 0],
-          ["Tag Call", "", 4, 0],
-          ["Beast Ring", "", 4, 0],
-          ["Great Catcher", "", 3, 0],
-          ["Reset Stamp", "", 2, 0],
+          ["Tag Call", "", 0, 4],
+          ["Beast Ring", "", 0, 4],
+          ["Great Catcher", "", 0, 3],
+          ["Reset Stamp", "", 0, 2],
           ["Acro Bike", "", 2, 0],
           ["Energy Recycler", "", 1, 0]
         ],
@@ -2288,7 +2283,7 @@ const decks = {
           "sleeves": true
         },
         "pokemon": [
-          ["Inteleon", "CRE 43", 2, 0],
+          ["Inteleon", "CRE 43", 3, 0],
           ["Inteleon", "SSH 58", 1, 0],
           ["Drizzile", "SSH 57", 4, 0],
           ["Sobble", "CRE 41", 4, 0],
@@ -2299,7 +2294,7 @@ const decks = {
           ["Crobat V", "DAA 104", 1, 0]
         ], "supporter": [
           ["Professor's Research", "", 4, 0],
-          ["Raihan", "", 3, 0],
+          ["Raihan", "", 2, 0],
           ["Marnie", "", 2, 0],
           ["Boss's Orders", "", 1, 0]
         ], "item": [
@@ -2307,15 +2302,14 @@ const decks = {
           ["Evolution Incense", "", 3, 0],
           ["Quick Ball", "", 3, 0],
           ["Energy Switch", "", 2, 0],
-          ["Energy Search", "", 1, 0],
-          ["Escape Rope", "", 1, 0],
-          ["Switch", "", 1, 0]
+          ["Energy Search", "", 2, 0],
+          ["Escape Rope", "", 2, 0],
         ], "tool": [
           ["Air Balloon", "", 1, 0],
         ], "stadium": [
           ["Tower of Waters", "", 2, 0]
         ], "energy": [
-          ["Darkness Energy", "", 5, 0],
+          ["Darkness Energy", "", 4, 0],
           ["Rapid Strike Energy", "", 4, 0],
           ["Fighting Energy", "", 1, 0]
         ]
