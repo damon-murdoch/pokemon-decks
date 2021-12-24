@@ -181,7 +181,6 @@ const decks = {
           ["Pumpkaboo", "PHF 44", 4, 0],
           ["Lampent", "PHF 42", 4, 0],
           ["Shaymin-ex", "ROS 77", 3, 0],
-          ["Mew", "FAC 29", 1, 0]
         ], "supporter": [
           ["Professor Sycamore", "", 3, 0],
           ["Lysandre", "", 2, 0],
@@ -201,12 +200,12 @@ const decks = {
           ["Target Whistle", "", 1, 0],
           ["Escape Rope", "", 1, 0]
         ], "tool": [
-          ["Fighting Fury Belt", "", 2, 0]
+          ["Fighting Fury Belt", "", 2, 0],
+          ["Float Stone", "", 0, 2]
         ], "stadium": [
           ["Dimension Valley", "", 3, 0]
         ], "energy": [
-          ["Double Colorless Energy", "", 1, 3],
-          ["Psychic Energy", "", 1, 0]
+          ["Double Colorless Energy", "", 1, 3]
         ]
       }, 
       "Vespiquen Vileplume": { 
@@ -243,7 +242,7 @@ const decks = {
           ["Forest of Giant Plants", "", 1, 3]
         ], 
         "energy": [
-          ["Double Colorless Energy", "", 1, 3]
+          ["Double Colorless Energy", "", 2, 2]
         ]
       },
       "Greninja Talonflame": { 
@@ -319,7 +318,7 @@ const decks = {
         ], 
         "tool": [
           ["Audino Spirit Link", "", 4, 0],
-          ["Float Stone", "", 2, 0],
+          ["Float Stone", "", 0, 2],
         ], 
         "stadium": [
           ["Parallel City", "", 2, 0]
@@ -348,10 +347,10 @@ const decks = {
           ["AZ", "", 1, 0],
         ], 
         "item": [
-          ["Max Potion", "", 4, 0],
+          ["Max Potion", "", 3, 1],
           ["Ultra Ball", "", 0, 4],
           ["VS Seeker", "", 0, 4],
-          ["Enhanced Hammer", "", 3, 0],
+          ["Enhanced Hammer", "", 0, 3],
           ["Trainers' Mail", "", 0, 3],
           ["Battle Compressor", "", 1, 0],
           ["Super Rod", "", 1, 0],
@@ -421,11 +420,12 @@ const decks = {
         "supporter": [
           ["Professor Sycamore", "", 0, 4],
           ["N", "", 0, 3],
-          ["Lysandre", "", 2, 0],
+          ["Delinquent", "", 1, 1],
+          ["Lysandre", "", 1, 0],
           ["AZ", "", 1, 0],
           ["Xerosic", "", 1, 0],
-          ["Team Flare Grunt", "", 1, 0],
-          ["Hex Maniac", "", 1, 0]
+          ["Team Flare Grunt", "", 0, 1],
+          ["Hex Maniac", "", 0, 1]
         ], 
         "item": [
           ["VS Seeker", "", 0, 4],
@@ -434,15 +434,14 @@ const decks = {
           ["Energy Switch", "", 3, 0]
         ], 
         "tool": [
-          ["Fighting Fury Belt", "", 3, 0]
+          ["Fighting Fury Belt", "", 0, 3]
         ], 
         "stadium": [
           ["Rough Seas", "", 3, 0],
           ["Parallel City", "", 1, 0],
         ], 
         "energy": [
-          ["Double Colorless Energy", "", 0, 4],
-          ["Water Energy", "", 0, 9],
+          ["Water Energy", "", 0, 12],
         ]
       },
       "Volcanion": { 
