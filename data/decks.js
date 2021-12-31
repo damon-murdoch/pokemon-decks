@@ -570,11 +570,11 @@ const decks = {
           ["Bronzor", "PHF 60", 4, 0],
           ["Bronzong", "PHF 61", 4, 0],
           ["Bronzong Break", "FCI 62", 1, 0],
-          ["Shaymin-Ex", "ROS 77", 0, 2],
-          ["Aegislash-Ex", "PHF 65", 2, 0],
-          ["Genesect-Ex", "FCO 64", 1, 1],
+          ["Shaymin-ex", "ROS 77", 0, 2],
+          ["Aegislash-ex", "PHF 65", 2, 0],
+          ["Genesect-ex", "FCO 64", 1, 1],
           ["Cobalion", "STS 74", 2, 0],
-          ["Magearna-Ex", "STS 75", 1, 0]
+          ["Magearna-ex", "STS 75", 1, 0]
         ], 
         "supporter": [
           ["Professor Sycamore", "", 0, 4],
@@ -1352,7 +1352,7 @@ const decks = {
           ["Zorua", "", 4, 0],
           ["Gardevoir-gx", "", 2, 0],
           ["Gallade", "", 1, 0],
-          ["Tapu Lele-gx", "", 1, 2],
+          ["Tapu Lele-gx", "GRI 60", 1, 2],
           ["Mew-ex", "LTR RC24", 1, 0],
           ["Mewtwo", "EVO 51", 1, 0]
         ], 
@@ -1426,7 +1426,7 @@ const decks = {
         },
         "pokemon": [
           ["Buzzwole", "", 0, 4],
-          ["Trubbish", "", 0, 3],
+          ["Trubbish", "BKP 56", 0, 3],
           ["Garbodor", "", 0, 2],
           ["Garbodor", "", 0, 1],
           ["Remoraid", "", 1, 0],
@@ -1530,7 +1530,7 @@ const decks = {
         },
         "pokemon": [
           ["Rayquaza-gx", "", 1, 3],
-          ["Tapu Lele-gx", "", 0, 2],
+          ["Tapu Lele-gx", "GRI 60", 0, 2],
           ["Marshadow", "", 2, 0],
           ["Oranguru", "", 1, 0],
           ["Latias", "", 1, 0],
@@ -1728,40 +1728,43 @@ const decks = {
         },
         "pokemon": [
           ["Sableye", "DEX 62", 4, 0],
+          ["Trubbish", "NVI 48", 3, 0],
           ["Garbodor", "BKP 57", 2, 0],
-          ["Trubbish", "BKP 56", 2, 0],
-          ["Shaymin-ex", "ROS 77", 2, 0]
+          ["Garbodor", "GRI 51", 1, 0],
+          ["Shaymin-ex", "ROS 77", 2, 0], 
+          ["Tapu Lele-gx", "GRI 60", 1, 0], 
+          ["Kartana-gx", "GRI 60", 1, 0], 
         ], "supporter": [
           ["Professor Juniper", "", 4, 0], 
-          ["N", "", 2, 0],
-          ["Lysandre", "", 2, 0],
-          ["Team Flare Grunt", "", 2, 0],
-          ["Pokemon Center Lady", "", 1, 0],
-          ["Team Rocket's Handiwork", "", 1, 0],
-          ["Xerosic", "", 1, 0],
-          ["Hex Maniac", "", 1, 0],
           ["Delinquent", "", 1, 0],
-          ["AZ", "", 1, 0]
+          ["Ghetsis", "", 1, 0],
+          ["Gladion", "", 1, 0],
+          ["Guzma", "", 1, 0],
+          ["N", "", 1, 0],
+          ["Team Flare Grunt", "", 1, 0],
+          ["Team Skull Grunt", "", 1, 0],
         ], "item": [
           ["Trainers' Mail", "", 0, 4],
-          ["Crushing Hammer", "", 3, 0],
           ["Puzzle of Time", "", 0, 3],
-          ["Ultra Ball", "", 0, 3],
+          ["Ultra Ball", "", 3, 0],
           ["VS Seeker", "", 0, 3],
-          ["Trick Shovel", "", 2, 0],
+          ["Mysterious Treasure", "", 1, 0],
+          ["Crushing Hammer", "", 2, 0],
           ["Enhanced Hammer", "", 1, 0],
+          ["Trick Shovel", "", 2, 0],
+          ["Battle Compressor", "", 1, 0], 
+          ["Counter Catcher", "", 1, 0], 
+          ["Field Blower", "", 1, 0],
           ["Super Rod", "", 1, 0],
-          ["Target Whistle", "", 1, 0],
-          ["Field Blower", "", 0, 1]
+          ["Red Card", "", 1, 0],
         ], "tool": [
-          ["Float Stone", "", 1, 1],
-          ["Head Ringer", "", 1, 0],
+          ["Float Stone", "", 3, 0],
           ["Life Dew", "", 0, 1]
         ], "stadium": [
           ["Parallel City", "", 1, 0],
-          ["Team Aqua's Secret Base", "", 1, 0]
         ], "energy": [
-          ["Darkness Energy", "", 6, 0]
+          ["Rainbow Energy", "", 3, 0],
+          ["Darkness Energy", "", 3, 0]
         ]
       },
       "Seismitoad": { 
