@@ -2,6 +2,89 @@
 const decks = {
 
   // Name, Count, Missing, Price (USD)
+  "Collection": {
+    "meta": {
+      "start": "Black_And_White",
+      "end": "Fusion_Strike"
+    }, 
+    "decks": {
+      "Zorua Collection": {
+        "meta": {
+          "deckbox": false,
+          "sleeves": false
+        }, 
+        "pokemon": [
+          ["Zorua", "BLW 70", 0, 1],
+          ["Zorua", "MCD 9", 0, 1],
+          ["Zorua", "EPO 66", 0, 1],
+          ["Zorua", "PR-BW BW12", 0, 1],
+          ["Zorua", "DEX 69", 0, 1],
+          ["Zorua", "LTR 89", 0, 1],
+          ["Zorua", "DEX 70", 0, 1],
+          ["Zorua", "XY 72", 1, 0],
+          ["Zorua", "BKT 89", 0, 1],
+          ["Zorua", "BKT 90", 0, 1],
+          ["Zorua", "SLG 52", 0, 1],
+          ["Zorua", "PR-SM SM83", 0, 1],
+          ["Zorua", "HIF SV25", 0, 1],
+          ["Zorua", "TEU 90", 0, 1],
+          ["Zorua", "EVS 102", 0, 1],
+          ["Zorua", "FST 170", 1, 0],
+        ], "supporter": [
+
+        ], "item": [
+
+        ], "tool": [
+
+        ], "stadium": [
+
+        ], "energy": [
+
+        ]
+      }, 
+      "Binder Display": {
+        "meta": {
+          "deckbox": false,
+          "sleeves": false
+        }, 
+        "pokemon": [
+          ["Landorus-ex", "BCR 144", 3, 0],
+          ["Seismitoad-ex", "FFI 106", 4, 0],
+          ["Volcanion-ex", "STS 107", 4, 0],
+          ["Gardevoir-ex", "GEN RC30", 4, 0],
+          ["M Gardevoir-ex", "GEN RC31", 4, 0],
+          ["Shaymin-ex", "ROS 106", 4, 0],
+          ["Zorua", "DEX 70", 4, 0],
+          ["Trubbish", "NVI 48", 4, 0],
+          ["Zorua", "HIF SV25 ", 4, 0],
+          ["Zoroark-gx", "HIF 77a", 4, 0],
+          ["Minccino", "HIF SV93", 0, 4],
+          ["Cinccino", "HIF SV94", 0, 4],
+        ], "supporter": [
+
+        ], "item": [
+          ["Head Ringer TFHG", "PHF 97", 4, 0],
+          ["Switch", "Base", 4, 0],
+          ["Switch", "DP", 4, 0],
+          ["Energy Switch", "DP", 2, 2],
+          ["Switch", "HGSS", 4, 0],
+          ["Energy Switch", "HGSS", 3, 1],
+          ["Pokemon Communication", "HGSS", 4, 0],
+          ["Copycat", "HGSS", 4, 0],
+          ["Hypnotoxic Lazer", "BW", 4, 0],
+          ["Dowsing Machine", "BW", 1, 0],
+          ["Computer Search", "BW", 1, 0],
+          ["Jamming Net TFHG", "BW", 1, 0],
+        ], "tool": [
+          ["Rock Guard", "BW", 1, 0],
+        ], "stadium": [
+          ["Virbank City Gym", "BW", 4, 0],
+        ], "energy": [
+
+        ]
+      }
+    }
+  },
 
   // 2015 Worlds
   // Boundaries Crossed to Roaring Skies
