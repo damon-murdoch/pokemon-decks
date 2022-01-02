@@ -22,13 +22,13 @@ const decks = {
           ["Zorua", "LTR 89", 0, 1],
           ["Zorua", "DEX 70", 0, 1],
           ["Zorua", "XY 72", 1, 0],
-          ["Zorua", "BKT 89", 0, 1],
+          ["Zorua", "BKT 89", 1, 0],
           ["Zorua", "BKT 90", 0, 1],
           ["Zorua", "SLG 52", 0, 1],
           ["Zorua", "PR-SM SM83", 0, 1],
           ["Zorua", "HIF SV25", 0, 1],
           ["Zorua", "TEU 90", 0, 1],
-          ["Zorua", "EVS 102", 0, 1],
+          ["Zorua", "EVS 102", 1, 0],
           ["Zorua", "FST 170", 1, 0],
         ], "supporter": [
 
@@ -319,13 +319,13 @@ const decks = {
           ["Special Charge", "", 1, 0]
         ], 
         "tool": [
-          ["Float Stone", "", 0, 2]
+          ["Float Stone", "", 1, 1]
         ], 
         "stadium": [
-          ["Forest of Giant Plants", "", 1, 3]
+          ["Forest of Giant Plants", "", 4, 0]
         ], 
         "energy": [
-          ["Double Colorless Energy", "", 2, 2]
+          ["Double Colorless Energy", "", 4, 0]
         ]
       },
       "Greninja Talonflame": { 
@@ -349,7 +349,7 @@ const decks = {
           ["Pokemon Ranger", "", 1, 0]
         ], 
         "item": [
-          ["VS Seeker", "", 0, 4],
+          ["VS Seeker", "", 4, 0],
           ["Dive Ball", "", 4, 0],
           ["Level Ball", "", 2, 0],
           ["Super Rod", "", 2, 0],
@@ -1338,7 +1338,7 @@ const decks = {
         ], "stadium": [
           ["Parallel City", "", 2, 0]
         ], "energy": [
-          ["Double Colorless Energy", "", 2, 2],
+          ["Double Colorless Energy", "", 4, 0],
           ["Strong Energy", "", 4, 0],
         ]
       },
@@ -1733,7 +1733,7 @@ const decks = {
           ["Garbodor", "GRI 51", 1, 0],
           ["Shaymin-ex", "ROS 77", 2, 0], 
           ["Tapu Lele-gx", "GRI 60", 1, 0], 
-          ["Kartana-gx", "GRI 60", 1, 0], 
+          ["Kartana-gx", "GRI 60", 0, 1], 
         ], "supporter": [
           ["Professor Juniper", "", 4, 0], 
           ["Delinquent", "", 1, 0],
@@ -1779,7 +1779,7 @@ const decks = {
           ["Hoopa-ex", "AOR 36", 1, 0],
           ["Jirachi-ex", "PLB 60", 1, 0],
           ["Keldeo-ex", "PR-BW BW60", 1, 0],
-          ["Mewtwo-ex", "NXD 54", 1, 0],
+          ["Mewtwo-ex", "NXD 54", 0, 1],
           ["Sudowoodo", "GRI 66", 1, 0],
           ["Giratina", "PR-XY XY184", 1, 0]
         ], "supporter": [
@@ -1829,16 +1829,16 @@ const decks = {
           ["Sudowoodo", "GRI 66", 1, 0],
           ["Tapu Lele-gx", "GRI 60", 1, 0]
         ], "supporter": [
-          ["Professor Juniper", "", 2, 2],
+          ["Professor Juniper", "", 4, 0],
           ["Guzma", "", 4, 0],
-          ["N", "", 1, 1],
+          ["Colress", "", 2, 0],
           ["Korrina", "", 2, 0],
-          ["Colress", "", 1, 0],
+          ["N", "", 1, 0],
           ["Ultra Ball", "", 4, 0],
           ["Max Elixir", "", 3, 0],
           ["Beast Ring", "", 2, 0]
         ], "item": [
-          ["Float Stone", "", 0, 2],
+          ["Float Stone", "", 2, 0],
           ["Muscle Band", "", 2, 0],
           ["Choice Band", "", 1, 0]
         ], "tool": [
@@ -2209,18 +2209,18 @@ const decks = {
         ],
         "supporter": [
           ["Green's-exploration", "", 4, 0],
-          ["Welder", "", 3, 1],
+          ["Welder", "", 4, 0],
         ],
         "item": [
           ["Great Potion", "",4, 0],
           ["Mixed Herbs", "",4, 0],
-          ["Pokegear 3.0", "", 0, 4],
-          ["Custom Catcher", "",0, 4],
+          ["Pokegear 3.0", "", 4, 0],
+          ["Custom Catcher", "",2, 2],
           ["Reset Stamp", "",0, 3],
           ["Tag Call", "",3, 0],
           ["Switch", "",2, 0],
           ["Fire Crystal", "",2, 0],
-          ["Great Catcher", "",0, 1],
+          ["Great Catcher", "",1, 0],
           ["Fiery Flint", "",0, 1],
           ["Energy Spinner", "",1, 0],
         ],
@@ -2247,21 +2247,21 @@ const decks = {
           ["Naganadel & Guzzlord Tag Team-gx", "CEC 158", 3, 0]
         ],
         "supporter": [
-          ["Cynthia & Caitlyn Tag Team", "", 0, 3],
-          ["Bill's Analysis", "", 1, 2],
+          ["Cynthia & Caitlyn Tag Team", "", 3, 0],
+          ["Bill's Analysis", "", 3, 0],
           ["Lt. Surge's Strategy", "", 2, 0],
           ["Mallow & Lana Tag Team", "", 2, 0],
-          ["Ultra Forest Kartenvoy", "", 0, 1]
+          ["Ultra Forest Kartenvoy", "", 1, 0]
         ],
         "item": [
           ["Dusk Stone", "", 4, 0],
           ["Order Pad", "", 4, 0],
           ["Mysterious Treasure", "", 4, 0],
-          ["Tag Call", "", 0, 4],
+          ["Tag Call", "", 4, 0],
           ["Beast Ring", "", 0, 4],
-          ["Great Catcher", "", 0, 3],
+          ["Acro Bike", "", 3, 0],
+          ["Great Catcher", "", 2, 0],
           ["Reset Stamp", "", 0, 2],
-          ["Acro Bike", "", 2, 0],
           ["Energy Recycler", "", 1, 0]
         ],
         "tool": [
