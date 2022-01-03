@@ -2156,30 +2156,30 @@ const decks = {
           "sleeves": false
         },
         "pokemon": [
-          ["Mismagius", "UNB 78", 3, 0],
+          ["Mismagius", "UNB 78", 1, 2],
           ["Misdreavus", "UNB 77", 4, 0],
           ["Garchomp & Giratina Tag Team-gx", "UNM 146", 1, 2],
           ["Naganadel & Guzzlord Tag Team-gx", "CEC 158", 1, 0],
-          ["Blacephalon", "CEC 104", 1, 0]
+          ["Blacephalon", "CEC 104", 0, 1]
         ],
         "supporter": [
-          ["Green's-exploration", "", 0, 4],
+          ["Green's-exploration", "", 4, 0],
           ["Guzma & Hala Tag Team", "", 2, 0],
-          ["Cynthia & Caitlyn Tag Team", "", 0, 1],
+          ["Cynthia & Caitlyn Tag Team", "", 1, 0],
           ["Mallow & Lana Tag Team", "", 1, 0],
           ["Faba", "", 1, 0]
         ],
         "item": [
           ["Pokegear 3.0", "", 0, 4],
           ["Mysterious Treasure", "", 4, 0],
-          ["Reset Stamp", "", 3, 0],
+          ["Reset Stamp", "", 0, 3],
           ["Tag Call", "", 2, 0],
-          ["Custom Catcher", "", 2, 0],
-          ["Great Catcher", "", 1, 0],
-          ["Dusk Stone", "", 1, 0],
+          ["Custom Catcher", "", 0, 2],
+          ["Great Catcher", "", 0, 1],
+          ["Dusk Stone", "", 0, 1],
           ["Switch", "", 1, 0],
           ["Energy Spinner", "", 1, 0],
-          ["Beast Ring", "", 1, 0],
+          ["Beast Ring", "", 0, 1],
           ["Wait and See Hammer", "", 1, 0]
         ],
         "tool": [
@@ -2187,12 +2187,12 @@ const decks = {
           ["Karate Belt", "", 1, 0]
         ],
         "stadium": [
-          ["Power Plant", "", 4, 0]
+          ["Power Plant", "", 0, 4]
         ],
         "energy": [
           ["Psychic Energy", "", 3, 0],
           ["Rainbow Energy", "", 0, 2],
-          ["Unit Energy FDY", "", 0, 2],
+          ["Unit Energy FDY", "", 2, 0],
           ["Weakness Guard Energy", "", 0, 2],
           ["Fighting Energy", "", 1, 0],
           ["Darkness Energy", "", 1, 0]
@@ -2283,35 +2283,36 @@ const decks = {
         },
         "pokemon": [
           ["Jirachi", "TEU 99", 0, 4],
-          ["Florges", "CEC 152", 0, 4],
-          ["Flabebe", "CEC 149", 0, 4],
+          ["Florges", "FLI 86", 0, 3],
+          ["Flabebe", "CEC 149", 4, 0],
           ["Munchlax", "UNM 173", 0, 2],
+          ["Mew", "PR-SM SM215", 1, 1],
           ["Spiritomb", "UNB 112", 0, 1],
+          ["Latios-gx", "UNM 78", 1, 0],
           ["Girafarig", "LOT 94", 1, 0],
-          ["Latios-gx", "UNM 78", 0, 1],
-          ["Mew", "PR-SM SM215", 1, 0]
+          ["Wobbufet", "LOT 93", 1, 0],
         ],
         "supporter": [
-          ["Professor Elm's Lecture", "", 4, 0],
-          ["Steven's Resolve", "", 0, 4],
-          ["Lusamine", "", 0, 3],
+          ["Professor Oak's Setup", "", 1, 3],
+          ["Steven's Resolve", "", 4, 0],
+          ["Lusamine", "", 3, 0],
           ["Bellelba & Brycen Man Tag Team", "", 2, 0],
-          ["Tate & Liza", "", 1, 0],
-          ["Faba", "", 1, 0],
+          ["Professor Elm's Lecture", "", 2, 0],
+          ["Channeler", "", 1, 0],
         ],
         "item": [
           ["Lillie's Poke Doll", "", 4, 0],
           ["Pokegear 3.0", "", 0, 4],
-          ["Rare Candy", "", 3, 0],
           ["Acro Bike", "", 4, 0],
-          ["Escape Board", "", 2, 0],
-          ["Pokemon Communication", "", 3, 0]
+          ["Rare Candy", "", 3, 0],
+          ["Pokemon Communication", "", 2, 0]
         ],
         "tool": [
-          ["Stealthy Hood", "", 4, 0]
+          ["Stealthy Hood", "", 4, 0],
+          ["Escape Board", "", 2, 0]
         ],
         "stadium": [
-          ["Sky Pillar", "", 0, 2]
+          ["Sky Pillar", "", 1, 0]
         ],
         "energy": [
           ["Rainbow Energy", "", 1, 0]

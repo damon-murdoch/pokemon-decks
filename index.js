@@ -220,6 +220,39 @@ function showPageFormat(format)
   // Get the list of deck formats
   decklist = Object.keys(decks[format].decks);
 
+  // Empty array for storing progress
+  progresslist = {}
+
+  // Loop over all of the decks
+  for (let deck of decklist)
+  {
+    // Get the progress of the deck from the deck list
+    progresslist[deck] = getDeckProgress(deck, format);
+  }
+
+  // Sort the decks by completeness
+  decklist.sort(function(a, b){
+
+    // Progress of first element
+    let progress_a = progresslist[a].obtained
+
+    // Progress of second element
+    let progress_b = progresslist[b].obtained
+
+    // If they have the same progress
+    if (progress_a == progress_b)
+    {
+      // Sort based on alphabetical order
+      return a > b
+    }
+    else // They have different progress
+    {
+      // Sort based on deck numbering
+      return progress_a < progress_b
+    }
+
+  });
+
   // Create a table element
   table = document.createElement('table');
 
@@ -283,7 +316,7 @@ function showPageFormat(format)
     let trow = document.createElement('tr');
 
     // Get the format progress information
-    let progress = getDeckProgress(deck, format);
+    let progress = progresslist[deck]
 
     // Set the contents for the row
     trow.innerHTML = 
