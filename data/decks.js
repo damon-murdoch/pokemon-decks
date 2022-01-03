@@ -4,7 +4,7 @@ const decks = {
   // Name, Count, Missing, Price (USD)
   "Collection": {
     "meta": {
-      "start": "Black_And_White",
+      "start": "Black_and_White",
       "end": "Fusion_Strike"
     }, 
     "decks": {
