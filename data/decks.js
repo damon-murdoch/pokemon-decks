@@ -263,7 +263,7 @@ const decks = {
           ["Joltik", "PHF 26", 4, 0],
           ["Pumpkaboo", "PHF 44", 4, 0],
           ["Lampent", "PHF 42", 4, 0],
-          ["Shaymin-ex", "ROS 77", 3, 0],
+          ["Shaymin-ex", "ROS 77", 3, 0]
         ], "supporter": [
           ["Professor Sycamore", "", 3, 0],
           ["Lysandre", "", 2, 0],
@@ -273,22 +273,23 @@ const decks = {
           ["Pokemon Ranger", "", 1, 0],
           ["AZ", "", 1, 0]
         ], "item": [
-          ["VS Seeker", "", 0, 4],
+          ["VS Seeker", "", 4, 0],
           ["Ultra Ball", "", 4, 0],
           ["Battle Compressor", "", 4, 0],
-          ["Puzzle of Time", "", 0, 4],
-          ["Trainers' Mail", "", 0, 3],
+          ["Puzzle of Time", "", 4, 0],
+          ["Trainers' Mail", "", 3, 0],
           ["Special Charge", "", 1, 0],
           ["Startling Megaphone", "", 1, 0],
           ["Target Whistle", "", 1, 0],
           ["Escape Rope", "", 1, 0]
         ], "tool": [
-          ["Fighting Fury Belt", "", 2, 0],
-          ["Float Stone", "", 0, 2]
+          ["Float Stone", "", 2, 0],
+          ["Fighting Fury Belt", "", 1, 0],
+          ["Muscle Band", "", 1, 0]
         ], "stadium": [
           ["Dimension Valley", "", 3, 0]
         ], "energy": [
-          ["Double Colorless Energy", "", 0, 4]
+          ["Double Colorless Energy", "", 4, 0]
         ]
       }, 
       "Vespiquen Vileplume": { 
@@ -319,7 +320,7 @@ const decks = {
           ["Special Charge", "", 1, 0]
         ], 
         "tool": [
-          ["Float Stone", "", 1, 1]
+          ["Float Stone", "", 2, 0]
         ], 
         "stadium": [
           ["Forest of Giant Plants", "", 4, 0]
@@ -379,7 +380,7 @@ const decks = {
           ["Shaymin-ex", "ROS 77", 2, 0],
           ["Magearna-ex", "STS 110", 1, 0],
           ["Cobalion", "STS 74", 1, 0],
-          ["Absol", "ROS 40", 0, 1],
+          ["Absol", "ROS 40", 1, 0],
         ], 
         "supporter": [
           ["Professor Sycamore", "", 4, 0],
@@ -391,9 +392,9 @@ const decks = {
           ["Pokemon Center Lady", "", 1, 0],
         ], 
         "item": [
-          ["VS Seeker", "", 0, 4],
+          ["VS Seeker", "", 4, 0],
           ["Ultra Ball", "", 4, 0],
-          ["Trainers' Mail", "", 0, 4],
+          ["Trainers' Mail", "", 4, 0],
           ["Mega Turbo", "", 1, 0],
           ["Escape Rope", "", 1, 0],
           ["Super Rod", "", 1, 0],
@@ -401,14 +402,14 @@ const decks = {
         ], 
         "tool": [
           ["Audino Spirit Link", "", 4, 0],
-          ["Float Stone", "", 0, 2],
+          ["Float Stone", "", 2, 0],
         ], 
         "stadium": [
           ["Parallel City", "", 2, 0]
         ], 
         "energy": [
           ["Metal Energy", "", 6, 0],
-          ["Double Colorless Energy", "", 0, 4],
+          ["Double Colorless Energy", "", 4, 0],
         ]
       },
       "Mega Manectric": { 
@@ -420,7 +421,7 @@ const decks = {
           ["M Manectric-ex", "PHF 24", 3, 0],
           ["Manectric-ex", "PHF 23", 3, 1],
           ["Shaymin-ex", "ROS 77", 1, 1],
-          ["Hoopa-ex", "AOR 36", 1, 0],
+          ["Hoopa-ex", "AOR 36", 0, 1],
           ["Jolteon-ex", "GEN 28", 1, 0],
         ], 
         "supporter": [
@@ -431,16 +432,16 @@ const decks = {
           ["AZ", "", 1, 0],
         ], 
         "item": [
-          ["Max Potion", "", 3, 1],
-          ["Ultra Ball", "", 0, 4],
-          ["VS Seeker", "", 0, 4],
+          ["Max Potion", "", 4, 0],
+          ["Ultra Ball", "", 4, 0],
+          ["VS Seeker", "", 4, 0],
           ["Enhanced Hammer", "", 3, 0],
-          ["Trainers' Mail", "", 0, 3],
+          ["Trainers' Mail", "", 3, 0],
           ["Battle Compressor", "", 1, 0],
           ["Super Rod", "", 1, 0],
         ], 
         "tool": [
-          ["Manectric Spirit Link", "", 3, 1],
+          ["Manectric Spirit Link", "", 4, 0],
         ], 
         "stadium": [
           ["Rough Seas", "", 4, 0]
@@ -469,7 +470,7 @@ const decks = {
           ["Hex Maniac", "", 2, 0],
         ], 
         "item": [
-          ["VS Seeker", "", 0, 4],
+          ["VS Seeker", "", 4, 0],
           ["Trainers' Mail", "", 0, 4],
           ["Super Scoop Up", "", 4, 0],
           ["Ultra Ball", "", 0, 4],
@@ -493,17 +494,17 @@ const decks = {
           "sleeves": false
         },
         "pokemon": [
-          ["Seismitoad-ex", "FFI 20", 3, 1],
+          ["Seismitoad-ex", "FFI 20", 4, 0],
           ["Manaphy-ex", "BKP 32", 2, 0],
           ["Shaymin-ex", "ROS 77", 2, 0],
           ["Shaymin-ex", "PR-XY XY148", 1, 0],
           ["Glaceon-ex", "FAC 20", 1, 0],
-          ["Hoopa-ex", "AOR 36", 0, 1],
+          ["Hoopa-ex", "AOR 36", 1, 0],
           ["Articuno", "ROS 17", 1, 0]
         ], 
         "supporter": [
-          ["Professor Sycamore", "", 3, 1],
-          ["N", "", 0, 3],
+          ["Professor Sycamore", "", 4, 0],
+          ["N", "", 3, 0],
           ["Delinquent", "", 2, 0],
           ["Lysandre", "", 1, 0],
           ["AZ", "", 1, 0],
@@ -512,16 +513,16 @@ const decks = {
           ["Hex Maniac", "", 1, 0]
         ], 
         "item": [
-          ["VS Seeker", "", 0, 4],
+          ["VS Seeker", "", 4, 0],
           ["Ultra Ball", "", 4, 0],
-          ["Max Elixir", "", 1, 3 ],
+          ["Max Elixir", "", 4, 0],
           ["Energy Switch", "", 3, 0]
         ], 
         "tool": [
-          ["Fighting Fury Belt", "", 0, 3]
+          ["Fighting Fury Belt", "", 3, 0]
         ], 
         "stadium": [
-          ["Rough Seas", "", 2, 1],
+          ["Rough Seas", "", 3, 0],
           ["Parallel City", "", 1, 0],
         ], 
         "energy": [
@@ -960,7 +961,7 @@ const decks = {
           ["Guzma", "", 4, 0],
           ["Brigette", "", 1, 0]
         ], "item": [
-          ["Ultra Ball", "", 0, 4],
+          ["Ultra Ball", "", 4, 0],
           ["Field Blower", "", 0, 2],
           ["Rescue Stretcher", "", 1, 0]
         ], "tool": [
@@ -1028,7 +1029,7 @@ const decks = {
           ["Acerola", "", 3, 0],
           ["Brigette", "", 1, 0]
         ], "item": [
-          ["Ultra Ball", "", 0, 4],
+          ["Ultra Ball", "", 4, 0],
           ["Field Blower", "", 0, 2],
           ["Rescue Stretcher", "", 1, 0],
           ["Heavy Ball", "", 1, 0],
@@ -1119,7 +1120,7 @@ const decks = {
           ["N", "", 1, 0],
         ], "item": [
           ["Nest Ball", "", 4, 0],
-          ["Puzzle of Time", "", 0, 4],
+          ["Puzzle of Time", "", 4, 0],
           ["Max Potion", "", 4, 0],
           ["Crushing Hammer", "", 4, 0],
           ["Enhanced Hammer", "", 3, 0],
@@ -1333,7 +1334,7 @@ const decks = {
           ["Enhanced Hammer", "", 1, 0]
         ], "tool": [
           ["Choice Band", "", 3, 0],
-          ["Float Stone", "", 0, 2]
+          ["Float Stone", "", 2, 0]
         ], "stadium": [
           ["Parallel City", "", 2, 0]
         ], "energy": [
@@ -1359,7 +1360,7 @@ const decks = {
         "supporter": [
           ["Brigette", "", 0, 3],
           ["Guzma", "", 3, 0],
-          ["N", "", 0, 3],
+          ["N", "", 3, 0],
           ["Cynthia", "", 1, 0],
           ["Acerola", "", 1, 0],
           ["Professor Sycamore", "", 1, 0]
@@ -1371,17 +1372,17 @@ const decks = {
           ["Rare Candy", "", 3, 0],
           ["Evosoda", "", 2, 0],
           ["Enhanced Hammer", "", 1, 0],
-          ["Max Potion", "", 1, 0]
+          ["Max Potion", "", 0, 1]
         ], 
         "tool": [
           ["Choice Band", "", 1, 0],
-          ["Float Stone", "", 0, 1]
+          ["Float Stone", "", 1, 0]
         ], 
         "stadium": [
           ["Parallel City", "", 1, 0]
         ], 
         "energy": [
-          ["Double Colorless Energy", "", 0, 4],
+          ["Double Colorless Energy", "", 4, 0],
           ["Fairy Energy", "", 4, 0]
         ]
       }, 
@@ -1435,18 +1436,18 @@ const decks = {
           ["Diancie", "", 1, 0],
           ["Oranguru", "", 1, 0],
         ], "supporter": [
-          ["Professor Sycamore", "", 0, 4],
+          ["Professor Sycamore", "", 4, 0],
           ["Cynthia", "", 4, 0],
-          ["Guzma", "", 0, 4],
-          ["N", "", 0, 3],
+          ["Guzma", "", 4, 0],
+          ["N", "", 3, 0],
         ], "item": [
-          ["Ultra Ball", "", 0, 4],
+          ["Ultra Ball", "", 4, 0],
           ["Nest Ball", "", 2, 0],
           ["Field Blower", "", 0, 2],
           ["Rescue Stretcher", "", 2, 0],
           ["Special Charge", "", 1, 0],
         ], "tool": [
-          ["Float Stone", "", 0, 4],
+          ["Float Stone", "", 1, 3],
           ["Choice Band", "", 0, 3]
         ], "stadium": [
           ["Shrine of Punishment", "", 4, 0],
@@ -1536,15 +1537,15 @@ const decks = {
           ["Oranguru", "", 1, 0],
           ["Latias", "", 1, 0],
         ], "supporter": [
-          ["Professor Sycamore", "", 0, 4],
-          ["Guzma", "", 0, 4],
+          ["Professor Sycamore", "", 4, 0],
+          ["Guzma", "", 4, 0],
           ["Cynthia", "", 1, 0],
           ["N", "", 1, 0],
         ], "item": [
-          ["Max Elixir", "", 0, 4],
+          ["Max Elixir", "", 4, 0],
           ["Acro Bike", "", 4, 0],
-          ["Mysterious Treasure", "", 4, 0],
-          ["Ultra Ball", "", 0, 3],
+          ["Mysterious Treasure", "", 0, 4],
+          ["Ultra Ball", "", 3, 0],
           ["Rescue Stretcher", "", 0, 2],
           ["Field Blower", "", 0, 2],
         ], "tool": [
@@ -1572,9 +1573,9 @@ const decks = {
           ["Deoxys", "CES 67", 1, 0]
         ], "supporter": [
           ["Cynthia", "", 4, 0],
-          ["Guzma", "", 0, 4],
-          ["N", "", 0, 3],
-          ["Professor Sycamore", "", 0, 3],
+          ["Guzma", "", 4, 0],
+          ["N", "", 3, 0],
+          ["Professor Sycamore", "", 3, 0],
           ["Acerola", "", 2, 0]
         ], "item": [
           ["Nest Ball", "", 4, 0],
@@ -1592,7 +1593,7 @@ const decks = {
           ["Reverse Valley", "", 1, 0]
         ], "energy": [
           ["Darkness Energy", "", 9, 0],
-          ["Double Colorless Energy", "", 0, 4]
+          ["Double Colorless Energy", "", 2, 2]
         ]
       }
     }
@@ -1745,10 +1746,10 @@ const decks = {
           ["Team Flare Grunt", "", 1, 0],
           ["Team Skull Grunt", "", 1, 0],
         ], "item": [
-          ["Trainers' Mail", "", 0, 4],
-          ["Puzzle of Time", "", 0, 3],
+          ["Trainers' Mail", "", 4, 0],
+          ["Puzzle of Time", "", 3, 0],
           ["Ultra Ball", "", 3, 0],
-          ["VS Seeker", "", 0, 3],
+          ["VS Seeker", "", 3, 0],
           ["Mysterious Treasure", "", 1, 0],
           ["Crushing Hammer", "", 2, 0],
           ["Enhanced Hammer", "", 1, 0],
