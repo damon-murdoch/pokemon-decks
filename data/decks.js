@@ -965,7 +965,7 @@ const decks = {
           ["Field Blower", "", 0, 2],
           ["Rescue Stretcher", "", 1, 0]
         ], "tool": [
-          ["Float Stone", "", 0, 4],
+          ["Float Stone", "", 1, 3],
           ["Choice Band", "", 4, 0]
         ], "stadium": [
           ["Po Town", "", 4, 0]
