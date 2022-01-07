@@ -419,9 +419,9 @@ const decks = {
         },
         "pokemon": [
           ["M Manectric-ex", "PHF 24", 3, 0],
-          ["Manectric-ex", "PHF 23", 3, 1],
+          ["Manectric-ex", "PHF 23", 4, 0],
           ["Shaymin-ex", "ROS 77", 1, 1],
-          ["Hoopa-ex", "AOR 36", 0, 1],
+          ["Hoopa-ex", "AOR 36", 1, 0],
           ["Jolteon-ex", "GEN 28", 1, 0],
         ], 
         "supporter": [
@@ -1542,9 +1542,9 @@ const decks = {
           ["Cynthia", "", 1, 0],
           ["N", "", 1, 0],
         ], "item": [
-          ["Max Elixir", "", 4, 0],
+          ["Max Elixir", "", 0, 1],
           ["Acro Bike", "", 4, 0],
-          ["Mysterious Treasure", "", 0, 4],
+          ["Mysterious Treasure", "", 4, 0],
           ["Ultra Ball", "", 3, 0],
           ["Rescue Stretcher", "", 0, 2],
           ["Field Blower", "", 0, 2],
@@ -1579,7 +1579,7 @@ const decks = {
           ["Acerola", "", 2, 0]
         ], "item": [
           ["Nest Ball", "", 4, 0],
-          ["Max Elixir", "", 0, 4],
+          ["Max Elixir", "", 4, 0],
           ["Super Rod", "", 2, 0],
           ["Pal Pad", "", 1, 0],
           ["Rescue Stretcher", "", 1, 0],
@@ -1781,7 +1781,7 @@ const decks = {
           ["Hoopa-ex", "AOR 36", 1, 0],
           ["Jirachi-ex", "PLB 60", 1, 0],
           ["Keldeo-ex", "PR-BW BW60", 1, 0],
-          ["Mewtwo-ex", "NXD 54", 0, 1],
+          ["Mewtwo-ex", "NXD 54", 1, 0],
           ["Sudowoodo", "GRI 66", 1, 0],
           ["Giratina", "PR-XY XY184", 1, 0]
         ], "supporter": [
@@ -2174,9 +2174,9 @@ const decks = {
         "item": [
           ["Pokegear 3.0", "", 0, 4],
           ["Mysterious Treasure", "", 4, 0],
-          ["Reset Stamp", "", 0, 3],
+          ["Reset Stamp", "", 3, 0],
           ["Tag Call", "", 2, 0],
-          ["Custom Catcher", "", 0, 2],
+          ["Custom Catcher", "", 2, 0],
           ["Great Catcher", "", 0, 1],
           ["Dusk Stone", "", 0, 1],
           ["Switch", "", 1, 0],
@@ -2186,7 +2186,7 @@ const decks = {
         ],
         "tool": [
           ["Counter Gain", "", 2, 0],
-          ["Karate Belt", "", 1, 0]
+          ["Karate Belt", "", 0, 1]
         ],
         "stadium": [
           ["Power Plant", "", 0, 4]
@@ -2217,14 +2217,14 @@ const decks = {
           ["Great Potion", "",4, 0],
           ["Mixed Herbs", "",4, 0],
           ["Pokegear 3.0", "", 4, 0],
-          ["Custom Catcher", "",2, 2],
-          ["Reset Stamp", "",0, 3],
-          ["Tag Call", "",3, 0],
-          ["Switch", "",2, 0],
-          ["Fire Crystal", "",2, 0],
-          ["Great Catcher", "",1, 0],
-          ["Fiery Flint", "",0, 1],
-          ["Energy Spinner", "",1, 0],
+          ["Custom Catcher", "", 0, 4],
+          ["Reset Stamp", "", 3, 0],
+          ["Tag Call", "", 3, 0],
+          ["Switch", "", 2, 0],
+          ["Fire Crystal", "", 2, 0],
+          ["Great Catcher", "", 1, 0],
+          ["Fiery Flint", "", 1, 0],
+          ["Energy Spinner", "", 1, 0],
         ],
         "tool": [
 
@@ -2260,10 +2260,10 @@ const decks = {
           ["Order Pad", "", 4, 0],
           ["Mysterious Treasure", "", 4, 0],
           ["Tag Call", "", 4, 0],
-          ["Beast Ring", "", 0, 4],
+          ["Beast Ring", "", 4, 0],
           ["Acro Bike", "", 3, 0],
           ["Great Catcher", "", 2, 0],
-          ["Reset Stamp", "", 0, 2],
+          ["Reset Stamp", "", 2, 0],
           ["Energy Recycler", "", 1, 0]
         ],
         "tool": [
@@ -2303,7 +2303,7 @@ const decks = {
           ["Channeler", "", 1, 0],
         ],
         "item": [
-          ["Lillie's Poke Doll", "", 4, 0],
+          ["Lillie's Poke Doll", "", 2, 2],
           ["Pokegear 3.0", "", 0, 4],
           ["Acro Bike", "", 4, 0],
           ["Rare Candy", "", 3, 0],
