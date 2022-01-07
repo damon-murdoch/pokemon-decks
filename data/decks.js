@@ -100,7 +100,7 @@ const decks = {
           "sleeves": false
         },
         "pokemon": [
-          ["Blastoise", "PLB 16", 1, 1],
+          ["Blastoise", "PLB 16", 2, 0],
           ["Keldeo-ex", "BCR 49", 2, 1],
           ["Jirachi-ex", "PLB 60", 2, 0],
           ["Shaymin-ex", "ROS 77", 0, 2],
@@ -110,11 +110,11 @@ const decks = {
           ["Wailord-ex", "PRC 38", 0, 1]
         ], "supporter": [
           ["Archie's Ace in the Hole", "", 2, 0],
-          ["Professor Juniper", "", 0, 2],
+          ["Professor Juniper", "", 2, 0],
           ["Lysandre", "", 1, 0],
           ["N", "", 0, 1]
         ], "item": [
-          ["Acro Bike", "", 0, 4],
+          ["Acro Bike", "", 4, 0],
           ["Battle Compressor", "", 4, 0],
           ["Superior Energy Retrieval", "", 3, 1],
           ["Trainers' Mail", "", 0, 4],
@@ -125,7 +125,7 @@ const decks = {
           ["Float Stone", "", 0, 1],
           ["Muscle Band", "", 1, 0],
         ], "stadium": [
-          ["Rough Seas", "", 0, 2]
+          ["Rough Seas", "", 2, 0]
         ], "energy": [
           ["Water Energy", "", 11, 0]
         ]
@@ -139,7 +139,7 @@ const decks = {
           ["Seismitoad-ex", "FFI 20", 0, 3],
           ["Manectric-ex", "PHF 23", 0, 2],
           ["Shaymin-ex", "ROS 77", 0, 2],
-          ["Zubat", "PLS 53", 0, 4],
+          ["Zubat", "PLS 53", 3, 1],
           ["Golbat", "PHF 32", 3, 0],
           ["Crobat", "PHF 33", 2, 0]
         ], "supporter": [
@@ -157,7 +157,7 @@ const decks = {
           ["VS Seeker", "", 0, 3]
         ], "tool": [
           ["Head Ringer", "", 2, 0],
-          ["Muscle Band", "", 2, 0],
+          ["Muscle Band", "", 0, 2],
           ["Rock Guard", "", 1, 0]
         ], "stadium": [
           ["Virbank City Gym", "", 3, 0]
@@ -212,7 +212,7 @@ const decks = {
         },
         "pokemon": [
           ["Donphan", "PLS 72", 4, 0],
-          ["Phanphy", "PLS 71", 0, 4],
+          ["Phanphy", "PLS 71", 4, 0],
           ["Hawlucha", "FFI 63", 2, 2],
           ["Bunnelby", "PRC 121", 1, 0],
           ["Mr. Mime", "PLF 47", 1, 0],
@@ -232,7 +232,7 @@ const decks = {
           ["Computer Search", "", 0, 1],
         ], "tool": [
           ["Focus Sash", "", 2, 0],
-          ["Muscle Band", "", 2, 0]
+          ["Muscle Band", "", 0, 2]
         ], "stadium": [
           ["Fighting Stadium", "", 3, 0],
           ["Silent Lab", "", 1, 0],
@@ -965,7 +965,7 @@ const decks = {
           ["Field Blower", "", 0, 2],
           ["Rescue Stretcher", "", 1, 0]
         ], "tool": [
-          ["Float Stone", "", 1, 3],
+          ["Float Stone", "", 3, 1],
           ["Choice Band", "", 4, 0]
         ], "stadium": [
           ["Po Town", "", 4, 0]
@@ -1531,18 +1531,18 @@ const decks = {
           "sleeves": false
         },
         "pokemon": [
-          ["Rayquaza-gx", "", 1, 3],
+          ["Rayquaza-gx", "CES 109", 1, 3],
           ["Tapu Lele-gx", "GRI 60", 0, 2],
-          ["Marshadow", "", 2, 0],
-          ["Oranguru", "", 1, 0],
-          ["Latias", "", 1, 0],
+          ["Marshadow", "SHL 45", 2, 0],
+          ["Oranguru", "SUM 113", 1, 0],
+          ["Latias", "CES 107", 1, 0],
         ], "supporter": [
           ["Professor Sycamore", "", 4, 0],
           ["Guzma", "", 4, 0],
           ["Cynthia", "", 1, 0],
           ["N", "", 1, 0],
         ], "item": [
-          ["Max Elixir", "", 0, 1],
+          ["Max Elixir", "", 1, 3],
           ["Acro Bike", "", 4, 0],
           ["Mysterious Treasure", "", 4, 0],
           ["Ultra Ball", "", 3, 0],

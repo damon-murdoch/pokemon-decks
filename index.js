@@ -1,7 +1,7 @@
 // getPageLink(deck: String, format: String): String
 // Given an (optional) deck and format string, gets a link
 // to the page which links to you to the requested page.
-function getPageLink(format = null, deck = null)
+function getPageLink(format = null, deck = null, card = null)
 {
   // Default home page url
   var url = new URL(window.location.href);
@@ -29,6 +29,18 @@ function getPageLink(format = null, deck = null)
     // Remove deck and format from the url
     url.searchParams.delete('deck');
     url.searchParams.delete('format');
+  }
+
+  // If a card is provided
+  if (card)
+  {
+    // Set the url params 'card' to the card provided
+    url.searchParams.set('card', card);
+  }
+  else
+  {
+    // Remove any card property from the url
+    url.searchParams.delete('card');
   }
 
   // Return the url reference
