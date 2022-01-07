@@ -420,7 +420,7 @@ const decks = {
         "pokemon": [
           ["M Manectric-ex", "PHF 24", 3, 0],
           ["Manectric-ex", "PHF 23", 4, 0],
-          ["Shaymin-ex", "ROS 77", 1, 1],
+          ["Shaymin-ex", "ROS 77", 2, 0],
           ["Hoopa-ex", "AOR 36", 1, 0],
           ["Jolteon-ex", "GEN 28", 1, 0],
         ], 
