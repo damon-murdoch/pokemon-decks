@@ -2358,11 +2358,33 @@ const decks = {
           "sleeves": true
         },
         "variants": {
+          "Roxie": {
+            "pokemon": [
+              ["Mimikyu", "CEC 97", 1, 0],
+              ["Weezing", "CEC 77", 0, 4],
+              ["Naganadel & Guzzlord Tag Team-gx", "CEC 158", -1, 0],
+            ], 
+            "supporter": [
+              ["Roxie", "", 4, 0]
+            ], "item": [
+              ["Lure Ball", "", 0, 3],
+              ["Pokegear 3.0", "", -4, 0], 
+              ["Custom Catcher", "", -2, 0],
+            ], "tool": [
 
+            ], "stadium": [
+              ["Power Plant", "", -2, 0]
+            ], "energy": [
+              ["Psychic Energy", "", 1, 0],
+              ["Unit Energy FDY", "", -2, 0],
+              ["Weakness Guard Energy", "", -1, 0],
+              ["Darkness Energy", "", -1, 0]
+            ]
+          }
         }, 
         "pokemon": [
-          ["Mismagius", "UNB 78", 1, 2],
           ["Misdreavus", "UNB 77", 4, 0],
+          ["Mismagius", "UNB 78", 1, 2],
           ["Garchomp & Giratina Tag Team-gx", "UNM 146", 1, 2],
           ["Naganadel & Guzzlord Tag Team-gx", "CEC 158", 1, 0],
           ["Blacephalon", "CEC 104", 0, 1]

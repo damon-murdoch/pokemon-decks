@@ -17,6 +17,22 @@ function getCardLink(card, set, format = null)
   return url;
 }
 
+// getVariantPageLink(format: String, deck: String): Void
+// Given an optional format and deck, returns a link to the 
+// variant page for that deck or format. If no deck or format
+// are provided, page displays all deck variants.
+function getVariantPageLink(format = null, deck = null)
+{
+  // Get the generic page link object
+  let url = getPageLink(format, deck);
+
+  // Add the variant page parameter to the url
+  url.searchParams.set('variantlist', true);
+
+  // Return the url
+  return url;
+}
+
 // getBuylistLink(format: String, deck: String, variant: String)
 // Given an optional format, deck and variant returns a link to the 
 // buylist page for that format, deck or variant.
@@ -53,7 +69,7 @@ function getPageLink(format = null, deck = null, variant = null)
       if (variant)
       {
         // Add the variant to the link
-        url.searchParams.delete('variant');
+        url.searchParams.set('variant', variant);
       }
     } 
     else // Deck is not set
@@ -73,6 +89,12 @@ function getPageLink(format = null, deck = null, variant = null)
     url.searchParams.delete('format');
     url.searchParams.delete('variant');
   }
+
+  // If card is in the parameters, remove it
+  url.searchParams.delete('card');
+
+  // If variant list is in the parameters, remove it
+  url.searchParams.delete('variantlist');
 
   // Return the url reference
   return url;

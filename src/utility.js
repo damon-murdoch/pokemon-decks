@@ -22,7 +22,7 @@ function addCopyEvent(element)
     if (navigator.clipboard)
     {
       // Get the string for the decklist
-      let content = exportDecklist(decklist);
+      let content = exportDecklist(document.decklist);
 
       // If a decklist is generated
       if (content !== "")

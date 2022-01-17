@@ -10,10 +10,12 @@ function showPageHome()
   function getRowFormat(title, progress, header = false)
   {
     // Get the total number of cards in the progress, including variants
-    let totalCards = progress.deck.missing + progress.deck.obtained;
+    let totalCards = progress.deck.missing + progress.deck.obtained + 
+      progress.variant.missing + progress.variant.obtained;
 
     // Get the total percentage of cards which have been obtained, including variants
-    let percentage = getPercentage(progress.deck.obtained, totalCards);
+    let percentage = getPercentage(progress.deck.obtained + 
+      progress.variant.obtained, totalCards);
 
     // Get the colour for all of the other columns
     let colorTotal = getProgressColor(percentage);
@@ -177,12 +179,14 @@ function showPageFormat(format)
   // to the caling process.
   function getRowDeck(format, deck, title, progress, header = false)
   {
-    // Get the total number of cards in the progress
-    let totalCards = progress.deck.missing + progress.deck.obtained;
+    // Get the total number of cards in the progress, including variants
+    let totalCards = progress.deck.missing + progress.deck.obtained + 
+      progress.variant.missing + progress.variant.obtained;
 
-    // Get the total percentage of cards which have been obtained
-    let percentage = getPercentage(progress.deck.obtained, totalCards);
-
+    // Get the total percentage of cards which have been obtained, including variants
+    let percentage = getPercentage(progress.deck.obtained + 
+      progress.variant.obtained, totalCards);
+      
     // Get the colour for all of the other columns
     let colorTotal = getProgressColor(percentage);
 
@@ -205,7 +209,7 @@ function showPageFormat(format)
     {
       // Add a link to the variant page for the deck to the title
       rowTitle.push("<a class='link-light' href='" + 
-        getPageLink(format, deck) + "'><sub>(+" + // Change to get variant link
+        getVariantPageLink(format, deck) + "'><sub>(+" + // Change to get variant link
         progress.variant.total + ")</sub></a>");
 
       // Add the total obtained variant cards to the total missing cards
@@ -405,32 +409,244 @@ function getCardCategoryTable(name, category, parent)
 // all of the cards in that deck, as well as their info
 // such as how many we have, how many we need, their
 // value, and other information about the deck.
-function showPageDeck(deck, format)
+function showPageDeck(deck, format, variant = null)
 {
-
   // Get the main element from the page
   let main = document.getElementById('main');
-
-  // Assign the header to the title
-  document.title = deck
-
-  // Set the page title
-  document.getElementById('pagetitle').innerHTML = format + ' - ' + deck;
 
   // Get the list of deck formats
   let decklist = getDeck(deck, format);
 
-  // Populate and create the copy link for the deck list
-  
-  // Get the empty a tag for the copy link
-  let deckCopy = document.getElementById('deckcopy');
+  // Set the page title
+  let title = format + ' - ' + deck;
 
-  // Populate the a tag with the text
-  deckCopy.innerHTML = "Copy Decklist";
+  // If a variant is selected
+  if (variant)
+  {
+    // Set the decklist to the variant decklist
+    decklist = getVariant(decklist, variant);
 
-  // Add the copy event 
-  // to the copy button
-  addCopyEvent(deckCopy);
+    // Element for the copy decklist to clipboard to reference
+    document.decklist = decklist;
+
+    // Add the variant text to the page title
+    title += ' ' + variant;
+  }
+
+  // Assign the header to the title
+  document.title = deck
+
+  // Set the page content title to the title
+  document.getElementById('pagetitle').innerHTML = title;
+
+  // If the decklist is not null
+  if (decklist !== null)
+  {
+    // Populate and create the copy link for the deck list
+    
+    // Get the empty a tag for the copy link
+    let deckCopy = document.getElementById('deckcopy');
+
+    // Populate the a tag with the text
+    deckCopy.innerHTML = "Copy Decklist";
+
+    // Add the copy event 
+    // to the copy button
+    addCopyEvent(deckCopy);
+
+    // Create a new div to serve as a container
+    let container = document.createElement('div');
+
+    // Set the class for the container
+    container.className = 'container';
+
+    // Create the row to store the container header
+    let rowHead = document.createElement('div');
+
+    // Set the class for the header
+    rowHead.className = 'row';
+
+    // Create the column to store the container header
+    let colHead = document.createElement('div');
+
+    // Assign the column header as a column
+    colHead.className = 'col';
+
+    // Populate the column header for the page
+    // Contents: Overall deck information
+
+    // Create a table element for the header
+    let tableHead = document.createElement('table');
+
+    // Specify the table classes
+    tableHead.className = "table table-dark bg-dark";
+
+    // Create a table row for the header
+    tableHead.appendChild(getTableHeader([
+      "Card Name", "Set Number", "Copies Obtained", 
+      "Copies Missing", "Total", "Details"
+    ]));
+    
+    // Create the table body
+    tbodyHead = document.createElement('tbody');
+
+    // Get the deck progress
+    // For the title row
+    let progress = getDeckProgress(deck, format, variant);
+
+    // Get the total number of cards in the deck
+    let totalCards = progress.deck.obtained + progress.deck.missing;
+
+    // Get the colour 
+    let totalColor = getProgressColor(progress.deck.obtained, totalCards);
+
+    // Add the table body to the column
+    tableHead.appendChild(getTableRow([
+      "Summary", // Card Name
+      "-", // Set Number
+      progress.deck.obtained, // Copies Obtained
+      progress.deck.missing, // Copies Missing
+      totalCards, // Total Cards
+      "-" // Card Details
+    ], [
+      COLOR_WHITE, // Card Name
+      COLOR_WHITE, // Set Number
+      totalColor, // Copies Obtained
+      totalColor, // Copies Missing
+      totalColor, // Total Cards
+      COLOR_WHITE // Card Details
+    ], true));
+
+    // Add the table to the left-hand side
+    colHead.appendChild(tableHead);
+
+    // Add the left-hand side to the row
+    rowHead.appendChild(colHead);
+
+    // Add the row to the container
+    container.appendChild(rowHead);
+
+    // Create the row to store in the container
+    let row = document.createElement('div');
+
+    // Set the class for the row
+    row.className = 'row';
+
+    // Get a new left side table object
+    let tbodyLeft = getSideTableObject(row);
+
+    // Create the pokemon table and append it to the page
+    getCardTable("Pokemon", decklist.pokemon, tbodyLeft);
+
+    // Create the energy table and append it to the page
+    getCardTable("Energy", decklist.energy, tbodyLeft);
+
+    // Get a new right side table object
+    let tbodyRight = getSideTableObject(row);
+
+    // Create the supporter table and append it to the right table
+    getCardTable("Supporter", decklist.supporter, tbodyRight);
+    
+    // Create the item table and append it to the right table
+    getCardTable("Item", decklist.item, tbodyRight);
+    
+    // Create the tool table and append it to the right table
+    getCardTable("Tool", decklist.tool, tbodyRight);
+    
+    // Create the stadium table and append it to the right table
+    getCardTable("Stadium", decklist.stadium, tbodyRight);
+
+    // Add the row to the container
+    container.appendChild(row);
+
+    // Add the container to the main
+    main.appendChild(container);
+  }
+  else // Failed to get decklist
+  {
+    console.error("Failed to find deck with properties format '", format,"', deck '", deck, "' and variant '",variant,"'.");
+  }
+}
+
+// showPageVariantList(deck: String, format: String): Void
+// Given an optional deck and an optional format, shows the
+// list of variants for all decks which meet the deck and 
+// format criteria. If neither a deck nor a format are 
+// provided, all variants will be listed, along with the
+// cards which have been modified from the original list.
+function showPageVariantList(format, deck = null)
+{
+  // Get the main element from the page
+  let main = document.getElementById('main');
+
+  // Create the starting title
+  let title = "Variant List";
+
+  // If format is specified
+  if (format)
+  {
+    // Add the format to the title
+    title += " - " + format;
+
+    // If deck is specified
+    if(deck)
+    {
+      // Add the deck to the title
+      title += " - " + deck;
+    }
+  }
+
+  // Set the document title to the title
+  document.title = title;
+
+  // Set the document in-page title to the title
+  document.getElementById('pagetitle').innerHTML = title;
+
+  // List of variants to process
+  let variantList = [];
+
+  // If format is specified
+  if (format)
+  {
+    // If deck is specified
+    if(deck)
+    {
+      // Get the data for the deck
+      let deck_object = getDeck(deck, format);
+
+      // Loop over all of the variants in the deck
+      Object.keys(deck_object.variants).forEach(variant_name => {
+
+        // Dereference the variant properties
+        let variant_data = deck_object.variants[variant_name];
+
+        // Push the variant properties onto the variant list
+        variantList.push([format, deck, variant_name, variant_data])
+      });
+    }
+    else // No deck is specified
+    {
+      // Get the format object
+      let data = getFormat(format);
+
+      // Loop over all of the decks in the format
+      Object.keys(data.decks).forEach(deck_name => {
+
+        // Get the deck object for the deck
+        deck_object = data.decks[deck_name];
+
+        // Loop over all of the variants in the deck
+        Object.keys(deck_object.variants).forEach(variant_name => {
+
+          // Dereference the variant properties
+          let variant_data = deck_object.variants[variant_name];
+
+          // Push the variant properties onto the variant list
+          variantList.push([format, deck_name, variant_name, variant_data])
+        });
+      });
+    }
+  }
 
   // Create a new div to serve as a container
   let container = document.createElement('div');
@@ -444,101 +660,95 @@ function showPageDeck(deck, format)
   // Set the class for the header
   rowHead.className = 'row';
 
-  // Create the column to store the container header
-  let colHead = document.createElement('div');
+  // If there is only one result in the list
+  if (variantList.length == 1)
+  {
+    // Get the first element of the variant list
+    let variant = variantList[0];
 
-  // Assign the column header as a column
-  colHead.className = 'col';
+    // Open the full page for the variant
+    window.location.href = getPageLink(variant[0], variant[1], variant[2]);
+  }
+  else // There is none or multiple results in the list
+  {
+    // Loop over all of the variants
+    variantList.forEach(variant => {
 
-  // Populate the column header for the page
-  // Contents: Overall deck information
+      // Create the column to store the container header
+      let colHead = document.createElement('div');
 
-  // Create a table element for the header
-  let tableHead = document.createElement('table');
+      // Assign the column header as a column
+      colHead.className = 'col';
 
-  // Specify the table classes
-  tableHead.className = "table table-dark bg-dark";
+      // Add the deck title to the column
+      let deckTitle = document.createElement('div');
 
-  // Create a table row for the header
-  tableHead.appendChild(getTableHeader([
-    "Card Name", "Set Number", "Copies Obtained", 
-    "Copies Missing", "Total", "Details"
-  ]));
-  
-  // Create the table body
-  tbodyHead = document.createElement('tbody');
+      // Set the classes for the deck title
+      deckTitle.classList = 'text-center text-justify text-light bg-dark';
 
-  // Get the deck progress
-  // For the title row
-  let progress = getDeckProgress(deck, format);
+      // Create the title for the variant
+      deckTitle.innerHTML = "<h5>" + variant[0] + " - " + 
+        variant[1] + " " + variant[2] + "</h5>";
 
-  // Get the total number of cards in the deck
-  let totalCards = progress.deck.obtained + progress.deck.missing;
+      // Create the link to the full page for the variant
+      deckTitle.innerHTML += "<a class='text-secondary' href='" + 
+        getPageLink(variant[0], variant[1], variant[2]) + "'> Full Deck List </a>";
 
-  // Get the colour 
-  let totalColor = getProgressColor(progress.deck.obtained, totalCards);
+      console.log(getPageLink(variant[0], variant[1], variant[2]));
 
-  // Add the table body to the column
-  tableHead.appendChild(getTableRow([
-    "Summary", // Card Name
-    "-", // Set Number
-    progress.deck.obtained, // Copies Obtained
-    progress.deck.missing, // Copies Missing
-    totalCards, // Total Cards
-    "-" // Card Details
-  ], [
-    COLOR_WHITE, // Card Name
-    COLOR_WHITE, // Set Number
-    totalColor, // Copies Obtained
-    totalColor, // Copies Missing
-    totalColor, // Total Cards
-    COLOR_WHITE // Card Details
-  ], true));
+      // Add the deck title to the column head
+      colHead.appendChild(deckTitle);
 
-  // Add the table to the left-hand side
-  colHead.appendChild(tableHead);
+      // Populate the column header for the page
+      // Contents: Overall deck information
 
-  // Add the left-hand side to the row
-  rowHead.appendChild(colHead);
+      // Create a table element for the header
+      let table = document.createElement('table');
 
-  // Add the row to the container
-  container.appendChild(rowHead);
+      // Specify the table classes
+      table.className = "table table-dark bg-dark";
 
-  // Create the row to store in the container
-  let row = document.createElement('div');
+      // Create a table row for the header
+      table.appendChild(getTableHeader([
+        "Card Name", "Set Number", "Copies Obtained", 
+        "Copies Missing", "Total", "Details"
+      ]));
 
-  // Set the class for the row
-  row.className = 'row';
+      // Get the variant data
+      let data = variant[3];
 
-  // Get a new left side table object
-  let tbodyLeft = getSideTableObject(row);
+      // getCardCategoryTable()
 
-  // Create the pokemon table and append it to the page
-  getCardTable("Pokemon", decklist.pokemon, tbodyLeft);
+      let child = getSideTableObject(colHead);
 
-  // Create the energy table and append it to the page
-  getCardTable("Energy", decklist.energy, tbodyLeft);
+      // Add the variant's pokemon to the table
+      getCardCategoryTable("Pokemon", data.pokemon, child);
 
-  // Get a new right side table object
-  let tbodyRight = getSideTableObject(row);
+      // Add the variant's supporters to the table
+      getCardCategoryTable("Supporter", data.supporter, child);
 
-  // Create the supporter table and append it to the right table
-  getCardTable("Supporter", decklist.supporter, tbodyRight);
-  
-  // Create the item table and append it to the right table
-  getCardTable("Item", decklist.item, tbodyRight);
-  
-  // Create the tool table and append it to the right table
-  getCardTable("Tool", decklist.tool, tbodyRight);
-  
-  // Create the stadium table and append it to the right table
-  getCardTable("Stadium", decklist.stadium, tbodyRight);
+      // Add the variant's pokemon to the table
+      getCardCategoryTable("Item", data.item, child);
 
-  // Add the row to the container
-  container.appendChild(row);
+      // Add the variant's supporters to the table
+      getCardCategoryTable("Tool", data.tool, child);
 
-  // Add the container to the main
-  main.appendChild(container);
+      // Add the variant's pokemon to the table
+      getCardCategoryTable("Stadium", data.stadium, child);
+
+      // Add the variant's supporters to the table
+      getCardCategoryTable("Energy", data.energy, child);
+      
+      // Add the left-hand side to the row
+      rowHead.appendChild(colHead);
+    });
+
+    // Add the row to the container
+    container.appendChild(rowHead);
+
+    // Add the container to the body
+    main.appendChild(container);
+  }
 }
 
 function showPageBuylist(format = null, deck = null)
@@ -687,10 +897,28 @@ if (params.has('format'))
       // Show the deck buy list
       showPageBuylist(format, deck);
     }
+    // We are on the variantlist page
+    else if (params.has('variantlist'))
+    {
+      // Show the deck / format variant list
+      showPageVariantList(format, deck);
+    }
     else // We are not on the buylist page
     {
-      // Show the deck list
-      showPageDeck(deck, format);
+      // If the deck variant is specified
+      if (params.has('variant'))
+      {
+        // Get the variant from the parameters
+        let variant = params.get('variant');
+
+        // Pass the variant to the page
+        showPageDeck(deck, format, variant);
+      }
+      else // We are not on the variant page
+      {
+        // Show the deck list
+        showPageDeck(deck, format);
+      }
     }
   }
   else // No deck selected
@@ -700,6 +928,12 @@ if (params.has('format'))
     {
       // Show the format buy list
       showPageBuylist(format);
+    }
+    // We are on the variantlist page
+    else if (params.has('variantlist'))
+    {
+      // Show the deck / format variant list
+      showPageVariantList(format);
     }
     else // We are not on the buylist page
     {

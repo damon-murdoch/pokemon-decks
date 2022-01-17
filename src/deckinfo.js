@@ -158,7 +158,9 @@ function mergeCards(a, b)
 function getVariant(deck_object, variant)
 {
   // Get the deck list object for the given variant
-  variant_object = deck_object.variants[variant];
+
+  // Creates a clone of the variant object, so the original is not modified
+  variant_object = JSON.parse(JSON.stringify(deck_object.variants[variant]));
 
   // Create a clone of the deck object 
   new_object = JSON.parse(JSON.stringify(deck_object));
@@ -285,28 +287,20 @@ function getCategoryProgress(category)
   // Loop over all of the cards in the category
   for (let card of category)
   {
-    // Add obtained cards to obtained total
-    cards.obtained += card[2];                           
-
-    // Add missing cards to missing total
-    cards.missing += card[3];
+    // Obtained count greater than 0
+    if (card[2] > 0)
+    {
+      // Add obtained cards to obtained total
+      cards.obtained += card[2];  
+    }
+    
+    // Missing count greater than 0
+    if (card[3] > 0)
+    {
+      // Add missing cards to missing total
+      cards.missing += card[3];
+    }
   }
-
-  // If any of the numbers are negative, set them to zero
-  
-  // If there is less than one card missing
-  if (cards.missing < 0)
-  { 
-    // Set the nunber to zero
-    cards.missing = 0 
-  };
-  
-  // If there is less than one card obtained
-  if (cards.obtained < 0)
-  {
-    // Set the number to zero
-    cards.obtained = 0 
-  };
 
   // Return the cards object
   return cards;
@@ -315,10 +309,17 @@ function getCategoryProgress(category)
 // getDeckProgress(deck: String, format: String): Void
 // Given a deck and a format, retrieves the number of 
 // missing and obtained cards for that deck.
-function getDeckProgress(deck, format)
+function getDeckProgress(deck, format, variant = null)
 {
   // If it is valid, get the deck from the json
   let data = getDeck(deck, format);
+
+  // If a variant is specified
+  if (variant)
+  {
+    // Get the specific deck variant
+    data = getVariant(data, variant);
+  }
 
   // Deck is retrieved
   if (data !== null)
