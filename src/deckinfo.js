@@ -517,23 +517,20 @@ function mergeBuylist(a, b)
   return c;
 }
 
-// getDeckBuylist(deck: String, format: String): Void
-// Given a deck and a format, gets all of the cards
-// missing from the deck and returns them as a table.
-function getDeckBuylist(deck, format)
+// Given a deck object, returns all of
+// the cards missing from the deck and
+// returns them as a table.
+function getObjectBuylist(deckObject)
 {
-  // Hashtable of cards
+  // Empty cards table
   let cards = {};
 
-  // Get the deck data
-  let data = getDeck(deck, format);
-
-  // Get all of the cards in the deck
-  let decklist = flattenCards(data);
+  // Get the list of all of the cards
+  decklist = flattenCards(deckObject);
 
   // Loop over all of the cards in the deck
   decklist.forEach(card => {
-    
+  
     // If the card is missing (any number)
     if (card[3] > 0)
     {
@@ -554,6 +551,31 @@ function getDeckBuylist(deck, format)
       // Add the new number of missing cards to the existing number
       cards[card[0]][card[1]] += card[3];
     }
+  });
+
+  // Return the buylist
+  return cards;
+}
+
+// getDeckBuylist(deck: String, format: String): Void
+// Given a deck and a format, gets all of the cards
+// missing from the deck and returns them as a table.
+function getDeckBuylist(deck, format)
+{
+  // Get the deck data
+  let data = getDeck(deck, format);
+
+  // Get the buylist for the deck
+  cards = getObjectBuylist(data);
+
+  // Loop over the variants in the deck
+  Object.keys(data.variants).forEach(variantName => {
+
+    // Dereference the variant
+    let variant = data.variants[variantName];
+
+    // Get the buylist for the variant and merge it with the list
+    cards = mergeBuylist(cards, getObjectBuylist(variant));
   });
 
   // Return the cards list
