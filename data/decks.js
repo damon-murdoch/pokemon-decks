@@ -10,8 +10,11 @@ const decks = {
     "decks": {
       "Zorua Collection": {
         "meta": {
-          "deckbox": false,
+          "deckbox": true,
           "sleeves": false
+        },
+        "variants": {
+
         }, 
         "pokemon": [
           ["Zorua", "BLW 70", 1, 0],
@@ -44,8 +47,11 @@ const decks = {
       }, 
       "Binder Display": {
         "meta": {
-          "deckbox": false,
+          "deckbox": true,
           "sleeves": false
+        },
+        "variants": {
+
         }, 
         "pokemon": [
           ["Landorus-ex", "BCR 144", 3, 0],
@@ -58,8 +64,6 @@ const decks = {
           ["Trubbish", "NVI 48", 4, 0],
           ["Zorua", "HIF SV25 ", 4, 0],
           ["Zoroark-gx", "HIF 77a", 4, 0],
-          ["Minccino", "HIF SV93", 0, 4],
-          ["Cinccino", "HIF SV94", 0, 4],
         ], "supporter": [
 
         ], "item": [
@@ -96,9 +100,12 @@ const decks = {
     "decks": {
       "Archie's Blastoise": {
         "meta": {
-          "deckbox": false,
+          "deckbox": true,
           "sleeves": false
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Blastoise", "PLB 16", 2, 0],
           ["Keldeo-ex", "BCR 49", 2, 1],
@@ -106,7 +113,7 @@ const decks = {
           ["Shaymin-ex", "ROS 77", 0, 2],
           ["Exeggcute", "PLF 4", 2, 0],
           ["Articuno", "ROS 17", 1, 0],
-          ["Mewtwo-ex", "NXD 54", 0, 1],
+          ["Mewtwo-ex", "NXD 54", 1, 0],
           ["Wailord-ex", "PRC 38", 0, 1]
         ], "supporter": [
           ["Archie's Ace in the Hole", "", 2, 0],
@@ -132,9 +139,12 @@ const decks = {
       }, 
       "Manec Toad Bats": {
         "meta": {
-          "deckbox": false,
+          "deckbox": true,
           "sleeves": false
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Seismitoad-ex", "FFI 20", 0, 3],
           ["Manectric-ex", "PHF 23", 0, 2],
@@ -168,9 +178,12 @@ const decks = {
       }, 
       "Primal Groudon": {
         "meta": {
-          "deckbox": false,
+          "deckbox": true,
           "sleeves": false
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Primal Groudon-ex", "PRC 151", 1, 2],
           ["Groudon-ex", "PRC 150", 2, 1],
@@ -207,9 +220,12 @@ const decks = {
       }, 
       "Donphan": {
         "meta": {
-          "deckbox": false,
+          "deckbox": true,
           "sleeves": false
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Donphan", "PLS 72", 4, 0],
           ["Phanphy", "PLS 71", 4, 0],
@@ -259,11 +275,31 @@ const decks = {
           "deckbox": true,
           "sleeves": false
         },
+        "variants": {
+          "Vespiquen": {
+            "pokemon": [
+              ["Combee", "AOR 9", 0, 3], 
+              ["Vespiquen", "AOR 10", 0, 3], 
+              ["Mew", "FCO 29", -2, 0]
+            ], "supporter": [
+              ["Lysandre", "", -1, 0],
+              ["Hex Maniac", "", -1, 0],
+              ["Pokemon Ranger", "", -1, 0]
+            ], "item": [
+              ["Town Map", "", 1, 0]
+            ], "tool": [
+              ["Fighting Fury Belt", "", -2, 0]
+            ], "stadium": [
+            ], "energy": [
+            ]
+          }
+        }, 
         "pokemon": [
           ["Joltik", "PHF 26", 4, 0],
           ["Pumpkaboo", "PHF 44", 4, 0],
           ["Lampent", "PHF 42", 4, 0],
-          ["Shaymin-ex", "ROS 77", 3, 0]
+          ["Shaymin-ex", "ROS 77", 3, 0], 
+          ["Mew", "FCO 29", 2, 0]
         ], "supporter": [
           ["Professor Sycamore", "", 3, 0],
           ["Lysandre", "", 2, 0],
@@ -283,9 +319,7 @@ const decks = {
           ["Target Whistle", "", 1, 0],
           ["Escape Rope", "", 1, 0]
         ], "tool": [
-          ["Float Stone", "", 2, 0],
-          ["Fighting Fury Belt", "", 1, 0],
-          ["Muscle Band", "", 1, 0]
+          ["Fighting Fury Belt", "", 1, 1],
         ], "stadium": [
           ["Dimension Valley", "", 3, 0]
         ], "energy": [
@@ -297,6 +331,9 @@ const decks = {
           "deckbox": true,
           "sleeves": false
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Vileplume", "AOR 3", 4, 0], 
           ["Gloom", "AOR 2", 4, 0],
@@ -334,6 +371,9 @@ const decks = {
           "deckbox": true,
           "sleeves": false
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Talonflame", "STS 96", 4, 0],
           ["Greninja Break", "BKP 41", 3, 0],
@@ -373,6 +413,9 @@ const decks = {
           "deckbox": true,
           "sleeves": false
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["M Audino-ex", "FAC 85", 3, 0],
           ["Audino-ex", "FAC 84", 4, 0],
@@ -417,8 +460,11 @@ const decks = {
           "deckbox": true,
           "sleeves": false
         },
+        "variants": {
+
+        }, 
         "pokemon": [
-          ["M Manectric-ex", "PHF 24", 3, 0],
+          ["M Manectric-ex", "PHF 24", 3, 1],
           ["Manectric-ex", "PHF 23", 4, 0],
           ["Shaymin-ex", "ROS 77", 2, 0],
           ["Hoopa-ex", "AOR 36", 1, 0],
@@ -438,7 +484,6 @@ const decks = {
           ["Enhanced Hammer", "", 3, 0],
           ["Trainers' Mail", "", 3, 0],
           ["Battle Compressor", "", 1, 0],
-          ["Super Rod", "", 1, 0],
         ], 
         "tool": [
           ["Manectric Spirit Link", "", 4, 0],
@@ -455,6 +500,9 @@ const decks = {
           "deckbox": false,
           "sleeves": false
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Lucario-ex", "FFI 107", 3, 0],
           ["Crobat", "PHF 33", 3, 0],
@@ -493,6 +541,9 @@ const decks = {
           "deckbox": true,
           "sleeves": false
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Seismitoad-ex", "FFI 20", 4, 0],
           ["Manaphy-ex", "BKP 32", 2, 0],
@@ -534,6 +585,9 @@ const decks = {
           "deckbox": false,
           "sleeves": false
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Volcanion-ex", "PR-XY XY173", 4, 0],
           ["Volcanion", "STS 25", 4, 0],
@@ -568,6 +622,9 @@ const decks = {
           "deckbox": false,
           "sleeves": false
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Bronzor", "PHF 60", 4, 0],
           ["Bronzong", "PHF 61", 4, 0],
@@ -604,6 +661,9 @@ const decks = {
           "deckbox": false,
           "sleeves": false
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Darkrai-ex", "BKP 74", 0, 3],
           ["Shaymin-ex", "ROS 77", 0, 2],
@@ -652,6 +712,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Darkrai-ex","BKP 74",4,0],
           ["Hoopa-ex","AOR 36",1,0],
@@ -690,6 +753,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Decidueye-gx","SUM 12",4,0],
           ["Dartrix","SUM 11",4,0],
@@ -724,6 +790,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Volcanion-ex", "STS 26", 4, 0],
           ["Volcanion", "STS 25", 3, 0],
@@ -758,6 +827,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["M Mewtwo-ex", "BKT 64", 3, 0],
           ["Mewtwo-ex", "BKT 62", 3, 0],
@@ -795,6 +867,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["M Rayquaza-ex", "ROS 76", 3, 0],
           ["Rayquaza-ex", "ROS 75", 3, 0],
@@ -832,6 +907,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["M Gardevoir-ex", "STS 112", 3, 0],
           ["Gardevoir-ex", "STS 111", 3, 0],
@@ -866,6 +944,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Yveltal-ex", "XY 79", 3, 0],
           ["Garbodor", "BKP 57", 2, 0],
@@ -901,6 +982,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Gyarados", "AOR 21", 3, 0],
           ["Magikarp", "EVO 33", 4, 0],
@@ -946,6 +1030,13 @@ const decks = {
     },
     "decks": {
       "Drampa Garbodor": { 
+        "meta": {
+          "deckbox": true,
+          "sleeves": true
+        },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Trubbish", "BKP 56", 4, 0],
           ["Garbodor", "BKP 57", 0, 2],
@@ -980,6 +1071,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Gardevoir-gx", "BUS 93", 3, 0],
           ["Gallade", "BKT 84", 1, 0],
@@ -1013,6 +1107,13 @@ const decks = {
         ]
       },
       "Golisopod Garbodor": { 
+        "meta": {
+          "deckbox": true,
+          "sleeves": true
+        },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Golisopod-gx", "BUS 17", 3, 0],
           ["Wimpod", "BUS 16", 3, 0],
@@ -1045,6 +1146,13 @@ const decks = {
         ]
       },
       "Tapu Bulu Vikavolt": { 
+        "meta": {
+          "deckbox": true,
+          "sleeves": true
+        },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Tapu Bulu-gx", "PR-SM SM32", 3, 0],
           ["Vikavolt", "PR-SM SM28", 3, 0],
@@ -1077,6 +1185,13 @@ const decks = {
         ]
       },
       "Metagross": { 
+        "meta": {
+          "deckbox": true,
+          "sleeves": true
+        },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Metagross-gx", "GRI 85", 4, 0],
           ["Metang", "GRI 84", 3, 0],
@@ -1106,6 +1221,13 @@ const decks = {
         ]
       },
       "Sylveon Gardevoir": {
+        "meta": {
+          "deckbox": true,
+          "sleeves": true
+        },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Sylveon-gx", "GRI 92", 4, 0],
           ["Eevee", "SUM 101", 4, 0],
@@ -1151,6 +1273,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Zoroark-gx", "SLG 53", 4, 0],
           ["Zorua", "SLG 52", 4, 0],
@@ -1190,6 +1315,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Zoroark-gx", "SLG 53", 4, 0],
           ["Zorua", "SLG 52", 4, 0],
@@ -1229,6 +1357,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Zoroark-gx", "SLG 53", 4, 0],
           ["Zorua", "SLG 52", 4, 0],
@@ -1270,6 +1401,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Zoroark-gx", "PR-SM SM84", 4, 0],
           ["Zorua", "PR-SM SM83", 4, 0],
@@ -1308,8 +1442,11 @@ const decks = {
       "Zoroark Lucario": { 
         "meta": {
           "deckbox": true,
-          "sleeves": false
+          "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Zoroark-gx", "SLG 53", 4, 0],
           ["Zorua", "SLG 52", 4, 0],
@@ -1344,9 +1481,12 @@ const decks = {
       },
       "Zoroark Gardevoir": {
         "meta": {
-          "deckbox": false,
-          "sleeves": false
+          "deckbox": true,
+          "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Zoroark-gx", "", 4, 0],
           ["Zorua", "", 4, 0],
@@ -1391,6 +1531,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Buzzwole", "FLI 77", 3, 0],
           ["Buzzwole-gx", "CIN 57", 2, 0],
@@ -1423,9 +1566,12 @@ const decks = {
       },
       "Buzzwole Garbodor": {
         "meta": {
-          "deckbox": false,
-          "sleeves": false
+          "deckbox": true,
+          "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Buzzwole", "FLI 71", 4, 0],
           ["Garbodor", "GRI 51", 2, 0],
@@ -1462,6 +1608,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Malamar", "FLI 51", 4, 0],
           ["Inkay", "FLI 50", 4, 0],
@@ -1495,6 +1644,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Malamar", "FLI 51", 4, 0],
           ["Inkay", "FLI 50", 4, 0],
@@ -1527,9 +1679,12 @@ const decks = {
       },
       "Rayquaza": {
         "meta": {
-          "deckbox": false,
-          "sleeves": false
+          "deckbox": true,
+          "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Rayquaza-gx", "CES 109", 1, 3],
           ["Tapu Lele-gx", "GRI 60", 0, 2],
@@ -1561,9 +1716,12 @@ const decks = {
       }, 
       "Attacking Hoopa": {
         "meta": {
-          "deckbox": false,
-          "sleeves": false
+          "deckbox": true,
+          "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Hoopa", "SLG 55", 4, 0],
           ["Oranguru", "SUM 113", 1, 0],
@@ -1610,8 +1768,11 @@ const decks = {
       "Trevenant Break": { 
         "meta": {
           "deckbox": true,
-          "sleeves": false
+          "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Trevenant Break", "BKP 66", 3, 0],
           ["Trevenant", "XY 55", 4, 0],
@@ -1647,6 +1808,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Zoroark-gx", "PR-SM SM84", 4, 0],
           ["Zorua", "PR-SM SM83", 4, 0],
@@ -1687,6 +1851,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Joltik", "PHF 26", 4, 0],
           ["Pumpkaboo", "PHF 44", 4, 0],
@@ -1726,8 +1893,11 @@ const decks = {
       "Sableye Control": { 
         "meta": {
           "deckbox": true,
-          "sleeves": false
+          "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Sableye", "DEX 62", 4, 0],
           ["Trubbish", "NVI 48", 3, 0],
@@ -1772,8 +1942,11 @@ const decks = {
       "Seismitoad": { 
         "meta": {
           "deckbox": true,
-          "sleeves": false
+          "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Seismitoad-ex", "FFI 20", 4, 0],
           ["Shaymin-ex", "ROS 77", 2, 0],
@@ -1817,8 +1990,11 @@ const decks = {
       "Buzzwole Lycanroc": { 
         "meta": {
           "deckbox": true,
-          "sleeves": false
+          "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Buzzwole-gx", "CIN 57", 3, 0],
           ["Lycanroc-gx", "GRI 74", 2, 0],
@@ -1870,6 +2046,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Jirachi", "TEU 99", 4, 0],
           ["Mewtwo & Mew Tag Team-gx", "UNM 71", 3, 0],
@@ -1910,6 +2089,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Jirachi", "TEU 99", 4, 0],
           ["Arceus, Dialga & Palkia Tag Team-gx", "CEC 156", 2, 0],
@@ -1947,6 +2129,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Gardevoir & Sylveon Tag Team-gx", "UNB 130", 4, 0],
           ["Lugia-gx", "LOT 159", 1, 0]
@@ -1980,6 +2165,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Pidgeotto", "TEU 123", 4, 0],
           ["Pidgey", "TEU 122", 3, 0],
@@ -2021,6 +2209,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Jirachi", "TEU 99", 4, 0],
           ["Pikachu & Zekrom Tag Team-gx", "TEU 33", 2, 0],
@@ -2058,6 +2249,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Jirachi", "TEU 99", 4, 0],
           ["Dedenne-gx", "UNB 57", 3, 0],
@@ -2093,6 +2287,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Malamar", "FLI 51", 4, 0],
           ["Inkay", "FLI 50", 4, 0],
@@ -2126,6 +2323,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Blacephalon", "UNB 32", 4, 0],
           ["Pidgeotto", "TEU 123", 4, 0],
@@ -2154,9 +2354,12 @@ const decks = {
       },
       "Garchomp & Giratina": {
         "meta": {
-          "deckbox": false,
-          "sleeves": false
+          "deckbox": true,
+          "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Mismagius", "UNB 78", 1, 2],
           ["Misdreavus", "UNB 77", 4, 0],
@@ -2202,9 +2405,12 @@ const decks = {
       }, 
       "Green's ReshiZard": {
         "meta": {
-          "deckbox": false,
-          "sleeves": false
+          "deckbox": true,
+          "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Volcanion", "UNB 25", 4, 0],
           ["Reshiram & Charizard Tag Team-gx", "PR-SM SM201", 3, 0]
@@ -2217,7 +2423,7 @@ const decks = {
           ["Great Potion", "",4, 0],
           ["Mixed Herbs", "",4, 0],
           ["Pokegear 3.0", "", 4, 0],
-          ["Custom Catcher", "", 0, 4],
+          ["Custom Catcher", "", 4, 0],
           ["Reset Stamp", "", 3, 0],
           ["Tag Call", "", 3, 0],
           ["Switch", "", 2, 0],
@@ -2232,7 +2438,7 @@ const decks = {
         "stadium": [
           ["Power Plant", "", 2, 0],
           ["Shrine of Punishment", "", 1, 0],
-          ["Heat Factory Prism Star", "", 0, 1],
+          ["Heat Factory Prism Star", "", 1, 0],
         ],
         "energy": [
           ["Fire Energy", "", 12, 0],
@@ -2240,9 +2446,12 @@ const decks = {
       },
       "Naganadel & Guzzlord": {
         "meta": {
-          "deckbox": false,
-          "sleeves": false
+          "deckbox": true,
+          "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Mismagius", "UNB 78", 4, 0],
           ["Misdreavus", "UNB 77", 4, 0],
@@ -2280,9 +2489,12 @@ const decks = {
       }, 
       "Florges Dolls": {
         "meta": {
-          "deckbox": false,
-          "sleeves": false
+          "deckbox": true,
+          "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Jirachi", "TEU 99", 0, 4],
           ["Florges", "FLI 86", 0, 3],
@@ -2336,6 +2548,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Zacian V", "SSH 138", 4, 0],
           ["Zamazenta V", "SSH 139", 2, 0],
@@ -2370,6 +2585,9 @@ const decks = {
           "deckbox": true,
           "sleeves": true
         },
+        "variants": {
+
+        }, 
         "pokemon": [
           ["Inteleon", "CRE 43", 3, 0],
           ["Inteleon", "SSH 58", 1, 0],

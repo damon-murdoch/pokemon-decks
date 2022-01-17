@@ -44,6 +44,153 @@ function getDeck(deck, format)
   return null;
 }
 
+// getFormat(format: String): Void
+// Given a format, verifies the format 
+// can be found and returns it from the json.
+function getFormat(format)
+{
+  // If the format is found
+  if (decks.hasOwnProperty(format))
+  {
+    // Return the format
+    return decks[format];
+  }
+  else // Format is not found
+  {
+    // Return null
+    return null;
+  }
+}
+
+// mergeCards(a: CardsList, b: CardsList): CardsList
+// Given two cards lists, merges them and returns the 
+// combined list. Indexes with negative card counts will
+// be removed from the total, and if the total number of
+// a card becomes equal to zero it will be removed from 
+// the list.
+function mergeCards(a, b)
+{
+  // Merged list of card
+  cards_merged = [];
+
+  // Loop over the card in the deck object
+  // for(let card of deck_object.card)
+  for(let i = 0; i < a.length; i++)
+  {
+    // Dereference the card object
+    let card = a[i];
+
+    // Check if the list is in the variant
+    let in_variant = 0;
+
+    // Loop over the card in the variant object
+    // for(let card_v of variant_object.card)
+    for(let j = 0; j < b.length; j++)
+    {
+      // Dereference the variable card object
+      let card_v = b[j];
+
+      if (
+        // Name of card is the same
+        card[0] == card_v[0] && 
+        // Set number of card is the same
+        card[1] == card_v[1]
+      )
+      {
+        // Card is in the variant
+        in_variant = 1;
+
+        // Combine the object
+        let card_new = [
+          card[0], // Card Name
+          card[1], // Card Set / Set Number
+          card[2] + card_v[2], // Card Count (Have)
+          card[3] + card_v[3], // Card Count (Missing)
+        ];
+
+        // If the obtained card number is negative
+        if (card_new[2] < 0)
+        {
+          // Add the obtained card number from
+          // the deducted card number
+          card_new[3] += card_new[2];
+
+          // Set the obtained card number to zero
+          card_new[2] = 0;
+        }
+
+        // If there is AT LEAST one card obtained or missing
+        if(card_new[2] > 0 || card_new[3] > 0)
+        {
+          cards_merged.push(card_new);
+        }
+
+        // Remove it from the list
+        b.splice(j, 1);
+        
+        // Break the loop
+        break;
+      }
+    }
+
+    // Variant has not been modified
+    if (!in_variant)
+    {
+      // Add it to the list
+      cards_merged.push(card);
+    }
+  }
+
+  // Loop over the remaining cards
+  for(let card of b)
+  {
+    // Add the pokemon to the merged list
+    cards_merged.push(card);
+  }
+
+  // Return the merged cards object
+  return cards_merged;
+}
+
+// Given a deck object and a variant, merges
+// the cards in the deck object with the variant
+// and returns the combined deck list.
+function getVariant(deck_object, variant)
+{
+  // Get the deck list object for the given variant
+  variant_object = deck_object.variants[variant];
+
+  // Create a clone of the deck object 
+  new_object = JSON.parse(JSON.stringify(deck_object));
+
+  // Merge the pokemon cards list
+  new_object.pokemon = mergeCards(
+    deck_object.pokemon, variant_object.pokemon);
+
+  // Merge the supporter cards list
+  new_object.supporter = mergeCards(
+    deck_object.supporter, variant_object.supporter);
+
+  // Merge the item cards list
+  new_object.item = mergeCards(
+    deck_object.item, variant_object.item);
+
+  // Merge the tool cards list
+  new_object.tool = mergeCards(
+    deck_object.tool, variant_object.tool);
+
+  // Merge the stadium cards list
+  new_object.stadium = mergeCards(
+    deck_object.stadium, variant_object.stadium);
+
+  // Merge the energy cards list
+  new_object.energy = mergeCards(
+    deck_object.energy, variant_object.energy);
+
+  // Return the modified object
+  return new_object;
+}
+
 // Given a deck object, returns all
 // of the cards in the deck formatted
 // as a string. This string can be 
@@ -133,47 +280,41 @@ function getCategoryProgress(category)
   let cards = {
     obtained: 0, // Obtained Cards
     missing: 0, // Missing Cards
-    total: 0 // Total Cards
   }
 
   // Loop over all of the cards in the category
   for (let card of category)
   {
     // Add obtained cards to obtained total
-    cards.obtained += card[2];
+    cards.obtained += card[2];                           
 
     // Add missing cards to missing total
     cards.missing += card[3];
-    
-    // Add newly found cards to total
-    cards.total += card[2] + card[3];
   }
+
+  // If any of the numbers are negative, set them to zero
+  
+  // If there is less than one card missing
+  if (cards.missing < 0)
+  { 
+    // Set the nunber to zero
+    cards.missing = 0 
+  };
+  
+  // If there is less than one card obtained
+  if (cards.obtained < 0)
+  {
+    // Set the number to zero
+    cards.obtained = 0 
+  };
 
   // Return the cards object
   return cards;
 }
 
-// getFormat(format: String): Void
-// Given a format, verifies the format 
-// can be found and returns it from the json.
-function getFormat(format)
-{
-  // If the format is found
-  if (decks.hasOwnProperty(format))
-  {
-    // Return the format
-    return decks[format];
-  }
-  else // Format is not found
-  {
-    // Return null
-    return null;
-  }
-}
-
 // getDeckProgress(deck: String, format: String): Void
-// Given a deck and a format, retrieves the number of
-// cards in the deck excluding missing cards.
+// Given a deck and a format, retrieves the number of 
+// missing and obtained cards for that deck.
 function getDeckProgress(deck, format)
 {
   // If it is valid, get the deck from the json
@@ -185,50 +326,71 @@ function getDeckProgress(deck, format)
     // Get a flattened list of cards
     let list = flattenCards(data);
 
-    // Price and count 
-    // for obtained cards
-    let obtained = 0;
+    // Progress data object
+    let progress = {
 
-    // Price and count
-    // for missing cards
-    let missing = 0;
+      // Main Deck
+      deck: getCategoryProgress(list), 
+      
+      // Deck Variants
+      variant: {
+        complete: 0, // Number of complete deck variants
+        obtained: 0, // Obtained cards in variants
+        missing: 0, // Missing cards in variants
+        total: 0, // Number of deck variants
+      }
+    }
 
-    // Loop over the cards
-    list.forEach(card => {
+    // Loop over all of the variants in the progress
+    Object.keys(data.variants).forEach(variant => {
 
-      // 0: Name
-      // 1: Set Number
-      // 2: Number Have
-      // 3: Number Missing
+      // Get the selected variant from the selected deck
+      let variant_data = getDeck(deck, format).variants[variant];
+    
+      // If data is retrieved
+      if (variant_data !== null)
+      {
+        // Get the flattened list of cards
+        let variant_list = flattenCards(variant_data);
 
-      // Add to the card count
-      obtained += card[2];
+        // Get the progress of the variant
+        let variant_progress = getCategoryProgress(variant_list);
 
-      // Add to the missing count
-      missing += card[3];
+        // Add to the total variant progress
+
+        // Obtained cards
+        progress.variant.obtained += variant_progress.obtained;
+
+        // Missing cards
+        progress.variant.missing += variant_progress.missing;
+
+        // If there are no cards missing, variant is complete
+        if (variant_progress.missing == 0)
+        {
+          // Increment the complete variant counter
+          progress.variant.complete++;
+        }
+
+        // Increment the total variant counter
+        progress.variant.total++;
+      }
     });
 
-    // Return the total cards minus the missing cards
-
-    return {
-      // Obtained count / price
-      obtained: obtained,
-      
-      // Missing count / price
-      missing: missing
-    }
+    // Return the merged progress object
+    return progress;
   }
   else // No deck is found
   {
-    // Return null
+    // Return null  
     return null;
   }
 }
 
 // getFormatProgress(format: String): Void
 // Given a format, retrieves the completeness 
-// of the format including total decks, completed decks
-// and overall progress as a percentage.
+// of the variants within the format including 
+// total variants, completed variants and overall 
+// variant progress as a percentage.
 function getFormatProgress(format)
 {
   // If it is valid, get the format from the json
@@ -237,17 +399,30 @@ function getFormatProgress(format)
   // If the data is not null
   if (data !== null)
   {
-    // Total Decks 
-    let total = 0;
+    // Object to return
+    let result = {
 
-    // Complete Decks
-    let complete = 0;
+      deck: { // Complete Decks
 
-    // Missing Cards
-    let missing = 0;
+        total: 0, // Total Decks 
+      
+        complete: 0, // Complete Decks
+        
+        missing: 0, // Missing Cards
+        
+        obtained: 0 // Obtained Cards
+      }, 
+      variant: { // Deck Variants
 
-    // Obtained Cards
-    let obtained = 0;
+        total: 0, // Total Variants 
+      
+        complete: 0, // Complete Variants
+        
+        missing: 0, // Missing Cards
+        
+        obtained: 0 // Obtained Cards
+      }
+    }
 
     // Loop over each deck
     Object.keys(data.decks).forEach(deck => {
@@ -257,37 +432,38 @@ function getFormatProgress(format)
 
       // If there are exactly 60 cards in the deck
       // It is done, increment the complete counter
-      if (current.missing == 0)
+      if (current.deck.missing == 0)
       {
         // Increment the complete counter
-        complete++;
+        result.deck.complete++;
       }
       else // Some missing cards
       {
         // Add to missing card counter
-        missing += current.missing;
+        result.deck.missing += current.deck.missing;
       }
 
       // Increment the progress by the cards in the deck
-      obtained += current.obtained;
+      result.deck.obtained += current.deck.obtained;
+
+      // Increment the variant total by the variants in the deck
+      result.variant.total += current.variant.total;
+      
+      // Increment the complete total by the complete variants
+      result.variant.complete += current.variant.complete;
+      
+      // Increment the missing total by the missing cards
+      result.variant.missing += current.variant.missing;
+
+      // Increment the obtained total by the obtained cards
+      result.variant.obtained += current.variant.obtained;
 
       // Increment the deck counter
-      total++;
+      result.deck.total++;
     });
 
-    // Return the calculated values
-    return {
-      // Total Decks
-      total: total,
-      // Decks Complete
-      complete: complete,
-      // Obtained Cards
-      obtained: obtained,
-      // Missing Cards
-      missing: missing,      
-      // Format Overall Progress
-      progress: (obtained / total / 60 * 100),
-    };
+    // Return result
+    return result;
   }
   else // Data is null
   {
@@ -298,16 +474,61 @@ function getFormatProgress(format)
   }
 }
 
+// mergeBuylist(a: Buylist, b: Buylist)
+// Given two buylists, merges them and 
+// returns the combined result.
+function mergeBuylist(a, b)
+{
+  // Starting buylist is 
+  // clone of first argument
+  let c = a;
+
+  // Loop over the different cards
+  for (let card in b)
+  {
+    // Card is in the buylist
+    if (c.hasOwnProperty(card))
+    {
+      // Loop over the set numbers
+      for(let num in b[card])
+      {
+        // If the set number is in the buylist
+        if (c[card].hasOwnProperty(num))
+        {
+          // Increment the number
+          c[card][num] += b[card][num];
+        }
+        else // Set number is not in the buylist
+        {
+          // Assign the value 
+          c[card][num] = b[card][num];
+        }
+      }
+    }
+    else // If the card is not in the buylist
+    {
+      // Add it to the buylist
+      c[card] = b[card];
+    }
+  }
+
+  // Return the combined list
+  return c;
+}
+
+// getDeckBuylist(deck: String, format: String): Void
+// Given a deck and a format, gets all of the cards
+// missing from the deck and returns them as a table.
 function getDeckBuylist(deck, format)
 {
   // Hashtable of cards
   let cards = {};
 
-  // Get the format data
-  data = getFormat(format);
+  // Get the deck data
+  let data = getDeck(deck, format);
 
   // Get all of the cards in the deck
-  let decklist = flattenCards(data.decks[deck]);
+  let decklist = flattenCards(data);
 
   // Loop over all of the cards in the deck
   decklist.forEach(card => {
@@ -338,6 +559,9 @@ function getDeckBuylist(deck, format)
   return cards;
 }
 
+// getFormatBuylist(format: String): Void
+// Given a format, gets all of the cards missing
+// from the format and returns them as a table.
 function getFormatBuylist(format)
 {
   // Hashtable of cards
@@ -346,47 +570,23 @@ function getFormatBuylist(format)
   // Get the format data
   data = getFormat(format);
 
-  // Loop over all of the decks
-  for (let deck in data.decks)
-  {
-    // Get all of the cards in the deck
-    let decklist = flattenCards(data.decks[deck]);
+  Object.keys(data.decks).forEach(deck => {
 
-    // Loop over all of the cards in the deck
-    decklist.forEach(card => {
-      
-      // If the card is missing (any number)
-      if (card[3] > 0)
-      {
-        // If the card is not in the cards list
-        if (!cards.hasOwnProperty(card[0]))
-        {
-          // Add the card to the cards list
-          cards[card[0]] = {}; 
-        }
+    // Get the deck buylist
+    let buylist = getDeckBuylist(deck, format);
 
-        // If the set is not in the card sets list
-        if (!cards[card[0]].hasOwnProperty(card[1]))
-        {
-          // Create a new value for it and assign it to zero
-          cards[card[0]][card[1]] = 0;
-        }
-
-        // Add the new number of missing cards to the existing number
-        cards[card[0]][card[1]] += card[3];
-      }
-    });
-  }
+    // Merge the current buylist with the deck buylist
+    cards = mergeBuylist(cards, buylist);
+  });
 
   // Return the data object
   return cards;
 }
 
 // getBuylist(Void): Void
-// Goes through all of the decks
-// in every format, and adds up
-// how many copies of each card
-// are missing 
+// Returns the total cards missing
+// from all formats in the decks list
+// and returns them as a table.
 function getBuylist()
 {
   // Hashtable of cards
@@ -395,40 +595,11 @@ function getBuylist()
   // Loop over all of the formats
   Object.keys(decks).forEach(format => {
 
-    // Get the format data
-    data = getFormat(format);
+    // Get the format buylist
+    let buylist = getFormatBuylist(format);
 
-    // Loop over all of the decks
-    for (let deck in data.decks)
-    {
-      // Get all of the cards in the deck
-      let decklist = flattenCards(data.decks[deck]);
-
-      // Loop over all of the cards in the deck
-      decklist.forEach(card => {
-        
-        // If the card is missing (any number)
-        if (card[3] > 0)
-        {
-          // If the card is not in the cards list
-          if (!cards.hasOwnProperty(card[0]))
-          {
-            // Add the card to the cards list
-            cards[card[0]] = {}; 
-          }
-
-          // If the set is not in the card sets list
-          if (!cards[card[0]].hasOwnProperty(card[1]))
-          {
-            // Create a new value for it and assign it to zero
-            cards[card[0]][card[1]] = 0;
-          }
-
-          // Add the new number of missing cards to the existing number
-          cards[card[0]][card[1]] += card[3];
-        }
-      });
-    }
+    // Merge the current buylist with the format buylist
+    cards = mergeBuylist(cards, buylist);
   });
 
   // Return the table of missing cards
@@ -458,23 +629,28 @@ function getBuylistCount(buylist)
   return count;
 }
 
-// getTotalProgress(Void): Void
+// 
 function getTotalProgress()
 {
-  // Total Decks 
-  let total = 0;
+  // Overall progress object
+  let progress = {
 
-  // Complete Decks
-  let complete = 0;
+    // Unique Decks
+    deck: {
+      total: 0, 
+      complete: 0,
+      obtained: 0,
+      missing: 0
+    },
 
-  // Obtained Cards
-  let obtained = 0;
-
-  // Missing Cards
-  let missing = 0;
-
-  // Overall progress
-  let progress = 0;
+    // Deck Variants
+    variant: {
+      total: 0, 
+      complete: 0,
+      obtained: 0,
+      missing: 0
+    }
+  }
 
   // Loop over each format
   // Calculates the total decks, 
@@ -486,34 +662,17 @@ function getTotalProgress()
     // Get the progress for the format
     data = getFormatProgress(format);
 
-    // Add to the total decks
-    total += data.total;
-
-    // Add to the total completed decks
-    complete += data.complete;
-
-    // Add to the total obtained
-    obtained += data.obtained;
-
-    // Add to the total missing
-    missing += data.missing;
-
-    // Add the progress (will be divided later)
-    progress += data.progress;
-
+    progress.deck.total += data.deck.total;
+    progress.deck.complete += data.deck.complete;
+    progress.deck.obtained += data.deck.obtained;
+    progress.deck.missing += data.deck.missing;
+    
+    progress.variant.total += data.variant.total;
+    progress.variant.complete += data.variant.complete;
+    progress.variant.obtained += data.variant.obtained;
+    progress.variant.missing += data.variant.missing;
   });
 
-  // Return the results
-  return {
-    // Total decks
-    total: total, 
-    // Decks Complete
-    complete: complete, 
-    // Obtained Cards
-    obtained: obtained,
-    // Missing Cards
-    missing: missing,
-    // Overall Progress
-    progress: (progress / Object.keys(decks).length)
-  };
+  // Return the progress
+  return progress;
 }

@@ -1,82 +1,119 @@
-// getPageLink(deck: String, format: String): String
-// Given an (optional) deck and format string, gets a link
-// to the page which links to you to the requested page.
-function getPageLink(format = null, deck = null, card = null)
-{
-  // Default home page url
-  var url = new URL(window.location.href);
-
-  // If the format is set
-  if (format)
-  {
-    // If the deck is set
-    if (deck)
-    {
-      // Add the deck to the link
-      url.searchParams.set('deck', deck);
-    } 
-    else // Deck is not set
-    {
-      // Remove it from the url
-      url.searchParams.delete('deck');
-    }
-
-    // Add the format to the link
-    url.searchParams.set('format', format);
-  }
-  else // Format is not set
-  {
-    // Remove deck and format from the url
-    url.searchParams.delete('deck');
-    url.searchParams.delete('format');
-  }
-
-  // If a card is provided
-  if (card)
-  {
-    // Set the url params 'card' to the card provided
-    url.searchParams.set('card', card);
-  }
-  else
-  {
-    // Remove any card property from the url
-    url.searchParams.delete('card');
-  }
-
-  // Return the url reference
-  return url.href;
-}
-
-// getFormatLogo(start: String, end: String): Object
-// Given a start and end format, gets the 
-// path of the start and end sprites and 
-// returns them to the calling process.
-function getFormatLogos(start, end)
-{
-  // getLogoPath(path: String): String
-  // Given a logo name, returns the file
-  // path of the logo.
-  function getLogoPath(path)
-  {
-    // Retrn the path to the 30px sprite for the format
-    return "img/symbol/30px/30px-SetSymbol" + path + ".webp";
-  }
-
-  // Return the start and end sprite paths
-  return {
-    // Format Starting Sprite
-    start: getLogoPath(start),
-
-    // Formad Ending Sprite
-    end: getLogoPath(end)
-  };
-}
-
 // showPageHome(Void): Void
 // Shows the home page, listing 
 // all formats and other basic info
 function showPageHome()
 {
+  // getRowFormat(title: String, progress: Object, header: Bool): Element
+  // Given a row title, format progress object and if the row is a header
+  // row or not, generates the row using the properties and returns them 
+  // to the caling process.
+  function getRowFormat(title, progress, header = false)
+  {
+    // Get the total number of cards in the progress, including variants
+    let totalCards = progress.deck.missing + progress.deck.obtained;
+
+    // Get the total percentage of cards which have been obtained, including variants
+    let percentage = getPercentage(progress.deck.obtained, totalCards);
+
+    // Get the colour for all of the other columns
+    let colorTotal = getProgressColor(percentage);
+
+    // Get the colour for the completed decks column
+    let colorDecks = getProgressColor(getPercentage(
+      // Total of complete decks over total decks
+      progress.deck.complete, progress.deck.total
+    ));
+
+    // Clone the decks colour for the progress
+    // bar, in case the decks colour is changed
+    let colorPercentage = colorTotal;
+
+    // Total cards missing from the decks
+    // Is an array, so variants can be appended if required
+    let deckTotal = [progress.deck.total];
+
+    // Total number of complete decks
+    // Is an array, so variants can be appended if required
+    let deckComplete = [progress.deck.complete];
+
+    // Total number of obtained cards in decks
+    let deckObtained = [progress.deck.obtained];
+    
+    // Total number of missing cards in decks
+    let deckMissing = [progress.deck.missing];
+
+    // If there are any variants in the list
+    if (progress.variant.total > 0)
+    {
+      // Get the colour for the completed variants column
+      let colorVariantsComplete = getProgressColor(getPercentage(
+        // Total number of complete variants over total variants
+        progress.variant.complete, progress.variant.total
+      ));
+
+      // Get the total variant cards compared to the required cards
+      let totalVariantCards = progress.variant.obtained + 
+        progress.variant.missing;
+
+      // Get the colour for the total progress for variants
+      let colorVariantsTotal = getProgressColor(getPercentage(
+        // Total number of variant cards over total required
+        progress.variant.obtained, totalVariantCards
+      ));
+
+      // Set colorDecks to be a list
+      colorDecks = [
+
+        // Colour for decks
+        colorDecks, 
+
+        // Colour for variants
+        colorVariantsComplete
+      ]
+
+      colorTotal = [
+        // Colour for deck
+        colorTotal, 
+
+        // Colour for variants
+        colorVariantsTotal
+      ]
+
+      // Append the variant total to the deck total
+      // This will show the variant total as subscript
+      deckTotal.push(progress.variant.total);
+
+      // Append the complete variants to the complete
+      // decks total, showing variant total as subscript
+      deckComplete.push(progress.variant.complete);
+
+      // Append the variant cards obtained to the total
+      deckObtained.push(progress.variant.obtained);
+
+      // Append the variant cards missing to the total
+      deckMissing.push(progress.variant.missing);
+    }
+
+    // Generate and return a table row
+    return getTableRow([
+      title, // Format
+      deckTotal, // Total Decks
+      deckComplete, // Completed Decks
+      deckObtained, // Obtained Cards
+      deckMissing, // Missing Cards
+      (percentage * 100).toFixed(2) + "%", // Progress
+      "<a class='link-secondary' href='index.html?buylist'>Buylist</a>" // Buylist Link
+    ], [
+      COLOR_WHITE, // Format, always light gray
+      COLOR_GREEN, // Total Decks, always green
+      colorDecks, // Completed Decks
+      colorTotal, // Obtained Cards
+      colorTotal, // Missing Cards
+      colorPercentage, // Progress
+      COLOR_WHITE // Buylist Link, always dark gray
+    ], header);
+  }
+
   // Assign the header to the title
   document.title = config.title;
 
@@ -92,111 +129,30 @@ function showPageHome()
   // Specify the table classes
   table.className = "table table-dark bg-dark";
 
-  // Create a table row for the header
-  let thead = document.createElement('thead');
-
-  // Specify the header classes
-  thead.className = "";
-
-  // Assign the columns in the table header
-  thead.innerHTML = "<tr><th> Format </th>" + 
-    "<th scope='col'> Total Decks </th>" + 
-    "<th scope='col'> Completed Decks </th>" + 
-    "<th scope='col'> Obtained Cards </th>" + 
-    "<th scope='col'> Missing Cards </th>" + 
-    "<th scope='col'> Progress </th>" + 
-    "<th scope='col'> Buylist </th>" + 
-    "</tr>"
-    
   // Add the table head to the table
-  table.appendChild(thead);
+  table.appendChild(getTableHeader([
+    "Format", "Total Decks", 
+    "Completed Decks", "Obtained Cards", 
+    "Missing Cards", "Progress", "Buylist"
+  ]));
 
   // Create the table body
   let tbody = document.createElement('tbody');
 
-  // Create table row for the summary
-  let title = document.createElement('tr');
-
   // Get the overall collection summary
-  let summary = getTotalProgress();
+  let totalProgress = getTotalProgress();
 
-  // Create the standard parts of the title heading
-  title.innerHTML = "<th class='text-light' scope='row'> Summary </th>" + 
-  "<th style='color: rgb(0, 255, 0)'>" + summary.total + "</th>";
-
-  // Calculate the colour for the progress
-  let deckcolor = getProgressColor(summary.complete / summary.total);
-
-  // Calculate the style which should be applied to the completed decks
-  let deckstyle = 'color: rgb(' + deckcolor.r + ',' + deckcolor.g + ',' + deckcolor.b + ')';
-
-  // Add the number of completed decks to the form
-  title.innerHTML += "<th style='" + deckstyle + "'>" + summary.complete + "</th>";
-
-  // Percentage of total cards obtained (0-1)
-  let total = summary.obtained / (summary.obtained + summary.missing);
-
-  // Calculate the colour for the progress
-  let color = getProgressColor(total);
-
-  // Calculate the style to apply to the text
-  let style = 'color: rgb(' + color.r + ',' + color.g + ',' + color.b + ')';
-
-  // Display the progress bar in red colouring
-  
-  title.innerHTML += "<th style='" + style + "'>" + summary.obtained + "</th>";
-  title.innerHTML += "<th style='" + style + "'>" + summary.missing + "</th>";
-  title.innerHTML += "<th style='" + style + "'>" + summary.progress.toFixed(2) + "% </th>";
-  title.innerHTML += "<th style='" + style + "'><a class='text-muted' href='index.html?buylist'> Buylist </th>";
-
-  tbody.appendChild(title);
+  // Add a row for the total progress to the table
+  tbody.appendChild(getRowFormat("Summary", totalProgress, true));
 
   // Loop over all of the formats
   formats.forEach(format => {
 
-    // Create the table row for the row
-    let trow = document.createElement('tr');
+    // Get the format progress
+    let formatProgress = getFormatProgress(format);
 
-    // Get the format progress information
-    let progress = getFormatProgress(format);
-
-    // Get the format sprite information
-    let sprites = getFormatLogos(decks[format].meta.start, decks[format].meta.end);
-
-    // Set the contents for the row
-    trow.innerHTML = 
-      // Deck Format
-      "<th scope='row' class='d-flex justify-content-center'><img src='" + sprites.start + "'>" + 
-      "</img><a href='" + getPageLink(format) + "' class='text-light px-2'>" + format + "</a>" + 
-      "<img src='" + sprites.end + "'>" + 
-      "</img></th><td style='color: rgb(0, 255, 0)'>" + progress.total + "</td>"; 
-      
-      // Calculate the colour for the progress
-      let deckcolor = getProgressColor(progress.complete / progress.total);
-
-      // Calculate the style which should be applied to the completed decks
-      let deckstyle = 'color: rgb(' + deckcolor.r + ',' + deckcolor.g + ',' + deckcolor.b + ')';
-
-      // Add the number of completed decks to the form
-      trow.innerHTML += "<td style='" + deckstyle + "'>" + progress.complete + "</td>";
-
-    // Percentage of deck cards obtained (0-1)
-    total = progress.obtained / (progress.obtained + progress.missing);
-
-    // Calculate the colour for the progress
-    color = getProgressColor(total);
-
-    // Calculate the style to apply to the text
-    style = 'color: rgb(' + color.r + ',' + color.g + ',' + color.b + ')';
-
-    // Display the progress text in red
-    trow.innerHTML += "<td style='" + style + "'>" + progress.obtained + "</td>";
-    trow.innerHTML += "<th style='" + style + "'>" + progress.missing + "</th>";
-    trow.innerHTML += "<th style='" + style + "'>" + progress.progress.toFixed(2) + "% </th>";
-    trow.innerHTML += "<th style='" + style + "'><a class='text-muted' href='index.html?buylist&format=" + format + "'> Buylist </th>";
-
-    // Add the row to the table
-    tbody.appendChild(trow);
+    // Add a row for the format progress to the table
+    tbody.appendChild(getRowFormat(getFormatTitle(format), formatProgress, false));
   });
 
   // Add the table body to the table
@@ -215,25 +171,105 @@ function showPageHome()
 // a little bit of information about each deck.
 function showPageFormat(format)
 {
+  // getRowFormat(title: String, progress: Object, header: Bool): Element
+  // Given a row title, deck progress object and if the row is a header
+  // row or not, generates the row using the properties and returns them 
+  // to the caling process.
+  function getRowDeck(format, deck, title, progress, header = false)
+  {
+    // Get the total number of cards in the progress
+    let totalCards = progress.deck.missing + progress.deck.obtained;
+
+    // Get the total percentage of cards which have been obtained
+    let percentage = getPercentage(progress.deck.obtained, totalCards);
+
+    // Get the colour for all of the other columns
+    let colorTotal = getProgressColor(percentage);
+
+    // Clone the decks colour for the progress
+    // bar, in case the decks colour is changed
+    let colorPercentage = colorTotal;
+
+    // Generate the title which will be used for the row
+    let rowTitle = ["<a class='link-light' href='" + 
+      getPageLink(format, deck) + "'>" + title + "<a/>"]
+
+    // Number of obtained cards in the deck
+    let deckObtained = [progress.deck.obtained];
+
+    // Number of missing cards in the deck
+    let deckMissing = [progress.deck.missing];
+
+    // If there are any variants in the list
+    if (progress.variant.total > 0)
+    {
+      // Add a link to the variant page for the deck to the title
+      rowTitle.push("<a class='link-light' href='" + 
+        getPageLink(format, deck) + "'><sub>(+" + // Change to get variant link
+        progress.variant.total + ")</sub></a>");
+
+      // Add the total obtained variant cards to the total missing cards
+      let totalVariantCards = progress.variant.obtained + 
+        progress.variant.missing;
+
+      // Get the colour for the total progress for variants
+      let colorVariants = getProgressColor(getPercentage(
+        // Total number of variant cards over total required
+        progress.variant.obtained, totalVariantCards
+      ));
+
+      // Update the colourTotal object
+      colorTotal = [
+
+        // Colour for decks
+        colorTotal, 
+
+        // Colour for variants
+        colorVariants
+      ]
+
+      // Convert totalCards object to a list
+      totalCards = [totalCards];
+
+      // Add the variant cards to the total cards list
+      totalCards.push(totalVariantCards);
+
+      // Add the number of variant cards to the obtained cards
+      deckObtained.push(progress.variant.obtained);
+
+      // Add the number of variant cards to the missing cards
+      deckMissing.push(progress.variant.missing);
+    }      
+
+    return getTableRow([
+      rowTitle, // Deck Name
+      totalCards, // Deck Cards
+      deckObtained, // Obtained Cards
+      deckMissing, // Missing Cards
+      (percentage * 100).toFixed(2) + "%", // Percentage
+      "<a class='link-secondary' href='" + 
+        getBuylistLink(format, deck) + "'> Buylist </a>" // Buylist
+    ], [
+      COLOR_WHITE, // Format, always light gray
+      COLOR_GREEN, // Total Decks, always green
+      colorTotal, // Obtained Cards
+      colorTotal, // Missing Cards
+      colorPercentage, // Percentage
+      COLOR_WHITE // Buylist Link, always dark gray
+    ], header);
+  }
+
   // Assign the header to the title
   document.title = format;
-  
-  // Set the page title
-  document.getElementById('pagetitle').innerHTML = format; 
-
-  // Get the format sprite information
-  sprites = getFormatLogos(decks[format].meta.start, decks[format].meta.end);
 
   // Set the page title
-  document.getElementById('pagetitle').innerHTML = "<th scope='row' class='d-flex justify-content-center'><img src='" + sprites.start + "'>" + 
-  "</img><a href='#' class='text-light px-2'>" + format + "</a>" + 
-  "<img src='" + sprites.end + "'>";
+  document.getElementById('pagetitle').innerHTML = getFormatTitle(format);
 
   // Get the list of deck formats
-  decklist = Object.keys(decks[format].decks);
+  let decklist = Object.keys(decks[format].decks);
 
   // Empty array for storing progress
-  progresslist = {}
+  let progresslist = {}
 
   // Loop over all of the decks
   for (let deck of decklist)
@@ -246,10 +282,10 @@ function showPageFormat(format)
   decklist.sort(function(a, b){
 
     // Progress of first element
-    let progress_a = progresslist[a].obtained
+    let progress_a = progresslist[a].deck.obtained
 
     // Progress of second element
-    let progress_b = progresslist[b].obtained
+    let progress_b = progresslist[b].deck.obtained
 
     // If they have the same progress
     if (progress_a == progress_b)
@@ -266,107 +302,34 @@ function showPageFormat(format)
   });
 
   // Create a table element
-  table = document.createElement('table');
+  let table = document.createElement('table');
 
   // Specify the table classes
   table.className = "table table-dark bg-dark";
-
-  // Create a table row for the header
-  thead = document.createElement('thead');
-
-  // Specify the header classes
-  thead.className = "";
-
-  // Assign the columns in the table header
-  thead.innerHTML = "<tr><th> Deck </th>" + 
-    "<th scope='col'> Total Cards </th>" + 
-    "<th scope='col'> Obtained Cards </th>" + 
-    "<th scope='col'> Missing Cards </th>" + 
-    "<th scope='col'> Progress </th>" + 
-    "<th scope='col'> Buylist </th>" + 
-    "</tr>"
     
   // Add the table head to the table
-  table.appendChild(thead);
+  table.appendChild(getTableHeader([
+    "Deck", "Total Cards", "Obtained Cards", 
+    "Missing Cards", "Progress", "Buylist"
+  ]));
 
   // Create the table body
-  tbody = document.createElement('tbody');
+  let tbody = document.createElement('tbody');
 
   // Get the overall format info
-  summary = getFormatProgress(format);
+  let formatProgress = getFormatProgress(format);
 
-  // Create table row for the summary
-  title = document.createElement('tr');
-
-  // Create the standard parts of the title heading
-  title.innerHTML = "<th class='text-light' scope='row'> Summary </th>" + 
-  "<th class='text-light'>-</th>" + 
-  "<th class='text-light'>-</th>" + 
-  "<th class='text-light'>-</th>";
-
-  // Percentage of total cards obtained (0-1)
-  let total = summary.obtained / (summary.obtained + summary.missing);
-
-  // Calculate the colour for the progress
-  let color = getProgressColor(total);
-
-  // Calculate the style to apply to the text
-  let style = 'color: rgb(' + color.r + ',' + color.g + ',' + color.b + ')';
-
-  // Calculate the colour for the progress
-
-  // Display the progress bar in red colouring
-  title.innerHTML += "<th style='" + style + "'>" + summary.progress.toFixed(2) + "% </th>" + 
-  "<td><a class='text-muted' href='index.html?buylist&format=" + format + "'> Format </a></td>";
-
-  tbody.appendChild(title);
+  // 
+  tbody.appendChild(getRowDeck(format, null, "Summary", formatProgress, true));
 
   // Loop over all of the formats
   decklist.forEach(deck => {
 
-    // Create the table row for the row
-    let trow = document.createElement('tr');
-
-    // Get the format progress information
-    let progress = progresslist[deck]
-
-    // Set the contents for the row
-    trow.innerHTML = 
-    // Deck Format
-    "<th scope='row'><a href='" + getPageLink(format, deck) +
-    "' class='text-light'>" + deck + "</a></th>";
-
-    // Get the percentage of cards remaining
-    let percentage = (progress.obtained / (progress.obtained + progress.missing) * 100).toFixed(2);
-
-    // If the deck has 60 cards (as required)
-    if ((progress.obtained + progress.missing) == 60)
-    {
-      // Show the text in green
-      trow.innerHTML += "<td style='color: rgb(0, 255, 0)'>" + (progress.obtained + progress.missing) + "</td>";
-    }
-    else // Deck has more or less than 60 cards
-    {
-      // Show the text in red
-      trow.innerHTML += "<td style='color: rgb(255, 0, 0)'>" + (progress.obtained + progress.missing) + "</td>";
-    }
+    // Get the progress for the current deck
+    let deckProgress = getDeckProgress(deck, format);
     
-    // Percentage of total cards obtained (0-1)
-    let total = progress.obtained / (progress.obtained + progress.missing);
-
-    // Calculate the colour for the progress
-    let color = getProgressColor(total);
-    
-    // Calculate the style to apply to the text
-    let style = 'color: rgb(' + color.r + ',' + color.g + ',' + color.b + ')';
-    
-    trow.innerHTML += "<td style='" + style + "'>" + progress.obtained + "</td>" + 
-    "<td style='" + style + "'>" + progress.missing + "</td>" + 
-    "<td style='" + style + "'>" + percentage + "%</td>" + 
-    "<td><a class='text-muted' href='index.html?buylist&format=" + format + "&deck=" + deck + "'> Deck </a></td>";
-
-    // Add the row to the table
-    tbody.appendChild(trow);
+    // 
+    tbody.appendChild(getRowDeck(format, deck, deck, deckProgress, false));
   });
 
   // Add the table body to the table
@@ -379,6 +342,64 @@ function showPageFormat(format)
   main.appendChild(table);
 }
 
+function getCardCategoryTable(name, category, parent)
+{
+  // Get the category progress
+  let progress = getCategoryProgress(category);
+
+  // Get the combined total of missing and obtained cards
+  let total = progress.obtained + progress.missing;
+
+  // Get the colour for the progress (based on % of cards obtained)
+  let color = getProgressColor(getPercentage(progress.obtained, total));
+  
+  // Add the header to the div element
+  parent.appendChild(getTableRow([
+    name, // Card Name
+    "", // Set Number
+    progress.obtained, // Cards Obtained
+    progress.missing, // Cards Missing
+    total, // Total Cards
+    "" // Details
+  ], [
+    COLOR_WHITE, // Card Name
+    COLOR_WHITE, // Set Number
+    color, // Cards Obtained
+    color, // Cards Missing
+    color, // Total Cards
+    COLOR_WHITE, // Details
+  ], true));
+
+  // Loop over each card in the category
+  category.forEach(card => {
+
+    // Get the total number of cards required
+    let cardTotal = card[2] + card[3];
+
+    // Get the colour of the card, based upon the total number of cards
+    // versus the number of cards required
+    let cardColor = getProgressColor(getPercentage(card[2], cardTotal));
+
+    parent.appendChild(getTableRow([
+      card[0], // Card Name
+      card[1], // Set Number
+      card[2], // Copies Obtained
+      card[3], // Copies Missing
+      cardTotal, // Total Copies
+      "<a target='_blank' href='" + 
+        getPGFQuery(card[0], card[1]) + 
+        "> Link </a>"// Card Details
+    ], [
+      COLOR_WHITE, // Card Name
+      COLOR_WHITE, // Set Number
+      cardColor, // Cards Obtained
+      cardColor, // Cards Missing
+      cardColor, // Total Cards
+      COLOR_WHITE, // Details
+    ], false));
+  });
+}
+
 // showPageDeck(Deck: String, Format: String): Void
 // Given a deck and a format, shows a page that lists
 // all of the cards in that deck, as well as their info
@@ -386,6 +407,7 @@ function showPageFormat(format)
 // value, and other information about the deck.
 function showPageDeck(deck, format)
 {
+
   // Get the main element from the page
   let main = document.getElementById('main');
 
@@ -406,42 +428,9 @@ function showPageDeck(deck, format)
   // Populate the a tag with the text
   deckCopy.innerHTML = "Copy Decklist";
 
-  // Add the copy click event to the link
-  deckCopy.addEventListener('click', async function(){
-
-    // If the client's browser has the clipboard module
-    if (navigator.clipboard)
-    {
-      // Get the string for the decklist
-      let content = exportDecklist(decklist);
-
-      // If a decklist is generated
-      if (content !== "")
-      {
-        try
-        {
-          // Copy the string to the clipboard
-          await navigator.clipboard.writeText(content);
-        }
-        catch (err) // Failed clipboard write
-        {
-          // Report the failure to the error console
-          console.error('Failed to copy content "' + content + '"! Reason: "' + err + '"');
-        }
-      }
-      else // Failed to export decklist
-      {
-        console.error("Failed to export decklist for deck '" + deck + "' of format '" + format + "'!")
-      }
-
-
-    }
-    else // Clipboard module is not available
-		{
-			// Report failure to console, continue
-			console.error('Clipboard interaction not supported by browser.');
-		}
-  });
+  // Add the copy event 
+  // to the copy button
+  addCopyEvent(deckCopy);
 
   // Create a new div to serve as a container
   let container = document.createElement('div');
@@ -471,20 +460,10 @@ function showPageDeck(deck, format)
   tableHead.className = "table table-dark bg-dark";
 
   // Create a table row for the header
-  let theadHead = document.createElement('thead');
-
-  // Assign the columns in the table header
-  theadHead.innerHTML = "<tr>" + 
-    "<th class='text-light' scope='col'> Card Name </th>" + 
-    "<th class='text-light' scope='col'> Set Number </th>" + 
-    "<th class='text-light' scope='col'> Copies Obtained </th>" + 
-    "<th class='text-light' scope='col'> Copies Missing </th>" + 
-    "<th class='text-light' scope='col'> Total </th>" + 
-    "<th class='text-light' scope='col'> Details </th>" + 
-    "</tr>";
-
-  // Add the table head to the table
-  tableHead.appendChild(theadHead);    
+  tableHead.appendChild(getTableHeader([
+    "Card Name", "Set Number", "Copies Obtained", 
+    "Copies Missing", "Total", "Details"
+  ]));
   
   // Create the table body
   tbodyHead = document.createElement('tbody');
@@ -493,25 +472,28 @@ function showPageDeck(deck, format)
   // For the title row
   let progress = getDeckProgress(deck, format);
 
-  // Create a row for storing the deck summary
-  let summary = document.createElement('tr');
+  // Get the total number of cards in the deck
+  let totalCards = progress.deck.obtained + progress.deck.missing;
 
-  // Generate the colour for the header
-  let colorHead = getProgressColor(progress.obtained / (progress.obtained + progress.missing));
-
-  // Generate the header info for the colour
-  let styleHead = 'color: rgb(' + colorHead.r + ',' + colorHead.g + ',' + colorHead.b + ')';
-
-  // Generate the html info for the row
-  summary.innerHTML = "<th class='text-light' scope='row'> Summary </th>" + 
-    "<th scope='col'> - </th>" + 
-    "<th scope='col' style='" + styleHead + "'>" + progress.obtained + "</th>" + 
-    "<th scope='col' style='" + styleHead + "'>" + progress.missing + "</th>" + 
-    "<th scope='col' style='" + styleHead + "'>" + (progress.obtained + progress.missing) + "</th>" + 
-    "<th scope='col'> - </th>";
+  // Get the colour 
+  let totalColor = getProgressColor(progress.deck.obtained, totalCards);
 
   // Add the table body to the column
-  tableHead.appendChild(summary);
+  tableHead.appendChild(getTableRow([
+    "Summary", // Card Name
+    "-", // Set Number
+    progress.deck.obtained, // Copies Obtained
+    progress.deck.missing, // Copies Missing
+    totalCards, // Total Cards
+    "-" // Card Details
+  ], [
+    COLOR_WHITE, // Card Name
+    COLOR_WHITE, // Set Number
+    totalColor, // Copies Obtained
+    totalColor, // Copies Missing
+    totalColor, // Total Cards
+    COLOR_WHITE // Card Details
+  ], true));
 
   // Add the table to the left-hand side
   colHead.appendChild(tableHead);
@@ -528,415 +510,29 @@ function showPageDeck(deck, format)
   // Set the class for the row
   row.className = 'row';
 
-  // Create the left-hand side element
-  let left = document.createElement('div');
+  // Get a new left side table object
+  let tbodyLeft = getSideTableObject(row);
 
-  // Assign the left element as a column
-  left.className = 'col';
+  // Create the pokemon table and append it to the page
+  getCardTable("Pokemon", decklist.pokemon, tbodyLeft);
 
-  // Populate the left-hand side of the page
-  // Contents: Pokemon, Stadiums, Energies
+  // Create the energy table and append it to the page
+  getCardTable("Energy", decklist.energy, tbodyLeft);
+
+  // Get a new right side table object
+  let tbodyRight = getSideTableObject(row);
+
+  // Create the supporter table and append it to the right table
+  getCardTable("Supporter", decklist.supporter, tbodyRight);
   
-  // Create a table element
-  let tableLeft = document.createElement('table');
-
-  // Specify the table classes
-  tableLeft.className = "table table-dark bg-dark";
-
-  // Create a table row for the header
-  let theadLeft = document.createElement('thead');
-
-  // Assign the columns in the table header
-  theadLeft.innerHTML = "<tr>" + 
-    "<th class='text-light' scope='col'> Card Name </th>" + 
-    "<th class='text-light' scope='col'> Set Number </th>" + 
-    "<th class='text-light' scope='col'> Copies Obtained </th>" + 
-    "<th class='text-light' scope='col'> Copies Missing </th>" + 
-    "<th class='text-light' scope='col'> Total </th>" + 
-    "<th class='text-light' scope='col'> Details </th>" + 
-    "</tr>";
-
-  // Add the table head to the table
-  tableLeft.appendChild(theadLeft);  
-
-  // Create the table body
-  tbodyLeft = document.createElement('tbody');
-
-  // If there is at least one pokemon in the deck
-  if (decklist.pokemon.length > 0)
-  {
-    // Add the pokemon summary
-    let theadpkmn = document.createElement('tr');
-
-    // Get the pokemon progress
-    let tdatapkmn = getCategoryProgress(decklist.pokemon);
-
-    // Get the colour for the progress
-    let colorpkmn = getProgressColor(tdatapkmn.obtained / tdatapkmn.total);
-
-    // Get the style for the progress
-    let stylepkmn = 'color: rgb(' + colorpkmn.r + ',' + colorpkmn.g + ',' + colorpkmn.b + ')';
-
-    // Assign the columns in the pokemon header
-    theadpkmn.innerHTML = 
-      "<th scope='col' style='" + stylepkmn + "'> Pokemon </th>" + 
-      "<th scope='col' class='text-light'></th>" + 
-      "<th scope='col' style='" + stylepkmn + "'>" + tdatapkmn.obtained + "</th>" + 
-      "<th scope='col' style='" + stylepkmn + "'>" + tdatapkmn.missing + "</th>" + 
-      "<th scope='col' style='" + stylepkmn + "'>" + tdatapkmn.total + "</th>" + 
-      "<th scope='col' class='text-light'></th>";
-
-    // Add the pokemon header to the table
-    tbodyLeft.appendChild(theadpkmn);
-
-    // Loop over all of the pokemon
-    for (let card of decklist.pokemon)
-    {
-      // Create the table row for the row
-      let trow = document.createElement('tr');
-
-      // Get the colour for the progress
-      let colorrow = getProgressColor(card[2] / (card[2] + card[3]));
-
-      // Get the style for the progress
-      let stylerow = 'color: rgb(' + colorrow.r + ',' + colorrow.g + ',' + colorrow.b + ')';
-
-      // Set the contents for the row
-      trow.innerHTML = 
-        // Deck Format
-        "<td class='text-light' scope='row'>" + card[0] + "</td>" + 
-        "<td class='text-light' scope='row'>" + card[1] + "</td>" + 
-        "<td style='" + stylerow + "'>" + card[2] + "</td>" + 
-        "<td style='" + stylerow + "'>" + card[3] + "</td>" + 
-        "<td style='" + stylerow + "'>" + (card[2] + card[3]) + "</td>" + 
-        "<td class='text-light'><a target='_blank' href='" + getPGFQuery(card[0], card[1]) + "'> Link </a></td>";
-
-      // Add the row to the table
-      tbodyLeft.appendChild(trow);
-    }
-  }
-
-  // If there is at least one energy card in the deck
-  if (decklist.energy.length > 0)
-  {
-    // Add the energy summary
-    let theadnrgy = document.createElement('tr');
-
-    // Get the pokemon progress
-    let tdatanrgy = getCategoryProgress(decklist.energy);
-
-    // Get the colour for the progress
-    let colornrgy = getProgressColor(tdatanrgy.obtained / tdatanrgy.total);
-
-    // Get the style for the progress
-    let stylenrgy = 'color: rgb(' + colornrgy.r + ',' + colornrgy.g + ',' + colornrgy.b + ')';
-
-    // Assign the columns in the pokemon header
-    theadnrgy.innerHTML = 
-      "<th scope='col' style='" + stylenrgy + "'> Energy </th>" + 
-      "<th scope='col' class='text-light'></th>" + 
-      "<th scope='col' style='" + stylenrgy + "'>" + tdatanrgy.obtained + "</th>" + 
-      "<th scope='col' style='" + stylenrgy + "'>" + tdatanrgy.missing + "</th>" + 
-      "<th scope='col' style='" + stylenrgy + "'>" + tdatanrgy.total + "</th>" + 
-      "<th class='text-light' scope='col'></th>";
-
-    // Add the energy header to the table
-    tbodyLeft.appendChild(theadnrgy);
-
-    // Loop over all of the energy
-    for (let card of decklist.energy)
-    {
-      // Create the table row for the row
-      let trow = document.createElement('tr');
-
-      // Get the colour for the progress
-      let colorrow = getProgressColor(card[2] / (card[2] + card[3]));
-
-      // Get the style for the progress
-      let stylerow = 'color: rgb(' + colorrow.r + ',' + colorrow.g + ',' + colorrow.b + ')';
-
-      // Set the contents for the row
-      trow.innerHTML = 
-        // Deck Format
-        "<td class='text-light' scope='row'>" + card[0] + "</td>" + 
-        "<td class='text-light' scope='row'>" + card[1] + "</td>" + 
-        "<td style='" + stylerow + "'>" + card[2] + "</td>" + 
-        "<td style='" + stylerow + "'>" + card[3] + "</td>" + 
-        "<td style='" + stylerow + "'>" + (card[2] + card[3]) + "</td>" + 
-        "<td class='text-light'><a target='_blank' href='" + getPGFQuery(card[0], card[1]) + "'> Link </a></td>";
-
-      // Add the row to the table
-      tbodyLeft.appendChild(trow);
-    }
-  }
-
-  // Add the table body to the column
-  tableLeft.appendChild(tbodyLeft);
-
-  // Add the table to the left-hand side
-  left.appendChild(tableLeft);
-
-  // Add the left-hand side to the container
-  row.appendChild(left);
-
-  // Create the right-hand side element
-  let right = document.createElement('div');
-
-  // Assign the left element as a column
-  right.className = 'col';
-
-  // Populate the right-hand side of the page
-  // Contents: Supporters, Items, Tools
-
-  // Create a table element
-  let tableRight = document.createElement('table');
-
-  // Specify the table classes
-  tableRight.className = "table table-dark bg-dark";
-
-  // Create a table row for the header
-  let theadRight = document.createElement('thead');
-
-  // Assign the columns in the table header
-  theadRight.innerHTML = "<tr>" + 
-    "<th class='text-light' scope='col'> Card Name </th>" + 
-    "<th class='text-light' scope='col'> Set Number </th>" + 
-    "<th class='text-light' scope='col'> Copies Obtained </th>" + 
-    "<th class='text-light' scope='col'> Copies Missing </th>" + 
-    "<th class='text-light' scope='col'> Total </th>" + 
-    "<th class='text-light' scope='col'> Details </th>" + 
-    "</tr>";
-
-  // Add the table head to the table
-  tableRight.appendChild(theadRight);  
-
-  // Create the table body
-  tbodyRight = document.createElement('tbody');
-
-  // If the deck has at least one supporter card
-  if (decklist.supporter.length > 0)
-  {
-    // Add the pokemon summary
-    let theadsupp = document.createElement('tr');
-
-    // Get the pokemon progress
-    let tdatasupp = getCategoryProgress(decklist.supporter);
-
-    // Get the colour for the progress
-    let colorsupp = getProgressColor(tdatasupp.obtained / tdatasupp.total);
-
-    // Get the style for the progress
-    let stylesupp = 'color: rgb(' + colorsupp.r + ',' + colorsupp.g + ',' + colorsupp.b + ')';
-
-    // Assign the columns in the pokemon header
-    theadsupp.innerHTML = 
-      "<th scope='col' style='" + stylesupp + "'> Supporter </th>" + 
-      "<th scope='col' class='text-light'></th>" + 
-      "<th scope='col' style='" + stylesupp + "'>" + tdatasupp.obtained + "</th>" + 
-      "<th scope='col' style='" + stylesupp + "'>" + tdatasupp.missing + "</th>" + 
-      "<th scope='col' style='" + stylesupp + "'>" + tdatasupp.total + "</th>" + 
-      "<th class='text-light' scope='col'></th>";
-
-    // Add the pokemon header to the table
-    tbodyRight.appendChild(theadsupp);
-
-    // Loop over all of the pokemon
-    for (let card of decklist.supporter)
-    {
-      // Create the table row for the row
-      let trow = document.createElement('tr');
-
-      // Get the colour for the progress
-      let colorrow = getProgressColor(card[2] / (card[2] + card[3]));
-
-      // Get the style for the progress
-      let stylerow = 'color: rgb(' + colorrow.r + ',' + colorrow.g + ',' + colorrow.b + ')';
-
-      // Set the contents for the row
-      trow.innerHTML = 
-        // Deck Format
-        "<td class='text-light' scope='row'>" + card[0] + "</td>" + 
-        "<td class='text-light' scope='row'>" + card[1] + "</td>" + 
-        "<td style='" + stylerow + "'>" + card[2] + "</td>" + 
-        "<td style='" + stylerow + "'>" + card[3] + "</td>" + 
-        "<td style='" + stylerow + "'>" + (card[2] + card[3]) + "</td>" + 
-        "<td class='text-light'><a target='_blank' href='" + getPGFQuery(card[0], card[1]) + "'> Link </a></td>";
-        
-        // Add the row to the table
-        tbodyRight.appendChild(trow);
-    }
-  }
-
-  // If the deck has at least one item card
-  if (decklist.item.length > 0)
-  {
-    // Add the item summary
-    let theaditem = document.createElement('tr');
-
-    // Get the item progress
-    let tdataitem = getCategoryProgress(decklist.item);
-
-    // Get the colour for the progress
-    let coloritem = getProgressColor(tdataitem.obtained / tdataitem.total);
-
-    // Get the style for the progress
-    let styleitem = 'color: rgb(' + coloritem.r + ',' + coloritem.g + ',' + coloritem.b + ')';
-
-    // Assign the columns in the item header
-    theaditem.innerHTML = 
-      "<th scope='col' style='" + styleitem + "'> Item </th>" + 
-      "<th scope='col' class='text-light'></th>" + 
-      "<th scope='col' style='" + styleitem + "'>" + tdataitem.obtained + "</th>" + 
-      "<th scope='col' style='" + styleitem + "'>" + tdataitem.missing + "</th>" + 
-      "<th scope='col' style='" + styleitem + "'>" + tdataitem.total + "</th>" + 
-      "<th class='text-light' scope='col'></th>";
-
-    // Add the item header to the table
-    tbodyRight.appendChild(theaditem);
-
-    // Loop over all of the item
-    for (let card of decklist.item)
-    {
-      // Create the table row for the row
-      let trow = document.createElement('tr');
-
-      // Get the colour for the progress
-      let colorrow = getProgressColor(card[2] / (card[2] + card[3]));
-
-      // Get the style for the progress
-      let stylerow = 'color: rgb(' + colorrow.r + ',' + colorrow.g + ',' + colorrow.b + ')';
-
-      // Set the contents for the row
-      trow.innerHTML = 
-        // Deck Format
-        "<td class='text-light' scope='row'>" + card[0] + "</td>" + 
-        "<td class='text-light' scope='row'>" + card[1] + "</td>" + 
-        "<td style='" + stylerow + "'>" + card[2] + "</td>" + 
-        "<td style='" + stylerow + "'>" + card[3] + "</td>" + 
-        "<td style='" + stylerow + "'>" + (card[2] + card[3]) + "</td>" + 
-        "<td class='text-light'><a target='_blank' href='" + getPGFQuery(card[0], card[1]) + "'> Link </a></td>";
-
-      // Add the row to the table
-      tbodyRight.appendChild(trow);
-    }
-  }
-
-  // If the deck has at least one tool card
-  if (decklist.tool.length > 0)
-  {
-    // Add the tool summary
-    let theadtool = document.createElement('tr');
-
-    // Get the tool progress
-    let tdatatool = getCategoryProgress(decklist.tool);
-    
-    // Get the colour for the progress
-    let colortool = getProgressColor(tdatatool.obtained / tdatatool.total);
-
-    // Get the style for the progress
-    let styletool = 'color: rgb(' + colortool.r + ',' + colortool.g + ',' + colortool.b + ')';
-
-    // Assign the columns in the tool header
-    theadtool.innerHTML = 
-      "<th scope='col' style='" + styletool + "'> Tool </th>" + 
-      "<th scope='col' class='text-light'></th>" + 
-      "<th scope='col' style='" + styletool + "'>" + tdatatool.obtained + "</th>" + 
-      "<th scope='col' style='" + styletool + "'>" + tdatatool.missing + "</th>" + 
-      "<th scope='col' style='" + styletool + "'>" + tdatatool.total + "</th>" + 
-      "<th class='text-light' scope='col'></th>";
-
-    // Add the tool header to the table
-    tbodyRight.appendChild(theadtool);
-
-    // Loop over all of the tool
-    for (let card of decklist.tool)
-    {
-      // Create the table row for the row
-      let trow = document.createElement('tr');
-
-      // Get the colour for the progress
-      let colorrow = getProgressColor(card[2] / (card[2] + card[3]));
-
-      // Get the style for the progress
-      let stylerow = 'color: rgb(' + colorrow.r + ',' + colorrow.g + ',' + colorrow.b + ')';
-
-      // Set the contents for the row
-      trow.innerHTML = 
-        // Deck Format
-        "<td class='text-light' scope='row'>" + card[0] + "</td>" + 
-        "<td class='text-light' scope='row'>" + card[1] + "</td>" + 
-        "<td style='" + stylerow + "'>" + card[2] + "</td>" + 
-        "<td style='" + stylerow + "'>" + card[3] + "</td>" + 
-        "<td style='" + stylerow + "'>" + (card[2] + card[3]) + "</td>" + 
-        "<td class='text-light'><a target='_blank' href='" + getPGFQuery(card[0], card[1]) + "'> Link </a></td>";
-
-      // Add the row to the table
-      tbodyRight.appendChild(trow);
-    }
-  }
-
-  // If the deck has at least one stadium card
-  if (decklist.stadium.length > 0)
-  {
-    // Add the stadium summary
-    let theadstad = document.createElement('tr');
-
-    // Get the stadium progress
-    let tdatastad = getCategoryProgress(decklist.stadium);
-    
-    // Get the colour for the progress
-    let colorstad = getProgressColor(tdatastad.obtained / tdatastad.total);
-
-    // Get the style for the progress
-    let stylestad = 'color: rgb(' + colorstad.r + ',' + colorstad.g + ',' + colorstad.b + ')';
-
-    // Assign the columns in the stadium header
-    theadstad.innerHTML = 
-      "<th scope='col' style='" + stylestad + "'> Stadium </th>" + 
-      "<th scope='col' class='text-light'></th>" + 
-      "<th scope='col' style='" + stylestad + "'>" + tdatastad.obtained + "</th>" + 
-      "<th scope='col' style='" + stylestad + "'>" + tdatastad.missing + "</th>" + 
-      "<th scope='col' style='" + stylestad + "'>" + tdatastad.total + "</th>" + 
-      "<th class='text-light' scope='col'></th>";
-
-    // Add the stadium header to the table
-    tbodyRight.appendChild(theadstad);
-
-    // Loop over all of the stadium
-    for (let card of decklist.stadium)
-    {
-      // Create the table row for the row
-      let trow = document.createElement('tr');
-
-      // Get the colour for the progress
-      let colorrow = getProgressColor(card[2] / (card[2] + card[3]));
-
-      // Get the style for the progress
-      let stylerow = 'color: rgb(' + colorrow.r + ',' + colorrow.g + ',' + colorrow.b + ')';
-
-      // Set the contents for the row
-      trow.innerHTML = 
-        // Deck Format
-        "<td class='text-light' scope='row'>" + card[0] + "</td>" + 
-        "<td class='text-light' scope='row'>" + card[1] + "</td>" + 
-        "<td style='" + stylerow + "'>" + card[2] + "</td>" + 
-        "<td style='" + stylerow + "'>" + card[3] + "</td>" + 
-        "<td style='" + stylerow + "'>" + (card[2] + card[3]) + "</td>" + 
-        "<td class='text-light'><a target='_blank' href='" + getPGFQuery(card[0], card[1]) + "'> Link </a></td>";
-
-      // Add the row to the table
-      tbodyRight.appendChild(trow);
-    }
-  }
-
-  // Add the table body to the column
-  tableRight.appendChild(tbodyRight);
-
-  // Add the table to the left-hand side
-  right.appendChild(tableRight);
-
-  // Add the right-hand side to the container
-  row.appendChild(right);
+  // Create the item table and append it to the right table
+  getCardTable("Item", decklist.item, tbodyRight);
+  
+  // Create the tool table and append it to the right table
+  getCardTable("Tool", decklist.tool, tbodyRight);
+  
+  // Create the stadium table and append it to the right table
+  getCardTable("Stadium", decklist.stadium, tbodyRight);
 
   // Add the row to the container
   container.appendChild(row);
