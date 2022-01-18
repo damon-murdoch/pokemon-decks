@@ -1165,9 +1165,9 @@ const decks = {
           ["Professor Sycamore", "", 0, 4],
           ["N", "", 0, 4],
           ["Guzma", "", 4, 0],
-          ["Skyla", "", 2, 0],
-          ["Brigette", "", 0, 1],
-          ["Brock's Grit", "", 1, 0]
+          ["Brigette", "", 2, 0],
+          ["Brock's Grit", "", 1, 0],
+          ["Skyla", "", 1, 0]
         ], "item": [
           ["Ultra Ball", "", 0, 4],
           ["Rare Candy", "", 0, 4],
@@ -1203,7 +1203,7 @@ const decks = {
           ["Professor Sycamore", "", 0, 4],
           ["N", "", 0, 4],
           ["Guzma", "", 4, 0],
-          ["Brigette", "", 0, 2],
+          ["Brigette", "", 2, 0],
           ["Skyla", "", 1, 0],
         ], "item": [
           ["Ultra Ball", "", 0, 4],
@@ -1458,7 +1458,7 @@ const decks = {
           ["Mewtwo", "EVO 51", 1, 0]
         ], "supporter": [
           ["Guzma", "", 3, 0],
-          ["Brigette", "", 0, 3],
+          ["Brigette", "", 3, 0],
           ["N", "", 3, 0],
           ["Cynthia", "", 1, 0],
           ["Acerola", "", 1, 0],
@@ -1498,7 +1498,7 @@ const decks = {
           ["Mewtwo", "EVO 51", 1, 0]
         ], 
         "supporter": [
-          ["Brigette", "", 0, 3],
+          ["Brigette", "", 3, 0],
           ["Guzma", "", 3, 0],
           ["N", "", 3, 0],
           ["Cynthia", "", 1, 0],
