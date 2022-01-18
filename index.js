@@ -10,12 +10,12 @@ function showPageHome()
   function getRowFormat(title, progress, header = false)
   {
     // Get the total number of cards in the progress, including variants
-    let totalCards = progress.deck.missing + progress.deck.obtained + 
-      progress.variant.missing + progress.variant.obtained;
+    let totalCards = progress.deck.missing + progress.deck.obtained;
 
     // Get the total percentage of cards which have been obtained, including variants
     let percentage = getPercentage(progress.deck.obtained + 
-      progress.variant.obtained, totalCards);
+      progress.variant.obtained, totalCards + 
+      (progress.variant.obtained + progress.variant.missing));
 
     // Get the colour for all of the other columns
     let colorTotal = getProgressColor(percentage);
@@ -180,12 +180,12 @@ function showPageFormat(format)
   function getRowDeck(format, deck, title, progress, header = false)
   {
     // Get the total number of cards in the progress, including variants
-    let totalCards = progress.deck.missing + progress.deck.obtained + 
-      progress.variant.missing + progress.variant.obtained;
+    let totalCards = progress.deck.missing + progress.deck.obtained;
 
     // Get the total percentage of cards which have been obtained, including variants
     let percentage = getPercentage(progress.deck.obtained + 
-      progress.variant.obtained, totalCards);
+      progress.variant.obtained, totalCards + 
+      (progress.variant.obtained + progress.variant.missing));
       
     // Get the colour for all of the other columns
     let colorTotal = getProgressColor(percentage);

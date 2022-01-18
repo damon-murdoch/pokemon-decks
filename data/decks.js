@@ -630,7 +630,7 @@ const decks = {
           ["Bronzong", "PHF 61", 4, 0],
           ["Bronzong Break", "FCI 62", 1, 0],
           ["Shaymin-ex", "ROS 77", 0, 2],
-          ["Aegislash-ex", "PHF 65", 2, 0],
+          ["Aegislash-ex", "PHF 65", 1, 1],
           ["Genesect-ex", "FCO 64", 1, 1],
           ["Cobalion", "STS 74", 2, 0],
           ["Magearna-ex", "STS 75", 1, 0]
@@ -646,7 +646,7 @@ const decks = {
           ["Ultra Ball", "", 0, 4],
           ["Max Elixir", "", 0, 4],
           ["VS Seeker", "", 0, 4],
-          ["Battle Compressor", "", 0, 1]
+          ["Battle Compressor", "", 1, 0]
         ], "tool": [
           ["Fighting Fury Belt", "", 0, 3],
           ["Float Stone", "", 0, 3]
@@ -686,13 +686,14 @@ const decks = {
           ["Trainers' Mail", "", 0, 3],
           ["Enhanced Hammer", "", 2, 0],
           ["Startling Megaphone", "", 1, 0],
+          ["Super Rod", "", 1, 0],
         ], "tool": [
           ["Fighting Fury Belt", "", 0, 3],
           ["Float Stone", "", 0, 2],
         ], "stadium": [
-          ["Parallel City", "", 2, 0]
+          ["Parallel City", "", 0, 2]
         ], "energy": [
-          ["Darkness Energy", "", 10, 0],
+          ["Darkness Energy", "", 9, 0],
           ["Double Dragon Energy", "", 4, 0]
         ]
       }
@@ -1056,14 +1057,14 @@ const decks = {
           ["Field Blower", "", 0, 2],
           ["Rescue Stretcher", "", 1, 0]
         ], "tool": [
-          ["Float Stone", "", 3, 1],
+          ["Float Stone", "", 0, 4],
           ["Choice Band", "", 4, 0]
         ], "stadium": [
           ["Po Town", "", 4, 0]
         ], "energy": [
           ["Psychic Energy", "", 6, 0],
-          ["Double Colorless Energy", "", 0, 4],
-          ["Rainbow Energy", "", 0, 2]
+          ["Double Colorless Energy", "", 3, 1],
+          ["Rainbow Energy", "", 2, 0]
         ]
       },
       "Gardevoir": { 
@@ -1140,8 +1141,8 @@ const decks = {
         ], "stadium": [
           ["Parallel City", "", 1, 0]
         ], "energy": [
-          ["Double Colorless Energy", "", 0, 3],
-          ["Rainbow Energy", "", 0, 3],
+          ["Double Colorless Energy", "", 3, 0],
+          ["Rainbow Energy", "", 3, 0],
           ["Grass Energy", "", 3, 0],
         ]
       },
@@ -1576,11 +1577,11 @@ const decks = {
           ["Buzzwole", "FLI 71", 4, 0],
           ["Garbodor", "GRI 51", 2, 0],
           ["Garbodor", "BKP 57", 0, 1],
-          ["Tribbish", "BKP 56", 3, 0],
-          ["Remoraid", "", 1, 0],
-          ["Octillery", "", 0, 1],
-          ["Diancie", "", 1, 0],
-          ["Oranguru", "", 1, 0],
+          ["Trubbish", "BKP 56", 3, 0],
+          ["Remoraid", "BKT 32", 1, 0],
+          ["Octillery", "BKT 33", 0, 1],
+          ["Diancie", "FLI 74", 1, 0],
+          ["Oranguru", "SUM 113", 1, 0]
         ], "supporter": [
           ["Professor Sycamore", "", 4, 0],
           ["Cynthia", "", 4, 0],
@@ -1589,17 +1590,17 @@ const decks = {
         ], "item": [
           ["Ultra Ball", "", 4, 0],
           ["Nest Ball", "", 2, 0],
-          ["Field Blower", "", 0, 2],
+          ["Field Blower", "", 0, 3],
           ["Rescue Stretcher", "", 2, 0],
           ["Special Charge", "", 1, 0],
         ], "tool": [
-          ["Float Stone", "", 1, 3],
+          ["Float Stone", "", 3, 0],
           ["Choice Band", "", 0, 3]
         ], "stadium": [
           ["Shrine of Punishment", "", 4, 0],
         ], "energy": [
           ["Strong Energy", "", 0, 4],
-          ["Rainbow Energy", "", 0, 4],
+          ["Rainbow Energy", "", 4, 0],
           ["Beast Energy", "", 1, 0]
         ]
       },
@@ -1704,7 +1705,7 @@ const decks = {
           ["Rescue Stretcher", "", 0, 2],
           ["Field Blower", "", 0, 2],
         ], "tool": [
-          ["Float Stone", "", 0, 3],
+          ["Float Stone", "", 1, 2],
           ["Fighting Fury Belt", "", 0, 2],
           ["Choice Band", "", 0, 1]
         ], "stadium": [
@@ -1751,7 +1752,7 @@ const decks = {
           ["Reverse Valley", "", 1, 0]
         ], "energy": [
           ["Darkness Energy", "", 9, 0],
-          ["Double Colorless Energy", "", 2, 2]
+          ["Double Colorless Energy", "", 3, 1]
         ]
       }
     }
@@ -2384,7 +2385,7 @@ const decks = {
         }, 
         "pokemon": [
           ["Misdreavus", "UNB 77", 4, 0],
-          ["Mismagius", "UNB 78", 1, 2],
+          ["Mismagius", "UNB 78", 3, 0],
           ["Garchomp & Giratina Tag Team-gx", "UNM 146", 1, 2],
           ["Naganadel & Guzzlord Tag Team-gx", "CEC 158", 1, 0],
           ["Blacephalon", "CEC 104", 0, 1]
@@ -2397,13 +2398,13 @@ const decks = {
           ["Faba", "", 1, 0]
         ],
         "item": [
-          ["Pokegear 3.0", "", 0, 4],
+          ["Pokegear 3.0", "", 4, 0],
           ["Mysterious Treasure", "", 4, 0],
           ["Reset Stamp", "", 3, 0],
           ["Tag Call", "", 2, 0],
           ["Custom Catcher", "", 2, 0],
-          ["Great Catcher", "", 0, 1],
-          ["Dusk Stone", "", 0, 1],
+          ["Great Catcher", "", 1, 0],
+          ["Dusk Stone", "", 1, 0],
           ["Switch", "", 1, 0],
           ["Energy Spinner", "", 1, 0],
           ["Beast Ring", "", 1, 0],
@@ -2411,14 +2412,14 @@ const decks = {
         ],
         "tool": [
           ["Counter Gain", "", 2, 0],
-          ["Karate Belt", "", 0, 1]
+          ["Karate Belt", "", 1, 0]
         ],
         "stadium": [
-          ["Power Plant", "", 0, 4]
+          ["Power Plant", "", 4, 0]
         ],
         "energy": [
           ["Psychic Energy", "", 3, 0],
-          ["Rainbow Energy", "", 0, 2],
+          ["Rainbow Energy", "", 1, 1],
           ["Unit Energy FDY", "", 2, 0],
           ["Weakness Guard Energy", "", 0, 2],
           ["Fighting Energy", "", 1, 0],
@@ -2521,7 +2522,7 @@ const decks = {
           ["Jirachi", "TEU 99", 0, 4],
           ["Florges", "FLI 86", 0, 3],
           ["Flabebe", "CEC 149", 4, 0],
-          ["Munchlax", "UNM 173", 0, 2],
+          ["Munchlax", "UNM 173", 2, 0],
           ["Mew", "PR-SM SM215", 1, 1],
           ["Spiritomb", "UNB 112", 0, 1],
           ["Latios-gx", "UNM 78", 1, 0],
@@ -2529,7 +2530,7 @@ const decks = {
           ["Wobbufet", "LOT 93", 1, 0],
         ],
         "supporter": [
-          ["Professor Oak's Setup", "", 1, 3],
+          ["Professor Oak's Setup", "", 4, 0],
           ["Steven's Resolve", "", 4, 0],
           ["Lusamine", "", 3, 0],
           ["Bellelba & Brycen Man Tag Team", "", 2, 0],
@@ -2537,8 +2538,8 @@ const decks = {
           ["Channeler", "", 1, 0],
         ],
         "item": [
-          ["Lillie's Poke Doll", "", 2, 2],
-          ["Pokegear 3.0", "", 0, 4],
+          ["Lillie's Poke Doll", "", 4, 0],
+          ["Pokegear 3.0", "", 4, 0],
           ["Acro Bike", "", 4, 0],
           ["Rare Candy", "", 3, 0],
           ["Pokemon Communication", "", 2, 0]
