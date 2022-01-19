@@ -9,10 +9,7 @@ const decks = {
     }, 
     "decks": {
       "Zorua Collection": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": false
-        },
+
         "variants": {
 
         }, 
@@ -46,10 +43,7 @@ const decks = {
         ]
       }, 
       "Binder Display": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": false
-        },
+
         "variants": {
 
         }, 
@@ -99,10 +93,7 @@ const decks = {
     },
     "decks": {
       "Archie's Blastoise": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": false
-        },
+
         "variants": {
 
         }, 
@@ -138,10 +129,7 @@ const decks = {
         ]
       }, 
       "Manec Toad Bats": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": false
-        },
+
         "variants": {
 
         }, 
@@ -177,10 +165,7 @@ const decks = {
         ]
       }, 
       "Primal Groudon": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": false
-        },
+
         "variants": {
 
         }, 
@@ -219,10 +204,7 @@ const decks = {
         ]
       }, 
       "Donphan": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": false
-        },
+
         "variants": {
 
         }, 
@@ -258,6 +240,7 @@ const decks = {
           ["Double Colorless Energy", "", 0, 2],
         ]
       }
+      // https://www.pokemon.com/us/play-pokemon/worlds/2015/decks/landorus-crobat/
     }
   },
 
@@ -271,10 +254,7 @@ const decks = {
     "decks": {
 
       "Night March": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": false
-        },
+
         "variants": {
           "Vespiquen": {
             "pokemon": [
@@ -327,12 +307,9 @@ const decks = {
         ]
       }, 
       "Vespiquen Vileplume": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": false
-        },
-        "variants": {
 
+        "variants": {
+          
         }, 
         "pokemon": [
           ["Vileplume", "AOR 3", 4, 0], 
@@ -367,10 +344,7 @@ const decks = {
         ]
       },
       "Greninja Talonflame": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": false
-        },
+
         "variants": {
 
         }, 
@@ -409,10 +383,7 @@ const decks = {
         ]
       },
       "Mega Audino": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": false
-        },
+
         "variants": {
 
         }, 
@@ -456,10 +427,7 @@ const decks = {
         ]
       },
       "Mega Manectric": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": false
-        },
+
         "variants": {
 
         }, 
@@ -495,52 +463,8 @@ const decks = {
           ["Lightning Energy", "", 11, 0], 
         ]
       },
-      "Lucario Crobat": { 
-        "meta": {
-          "deckbox": false,
-          "sleeves": false
-        },
-        "variants": {
-
-        }, 
-        "pokemon": [
-          ["Lucario-ex", "FFI 107", 3, 0],
-          ["Crobat", "PHF 33", 3, 0],
-          ["Golbat", "PHF 32", 4, 0],
-          ["Zubat", "PHF 31", 4, 0],
-          ["Shaymin-ex", "ROS 77", 0, 2],
-        ], 
-        "supporter": [
-          ["Professor Sycamore", "", 0, 4], 
-          ["N", "", 0, 2],
-          ["Korrina", "", 2, 0],
-          ["Lysandre", "", 2, 0],
-          ["Hex Maniac", "", 2, 0],
-        ], 
-        "item": [
-          ["VS Seeker", "", 4, 0],
-          ["Trainers' Mail", "", 0, 4],
-          ["Super Scoop Up", "", 4, 0],
-          ["Ultra Ball", "", 0, 4],
-          ["Level Ball", "", 2, 0],
-          ["Escape Rope", "", 2, 0],
-        ], 
-        "tool": [
-          ["Muscle Band", "", 2, 0]
-        ], 
-        "stadium": [
-          ["Fighting Stadium", "", 2, 0]
-        ], 
-        "energy": [
-          ["Fighting Energy", "", 4, 0],
-          ["Strong Energy", "", 0, 4]
-        ]
-      },
       "Water Seismitoad": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": false
-        },
+
         "variants": {
 
         }, 
@@ -581,10 +505,7 @@ const decks = {
         ]
       },
       "Volcanion": { 
-        "meta": {
-          "deckbox": false,
-          "sleeves": false
-        },
+
         "variants": {
 
         }, 
@@ -618,10 +539,7 @@ const decks = {
         ]
       },
       "Metal Box": {
-        "meta": {
-          "deckbox": false,
-          "sleeves": false
-        },
+
         "variants": {
 
         }, 
@@ -657,10 +575,7 @@ const decks = {
         ]
       },
       "Dark Box": {
-        "meta": {
-          "deckbox": false,
-          "sleeves": false
-        },
+
         "variants": {
 
         }, 
@@ -697,6 +612,7 @@ const decks = {
           ["Double Dragon Energy", "", 4, 0]
         ]
       }
+      // https://www.pokemon.com/us/play-pokemon/worlds/2016/decks/popular/
     }
   },
 
@@ -709,10 +625,7 @@ const decks = {
     },
     "decks": {
       "Darkrai": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -750,10 +663,7 @@ const decks = {
         ]
       },
       "Decidueye Vileplume": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -787,10 +697,7 @@ const decks = {
         ]
       },
       "Volcanion": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -824,10 +731,7 @@ const decks = {
         ]
       },
       "Mega Mewtwo": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -864,10 +768,7 @@ const decks = {
         ]
       },
       "Mega Rayquaza": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -904,10 +805,7 @@ const decks = {
         ]
       },
       "Mega Gardevoir": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -941,10 +839,7 @@ const decks = {
         ]
       },
       "Yveltal Garbodor": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -979,10 +874,7 @@ const decks = {
         ]
       },
       "Gyarados": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1031,10 +923,7 @@ const decks = {
     },
     "decks": {
       "Drampa Garbodor": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1068,10 +957,7 @@ const decks = {
         ]
       },
       "Gardevoir": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1108,10 +994,7 @@ const decks = {
         ]
       },
       "Golisopod Garbodor": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1147,10 +1030,7 @@ const decks = {
         ]
       },
       "Tapu Bulu Vikavolt": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1186,10 +1066,7 @@ const decks = {
         ]
       },
       "Metagross": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1222,10 +1099,7 @@ const decks = {
         ]
       },
       "Sylveon Gardevoir": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1270,10 +1144,7 @@ const decks = {
     },
     "decks": {
       "Zoroark Garbodor": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1312,10 +1183,7 @@ const decks = {
         ]
       },
       "Zoroark Golisopod": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1354,10 +1222,7 @@ const decks = {
         ]
       },
       "Zoroark Lycanroc": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1398,10 +1263,7 @@ const decks = {
         ]
       },
       "Zoroark Control": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1441,10 +1303,7 @@ const decks = {
         ]
       },
       "Zoroark Lucario": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1481,10 +1340,7 @@ const decks = {
         ]
       },
       "Zoroark Gardevoir": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1528,10 +1384,7 @@ const decks = {
         ]
       }, 
       "Buzzwole Lycanroc": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1566,10 +1419,7 @@ const decks = {
         ]
       },
       "Buzzwole Garbodor": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1605,10 +1455,7 @@ const decks = {
         ]
       },
       "Malamar Necrozma": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1641,10 +1488,7 @@ const decks = {
         ]
       },
       "Malamar Ultra": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1679,10 +1523,7 @@ const decks = {
         ]
       },
       "Rayquaza": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1716,10 +1557,7 @@ const decks = {
         ]
       }, 
       "Attacking Hoopa": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1767,10 +1605,7 @@ const decks = {
     },
     "decks": {
       "Trevenant Break": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1805,10 +1640,7 @@ const decks = {
         ]
       },
       "Zoroark Sky Field": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1848,10 +1680,7 @@ const decks = {
         ]
       },
       "Night March": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1892,10 +1721,7 @@ const decks = {
         ]
       },
       "Sableye Control": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1941,10 +1767,7 @@ const decks = {
         ]
       },
       "Seismitoad": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -1989,10 +1812,7 @@ const decks = {
         ]
       },
       "Buzzwole Lycanroc": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -2043,10 +1863,7 @@ const decks = {
     },
     "decks": {
       "Mewtwo & Mew": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -2086,10 +1903,7 @@ const decks = {
         ]
       },
       "ADP Keldeo": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -2126,10 +1940,7 @@ const decks = {
         ]
       },
       "Gardevoir & Sylveon": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -2162,10 +1973,7 @@ const decks = {
         ]
       },
       "Pidgeotto Control": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -2206,10 +2014,7 @@ const decks = {
         ]
       },
       "Pikachu & Zekrom": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -2246,10 +2051,7 @@ const decks = {
         ]
       },
       "Reshiram & Charizard": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -2284,10 +2086,7 @@ const decks = {
         ]
       },
       "Malamar Spread": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -2320,10 +2119,7 @@ const decks = {
         ]
       },
       "Pidgeotto Blacephalon": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -2354,10 +2150,7 @@ const decks = {
         ]
       },
       "Garchomp & Giratina": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
           "Roxie": {
             "pokemon": [
@@ -2391,7 +2184,7 @@ const decks = {
           ["Blacephalon", "CEC 104", 0, 1]
         ],
         "supporter": [
-          ["Green's-exploration", "", 4, 0],
+          ["Green's Exploration", "", 4, 0],
           ["Guzma & Hala Tag Team", "", 2, 0],
           ["Cynthia & Caitlyn Tag Team", "", 1, 0],
           ["Mallow & Lana Tag Team", "", 1, 0],
@@ -2427,10 +2220,7 @@ const decks = {
         ]
       }, 
       "Green's ReshiZard": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -2468,10 +2258,7 @@ const decks = {
         ]
       },
       "Naganadel & Guzzlord": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -2511,10 +2298,6 @@ const decks = {
         ]
       }, 
       "Florges Dolls": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
         "variants": {
 
         }, 
@@ -2555,6 +2338,110 @@ const decks = {
           ["Rainbow Energy", "", 1, 0]
         ]
       }, 
+      "Green's Blacephalon": {
+        "variants": {
+
+        }, 
+        "pokemon": [
+          ["Blacephalon", "UNB 32", 0, 4],
+          ["Blacephalon-Gx", "LOT 52", 0, 1],
+          ["Victini Prism Star", "DRM 7", 0, 1],
+        ], "supporter": [
+          ["Green's Exploration", "", 4, 0],
+          ["Welder", "", 0, 4], 
+          ["Rosa", "", 0, 1], 
+        ], "item": [
+          ["Acro Bike", "", 4, 0],
+          ["Pokegear 3.0", "", 0, 4],
+          ["Fire Crystal", "", 0, 4],
+          ["Fiery Flint", "", 0, 4],
+          ["Custom Catcher", "", 0, 4],
+          ["Beast Ring", "", 0, 2],
+          ["Cherish Ball", "", 1, 0],
+          ["Reset Stamp", "", 1, 0],
+          ["Switch", "", 1, 0],
+        ], "tool": [
+          
+        ], "stadium": [
+          ["Ultra Space", "", 3, 0],
+          ["Heat Factory Prism Star", "", 0, 1]
+        ], "energy": [
+          ["Fire Energy", "", 16, 0]
+        ]
+      }, 
+      "Blacephalon Gx Naganadel": {
+        "variants": {
+
+        }, 
+        "pokemon": [
+          ["Poipole", "FLI 55", 4, 0], 
+          ["Naganadel", "LOT 108", 3, 0],
+          ["Naganadel-Gx", "UNM 160", 0, 2],
+          ["Naganadel-Gx", "FLI 56", 1, 0],
+          ["Blacephalon-Gx", "LOT 52", 0, 3], 
+          ["Blacephalon", "CEC 104", 0, 1], 
+          ["Heatran-gx", "UNM 25", 1, 0],
+          ["Dedenne-gx", "UNB 57", 0, 1]
+        ], "supporter": [
+          ["Welder", "", 0, 4],
+          ["Cynthia", "", 4, 0],
+          ["Mallow & Lana", "", 2, 0],
+        ], "item": [
+          ["Beast Ring", "", 0, 4], 
+          ["Mysterious Treasure", "", 0, 4], 
+          ["Cherish Ball", "", 0, 2], 
+          ["Pokegear 3.0", "", 0, 2], 
+          ["Great Catcher", "", 2, 0], 
+          ["Reset Stamp", "", 1, 0], 
+        ], "tool": [
+          
+        ], "stadium": [
+          ["Ultra Space", "", 2, 0],
+          ["Heat Factory Prism Star", "", 0, 1]
+        ], "energy": [
+          ["Fire Energy", "", 14, 0],
+          ["Psychic Energy", "", 1, 0],
+          ["Beast Energy Prism Star", "", 1, 0],
+        ]
+      },
+      "Green's ADP": {
+        
+        "variants": {
+
+        }, 
+        "pokemon": [
+          ["Arceus & Dialga & Palkia Gx", "CEC 156", 0, 4],
+          ["Cryogonal", "UNM 46", 2, 0],
+          ["Lucario & Melmetal-Gx", "UNB 120", 0, 1],
+          ["Drampa", "CEC 159", 1, 0],
+        ], "supporter": [
+          ["Green's Exploration", "", 0, 4], 
+          ["Cynthia & Caitlyn", "", 0, 4], 
+          ["Mallow & Lana", "", 0, 2], 
+          ["Guzma & Hala", "", 1, 0], 
+          ["Channeler", "", 1, 0], 
+        ], "item": [
+          ["Pokegear  3.0", "", 0, 4],
+          ["Tag Call", "", 4, 0],
+          ["Custom Catcher", "", 0, 4],
+          ["Reset Stamp", "", 3, 0],
+          ["Switch", "", 2, 0],
+          ["Great Potion", "", 0, 2],
+          ["Energy Spinner", "", 2, 0],
+          ["Pokemon Communication", "", 1, 0],
+          ["Great Catcher", "", 1, 0],
+        ], "tool": [
+          ["Choice Helmet", "", 1, 0],
+        ], "stadium": [
+          ["Chaotic Swell", "", 0, 2], 
+          ["Power Plant", "", 0, 2]
+        ], "energy": [
+          ["Water Energy", "", 5, 0],
+          ["Metal Energy", "", 5, 0],
+          ["Unit Energy GRW", "", 1, 0],
+          ["Unit Energy LPM", "", 1, 0],
+        ]
+      },
     }
   },
 
@@ -2567,10 +2454,7 @@ const decks = {
     },
     "decks": {
       "Zacian Zamazenta": {
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 
@@ -2604,10 +2488,7 @@ const decks = {
         ]
       },
       "Rapid Strike Inteleon": { 
-        "meta": {
-          "deckbox": true,
-          "sleeves": true
-        },
+
         "variants": {
 
         }, 

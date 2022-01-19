@@ -568,13 +568,13 @@ function showPageDeck(deck, format, variant = null)
   }
 }
 
-// showPageVariantList(deck: String, format: String): Void
+// showPageVariants(deck: String, format: String): Void
 // Given an optional deck and an optional format, shows the
 // list of variants for all decks which meet the deck and 
 // format criteria. If neither a deck nor a format are 
 // provided, all variants will be listed, along with the
 // cards which have been modified from the original list.
-function showPageVariantList(format, deck = null)
+function showPageVariants(format, deck = null)
 {
   // Get the main element from the page
   let main = document.getElementById('main');
@@ -901,7 +901,7 @@ if (params.has('format'))
     else if (params.has('variantlist'))
     {
       // Show the deck / format variant list
-      showPageVariantList(format, deck);
+      showPageVariants(format, deck);
     }
     else // We are not on the buylist page
     {
@@ -933,7 +933,7 @@ if (params.has('format'))
     else if (params.has('variantlist'))
     {
       // Show the deck / format variant list
-      showPageVariantList(format);
+      showPageVariants(format);
     }
     else // We are not on the buylist page
     {
