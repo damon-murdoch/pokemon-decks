@@ -2531,6 +2531,44 @@ const decks = {
           ["Psychic Energy", "", 1, 0],
           ["Beast Energy Prism Star", "", 1, 0],
         ]
+      }, 
+      "Quagsire Naganadel": {
+        "variants": {
+
+        }, 
+        "pokemon": [
+          ["Poipole", "UNM 102", 0, 3], 
+          ["Poipole", "FLI 55", 0, 1], 
+          ["Naganadel", "LOT 108",1, 2],
+          ["Quagsire", "DMN 26", 2, 1],
+          ["Wooper", "DMN 25", 0, 2],
+          ["Wooper", "VIV 83", 0, 1],
+          ["Lapras", "TEU 31", 2, 0],
+          ["Keldeo-gx", "UNM 47", 0, 2],
+          ["Dedenne-gx", "UNM 47", 0, 1],
+          ["Mega Lopunny & Jigglypuff-gx", "UNM 47", 0, 1],
+          ["Volcanion Prism Star", "FLI 31", 1, 0],
+          ["Ditto Prism Star", "LOT 154", 1, 0],
+          ["Mew", "UNB 76", 0, 1],
+        ], "supporter": [
+          ["Lillie", "", 4, 0],
+          ["Cynthia", "", 4, 0],
+        ], "item": [
+          ["Pokemon Communication", "", 4, 0], 
+          ["Mysterious Treasure", "", 0, 3], 
+          ["Acro Bike", "", 0, 3], 
+          ["Great Catcher", "", 2, 0], 
+          ["Cherish Ball", "", 0, 1], 
+          ["Reset Stamp", "", 1, 0], 
+        ], "tool": [
+          ["U-Turn Board", "", 0, 1],           
+        ], "stadium": [
+          ["Viridian Forest", "", 0, 2],
+          ["Chaotic Swell", "", 0, 2]
+        ], "energy": [
+          ["Water Energy", "", 12, 0],
+        ]
+
       }
     }
   },
