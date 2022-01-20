@@ -171,9 +171,9 @@ const decks = {
 
         }, 
         "pokemon": [
-          ["Wailord-Ex", "PRC 38", 3, 0], 
+          ["Wailord-ex", "PRC 38", 3, 0], 
           ["Suicune", "PLB 20", 0, 2], 
-          ["Landorus-Ex", "BCR 89", 0, 1],
+          ["Landorus-ex", "BCR 89", 0, 1],
           ["Bunnelby", "PRC 121", 1, 0],
         ], "supporter": [
           ["AZ", "", 4, 0],
@@ -2472,7 +2472,7 @@ const decks = {
         }, 
         "pokemon": [
           ["Blacephalon", "UNB 32", 0, 4],
-          ["Blacephalon-Gx", "LOT 52", 0, 1],
+          ["Blacephalon-gx", "LOT 52", 0, 1],
           ["Victini Prism Star", "DRM 7", 0, 1],
         ], "supporter": [
           ["Green's Exploration", "", 4, 0],
@@ -2504,9 +2504,9 @@ const decks = {
         "pokemon": [
           ["Poipole", "FLI 55", 4, 0], 
           ["Naganadel", "LOT 108", 3, 0],
-          ["Naganadel-Gx", "UNM 160", 0, 2],
-          ["Naganadel-Gx", "FLI 56", 1, 0],
-          ["Blacephalon-Gx", "LOT 52", 0, 3], 
+          ["Naganadel-gx", "UNM 160", 0, 2],
+          ["Naganadel-gx", "FLI 56", 1, 0],
+          ["Blacephalon-gx", "LOT 52", 0, 3], 
           ["Blacephalon", "CEC 104", 0, 1], 
           ["Heatran-gx", "UNM 25", 1, 0],
           ["Dedenne-gx", "UNB 57", 0, 1]
@@ -2540,7 +2540,7 @@ const decks = {
         "pokemon": [
           ["Arceus & Dialga & Palkia Gx", "CEC 156", 0, 4],
           ["Cryogonal", "UNM 46", 2, 0],
-          ["Lucario & Melmetal-Gx", "UNB 120", 0, 1],
+          ["Lucario & Melmetal-gx", "UNB 120", 0, 1],
           ["Drampa", "CEC 159", 1, 0],
         ], "supporter": [
           ["Green's Exploration", "", 0, 4], 
