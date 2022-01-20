@@ -640,7 +640,7 @@ const decks = {
           ["Bronzong Break", "FCI 62", 1, 0],
           ["Shaymin-ex", "ROS 77", 0, 2],
           ["Aegislash-ex", "PHF 65", 1, 1],
-          ["Genesect-ex", "FCO 64", 1, 1],
+          ["Genesect-ex", "FCO 64", 2, 0],
           ["Cobalion", "STS 74", 2, 0],
           ["Magearna-ex", "STS 75", 1, 0]
         ], 
@@ -2531,45 +2531,7 @@ const decks = {
           ["Psychic Energy", "", 1, 0],
           ["Beast Energy Prism Star", "", 1, 0],
         ]
-      },
-      "Green's ADP": {
-        
-        "variants": {
-
-        }, 
-        "pokemon": [
-          ["Arceus & Dialga & Palkia Gx", "CEC 156", 0, 4],
-          ["Cryogonal", "UNM 46", 2, 0],
-          ["Lucario & Melmetal-gx", "UNB 120", 0, 1],
-          ["Drampa", "CEC 159", 1, 0],
-        ], "supporter": [
-          ["Green's Exploration", "", 0, 4], 
-          ["Cynthia & Caitlyn", "", 0, 4], 
-          ["Mallow & Lana", "", 0, 2], 
-          ["Guzma & Hala", "", 1, 0], 
-          ["Channeler", "", 1, 0], 
-        ], "item": [
-          ["Pokegear  3.0", "", 0, 4],
-          ["Tag Call", "", 4, 0],
-          ["Custom Catcher", "", 0, 4],
-          ["Reset Stamp", "", 3, 0],
-          ["Switch", "", 2, 0],
-          ["Great Potion", "", 0, 2],
-          ["Energy Spinner", "", 2, 0],
-          ["Pokemon Communication", "", 1, 0],
-          ["Great Catcher", "", 1, 0],
-        ], "tool": [
-          ["Choice Helmet", "", 1, 0],
-        ], "stadium": [
-          ["Chaotic Swell", "", 0, 2], 
-          ["Power Plant", "", 0, 2]
-        ], "energy": [
-          ["Water Energy", "", 5, 0],
-          ["Metal Energy", "", 5, 0],
-          ["Unit Energy GRW", "", 1, 0],
-          ["Unit Energy LPM", "", 1, 0],
-        ]
-      },
+      }
     }
   },
 
