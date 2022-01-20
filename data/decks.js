@@ -2431,7 +2431,7 @@ const decks = {
         }, 
         "pokemon": [
           ["Jirachi", "TEU 99", 0, 4],
-          ["Florges", "FLI 86", 0, 3],
+          ["Florges", "FLI 86", 1, 2],
           ["Flabebe", "CEC 149", 4, 0],
           ["Munchlax", "UNM 173", 2, 0],
           ["Mew", "PR-SM SM215", 1, 1],
