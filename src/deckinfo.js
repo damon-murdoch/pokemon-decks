@@ -475,6 +475,84 @@ function getFormatProgress(format)
   }
 }
 
+// mergeCardInfo(a: Object, b: Object)
+// Given two card info objects, merges
+// them together and returns a conbined
+// object.
+function mergeCardInfo(a, b)
+{
+
+}
+
+// getCardDeckCount(deck: String, format: String, cardName: String, cardSet: String): Object
+function getDeckCardInfo(deck, format, cardName, cardSet)
+{
+  // Get the deck data from the decks object
+  let data = getDeck(deck, format);
+
+  
+}
+
+// getCardDeckCount(deck: String, format: String, cardName: String, cardSet: String): Object
+function getFormatCardInfo(format, cardName, cardSet)
+{
+  // Collection card info
+  let info = {};
+
+  // Get the format from the decks object
+  let data = getFormat(format);
+
+  // If data is not null
+  if (data !== null)
+  {
+    // Loop over all of the formats in the deck
+    Object.keys(decks).forEach(format => {
+
+      // Get the card info for the current format
+      let format_info = getFormatCardInfo(format, cardName, cardSet);
+
+      // Merge the new card info with the new info
+      info = mergeCardInfo(info, format_info);
+    }); 
+
+    // Return the info object
+    return info;
+  }
+  else // Data is null
+  {
+    // Return null
+    return null;
+  }
+}
+
+// getCardInfo(cardName: String, cardSet: String): Void
+// Given a card name and a card set, finds all of the 
+// decks in the collection which contain this card and 
+// returns them as a list, containing both the number 
+// present and the number missing.
+function getCardInfo(cardName, cardSet)
+{
+  // Collection card info
+  let info = {};
+
+  // Loop over all of the formats in the deck
+  Object.keys(decks).forEach(format => {
+
+    // Get the card info for the current format
+    let format_info = getFormatCardInfo(format, cardName, cardSet);
+
+    // If format info object is null
+    if (format_info !== null)
+    {
+      // Merge the new card info with the new info
+      info = mergeCardInfo(info, format_info);
+    }
+  }); 
+
+  // Return the info object
+  return info;
+}
+
 // mergeBuylist(a: Buylist, b: Buylist)
 // Given two buylists, merges them and 
 // returns the combined result.

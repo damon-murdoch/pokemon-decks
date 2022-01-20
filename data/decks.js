@@ -614,11 +614,11 @@ const decks = {
           ["Pokemon Ranger", "", 2, 0],
         ], 
         "item": [
-          ["VS Seeker", "", 0, 4],
-          ["Ultra Ball", "", 4, 0],
+          ["VS Seeker", "", 4, 0],
+          ["Ultra Ball", "", 2, 2],
           ["Acro Bike", "", 4, 0],
           ["Energy Retrieval", "", 4, 0],
-          ["Trainers' Mail", "", 0, 2],
+          ["Trainers' Mail", "", 2, 0],
           ["Battle Compressor", "", 2, 0],
           ["Escape Rope", "", 2, 0],
         ], "tool": [
@@ -688,8 +688,8 @@ const decks = {
         "item": [
           ["Ultra Ball", "", 0, 4],
           ["Max Elixir", "", 0, 4],
-          ["VS Seeker", "", 0, 4],
-          ["Trainers' Mail", "", 0, 3],
+          ["VS Seeker", "", 1, 3],
+          ["Trainers' Mail", "", 1, 2],
           ["Enhanced Hammer", "", 2, 0],
           ["Startling Megaphone", "", 1, 0],
           ["Super Rod", "", 1, 0],
@@ -697,7 +697,7 @@ const decks = {
           ["Fighting Fury Belt", "", 0, 3],
           ["Float Stone", "", 0, 2],
         ], "stadium": [
-          ["Parallel City", "", 0, 2]
+          ["Parallel City", "", 1, 1]
         ], "energy": [
           ["Darkness Energy", "", 9, 0],
           ["Double Dragon Energy", "", 4, 0]
@@ -709,35 +709,36 @@ const decks = {
 
         }, 
         "pokemon": [
-          ["Zygarde-ex", "FCO 54", 1, 1], 
+          ["Zygarde-ex", "FCO 54", 2, 0], 
           ["Lucario-ex", "FFI 54", 1, 0], 
-          ["Carbink Break", "FCO 51", 3, 0], 
-          ["Carbink", "FCO 50", 2, 0], 
-          ["Carbink", "FCO 49", 1, 0], 
+          ["Carbink Break", "FCO 51", 0, 3], 
+          ["Carbink", "FCO 50", 0, 2], 
+          ["Carbink", "FCO 49", 0, 1], 
           ["Shaymin-ex", "ROS 77", 0, 2],
-          ["Vileplume", "AOR 3", 2, 0],
-          ["Gloom", "AOR 2", 2, 0],
+          ["Vileplume", "AOR 3", 1, 1],
+          ["Gloom", "AOR 2", 3, 0],
           ["Oddish", "AOR 1", 3, 0],
         ], 
         "supporter": [
           ["N", "", 0, 4],
           ["Professor Sycamore", "", 0, 3],
-          ["AZ", "", 0, 3],
-          ["Lysandre", "", 0, 2],
-          ["Xerosic", "", 0, 1],
+          ["AZ", "", 3, 0],
+          ["Lysandre", "", 2, 0],
+          ["Xerosic", "", 1, 0],
         ], 
         "item": [
           ["Ultra Ball", "", 0, 4],
-          ["Trainers' Mail", "", 0, 4],
+          ["Trainers' Mail", "", 0, 3],
           ["Level Ball", "", 2, 0],
+          ["Heavy Ball", "", 1, 0],
           ["Revitalizer", "", 1, 0],
         ], "tool": [
           ["Float Stone", "", 0, 2],
           ["Fighting Fury Belt", "", 0, 2],
         ], "stadium": [
-          ["Forest of Giant Plants", "", 0, 4],
+          ["Forest of Giant Plants", "", 3, 1],
         ], "energy": [
-          ["Fighting Energy", "", 6, 0],
+          ["Fighting Energy", "", 4, 1],
           ["Strong Energy", "", 0, 4],
         ]
       }, 
@@ -1497,7 +1498,7 @@ const decks = {
           ["Rare Candy", "", 3, 0],
           ["Evosoda", "", 2, 0],
           ["Enhanced Hammer", "", 1, 0],
-          ["Max Potion", "", 0, 1]
+          ["Max Potion", "", 1, 0]
         ], 
         "tool": [
           ["Choice Band", "", 1, 0],
@@ -1557,7 +1558,7 @@ const decks = {
           ["Garbodor", "BKP 57", 0, 1],
           ["Trubbish", "BKP 56", 3, 0],
           ["Remoraid", "BKT 32", 1, 0],
-          ["Octillery", "BKT 33", 0, 1],
+          ["Octillery", "BKT 33", 1, 0],
           ["Diancie", "FLI 74", 1, 0],
           ["Oranguru", "SUM 113", 1, 0]
         ], "supporter": [
@@ -1671,12 +1672,12 @@ const decks = {
           ["Acro Bike", "", 4, 0],
           ["Mysterious Treasure", "", 4, 0],
           ["Ultra Ball", "", 3, 0],
-          ["Rescue Stretcher", "", 0, 2],
-          ["Field Blower", "", 0, 2],
+          ["Rescue Stretcher", "", 2, 0],
+          ["Field Blower", "", 2, 0],
         ], "tool": [
           ["Float Stone", "", 1, 2],
-          ["Fighting Fury Belt", "", 0, 2],
-          ["Choice Band", "", 0, 1]
+          ["Fighting Fury Belt", "", 2, 0],
+          ["Choice Band", "", 1, 0]
         ], "stadium": [
           ["Parallel City", "", 1, 0]
         ], "energy": [
