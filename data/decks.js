@@ -2558,15 +2558,14 @@ const decks = {
           ["Mysterious Treasure", "", 0, 3], 
           ["Acro Bike", "", 0, 3], 
           ["Great Catcher", "", 2, 0], 
-          ["Cherish Ball", "", 0, 1], 
+          ["Cherish Ball", "", 0, 2], 
           ["Reset Stamp", "", 1, 0], 
         ], "tool": [
           ["U-Turn Board", "", 0, 1],           
         ], "stadium": [
-          ["Viridian Forest", "", 0, 2],
-          ["Chaotic Swell", "", 0, 2]
+          ["Viridian Forest", "", 4, 0],
         ], "energy": [
-          ["Water Energy", "", 12, 0],
+          ["Water Energy", "", 10, 0],
         ]
 
       }
