@@ -16,7 +16,7 @@ const decks = {
         "pokemon": [
           ["Zorua", "BLW 70", 1, 0],
           ["Zorua", "MCD 9", 0, 1],
-          ["Zorua", "EPO 66", 0, 1],
+          ["Zorua", "EPO 66", 1, 0],
           ["Zorua", "PR-BW BW12", 0, 1],
           ["Zorua", "DEX 69", 1, 0],
           ["Zorua", "LTR 89", 1, 0],
@@ -64,7 +64,7 @@ const decks = {
           ["Head Ringer TFHG", "PHF 97", 4, 0],
           ["Switch", "Base", 4, 0],
           ["Switch", "DP", 4, 0],
-          ["Energy Switch", "DP", 2, 2],
+          ["Energy Switch", "DP", 4, 0],
           ["Switch", "HGSS", 4, 0],
           ["Energy Switch", "HGSS", 3, 1],
           ["Pokemon Communication", "HGSS", 4, 0],
@@ -327,7 +327,7 @@ const decks = {
           "Vespiquen": {
             "pokemon": [
               ["Combee", "AOR 9", 3, 0], 
-              ["Vespiquen", "AOR 10", 1, 2], 
+              ["Vespiquen", "AOR 10", 3, 0], 
               ["Mew", "FCO 29", -2, 0]
             ], "supporter": [
               ["Lysandre", "", -1, 0],
@@ -607,7 +607,7 @@ const decks = {
           ["Hoopa-ex", "AOR 36", 1, 0],
         ], 
         "supporter": [
-          ["Professor Sycamore", "", 0, 4],
+          ["Professor Sycamore", "", 3, 1],
           ["N", "", 0, 2],
           ["Blacksmith", "", 2, 0],
           ["Lysandre", "", 2, 0],
@@ -1493,7 +1493,7 @@ const decks = {
         ], 
         "item": [
           ["Ultra Ball", "", 4, 0],
-          ["Puzzle of Time", "", 0, 4],
+          ["Puzzle of Time", "", 4, 0],
           ["Field Blower", "", 2, 0],
           ["Rare Candy", "", 3, 0],
           ["Evosoda", "", 2, 0],
@@ -1555,7 +1555,7 @@ const decks = {
         "pokemon": [
           ["Buzzwole", "FLI 71", 4, 0],
           ["Garbodor", "GRI 51", 2, 0],
-          ["Garbodor", "BKP 57", 0, 1],
+          ["Garbodor", "BKP 57", 1, 0],
           ["Trubbish", "BKP 56", 3, 0],
           ["Remoraid", "BKT 32", 1, 0],
           ["Octillery", "BKT 33", 1, 0],
@@ -1569,16 +1569,16 @@ const decks = {
         ], "item": [
           ["Ultra Ball", "", 4, 0],
           ["Nest Ball", "", 2, 0],
-          ["Field Blower", "", 0, 3],
+          ["Field Blower", "", 3, 0],
           ["Rescue Stretcher", "", 2, 0],
           ["Special Charge", "", 1, 0],
         ], "tool": [
           ["Float Stone", "", 3, 0],
-          ["Choice Band", "", 0, 3]
+          ["Choice Band", "", 3, 0]
         ], "stadium": [
           ["Shrine of Punishment", "", 4, 0],
         ], "energy": [
-          ["Strong Energy", "", 1, 3],
+          ["Strong Energy", "", 4, 0],
           ["Rainbow Energy", "", 4, 0],
           ["Beast Energy", "", 1, 0]
         ]
@@ -1657,7 +1657,7 @@ const decks = {
 
         }, 
         "pokemon": [
-          ["Rayquaza-gx", "CES 109", 1, 3],
+          ["Rayquaza-gx", "CES 109", 4, 0],
           ["Tapu Lele-gx", "GRI 60", 0, 2],
           ["Marshadow", "SHL 45", 2, 0],
           ["Oranguru", "SUM 113", 1, 0],
@@ -1719,7 +1719,7 @@ const decks = {
           ["Reverse Valley", "", 1, 0]
         ], "energy": [
           ["Darkness Energy", "", 9, 0],
-          ["Double Colorless Energy", "", 3, 1]
+          ["Double Colorless Energy", "", 4, 0]
         ]
       }
     }
@@ -2308,7 +2308,7 @@ const decks = {
         "pokemon": [
           ["Misdreavus", "UNB 77", 4, 0],
           ["Mismagius", "UNB 78", 3, 0],
-          ["Garchomp & Giratina Tag Team-gx", "UNM 146", 1, 2],
+          ["Garchomp & Giratina Tag Team-gx", "UNM 146", 3, 0],
           ["Naganadel & Guzzlord Tag Team-gx", "CEC 158", 1, 0],
           ["Blacephalon", "CEC 104", 0, 1]
         ],
@@ -2341,9 +2341,9 @@ const decks = {
         ],
         "energy": [
           ["Psychic Energy", "", 3, 0],
-          ["Rainbow Energy", "", 1, 1],
+          ["Rainbow Energy", "", 2, 0],
           ["Unit Energy FDY", "", 2, 0],
-          ["Weakness Guard Energy", "", 0, 2],
+          ["Weakness Guard Energy", "", 2, 0],
           ["Fighting Energy", "", 1, 0],
           ["Darkness Energy", "", 1, 0]
         ]
@@ -2432,7 +2432,7 @@ const decks = {
         }, 
         "pokemon": [
           ["Jirachi", "TEU 99", 0, 4],
-          ["Florges", "FLI 86", 1, 2],
+          ["Florges", "FLI 86", 3, 0],
           ["Flabebe", "CEC 149", 4, 0],
           ["Munchlax", "UNM 173", 2, 0],
           ["Mew", "PR-SM SM215", 1, 1],
@@ -2505,12 +2505,12 @@ const decks = {
         "pokemon": [
           ["Poipole", "FLI 55", 4, 0], 
           ["Naganadel", "LOT 108", 3, 0],
-          ["Naganadel-gx", "UNM 160", 0, 2],
+          ["Naganadel-gx", "UNM 160", 2, 0],
           ["Naganadel-gx", "FLI 56", 1, 0],
-          ["Blacephalon-gx", "LOT 52", 0, 3], 
+          ["Blacephalon-gx", "LOT 52", 2, 1], 
           ["Blacephalon", "CEC 104", 0, 1], 
           ["Heatran-gx", "UNM 25", 1, 0],
-          ["Dedenne-gx", "UNB 57", 0, 1]
+          ["Dedenne-gx", "UNB 57", 1, 0]
         ], "supporter": [
           ["Welder", "", 0, 4],
           ["Cynthia", "", 4, 0],
