@@ -99,13 +99,13 @@ const decks = {
         }, 
         "pokemon": [
           ["Blastoise", "PLB 16", 2, 0],
-          ["Keldeo-ex", "BCR 49", 2, 1],
+          ["Keldeo-ex", "BCR 49", 1, 2],
           ["Jirachi-ex", "PLB 60", 2, 0],
           ["Shaymin-ex", "ROS 77", 0, 2],
           ["Exeggcute", "PLF 4", 2, 0],
           ["Articuno", "ROS 17", 1, 0],
           ["Mewtwo-ex", "NXD 54", 1, 0],
-          ["Wailord-ex", "PRC 38", 0, 1]
+          ["Wailord-ex", "PRC 38", 1, 0]
         ], "supporter": [
           ["Archie's Ace in the Hole", "", 2, 0],
           ["Professor Juniper", "", 2, 0],
@@ -157,7 +157,7 @@ const decks = {
           ["Professor's Letter", "", 1, 0], 
           ["Switch", "", 1, 0], 
         ], "tool": [
-          ["Muscle Band", "", 0, 3], 
+          ["Muscle Band", "", 3, 0], 
           ["G-Booster", "", 0, 1], 
         ], "stadium": [
 
@@ -172,7 +172,7 @@ const decks = {
         }, 
         "pokemon": [
           ["Wailord-ex", "PRC 38", 3, 0], 
-          ["Suicune", "PLB 20", 0, 2], 
+          ["Suicune", "PLB 20", 1, 1], 
           ["Landorus-ex", "BCR 89", 0, 1],
           ["Bunnelby", "PRC 121", 1, 0],
         ], "supporter": [
@@ -212,7 +212,7 @@ const decks = {
           ["Wobbufet", "PHF 36", 3, 0],
           ["Bunnelby", "PRC 121", 1, 0],
         ], "supporter": [
-          ["Korrina", "", 0, 4],
+          ["Korrina", "", 4, 0],
           ["Professor Juniper", "", 0, 4],
           ["Lysandre", "", 2, 0],
           ["N", "", 0, 2],
@@ -248,12 +248,12 @@ const decks = {
         "pokemon": [
           ["Donphan", "PLS 72", 4, 0],
           ["Phanphy", "PLS 71", 4, 0],
-          ["Hawlucha", "FFI 63", 2, 2],
+          ["Hawlucha", "FFI 63", 4, 0],
           ["Bunnelby", "PRC 121", 1, 0],
           ["Mr. Mime", "PLF 47", 1, 0],
         ], "supporter": [
           ["Professor Juniper", "", 0, 4],
-          ["Korrina", "", 0, 4],
+          ["Korrina", "", 4, 0],
           ["N", "", 0, 4],
           ["Lysandre", "", 2, 0],
           ["Colress", "", 1, 0],
@@ -267,7 +267,7 @@ const decks = {
           ["Computer Search", "", 0, 1],
         ], "tool": [
           ["Focus Sash", "", 2, 0],
-          ["Muscle Band", "", 0, 2]
+          ["Muscle Band", "", 2, 0]
         ], "stadium": [
           ["Fighting Stadium", "", 3, 0],
           ["Silent Lab", "", 1, 0],
@@ -292,8 +292,8 @@ const decks = {
         ], "supporter": [
           ["Professor Juniper", "", 0, 4],
           ["N", "", 0, 3],
-          ["Colress", "", 0, 2],
-          ["Lysandre", "", 0, 2],
+          ["Colress", "", 2, 0],
+          ["Lysandre", "", 2, 0],
         ], "item": [
           ["Ultra Ball", "", 0, 4],
           ["VS Seeker", "", 0, 4],
@@ -703,45 +703,6 @@ const decks = {
           ["Double Dragon Energy", "", 4, 0]
         ]
       }, 
-      "Zygarde Carbink": {
-        
-        "variants": {
-
-        }, 
-        "pokemon": [
-          ["Zygarde-ex", "FCO 54", 2, 0], 
-          ["Lucario-ex", "FFI 54", 1, 0], 
-          ["Carbink Break", "FCO 51", 0, 3], 
-          ["Carbink", "FCO 50", 0, 2], 
-          ["Carbink", "FCO 49", 0, 1], 
-          ["Shaymin-ex", "ROS 77", 0, 2],
-          ["Vileplume", "AOR 3", 1, 1],
-          ["Gloom", "AOR 2", 3, 0],
-          ["Oddish", "AOR 1", 3, 0],
-        ], 
-        "supporter": [
-          ["N", "", 0, 4],
-          ["Professor Sycamore", "", 0, 3],
-          ["AZ", "", 3, 0],
-          ["Lysandre", "", 2, 0],
-          ["Xerosic", "", 1, 0],
-        ], 
-        "item": [
-          ["Ultra Ball", "", 0, 4],
-          ["Trainers' Mail", "", 0, 3],
-          ["Level Ball", "", 2, 0],
-          ["Heavy Ball", "", 1, 0],
-          ["Revitalizer", "", 1, 0],
-        ], "tool": [
-          ["Float Stone", "", 0, 2],
-          ["Fighting Fury Belt", "", 0, 2],
-        ], "stadium": [
-          ["Forest of Giant Plants", "", 3, 1],
-        ], "energy": [
-          ["Fighting Energy", "", 4, 1],
-          ["Strong Energy", "", 0, 4],
-        ]
-      }, 
     }
   },
 
@@ -1072,7 +1033,7 @@ const decks = {
           ["Brigette", "", 1, 0]
         ], "item": [
           ["Ultra Ball", "", 4, 0],
-          ["Field Blower", "", 0, 2],
+          ["Field Blower", "", 2, 0],
           ["Rescue Stretcher", "", 1, 0]
         ], "tool": [
           ["Float Stone", "", 0, 4],
@@ -1081,7 +1042,7 @@ const decks = {
           ["Po Town", "", 4, 0]
         ], "energy": [
           ["Psychic Energy", "", 6, 0],
-          ["Double Colorless Energy", "", 3, 1],
+          ["Double Colorless Energy", "", 4, 0],
           ["Rainbow Energy", "", 2, 0]
         ]
       },
@@ -1144,7 +1105,7 @@ const decks = {
           ["Brigette", "", 1, 0]
         ], "item": [
           ["Ultra Ball", "", 4, 0],
-          ["Field Blower", "", 0, 2],
+          ["Field Blower", "", 2, 0],
           ["Rescue Stretcher", "", 1, 0],
           ["Heavy Ball", "", 1, 0],
         ], "tool": [
@@ -1180,7 +1141,7 @@ const decks = {
           ["Skyla", "", 1, 0]
         ], "item": [
           ["Ultra Ball", "", 0, 4],
-          ["Rare Candy", "", 0, 4],
+          ["Rare Candy", "", 4, 0],
           ["Field Blower", "", 0, 2],
           ["Energy Recycler", "", 1, 0],
           ["Heavy Ball", "", 1, 0]
@@ -1214,7 +1175,7 @@ const decks = {
           ["Skyla", "", 1, 0],
         ], "item": [
           ["Ultra Ball", "", 0, 4],
-          ["Rare Candy", "", 0, 4],
+          ["Rare Candy", "", 4, 0],
           ["Max Potion", "", 3, 0],
           ["Field Blower", "", 0, 3],
           ["Rescue Stretcher", "", 1, 0],
