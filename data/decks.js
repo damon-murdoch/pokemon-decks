@@ -982,7 +982,7 @@ const decks = {
         "pokemon": [
           ["Sylveon-gx", "GRI 92", 4, 0],
           ["Eevee", "SUM 101", 4, 0],
-          ["Gardevoir Gx", "BUS 93", 1, 0],
+          ["Gardevoir-gx", "BUS 93", 1, 0],
           ["Ralts", "BUS 91", 1, 0],
         ],
         "supporter": [
@@ -1739,7 +1739,7 @@ const decks = {
           ["Flareon", "PLF 12", 0, 4],
           ["Eevee", "ROS 101", 4, 0],
           ["Shaymin-ex", "ROS 77", 0, 3],
-          ["Tapu Lele-gx", "GI 60", 0, 1],
+          ["Tapu Lele-gx", "GRI 60", 0, 1],
           ["Mewtwo-ex", "ROS 77", 0, 1],
           ["Sudowoodo", "GRI 66", 1, 0],
           ["Exeggcute", "PLF 4", 0, 1],
@@ -1776,7 +1776,7 @@ const decks = {
           ["Froakie", "", 4, 0],
           ["Starmie", "", 1, 0],
           ["Staryu", "", 1, 0],
-          ["Tapu Lele Gx", "", 0, 1]
+          ["Tapu Lele-gx", "GRI 60", 0, 1]
         ], "supporter": [
           ["Cynthia", "", 4, 0],
           ["N", "", 0, 4],
@@ -2357,7 +2357,7 @@ const decks = {
           ["Fire Energy", "", 16, 0]
         ]
       }, 
-      "Blacephalon Gx Naganadel": {
+      "Blacephalon-gx Naganadel": {
         "variants": {
 
         }, 
