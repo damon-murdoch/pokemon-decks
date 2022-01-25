@@ -765,8 +765,8 @@ const decks = {
           ["Blitzle", "BKP ", 2, 0],
           ["Klefki", "STS ", 2, 0],
           ["Shaymin-ex", "ROS 77", 0, 2],
-          ["Eevee", "AOR ", 0, 2],
-          ["Vaporeon", "AOR ", 0, 1], 
+          ["Eevee", "AOR 63", 2, 0],
+          ["Vaporeon", "AOR ", 1, 0], 
           ["Oranguru", "SUM ", 1, 0], 
         ], "supporter": [
           ["Professor Sycamore", "", 0, 4],
@@ -774,7 +774,7 @@ const decks = {
           ["N", "", 0, 2],
         ], "item": [
           ["VS Seeker", "", 0, 4], 
-          ["Acro Bike", "", 0, 4], 
+          ["Acro Bike", "", 4, 0], 
           ["Ultra Ball", "", 0, 4], 
           ["Revitalizer", "", 1, 0], 
           ["Special Charge", "", 1, 0], 
@@ -1754,7 +1754,7 @@ const decks = {
           ["Battle Compressor", "", 4, 0],
           ["Ultra Ball", "", 0, 4],
           ["VS Seeker", "", 0, 4],
-          ["Dowsing Machine", "", 1, 0],
+          ["Computer Search", "", 1, 0],
         ], "tool": [
           ["Choice Band", "", 2, 0],
         ], "stadium": [
@@ -1808,7 +1808,6 @@ const decks = {
         }, 
         "pokemon": [
           ["Wailord-ex", "PRC 38", 4, 0],
-          ["Suicune", "PLB 20", 1, 1],
           ["Xurkitree-gx", "PR-SM SM68", 0, 1],
           ["Oranguru", "UPR 114", 1, 0]
         ], "supporter": [
@@ -1829,8 +1828,9 @@ const decks = {
           ["Max Potion", "", 0, 4],
           ["Enhanced Hammer", "", 0, 4],
           ["Robo Substitute", "", 0, 3],
+          ["Trick Shovel", "", 2, 0],
           ["Nest Ball", "", 2, 0],
-          ["Computer Search", "", 0, 1]
+          ["Computer Search", "", 1, 0]
         ], "tool": [
 
         ], "stadium": [
