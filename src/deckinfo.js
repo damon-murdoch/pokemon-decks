@@ -475,29 +475,119 @@ function getFormatProgress(format)
   }
 }
 
-// mergeCardInfo(a: Object, b: Object)
-// Given two card info objects, merges
-// them together and returns a conbined
-// object.
-function mergeCardInfo(a, b)
+// getCardSummary(cardList: List)
+// Given a list of all appearances
+// of a given card, returns the total
+// number of the given card (both obtained
+// and missing) and returns them to the calling
+// process.
+function getCardSummary(cardList)
 {
+  // Card summary
+  let info = {
 
+    // Total cards obtained
+    obtained: 0, 
+
+    // Total cards missing
+    missing: 0
+  }
+
+  // Loop over each instance of the card
+  cardList.forEach(card => {
+
+    // Increment the number of obtained cards
+    info.obtained += card.obtained;
+
+    // Increment the number of missing cards
+    info.missing += card.missing;
+  }); 
+
+  // Return the info object
+  return info;
+}
+
+// getCardObject(deck: String, format: String, variant: String, cardName: String, cardSet: String, obtained: Number, missing: Number)
+function getCardObject(deck, format, variant, cardName, cardSet, obtained, missing)
+{
+  return {
+    'deck': deck, // Deck Name
+    'format': format, // Format Name
+    'variant': variant, // Variant Name
+    'cardName': cardName, // Card Name
+    'cardSet': cardSet, // Card Set / Set Number
+    'obtained': obtained, // Obtained Card Count
+    'missing': missing // Missing Card Count
+  };
 }
 
 // getCardDeckCount(deck: String, format: String, cardName: String, cardSet: String): Object
 function getDeckCardInfo(deck, format, cardName, cardSet)
 {
+  // Collection card info
+  let list = [];
+
   // Get the deck data from the decks object
   let data = getDeck(deck, format);
 
-  
+  // If data is not null
+  if (data !== null)
+  {
+    // Flatten the cards in the deck
+    let cards = flattenCards(data);
+    
+    // Loop over all of the cards in the list
+    cards.forEach(card => {
+
+      // If the card requested matches the card
+      if (card[0] == cardName && card[1] == cardSet)
+      {
+        // Add the card info to the list
+        list.push(
+          getCardObject(deck, format, "-", 
+            cardName, cardSet, card[2], card[3]
+          )
+        );
+      }
+    });
+
+    // Loop over all of the variants in the list
+    Object.keys(data.variants).forEach(variant => {
+
+      // Get all of the unique cards from the variant
+      variant_cards = flattenCards(data.variants[variant]);
+
+      // Loop over all of the cards in the list
+      variant_cards.forEach(card => {
+
+        // If the card requested matches the card
+        if (card[0] == cardName && card[1] == cardSet)
+        {
+          // Add the card info to the list
+          list.push(
+            getCardObject(deck, format, variant, 
+              cardName, cardSet, card[2], card[3]
+            )
+          );
+        }
+      });
+    });
+
+    // Return the card list
+    return list;
+  }
+  else // Data is null
+  {
+    // Return null
+    return null;
+  }
 }
 
 // getCardDeckCount(deck: String, format: String, cardName: String, cardSet: String): Object
 function getFormatCardInfo(format, cardName, cardSet)
 {
   // Collection card info
-  let info = {};
+  let info = [];
 
   // Get the format from the decks object
   let data = getFormat(format);
@@ -506,13 +596,13 @@ function getFormatCardInfo(format, cardName, cardSet)
   if (data !== null)
   {
     // Loop over all of the formats in the deck
-    Object.keys(decks).forEach(format => {
+    Object.keys(data.decks).forEach(deck => {
 
       // Get the card info for the current format
-      let format_info = getFormatCardInfo(format, cardName, cardSet);
+      let deck_info = getDeckCardInfo(deck, format, cardName, cardSet);
 
       // Merge the new card info with the new info
-      info = mergeCardInfo(info, format_info);
+      info = info.concat(deck_info);
     }); 
 
     // Return the info object
@@ -533,20 +623,16 @@ function getFormatCardInfo(format, cardName, cardSet)
 function getCardInfo(cardName, cardSet)
 {
   // Collection card info
-  let info = {};
+  let info = [];
 
   // Loop over all of the formats in the deck
   Object.keys(decks).forEach(format => {
 
     // Get the card info for the current format
     let format_info = getFormatCardInfo(format, cardName, cardSet);
-
-    // If format info object is null
-    if (format_info !== null)
-    {
-      // Merge the new card info with the new info
-      info = mergeCardInfo(info, format_info);
-    }
+    
+    // Merge the new card info with the new info
+    info = info.concat(format_info);
   }); 
 
   // Return the info object

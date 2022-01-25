@@ -175,8 +175,10 @@ function getCardTable(name, category, parent)
     let cardColor = getProgressColor(getPercentage(card[2], cardTotal));
 
     parent.appendChild(getTableRow([
-      card[0], // Card Name
-      card[1], // Set Number
+      "<a class='text-light' href='" + 
+      getCardLink(card[0], card[1]) + "'>" + card[0] + "</a>", // Card Name
+      "<a class='text-light' href='" + 
+      getCardLink(card[0], card[1]) + "'>" + card[1] + "</a>", // Set Number
       card[2], // Copies Obtained
       card[3], // Copies Missing
       cardTotal, // Total Copies

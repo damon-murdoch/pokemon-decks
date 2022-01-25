@@ -2,10 +2,16 @@
 // Given a card, the set number the card is from and an optional format,
 // returns a link to the page for that card with respect to the given 
 // format, deck and variant.
-function getCardLink(card, set, format = null)
+function getCardLink(card, set)
 {
   // Get the generic page link object
   let url = getPageLink(format);
+
+  // Remove the format from the url
+  url.searchParams.delete('format');
+
+  // Remove the buylist from the url
+  url.searchParams.delete('buylist');
 
   // Add the card parameter to the url
   url.searchParams.set('card', card);

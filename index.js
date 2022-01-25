@@ -7,7 +7,7 @@ function showPageHome()
   // Given a row title, format progress object and if the row is a header
   // row or not, generates the row using the properties and returns them 
   // to the caling process.
-  function getRowFormat(title, progress, header = false)
+  function getRowFormat(title, progress, format, header = false)
   {
     // Get the total number of cards in the progress, including variants
     let totalCards = progress.deck.missing + progress.deck.obtained;
@@ -104,7 +104,8 @@ function showPageHome()
       deckObtained, // Obtained Cards
       deckMissing, // Missing Cards
       (percentage * 100).toFixed(2) + "%", // Progress
-      "<a class='link-secondary' href='index.html?buylist'>Buylist</a>" // Buylist Link
+      "<a class='link-secondary' href='" + 
+      getBuylistLink(format) + "'>Buylist</a>" // Buylist Link
     ], [
       COLOR_WHITE, // Format, always light gray
       COLOR_GREEN, // Total Decks, always green
@@ -145,7 +146,7 @@ function showPageHome()
   let totalProgress = getTotalProgress();
 
   // Add a row for the total progress to the table
-  tbody.appendChild(getRowFormat("Summary", totalProgress, true));
+  tbody.appendChild(getRowFormat("Summary", totalProgress, null, true));
 
   // Loop over all of the formats
   formats.forEach(format => {
@@ -154,7 +155,7 @@ function showPageHome()
     let formatProgress = getFormatProgress(format);
 
     // Add a row for the format progress to the table
-    tbody.appendChild(getRowFormat(getFormatTitle(format), formatProgress, false));
+    tbody.appendChild(getRowFormat(getFormatTitle(format), formatProgress, format, false));
   });
 
   // Add the table body to the table
@@ -756,23 +757,23 @@ function showPageBuylist(format = null, deck = null)
   // Get the page title object
   let pagetitle = document.getElementById('pagetitle');
 
-  // Set the page title
-  pagetitle.innerHTML = "Card Buylist"; 
-
   // Buylist placeholder
   let buylist;
+
+  // Create the buylist title
+  let title = "Card Buylist"; 
 
   // If a format is specified
   if (format !== null)
   {
     // Add it to the title
-    pagetitle.innerHTML += " - " + format;
+    title += " - " + format;
 
     // If a deck is specified
     if (deck !== null)
     {
       // Add it to the title
-      pagetitle.innerHTML += " - " + deck;
+      title += " - " + deck;
 
       // Get the deck specific buylist
       buylist = getDeckBuylist(deck, format);
@@ -787,6 +788,12 @@ function showPageBuylist(format = null, deck = null)
   {
     buylist = getBuylist();
   }
+
+  // Set the page title
+  pagetitle.innerHTML = title; 
+
+  // Set the document title
+  document.title = title;
 
   // If the command is successful
   if (buylist)
@@ -841,14 +848,170 @@ function showPageBuylist(format = null, deck = null)
         // Set the contents for the row
         trow.innerHTML = 
         // Card Info
-        "<td class='text-light' scope='row'>" + card + "</td>" + 
-        "<td class='text-light'>" + number + "</td>" + 
+        "<td class='text-light' scope='row'>" + 
+          "<a class='text-light' href='" + getCardLink(card, number) + "'>" + 
+            card + "</a>" + "</td>" + 
+        "<td class='text-light'>" + 
+          "<a class='text-light' href='" + getCardLink(card, number) + "'>" + 
+            number + "</a>" + "</td>" + 
         "<td class='text-light'>" + buylist[card][number] + "</td>" + 
         "<td class='text-light'><a target='_blank' href='" + getPGFQuery(card, number) + "'> Link </a></td>";
 
         tbody.appendChild(trow);
       }
     }
+    
+    // Add the table body to the table
+    table.appendChild(tbody);
+
+    // Get the main element from the page
+    const main = document.getElementById('main');
+
+    // Add the table to the main element
+    main.appendChild(table);
+  }
+  else // Buylist fails to return
+  {
+    // Return to the home page
+    window.location = window.location.pathname;
+  }
+}
+
+// showPageCard(cardName: String, cardSet: String): Void
+function showPageCard(cardName, cardSet)
+{
+  // Get the page title object
+  let pagetitle = document.getElementById('pagetitle');
+
+  // Get the link to the PGF Query
+  let pagelink = getPGFQuery(cardName, cardSet);
+
+  // Get the title name for the card
+  let name = cardName.replace("-", " ").toUpperCase();
+
+  // If a set is specified
+  if (cardSet)
+  {
+    // Add it to the title
+    name += " - " + cardSet;
+  }
+
+  // Set the page title
+  let title = "<a class='text-light' href='" + 
+    pagelink + "'>" + name;
+
+  // Add the link end to the title
+  title += "</a>";
+
+  // Set the page title to the title
+  pagetitle.innerHTML = title;
+
+  // Set the title to the card name
+  document.title = name;
+
+  // Get all of the info for the card
+  let cardInfo = getCardInfo(cardName, cardSet);
+
+  // If the command is successful
+  if (cardInfo)
+  {
+    // Create a table element
+    let table = document.createElement('table');
+
+    // Specify the table classes
+    table.className = "table table-dark bg-dark";
+
+    // Create a table row for the header
+    let thead = document.createElement('thead');
+
+    // Specify the header classes
+    thead.className = "";
+
+    /*
+    'deck': deck, // Deck Name
+    'format': format, // Format Name
+    'variant': variant, // Variant Name
+    'cardName': cardName, // Card Name
+    'cardSet': cardSet, // Card Set / Set Number
+    'obtained': obtained, // Obtained Card Count
+    'missing': missing // Missing Card Count
+    */
+
+    // Assign the columns in the table header
+    thead.innerHTML = "<tr>" + 
+      "<th class='text-light' scope='col'> Deck </th>" + 
+      "<th class='text-light' scope='col'> Format </th>" + 
+      "<th class='text-light' scope='col'> Variant </th>" + 
+      "<th class='text-light' scope='col'> Obtained </th>" + 
+      "<th class='text-light' scope='col'> Missing </th>" + 
+      "</tr>";
+      
+    // Add the table head to the table
+    table.appendChild(thead);    
+  
+    // Create the table body
+    tbody = document.createElement('tbody');
+
+    // Create a row for storing the deck summary
+    let summary = document.createElement('tr');
+
+    // Get the summary of the card info
+    let cardInfoSummary = getCardSummary(cardInfo);
+
+    summary.innerHTML = "<tr>" + 
+    "<th class='text-light' scope='col'> - </th>" + 
+    "<th class='text-light' scope='col'> - </th>" + 
+    "<th class='text-light' scope='col'> - </th>" + 
+    "<th class='text-light' scope='col'>" + cardInfoSummary.obtained + "</th>" + 
+    "<th class='text-light' scope='col'>" + cardInfoSummary.missing + "</th>" + 
+    "</tr>";
+
+    tbody.appendChild(summary);
+
+    // Loop over all of the cards in the buylist
+    // Sort ensures card names will be alphabetical
+    // for(card of Object.keys(cardInfo).sort())
+    Object.keys(cardInfo).forEach(card => {
+
+      // Dereference the card info
+      info = cardInfo[card];
+
+      // Create the table row for the row
+      let trow = document.createElement('tr');
+
+      // Set the contents for the row
+      trow.innerHTML = 
+        "<td class='text-light' scope='row'>" + 
+          "<a class='text-light' href='" + getPageLink(info.format, info.deck) + 
+            "'>" + info.deck + "</a></td>" + 
+          "<td class='text-light' scope='row'>" + 
+          "<a class='text-light' href='" + getPageLink(info.format) + 
+            "'>" + info.format + "</a></td>";
+
+
+      // Variant is default
+      if (info.variant === '-')
+      {
+        // Main deck, just add the dash
+        trow.innerHTML += 
+          "<td class='text-light' scope='row'>" + info.variant + "</td>";
+      }
+      else // Variant is selected
+      {
+        trow.innerHTML += 
+          "<td class='text-light' scope='row'>" + 
+            "<a class='text-light' href='" + getPageLink(info.format, info.deck, info.variant) + 
+              "'>" + info.variant + "</a></td>";
+      }
+
+      // Add the obtained / missing contents to the row
+      trow.innerHTML +=      
+        "<td class='text-light' scope='row'>" + info.obtained + "</td>" + 
+        "<td class='text-light' scope='row'>" + info.missing + "</td>";
+
+      tbody.appendChild(trow);
+
+    });
     
     // Add the table body to the table
     table.appendChild(tbody);
@@ -947,6 +1110,21 @@ else if (params.has('buylist'))
 {
   // Show the buylist page
   showPageBuylist();
+}
+else if (params.has('card'))
+{
+  // Show the card page
+
+  // If there is a card name specified
+  if (params.has('set'))
+  {
+    // Show the page for the card
+
+    showPageCard(
+      params.get('card'), 
+      params.get('set')
+    )
+  }
 }
 else // We are not on the buylist page
 {
