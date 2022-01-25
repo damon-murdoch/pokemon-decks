@@ -2440,7 +2440,6 @@ const decks = {
       "end": "Brilliant_Stars"
     },
     "decks": {
-
       "Urshifu Inteleon": { 
 
         "variants": {
@@ -2485,34 +2484,35 @@ const decks = {
           
         }, 
         "pokemon": [
-          ["Galarian Mr. Rime", "DAA 36", 0, 4],  
           ["Bunnelby", "DAA 150", 0, 4],  
-          ["Dedenne", "DAA 78", 0, 4],  
+          ["Dedenne", "DAA 78", 0, 4],
+          ["Galarian Mr. Rime", "DAA 36", 0, 4],  
           ["Polteageist", "DAA 83", 0, 4],  
-          ["Sinistea", "DAA 82", 0, 2],  
-          ["Crobat V", "DAA 104", 2, 0],  
-          ["Galarian Articuno V", "CRE 58", 0, 1],  
+          ["Sinistea", "DAA 82", 0, 3],
+          ["Bibarel", "BRS 121", 0, 2],
+          ["Bidoof", "BRS 120", 0, 2],
+          ["Crobat V", "DAA 104", 1, 0],
+          ["Lumineon V", "BRS 40", 0, 1],
           ["Oranguru", "SSH 148", 0, 1],  
           ["Manaphy", "BRS 41", 0, 1],  
         ], "supporter": [
           ["Professor's Research", "", 4, 0],
-          ["Allister", "", 0, 3],
-          ["Boss's Orders", "", 2, 0],
+          ["Boss's Orders", "", 4, 0],
         ], "item": [
           ["Level Ball", "", 4, 0],
           ["Quick Ball", "", 4, 0],
           ["Ultra Ball", "", 4, 0],
-          ["Evolution Incense", "", 3, 0],
-          ["Rescue Carrier", "", 2, 0],
+          ["Rescue Carrier", "", 1, 0],
           ["Escape Rope", "", 1, 0],
+          ["Pal Pad", "", 1, 0],
         ], "tool": [
-          ["Air Balloon", "", 2, 0],
+          ["Air Balloon", "", 1, 0],
           ["Choice Belt", "", 0, 2],
         ], "stadium": [
 
         ], "energy": [
           ["Twin Energy", "", 4, 0],
-          ["Double Turbo Energy", "", 2, 0]
+          ["Double Turbo Energy", "", 0, 3]
         ]
       }
     }
