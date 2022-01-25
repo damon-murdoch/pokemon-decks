@@ -2440,10 +2440,50 @@ const decks = {
       "end": "Brilliant_Stars"
     },
     "decks": {
-      "Urshifu Inteleon": { 
+
+      "Suicune Ludicolo": {
 
         "variants": {
 
+        }, 
+        "pokemon": [
+          ["Suicune V", "", 0, 4], 
+          ["Inteleon", "CRE 43", 0, 2],
+          ["Inteleon", "SSH 58", 0, 1],
+          ["Drizzile", "SSH 57", 4, 0],
+          ["Sobble", "CRE 41", 4, 0],
+          ["Ludicolo", "EVS 34", 0, 2], 
+          ["Lombre", "RCL 8", 1, 0], 
+          ["Lotad", "EVS 32", 2, 0], 
+          ["Manaphy", "BRS 41", 0, 1],
+        ], "supporter": [
+          ["Melony", "", 3, 0],
+          ["Boss's Orders", "", 2, 0],
+          ["Marnie", "", 2, 0],
+          ["Professor's Research", "", 1, 0],
+          ["Raihan", "", 1, 0],
+        ], "item": [
+          ["Quick Ball", "", 4, 0],
+          ["Evolution Incense", "", 3, 0],
+          ["Level Ball", "", 3, 0],
+          ["Ultra Ball", "", 2, 0],
+          ["Capacious Bucket", "", 2, 0],
+          ["Scoop Up Net", "", 2, 0],
+          ["Rare Candy", "", 2, 0],
+          ["Escape Rope", "", 1, 0],
+        ], "tool": [
+          ["Cape of Toughness", "", 2, 0]
+        ], "stadium": [
+
+        ], "energy": [
+          ["Water Energy", "", 5, 0],
+          ["Capture Energy", "", 2, 2],
+        ]
+      },
+      "Urshifu Inteleon": { 
+
+        "variants": {
+          
         }, 
         "pokemon": [
           ["Inteleon", "CRE 43", 2, 0],
@@ -2452,8 +2492,8 @@ const decks = {
           ["Sobble", "CRE 41", 4, 0],
           ["Rapid Strike Urshifu Vmax", "BST 88", 3, 0],
           ["Rapid Strike Urshifu V", "BST 87", 3, 0],
-          ["Octillery", "BST 37", 0, 2],
-          ["Remoraid", "BST 36", 2, 0],
+          ["Octillery", "BST 37", 0, 1],
+          ["Remoraid", "BST 36", 1, 0],
           ["Lumineon V", "BRS 40", 0, 1],
           ["Passimian", "CRE 88", 1, 0],
           ["Manaphy", "BRS 41", 0, 1],
@@ -2463,8 +2503,8 @@ const decks = {
           ["Marnie", "", 2, 0],
         ], "item": [
           ["Quick Ball", "", 4, 0],
-          ["Evolution Incense", "", 3, 0],
-          ["Level Ball", "", 3, 0],
+          ["Evolution Incense", "", 4, 0],
+          ["Level Ball", "", 4, 0],
           ["Ultra Ball", "", 2, 0],
           ["Capacious Bucket", "", 2, 0],
           ["Echoing Horn", "", 0, 1],
