@@ -61,7 +61,7 @@ const decks = {
         ], "supporter": [
 
         ], "item": [
-          ["Head Ringer TFHG", "PHF 97", 4, 0],
+          ["Head Ringer", "", 4, 0],
           ["Switch", "Base", 4, 0],
           ["Switch", "DP", 4, 0],
           ["Energy Switch", "DP", 4, 0],
@@ -69,14 +69,14 @@ const decks = {
           ["Energy Switch", "HGSS", 3, 1],
           ["Pokemon Communication", "HGSS", 4, 0],
           ["Copycat", "HGSS", 4, 0],
-          ["Hypnotoxic Lazer", "BW", 4, 0],
-          ["Dowsing Machine", "BW", 1, 0],
-          ["Computer Search", "BW", 1, 0],
-          ["Jamming Net TFHG", "BW", 1, 0],
+          ["Hypnotoxic Lazer", "", 4, 0],
+          ["Dowsing Machine", "", 1, 0],
+          ["Computer Search", "", 1, 0],
+          ["Jamming Net", "", 1, 0],
         ], "tool": [
-          ["Rock Guard", "BW", 1, 0],
+          ["Rock Guard", "", 1, 0],
         ], "stadium": [
-          ["Virbank City Gym", "BW", 4, 0],
+          ["Virbank City Gym", "", 4, 0],
         ], "energy": [
 
         ]
@@ -446,7 +446,7 @@ const decks = {
           ["Fighting Fury Belt", "", 0, 3],
           ["Float Stone", "", 0, 2],
         ], "stadium": [
-          ["Parallel City", "", 1, 1]
+          ["Parallel City", "", 2, 0]
         ], "energy": [
           ["Darkness Energy", "", 9, 0],
           ["Double Dragon Energy", "", 4, 0]
@@ -1585,7 +1585,7 @@ const decks = {
           ["Field Blower", "", 1, 0],
           ["Special Charge", "", 1, 0],
           ["Target Whistle", "", 1, 0],
-          ["Dowsing Machine Ace Spec", "", 1, 0]
+          ["Dowsing Machine", "", 1, 0]
         ], "tool": [
           ["Choice Band", "", 2, 0],
           ["Fighting Fury Belt", "", 1, 0],
@@ -1827,7 +1827,7 @@ const decks = {
           ["Puzzle of Time", "", 0, 4],
           ["Max Potion", "", 0, 4],
           ["Enhanced Hammer", "", 0, 4],
-          ["Robo Substitute", "", 0, 3],
+          ["Robo Substitute", "", 3, 0],
           ["Trick Shovel", "", 2, 0],
           ["Nest Ball", "", 2, 0],
           ["Computer Search", "", 1, 0]
@@ -2143,13 +2143,13 @@ const decks = {
           "Roxie": {
             "pokemon": [
               ["Mimikyu", "CEC 97", 1, 0],
-              ["Weezing", "CEC 77", 0, 4],
+              ["Weezing", "CEC 77", 4, 0],
               ["Naganadel & Guzzlord Tag Team-gx", "CEC 158", -1, 0],
             ], 
             "supporter": [
               ["Roxie", "", 4, 0]
             ], "item": [
-              ["Lure Ball", "", 0, 3],
+              ["Lure Ball", "", 3, 0],
               ["Pokegear 3.0", "", -4, 0], 
               ["Custom Catcher", "", -2, 0],
             ], "tool": [
@@ -2340,10 +2340,10 @@ const decks = {
           ["Rosa", "", 0, 1], 
         ], "item": [
           ["Acro Bike", "", 4, 0],
-          ["Pokegear 3.0", "", 0, 4],
+          ["Pokegear 3.0", "", 4, 0],
           ["Fire Crystal", "", 0, 4],
           ["Fiery Flint", "", 0, 4],
-          ["Custom Catcher", "", 0, 4],
+          ["Custom Catcher", "", 4, 0],
           ["Beast Ring", "", 0, 2],
           ["Cherish Ball", "", 1, 0],
           ["Reset Stamp", "", 1, 0],
@@ -2375,7 +2375,7 @@ const decks = {
           ["Cynthia", "", 4, 0],
           ["Mallow & Lana", "", 2, 0],
         ], "item": [
-          ["Beast Ring", "", 0, 4], 
+          ["Beast Ring", "", 3, 1], 
           ["Mysterious Treasure", "", 0, 4], 
           ["Cherish Ball", "", 0, 2], 
           ["Pokegear 3.0", "", 0, 2], 
@@ -2397,15 +2397,15 @@ const decks = {
 
         }, 
         "pokemon": [
-          ["Poipole", "UNM 102", 0, 3], 
-          ["Poipole", "FLI 55", 0, 1], 
+          ["Poipole", "UNM 102", 3, 0], 
+          ["Poipole", "FLI 55", 1, 0], 
           ["Naganadel", "LOT 108",1, 2],
-          ["Quagsire", "DMN 26", 2, 1],
-          ["Wooper", "DMN 25", 0, 2],
-          ["Wooper", "VIV 83", 0, 1],
-          ["Lapras", "TEU 31", 2, 0],
+          ["Quagsire", "DMN 26", 3, 0],
+          ["Wooper", "DMN 25", 2, 0],
+          ["Wooper", "VIV 83", 1, 0],
+          ["Lapras", "TEU 31", 1, 1],
           ["Keldeo-gx", "UNM 47", 0, 2],
-          ["Dedenne-gx", "UNM 47", 0, 1],
+          ["Dedenne-gx", "UNB 57", 0, 1],
           ["Mega Lopunny & Jigglypuff-gx", "UNM 47", 0, 1],
           ["Volcanion Prism Star", "FLI 31", 1, 0],
           ["Ditto Prism Star", "LOT 154", 1, 0],
@@ -2416,12 +2416,12 @@ const decks = {
         ], "item": [
           ["Pokemon Communication", "", 4, 0], 
           ["Mysterious Treasure", "", 0, 3], 
-          ["Acro Bike", "", 0, 3], 
+          ["Acro Bike", "", 3, 0], 
           ["Great Catcher", "", 2, 0], 
-          ["Cherish Ball", "", 0, 2], 
+          ["Cherish Ball", "", 2, 0], 
           ["Reset Stamp", "", 1, 0], 
         ], "tool": [
-          ["U-Turn Board", "", 0, 1],           
+          ["U-Turn Board", "", 1, 0],           
         ], "stadium": [
           ["Viridian Forest", "", 4, 0],
         ], "energy": [
