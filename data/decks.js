@@ -357,7 +357,7 @@ const decks = {
         ], 
         "supporter": [
           ["Professor Sycamore", "", 3, 1],
-          ["N", "", 0, 2],
+          ["N", "", 2, 0],
           ["Blacksmith", "", 2, 0],
           ["Lysandre", "", 2, 0],
           ["Pokemon Ranger", "", 2, 0],
@@ -371,7 +371,7 @@ const decks = {
           ["Battle Compressor", "", 2, 0],
           ["Escape Rope", "", 2, 0],
         ], "tool": [
-          ["Fighting Fury Belt", "", 0, 3]
+          ["Fighting Fury Belt", "", 3, 0]
         ], "stadium": [
   
         ], "energy": [
@@ -394,7 +394,7 @@ const decks = {
           ["Magearna-ex", "STS 75", 1, 0]
         ], 
         "supporter": [
-          ["Professor Sycamore", "", 0, 4],
+          ["Professor Sycamore", "", 4, 0],
           ["N", "", 0, 3],
           ["Lysandre", "", 2, 0],
           ["AZ", "", 2, 0],
@@ -427,7 +427,7 @@ const decks = {
           ["Yveltal", "STS 65", 1, 0]
         ], 
         "supporter": [
-          ["Professor Sycamore", "", 0, 4],
+          ["Professor Sycamore", "", 4, 0],
           ["N", "", 0, 3],
           ["Lysandre", "", 2, 0],
           ["AZ", "", 1, 0],
@@ -438,12 +438,12 @@ const decks = {
           ["Ultra Ball", "", 0, 4],
           ["Max Elixir", "", 0, 4],
           ["VS Seeker", "", 1, 3],
-          ["Trainers' Mail", "", 1, 2],
+          ["Trainers' Mail", "", 3, 0],
           ["Enhanced Hammer", "", 2, 0],
           ["Startling Megaphone", "", 1, 0],
           ["Super Rod", "", 1, 0],
         ], "tool": [
-          ["Fighting Fury Belt", "", 0, 3],
+          ["Fighting Fury Belt", "", 1, 2],
           ["Float Stone", "", 0, 2],
         ], "stadium": [
           ["Parallel City", "", 2, 0]
@@ -784,7 +784,7 @@ const decks = {
         ], "stadium": [
           ["Forest of Giant Plants", "", 0, 3]
         ], "energy": [
-          ["Double Colorless Energy", "", 0, 4]
+          ["Double Colorless Energy", "", 4, 0]
         ]
       }
     }
@@ -813,7 +813,7 @@ const decks = {
           ["Eevee", "SUM 101", 1, 0],
           ["Espeon-ex", "BKP 117", 1, 0]
         ], "supporter": [
-          ["Professor Sycamore", "", 0, 4],
+          ["Professor Sycamore", "", 4, 0],
           ["N", "", 0, 4],
           ["Guzma", "", 4, 0],
           ["Brigette", "", 1, 0]
@@ -884,7 +884,7 @@ const decks = {
           ["Tapu Fini-gx", "BUS 39", 1, 0],
           ["Tapu Koko", "PR-SM SM30", 1, 0],
         ], "supporter": [
-          ["Professor Sycamore", "", 0, 4],
+          ["Professor Sycamore", "", 4, 0],
           ["N", "", 0, 4],
           ["Guzma", "", 4, 0],
           ["Acerola", "", 3, 0],
@@ -919,7 +919,7 @@ const decks = {
           ["Tapu Koko", "PR-SM SM30", 1, 0],
           ["Mew", "FAC 29", 1, 0]
         ], "supporter": [
-          ["Professor Sycamore", "", 0, 4],
+          ["Professor Sycamore", "", 4, 0],
           ["N", "", 0, 4],
           ["Guzma", "", 4, 0],
           ["Brigette", "", 2, 0],
@@ -1405,7 +1405,7 @@ const decks = {
         }, 
         "pokemon": [
           ["Rayquaza-gx", "CES 109", 4, 0],
-          ["Tapu Lele-gx", "GRI 60", 0, 2],
+          ["Tapu Lele-gx", "GRI 60", 2, 0],
           ["Marshadow", "SHL 45", 2, 0],
           ["Oranguru", "SUM 113", 1, 0],
           ["Latias", "CES 107", 1, 0],
@@ -1460,7 +1460,7 @@ const decks = {
           ["Enhanced Hammer", "", 1, 0]
         ], "tool": [
           ["Float Stone", "", 0, 2],
-          ["Fighting Fury Belt", "", 0, 4]
+          ["Fighting Fury Belt", "", 4, 0]
         ], "stadium": [
           ["Parallel City", "", 1, 0],
           ["Reverse Valley", "", 1, 0]
@@ -1758,9 +1758,9 @@ const decks = {
         ], "tool": [
           ["Choice Band", "", 2, 0],
         ], "stadium": [
-          ["Parallel City", "", 0, 2]
+          ["Parallel City", "", 1, 1]
         ], "energy": [
-          ["Double Colorless Energy", "", 0, 4],
+          ["Double Colorless Energy", "", 3, 1],
           ["Fire Energy", "", 3, 0]
         ]
       }, 
@@ -1812,8 +1812,8 @@ const decks = {
           ["Oranguru", "UPR 114", 1, 0]
         ], "supporter": [
           ["Skyla", "", 4, 0], 
-          ["Team Flare Grunt", "", 0, 4], 
-          ["AZ", "", 2, 2], 
+          ["Team Flare Grunt", "", 4, 0], 
+          ["AZ", "", 4, 0], 
           ["Acerola", "", 3, 0], 
           ["Lusamine", "", 2, 0], 
           ["Plumeria", "", 2, 0], 
@@ -1824,7 +1824,7 @@ const decks = {
           ["Shauna", "", 1, 0]
         ], "item": [
           ["VS Seeker", "", 0, 4],
-          ["Puzzle of Time", "", 0, 4],
+          ["Puzzle of Time", "", 4, 0],
           ["Max Potion", "", 0, 4],
           ["Enhanced Hammer", "", 0, 4],
           ["Robo Substitute", "", 3, 0],
@@ -2441,46 +2441,7 @@ const decks = {
     },
     "decks": {
 
-      "Suicune Ludicolo": {
-
-        "variants": {
-
-        }, 
-        "pokemon": [
-          ["Suicune V", "", 0, 4], 
-          ["Inteleon", "CRE 43", 0, 2],
-          ["Inteleon", "SSH 58", 0, 1],
-          ["Drizzile", "SSH 57", 4, 0],
-          ["Sobble", "CRE 41", 4, 0],
-          ["Ludicolo", "EVS 34", 0, 2], 
-          ["Lombre", "RCL 8", 1, 0], 
-          ["Lotad", "EVS 32", 2, 0], 
-          ["Manaphy", "BRS 41", 0, 1],
-        ], "supporter": [
-          ["Melony", "", 3, 0],
-          ["Boss's Orders", "", 2, 0],
-          ["Marnie", "", 2, 0],
-          ["Professor's Research", "", 1, 0],
-          ["Raihan", "", 1, 0],
-        ], "item": [
-          ["Quick Ball", "", 4, 0],
-          ["Evolution Incense", "", 3, 0],
-          ["Level Ball", "", 3, 0],
-          ["Ultra Ball", "", 2, 0],
-          ["Capacious Bucket", "", 2, 0],
-          ["Scoop Up Net", "", 2, 0],
-          ["Rare Candy", "", 2, 0],
-          ["Escape Rope", "", 1, 0],
-        ], "tool": [
-          ["Cape of Toughness", "", 2, 0]
-        ], "stadium": [
-
-        ], "energy": [
-          ["Water Energy", "", 5, 0],
-          ["Capture Energy", "", 2, 2],
-        ]
-      },
-      "Urshifu Inteleon": { 
+      "Urshifu Inteleon Moltres": { 
 
         "variants": {
           
@@ -2492,31 +2453,30 @@ const decks = {
           ["Sobble", "CRE 41", 4, 0],
           ["Rapid Strike Urshifu-vmax", "BST 88", 3, 0],
           ["Rapid Strike Urshifu-v", "BST 87", 3, 0],
-          ["Octillery", "BST 37", 0, 2],
-          ["Remoraid", "BST 36", 2, 0],
-          ["Lumineon-v", "BRS 40", 0, 1],
+          ["Galarian Moltres-v", "CRE 97", 2, 0],
+          ["Crobat-v", "DAA 104", 1, 0],
           ["Passimian", "CRE 88", 1, 0],
           ["Manaphy", "BRS 41", 0, 1],
         ], "supporter": [
-          ["Melony", "", 3, 0],
-          ["Professor's Research", "", 2, 0],
+          ["Professor's Research", "", 4, 0],
           ["Marnie", "", 2, 0],
-          ["Raihan", "", 1, 0],
+          ["Raihan", "", 2, 0],
+          ["Boss's Orders", "", 1, 0],
         ], "item": [
           ["Quick Ball", "", 4, 0],
-          ["Evolution Incense", "", 3, 0],
           ["Level Ball", "", 3, 0],
-          ["Ultra Ball", "", 2, 0],
-          ["Capacious Bucket", "", 2, 0],
-          ["Echoing Horn", "", 0, 1],
+          ["Ultra Ball", "", 3, 0],
           ["Escape Rope", "", 2, 0],
+          ["Energy Switch", "", 2, 0],
+          ["Energy Search", "", 2, 0],
         ], "tool": [
-          ["Telescopic Sight", "", 2, 0],
+          ["Air Balloon", "", 1, 0],
         ], "stadium": [
-          ["Tower of Waters", "", 2, 0]
+          ["Tower of Waters", "", 2, 0],
         ], "energy": [
           ["Rapid Strike Energy", "", 4, 0],
-          ["Water Energy", "", 3, 0]
+          ["Darkness Energy", "", 4, 0],
+          ["Fighting Energy", "", 2, 0]
         ]
       }, 
       "Mad Party": {
@@ -2527,35 +2487,67 @@ const decks = {
         "pokemon": [
           ["Bunnelby", "DAA 150", 0, 4],  
           ["Dedenne", "DAA 78", 0, 4],
-          ["Galarian Mr. Rime", "DAA 36", 0, 4],  
+          ["Galarian Mr. Rime", "DAA 36", 4, 0],  
           ["Polteageist", "DAA 83", 0, 4],  
-          ["Sinistea", "DAA 82", 0, 3],
-          ["Bibarel", "BRS 121", 0, 2],
-          ["Bidoof", "BRS 120", 0, 2],
+          ["Sinistea", "DAA 82", 0, 4],
           ["Crobat-v", "DAA 104", 1, 0],
           ["Lumineon-v", "BRS 40", 0, 1],
           ["Oranguru", "SSH 148", 0, 1],  
           ["Manaphy", "BRS 41", 0, 1],  
         ], "supporter": [
           ["Professor's Research", "", 4, 0],
-          ["Boss's Orders", "", 4, 0],
+          ["Boss's Orders", "", 3, 0],
         ], "item": [
           ["Level Ball", "", 4, 0],
           ["Quick Ball", "", 4, 0],
           ["Ultra Ball", "", 4, 0],
+          ["Great Ball", "", 2, 0],
           ["Rescue Carrier", "", 1, 0],
-          ["Escape Rope", "", 1, 0],
           ["Pal Pad", "", 1, 0],
         ], "tool": [
-          ["Air Balloon", "", 1, 0],
+          ["Air Balloon", "", 2, 0],
           ["Choice Belt", "", 0, 2],
         ], "stadium": [
-
+          ["Collapsed Stadium", "", 0, 2]
         ], "energy": [
           ["Twin Energy", "", 4, 0],
           ["Double Turbo Energy", "", 0, 3]
         ]
+      },
+      "Zacian Zamazenta": {
+
+        "variants": {
+  
+        }, 
+        "pokemon": [
+          ["Zacian V", "SSH 138", 4, 0],
+          ["Zamazenta V", "SSH 139", 2, 0],
+          ["Oranguru", "SSH 148", 2, 0],
+        ],
+        "supporter": [
+          ["Professor's Research", "", 4, 0],
+          ["Boss's Orders", "", 4, 0],
+          ["Marnie", "", 3, 0],
+          ["Raihan", "", 1, 0]
+        ],
+        "item": [
+          ["Metal Saucer", "", 4, 0],
+          ["Switch", "", 4, 0],
+          ["Rotom Phone", "", 4, 0],
+          ["Quick Ball", "", 4, 0],
+          ["Tool Scrapper", "", 2, 0]
+        ],
+        "tool": [
+          ["Cape of Toughness", "", 4, 0],
+          ["Air Balloon", "", 2, 0]
+        ],
+        "stadium": [
+          ["Crystal Cave", "", 4, 0]
+        ],
+        "energy": [
+          ["Metal Energy", "", 12, 0]
+        ]
       }
-    }
+    }, 
   }
 }
