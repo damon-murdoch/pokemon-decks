@@ -2169,7 +2169,7 @@ const decks = {
           ["Mismagius", "UNB 78", 3, 0],
           ["Garchomp & Giratina Tag Team-gx", "UNM 146", 3, 0],
           ["Naganadel & Guzzlord Tag Team-gx", "CEC 158", 1, 0],
-          ["Blacephalon", "CEC 104", 0, 1]
+          ["Blacephalon", "CEC 104", 1, 0]
         ],
         "supporter": [
           ["Green's Exploration", "", 4, 0],
