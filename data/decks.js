@@ -2342,7 +2342,7 @@ const decks = {
           ["Acro Bike", "", 4, 0],
           ["Pokegear 3.0", "", 4, 0],
           ["Fire Crystal", "", 0, 4],
-          ["Fiery Flint", "", 0, 4],
+          ["Fiery Flint", "", 4, 0],
           ["Custom Catcher", "", 4, 0],
           ["Beast Ring", "", 0, 2],
           ["Cherish Ball", "", 1, 0],
@@ -2485,11 +2485,11 @@ const decks = {
           
         }, 
         "pokemon": [
-          ["Bunnelby", "DAA 150", 0, 4],  
-          ["Dedenne", "DAA 78", 0, 4],
+          ["Bunnelby", "DAA 150", 4, 0],  
+          ["Dedenne", "DAA 78", 4, 0],
           ["Galarian Mr. Rime", "DAA 36", 4, 0],  
-          ["Polteageist", "DAA 83", 0, 4],  
-          ["Sinistea", "DAA 82", 0, 4],
+          ["Polteageist", "DAA 83", 4, 0],  
+          ["Sinistea", "DAA 82", 3, 0],
           ["Crobat-v", "DAA 104", 1, 0],
           ["Lumineon-v", "BRS 40", 0, 1],
           ["Oranguru", "SSH 148", 0, 1],  
@@ -2501,7 +2501,7 @@ const decks = {
           ["Level Ball", "", 4, 0],
           ["Quick Ball", "", 4, 0],
           ["Ultra Ball", "", 4, 0],
-          ["Great Ball", "", 2, 0],
+          ["Cram-o-Matic", "", 3, 0],
           ["Rescue Carrier", "", 1, 0],
           ["Pal Pad", "", 1, 0],
         ], "tool": [
