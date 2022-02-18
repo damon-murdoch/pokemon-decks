@@ -1221,11 +1221,11 @@ const decks = {
 
         }, 
         "pokemon": [
-          ["Zoroark-gx", "", 4, 0],
-          ["Zorua", "", 4, 0],
+          ["Zoroark-gx", "SLG 53", 4, 0],
+          ["Zorua", "SLG 52", 0, 4],
           ["Ralts", "BUS 91", 4, 0],
-          ["Gardevoir-gx", "", 2, 0],
-          ["Gallade", "", 1, 0],
+          ["Gardevoir-gx", "BUS 93", 2, 0],
+          ["Gallade", "BKT 84", 1, 0],
           ["Tapu Lele-gx", "GRI 60", 0, 3],
           ["Mew-ex", "LTR RC24", 1, 0],
           ["Mewtwo", "EVO 51", 1, 0]
@@ -1604,11 +1604,11 @@ const decks = {
         "pokemon": [
           ["Sableye", "DEX 62", 4, 0],
           ["Trubbish", "NVI 48", 3, 0],
-          ["Garbodor", "LTR 68", 1, 1],
+          ["Garbodor", "BKP 57", 2, 0],
           ["Garbodor", "GRI 51", 1, 0],
           ["Shaymin-ex", "ROS 77", 2, 0], 
           ["Tapu Lele-gx", "GRI 60", 1, 0], 
-          ["Kartana-gx", "GRI 60", 0, 1], 
+          ["Kartana-gx", "GRI 60", 1, 0], 
         ], "supporter": [
           ["Professor Juniper", "", 4, 0], 
           ["Delinquent", "", 1, 0],
@@ -2492,7 +2492,7 @@ const decks = {
           ["Sinistea", "DAA 82", 3, 0],
           ["Crobat-v", "DAA 104", 1, 0],
           ["Lumineon-v", "BRS 40", 0, 1],
-          ["Oranguru", "SSH 148", 0, 1],  
+          ["Oranguru", "SSH 148", 1, 0],  
           ["Manaphy", "BRS 41", 0, 1],  
         ], "supporter": [
           ["Professor's Research", "", 4, 0],
