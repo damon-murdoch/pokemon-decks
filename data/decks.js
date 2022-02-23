@@ -41,45 +41,6 @@ const decks = {
         ], "energy": [
 
         ]
-      }, 
-      "Binder Display": {
-
-        "variants": {
-
-        }, 
-        "pokemon": [
-          ["Landorus-ex", "BCR 144", 3, 0],
-          ["Seismitoad-ex", "FFI 106", 4, 0],
-          ["Volcanion-ex", "STS 107", 4, 0],
-          ["Gardevoir-ex", "GEN RC30", 4, 0],
-          ["M Gardevoir-ex", "GEN RC31", 4, 0],
-          ["Shaymin-ex", "ROS 106", 4, 0],
-          ["Zorua", "DEX 70", 4, 0],
-          ["Trubbish", "NVI 48", 4, 0],
-          ["Zorua", "HIF SV25 ", 4, 0],
-          ["Zoroark-gx", "HIF 77a", 4, 0],
-        ], "supporter": [
-
-        ], "item": [
-          ["Head Ringer", "", 4, 0],
-          ["Switch", "Base", 4, 0],
-          ["Switch", "DP", 4, 0],
-          ["Energy Switch", "DP", 4, 0],
-          ["Switch", "HGSS", 4, 0],
-          ["Energy Switch", "HGSS", 3, 1],
-          ["Pokemon Communication", "HGSS", 4, 0],
-          ["Copycat", "HGSS", 4, 0],
-          ["Hypnotoxic Lazer", "", 4, 0],
-          ["Dowsing Machine", "", 1, 0],
-          ["Computer Search", "", 1, 0],
-          ["Jamming Net", "", 1, 0],
-        ], "tool": [
-          ["Rock Guard", "", 1, 0],
-        ], "stadium": [
-          ["Virbank City Gym", "", 4, 0],
-        ], "energy": [
-
-        ]
       }
     }
   },
@@ -761,13 +722,14 @@ const decks = {
           ["Unown", "AOR 30", 4, 0], 
           ["Zoroark", "BKT 91", 1, 1], 
           ["Zorua", "BKT 89", 2, 0], 
-          ["Zebstrika", "BKP ", 2, 0],
-          ["Blitzle", "BKP ", 2, 0],
-          ["Klefki", "STS ", 2, 0],
+          ["Zebstrika", "BKP 49", 0, 2],
+          ["Blitzle", "BKP 48", 0, 2],
+          ["Klefki", "STS 80", 2, 0],
           ["Shaymin-ex", "ROS 77", 0, 2],
           ["Eevee", "AOR 63", 2, 0],
-          ["Vaporeon", "AOR ", 1, 0], 
-          ["Oranguru", "SUM ", 1, 0], 
+          ["Vaporeon", "AOR 22", 1, 0], 
+          ["Flareon", "AOR 13", 1, 0], 
+          ["Oranguru", "SUM ", 0, 1], 
         ], "supporter": [
           ["Professor Sycamore", "", 0, 4],
           ["Lysandre", "", 2, 0],
@@ -782,9 +744,9 @@ const decks = {
         ], "tool": [
           ["Float Stone", "", 0, 2],
         ], "stadium": [
-          ["Forest of Giant Plants", "", 0, 3]
+          ["Forest of Giant Plants", "", 1, 2]
         ], "energy": [
-          ["Double Colorless Energy", "", 4, 0]
+          ["Double Colorless Energy", "", 3, 1]
         ]
       }
     }
@@ -1384,14 +1346,18 @@ const decks = {
         ], "item": [
           ["Mysterious Treasure", "", 4, 0],
           ["Field Blower", "", 3, 0],
+<<<<<<< HEAD
           ["Ultra Ball", "", 3, 0],
           ["Professor's Letter", "", 2, 0],
           ["Super Rod", "", 1, 0]
+=======
+          ["Professor's Letter", "", 2, 0]
+>>>>>>> b91030e1dfb39df054ee24f31bde38780e727ffa
         ], "tool": [
           ["Float Stone", "", 3, 0],
           ["Choice Band", "", 2, 0],
         ], "stadium": [
-          ["Parallel City", "", 1, 0]
+          ["Parallel City", "", 2, 0]
         ], "energy": [
           ["Psychic Energy", "", 8, 0],
           ["Metal Energy", "", 3, 0],
@@ -1607,8 +1573,12 @@ const decks = {
           ["Garbodor", "BKP 57", 2, 0],
           ["Garbodor", "GRI 51", 1, 0],
           ["Shaymin-ex", "ROS 77", 2, 0], 
-          ["Tapu Lele-gx", "GRI 60", 1, 0], 
           ["Kartana-gx", "GRI 60", 1, 0], 
+          ["Tapu Lele-gx", "GRI 60", 1, 0], 
+<<<<<<< HEAD
+          ["Kartana-gx", "GRI 60", 1, 0], 
+=======
+>>>>>>> b91030e1dfb39df054ee24f31bde38780e727ffa
         ], "supporter": [
           ["Professor Juniper", "", 4, 0], 
           ["Delinquent", "", 1, 0],
@@ -1740,16 +1710,17 @@ const decks = {
           ["Eevee", "ROS 101", 4, 0],
           ["Shaymin-ex", "ROS 77", 0, 3],
           ["Tapu Lele-gx", "GRI 60", 0, 1],
-          ["Mewtwo-ex", "ROS 77", 0, 1],
+          ["Mewtwo-ex", "ROS 77", 1, 0],
           ["Sudowoodo", "GRI 66", 1, 0],
           ["Exeggcute", "PLF 4", 0, 1],
           ["Oricorio", "GRI 56", 1, 0],
         ], "supporter": [
           ["Professor Juniper", "", 0, 3],
-          ["Guzma", "", 0, 2],
-          ["N", "", 0, 1],
-          ["Colress", "", 1, 0],
+          ["Hex Maniac", "", 1, 0],
           ["Blacksmith", "", 1, 0],
+          ["Teammates", "", 1, 0],
+          ["Guzma", "", 1, 0],
+          ["N", "", 0, 1],
         ], "item": [
           ["Battle Compressor", "", 4, 0],
           ["Ultra Ball", "", 0, 4],
@@ -1758,9 +1729,9 @@ const decks = {
         ], "tool": [
           ["Choice Band", "", 2, 0],
         ], "stadium": [
-          ["Parallel City", "", 1, 1]
+          ["Forest of Giant Plants", "", 2, 0]
         ], "energy": [
-          ["Double Colorless Energy", "", 3, 1],
+          ["Double Colorless Energy", "", 4, 0],
           ["Fire Energy", "", 3, 0]
         ]
       }, 
@@ -1771,7 +1742,7 @@ const decks = {
         }, 
         "pokemon": [
           ["Greninja Break", "", 0, 3],
-          ["Greninja", "", 1, 3],
+          ["Greninja", "", 2, 2],
           ["Frogadier", "", 4, 0],
           ["Froakie", "", 4, 0],
           ["Starmie", "", 1, 0],
@@ -1784,21 +1755,21 @@ const decks = {
           ["Ace Trainer", "", 1, 0]
         ], "item": [
           ["Dive Ball", "", 0, 4], 
-          ["Ultra Ball", "", 0, 2], 
+          ["Ultra Ball", "", 2, 0], 
           ["Evosoda", "", 2, 0], 
           ["Enhanced Hammer", "", 2, 0], 
           ["Field Blower", "", 0, 2], 
           ["Rescue Stretcher", "", 1, 0], 
           ["Counter Catcher", "", 1, 0], 
           ["Super Rod", "", 1, 0], 
-          ["Dowsing Machine", "", 0, 1]
+          ["Dowsing Machine", "", 1, 0]
         ], "tool": [
           ["Choice Band", "", 2, 0]
         ], "stadium": [
-          ["Brooklet Hill", "", 3, 0]
+          ["Brooklet Hill", "", 2, 1]
         ], "energy": [
           ["Water Energy", "", 6, 0],
-          ["Splash Energy", "", 4, 0]
+          ["Splash Energy", "", 1, 3]
         ]
       }, 
       "Wailord": {
@@ -2333,18 +2304,18 @@ const decks = {
         "pokemon": [
           ["Blacephalon", "UNB 32", 0, 4],
           ["Blacephalon-gx", "LOT 52", 0, 1],
-          ["Victini Prism Star", "DRM 7", 0, 1],
+          ["Victini Prism Star", "DRM 7", 1, 0],
         ], "supporter": [
           ["Green's Exploration", "", 4, 0],
           ["Welder", "", 0, 4], 
-          ["Rosa", "", 0, 1], 
         ], "item": [
           ["Acro Bike", "", 4, 0],
           ["Pokegear 3.0", "", 4, 0],
-          ["Fire Crystal", "", 0, 4],
+          ["Fire Crystal", "", 3, 1],
           ["Fiery Flint", "", 4, 0],
           ["Custom Catcher", "", 4, 0],
-          ["Beast Ring", "", 0, 2],
+          ["Beast Ring", "", 2, 0],
+          ["Great Catcher", "", 1, 0], 
           ["Cherish Ball", "", 1, 0],
           ["Reset Stamp", "", 1, 0],
           ["Switch", "", 1, 0],
@@ -2366,7 +2337,7 @@ const decks = {
           ["Naganadel", "LOT 108", 3, 0],
           ["Naganadel-gx", "UNM 160", 2, 0],
           ["Naganadel-gx", "FLI 56", 1, 0],
-          ["Blacephalon-gx", "LOT 52", 2, 1], 
+          ["Blacephalon-gx", "LOT 52", 3, 0], 
           ["Blacephalon", "CEC 104", 0, 1], 
           ["Heatran-gx", "UNM 25", 1, 0],
           ["Dedenne-gx", "UNB 57", 1, 0]
@@ -2397,7 +2368,7 @@ const decks = {
 
         }, 
         "pokemon": [
-          ["Poipole", "UNM 102", 3, 0], 
+          ["Poipole", "UNM 102", 0, 3], 
           ["Poipole", "FLI 55", 1, 0], 
           ["Naganadel", "LOT 108",1, 2],
           ["Quagsire", "DMN 26", 3, 0],
@@ -2405,7 +2376,7 @@ const decks = {
           ["Wooper", "VIV 83", 1, 0],
           ["Lapras", "TEU 31", 1, 1],
           ["Keldeo-gx", "UNM 47", 0, 2],
-          ["Dedenne-gx", "UNB 57", 0, 1],
+          ["Dedenne-gx", "UNB 57", 1, 0],
           ["Mega Lopunny & Jigglypuff-gx", "UNM 47", 0, 1],
           ["Volcanion Prism Star", "FLI 31", 1, 0],
           ["Ditto Prism Star", "LOT 154", 1, 0],
