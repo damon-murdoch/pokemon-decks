@@ -1371,7 +1371,7 @@ const decks = {
         "pokemon": [
           ["Malamar", "FLI 51", 4, 0],
           ["Inkay", "FLI 50", 4, 0],
-          ["Ultra Necrozma-gx", "FLI 95", 2, 0],
+          ["Ultra Necrozma-gx", "FLI 95", 3, 0],
           ["Dawn Wings Necrozma-gx", "UPR 63", 2, 0],
           ["Tapu Lele-gx", "GRI 60", 2, 0],
           ["Mew", "FAC 29", 1, 0]
@@ -1383,10 +1383,10 @@ const decks = {
           ["Brigette", "", 1, 0]
         ], "item": [
           ["Mysterious Treasure", "", 4, 0],
-          ["Ultra Ball", "", 3, 0],
           ["Field Blower", "", 3, 0],
-          ["Beast Ring", "", 2, 0],
-          ["Professor's Letter", "", 2, 0]
+          ["Ultra Ball", "", 3, 0],
+          ["Professor's Letter", "", 2, 0],
+          ["Super Rod", "", 1, 0]
         ], "tool": [
           ["Float Stone", "", 3, 0],
           ["Choice Band", "", 2, 0],
