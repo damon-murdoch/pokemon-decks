@@ -349,7 +349,7 @@ const decks = {
           ["Bronzong", "PHF 61", 4, 0],
           ["Bronzong Break", "FCI 62", 1, 0],
           ["Shaymin-ex", "ROS 77", 0, 2],
-          ["Aegislash-ex", "PHF 65", 1, 1],
+          ["Aegislash-ex", "PHF 65", 2, 0],
           ["Genesect-ex", "FCO 64", 2, 0],
           ["Cobalion", "STS 74", 2, 0],
           ["Magearna-ex", "STS 75", 1, 0]
@@ -2296,7 +2296,7 @@ const decks = {
         }, 
         "pokemon": [
           ["Blacephalon", "UNB 32", 0, 4],
-          ["Blacephalon-gx", "LOT 52", 0, 1],
+          ["Blacephalon-gx", "LOT 52", 1, 0],
           ["Victini Prism Star", "DRM 7", 1, 0],
         ], "supporter": [
           ["Green's Exploration", "", 4, 0],
