@@ -1346,13 +1346,9 @@ const decks = {
         ], "item": [
           ["Mysterious Treasure", "", 4, 0],
           ["Field Blower", "", 3, 0],
-<<<<<<< HEAD
           ["Ultra Ball", "", 3, 0],
           ["Professor's Letter", "", 2, 0],
           ["Super Rod", "", 1, 0]
-=======
-          ["Professor's Letter", "", 2, 0]
->>>>>>> b91030e1dfb39df054ee24f31bde38780e727ffa
         ], "tool": [
           ["Float Stone", "", 3, 0],
           ["Choice Band", "", 2, 0],
@@ -1575,10 +1571,7 @@ const decks = {
           ["Shaymin-ex", "ROS 77", 2, 0], 
           ["Kartana-gx", "GRI 60", 1, 0], 
           ["Tapu Lele-gx", "GRI 60", 1, 0], 
-<<<<<<< HEAD
           ["Kartana-gx", "GRI 60", 1, 0], 
-=======
->>>>>>> b91030e1dfb39df054ee24f31bde38780e727ffa
         ], "supporter": [
           ["Professor Juniper", "", 4, 0], 
           ["Delinquent", "", 1, 0],
