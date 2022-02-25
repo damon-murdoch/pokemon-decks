@@ -2420,7 +2420,7 @@ const decks = {
           ["Galarian Moltres-v", "CRE 97", 2, 0],
           ["Crobat-v", "DAA 104", 1, 0],
           ["Passimian", "CRE 88", 1, 0],
-          ["Manaphy", "BRS 41", 0, 1],
+          ["Manaphy", "BRS 41", 1, 0],
         ], "supporter": [
           ["Professor's Research", "", 4, 0],
           ["Marnie", "", 2, 0],
@@ -2457,7 +2457,7 @@ const decks = {
           ["Crobat-v", "DAA 104", 1, 0],
           ["Lumineon-v", "BRS 40", 0, 1],
           ["Oranguru", "SSH 148", 1, 0],  
-          ["Manaphy", "BRS 41", 0, 1],  
+          ["Manaphy", "BRS 41", 1, 0],  
         ], "supporter": [
           ["Professor's Research", "", 4, 0],
           ["Boss's Orders", "", 3, 0],
@@ -2470,12 +2470,12 @@ const decks = {
           ["Pal Pad", "", 1, 0],
         ], "tool": [
           ["Air Balloon", "", 2, 0],
-          ["Choice Belt", "", 0, 2],
+          ["Choice Belt", "", 2, 0],
         ], "stadium": [
-          ["Collapsed Stadium", "", 0, 2]
+          ["Collapsed Stadium", "", 2, 0]
         ], "energy": [
           ["Twin Energy", "", 4, 0],
-          ["Double Turbo Energy", "", 0, 3]
+          ["Double Turbo Energy", "", 3, 0]
         ]
       },
       "Zacian Zamazenta": {
