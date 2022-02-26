@@ -1702,11 +1702,10 @@ const decks = {
           ["Flareon", "PLF 12", 0, 4],
           ["Eevee", "ROS 101", 4, 0],
           ["Shaymin-ex", "ROS 77", 0, 3],
+          ["Exeggcute", "PLF 4", 2, 0],
           ["Tapu Lele-gx", "GRI 60", 0, 1],
           ["Mewtwo-ex", "ROS 77", 1, 0],
           ["Sudowoodo", "GRI 66", 1, 0],
-          ["Exeggcute", "PLF 4", 0, 1],
-          ["Oricorio", "GRI 56", 1, 0],
         ], "supporter": [
           ["Professor Juniper", "", 0, 3],
           ["Hex Maniac", "", 1, 0],
