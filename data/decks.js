@@ -2418,7 +2418,6 @@ const decks = {
           ["Galarian Moltres-v", "CRE 97", 2, 0],
           ["Crobat-v", "DAA 104", 1, 0],
           ["Passimian", "CRE 88", 1, 0],
-          ["Manaphy", "BRS 41", 1, 0],
         ], "supporter": [
           ["Professor's Research", "", 4, 0],
           ["Marnie", "", 2, 0],
@@ -2426,11 +2425,12 @@ const decks = {
           ["Boss's Orders", "", 1, 0],
         ], "item": [
           ["Quick Ball", "", 4, 0],
-          ["Level Ball", "", 3, 0],
-          ["Ultra Ball", "", 3, 0],
+          ["Level Ball", "", 4, 0],
+          ["Evolution Incense", "", 2, 0],
           ["Escape Rope", "", 2, 0],
           ["Energy Switch", "", 2, 0],
           ["Energy Search", "", 2, 0],
+          ["Ultra Ball", "", 1, 0],
         ], "tool": [
           ["Air Balloon", "", 1, 0],
         ], "stadium": [
@@ -2439,6 +2439,76 @@ const decks = {
           ["Rapid Strike Energy", "", 4, 0],
           ["Darkness Energy", "", 4, 0],
           ["Fighting Energy", "", 2, 0]
+        ]
+      }, 
+      "Umbreon Urshifu": {
+        "variants": {
+  
+        }, 
+        "pokemon": [
+          ["Houndoom", "BST 96", 0, 4],
+          ["Houndour", "BST 95", 0, 4],
+          ["Umbreon-v", "EVS 94", 0, 4],
+          ["Umbreon-vmax", "EVS 95", 0, 3],
+          ["Urshifu-v", "BST 85", 0, 2],
+          ["Urshifu-vmax", "BST 86", 0, 2],
+          ["Crobat-v", "DAA 104", 0 , 2],
+        ],
+        "supporter": [
+          ["Professor's Research", "", 0, 4],
+          ["Marnie", "", 0, 3],
+          ["Boss's Orders", "", 0, 2],
+        ],
+        "item": [
+          ["Ultra Ball", "", 0, 4],
+          ["Quick Ball", "", 4, 0],
+          ["Battle VIP Pass", "", 4, 0],
+          ["Urn of Vitality", "", 0, 4],
+          ["Switch", "", 1, 0],
+        ],
+        "tool": [
+          ["Air Balloon", "", 2, 0],
+        ],
+        "stadium": [
+          ["Tower of Darkness", "", 0, 3],
+        ],
+        "energy": [
+          ["Single Strike Energy", "", 0, 4],
+          ["Capture Energy", "", 0, 4],
+        ]
+      }, 
+      "Zacian Zamazenta": {
+
+        "variants": {
+  
+        }, 
+        "pokemon": [
+          ["Zacian V", "SSH 138", 4, 0],
+          ["Zamazenta V", "SSH 139", 2, 0],
+          ["Oranguru", "SSH 148", 2, 0],
+        ],
+        "supporter": [
+          ["Professor's Research", "", 4, 0],
+          ["Boss's Orders", "", 4, 0],
+          ["Marnie", "", 3, 0],
+          ["Raihan", "", 1, 0]
+        ],
+        "item": [
+          ["Metal Saucer", "", 4, 0],
+          ["Switch", "", 4, 0],
+          ["Rotom Phone", "", 4, 0],
+          ["Quick Ball", "", 4, 0],
+          ["Tool Scrapper", "", 2, 0]
+        ],
+        "tool": [
+          ["Cape of Toughness", "", 4, 0],
+          ["Air Balloon", "", 2, 0]
+        ],
+        "stadium": [
+          ["Crystal Cave", "", 4, 0]
+        ],
+        "energy": [
+          ["Metal Energy", "", 12, 0]
         ]
       }, 
       "Mad Party": {
@@ -2476,40 +2546,6 @@ const decks = {
           ["Double Turbo Energy", "", 3, 0]
         ]
       },
-      "Zacian Zamazenta": {
-
-        "variants": {
-  
-        }, 
-        "pokemon": [
-          ["Zacian V", "SSH 138", 4, 0],
-          ["Zamazenta V", "SSH 139", 2, 0],
-          ["Oranguru", "SSH 148", 2, 0],
-        ],
-        "supporter": [
-          ["Professor's Research", "", 4, 0],
-          ["Boss's Orders", "", 4, 0],
-          ["Marnie", "", 3, 0],
-          ["Raihan", "", 1, 0]
-        ],
-        "item": [
-          ["Metal Saucer", "", 4, 0],
-          ["Switch", "", 4, 0],
-          ["Rotom Phone", "", 4, 0],
-          ["Quick Ball", "", 4, 0],
-          ["Tool Scrapper", "", 2, 0]
-        ],
-        "tool": [
-          ["Cape of Toughness", "", 4, 0],
-          ["Air Balloon", "", 2, 0]
-        ],
-        "stadium": [
-          ["Crystal Cave", "", 4, 0]
-        ],
-        "energy": [
-          ["Metal Energy", "", 12, 0]
-        ]
-      }
     }, 
   }
 }
