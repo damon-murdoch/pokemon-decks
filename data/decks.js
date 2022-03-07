@@ -2511,6 +2511,41 @@ const decks = {
           ["Metal Energy", "", 12, 0]
         ]
       }, 
+      "Durant Mill": {
+
+        "variants": {
+          
+        }, 
+        "pokemon": [
+          ["Durant", "BST 10", 4, 0],
+          ["Cinccino", "SSH 147", 3, 0],
+          ["Minccino", "BRS 124", 3, 0],
+          ["Minccino", "SSH 145", 1, 0],
+          ["Snorlax", "VIV 131", 0, 2],
+          ["Manaphy", "BRS 41", 1, 0],  
+        ], "supporter": [
+          ["Boss's Orders", "", 0, 4],
+          ["Marnie", "", 3, 0],
+          ["Bruno", "", 3, 0],
+          ["Peonia", "", 1, 1],
+        ], "item": [
+          ["Level Ball", "", 4, 0],
+          ["Quick Ball", "", 4, 0],
+          ["Cursed Shovel", "", 3, 1],
+          ["Rescue Carrier", "", 0, 4],
+          ["Scoop Up Net", "", 3, 0],
+          ["Yell Horn", "", 2, 0],
+          ["Echoing Horn", "", 1, 0],
+        ], "tool": [
+          
+        ], "stadium": [
+          ["Galar Mine", "", 2, 2]
+        ], "energy": [
+          ["Double Turbo Energy", "", 0, 4],
+          ["Capture Energy", "", 2, 1],
+          ["Twin Energy", "", 1, 0],
+        ]
+      }, 
       "Mad Party": {
 
         "variants": {
