@@ -916,7 +916,7 @@ const decks = {
           ["Necrozma-gx", "BUS 63", 1, 0],
           ["Alolan Vulpix", "BUS 27", 1, 0]
         ], "supporter": [
-          ["Professor Sycamore", "", 1, 3],
+          ["Professor Sycamore", "", 2, 2],
           ["N", "", 4, 0],
           ["Guzma", "", 4, 0],
           ["Brigette", "", 2, 0],
@@ -928,7 +928,7 @@ const decks = {
           ["Field Blower", "", 3, 0],
           ["Rescue Stretcher", "", 1, 0],
         ], "tool": [
-          ["Choice Band", "", 1, 2],
+          ["Choice Band", "", 3, 0],
         ], "stadium": [
   
         ], "energy": [
@@ -2300,7 +2300,7 @@ const decks = {
           ["Green's Exploration", "", 4, 0],
           ["Welder", "", 4, 0], 
         ], "item": [
-          ["Acro Bike", "", 1, 3],
+          ["Acro Bike", "", 4, 0],
           ["Pokegear 3.0", "", 4, 0],
           ["Fire Crystal", "", 4, 0],
           ["Fiery Flint", "", 4, 0],
@@ -2316,7 +2316,7 @@ const decks = {
           ["Ultra Space", "", 3, 0],
           ["Heat Factory Prism Star", "", 1, 0]
         ], "energy": [
-          ["Fire Energy", "", 14, 2]
+          ["Fire Energy", "", 16, 0]
         ]
       }, 
       "Blacephalon-gx Naganadel": {
@@ -2531,13 +2531,12 @@ const decks = {
         ], "item": [
           ["Level Ball", "", 4, 0],
           ["Quick Ball", "", 4, 0],
-          ["Cursed Shovel", "", 3, 1],
-          ["Rescue Carrier", "", 0, 4],
+          ["Rescue Carrier", "", 4, 0],
           ["Scoop Up Net", "", 3, 0],
           ["Yell Horn", "", 2, 0],
           ["Echoing Horn", "", 1, 0],
         ], "tool": [
-          
+          ["Cursed Shovel", "", 4, 0],
         ], "stadium": [
           ["Galar Mine", "", 2, 2]
         ], "energy": [
