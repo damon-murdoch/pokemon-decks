@@ -912,7 +912,7 @@ const decks = {
           ["Metagross-gx", "GRI 85", 4, 0],
           ["Metang", "GRI 84", 3, 0],
           ["Beldum", "GRI 83", 4, 0],
-          ["Tapu Lele-gx", "GRI 60", 0, 3],
+          ["Tapu Lele-gx", "GRI 60", 3, 0],
           ["Necrozma-gx", "BUS 63", 1, 0],
           ["Alolan Vulpix", "BUS 27", 1, 0]
         ], "supporter": [
@@ -2371,7 +2371,7 @@ const decks = {
           ["Mega Lopunny & Jigglypuff-gx", "UNM 47", 1, 0],
           ["Volcanion Prism Star", "FLI 31", 1, 0],
           ["Ditto Prism Star", "LOT 154", 1, 0],
-          ["Mew", "UNB 76", 0, 1],
+          ["Mew", "UNB 76", 1, 0],
         ], "supporter": [
           ["Lillie", "", 4, 0],
           ["Cynthia", "", 4, 0],
