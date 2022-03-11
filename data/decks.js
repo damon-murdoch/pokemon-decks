@@ -725,7 +725,7 @@ const decks = {
           ["Zebstrika", "BKP 49", 2, 0],
           ["Blitzle", "BKP 48", 2, 0],
           ["Klefki", "STS 80", 2, 0],
-          ["Shaymin-ex", "ROS 77", 1, 1],
+          ["Shaymin-ex", "ROS 77", 2, 0],
           ["Eevee", "AOR 63", 2, 0],
           ["Vaporeon", "AOR 22", 1, 0], 
           ["Flareon", "AOR 13", 1, 0], 
