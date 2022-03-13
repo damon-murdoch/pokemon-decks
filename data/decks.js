@@ -769,7 +769,7 @@ const decks = {
           ["Trubbish", "BKP 56", 4, 0],
           ["Garbodor", "BKP 57", 2, 0],
           ["Garbodor", "GRI 51", 2, 0],
-          ["Tapu Lele-gx", "GRI 60", 0, 3],
+          ["Tapu Lele-gx", "GRI 60", 2, 1],
           ["Drampa-gx", "GRI 115", 2, 0],
           ["Espeon-gx", "SUM 61", 1, 0],
           ["Eevee", "SUM 101", 1, 0],
@@ -877,7 +877,7 @@ const decks = {
           ["Vikavolt", "PR-SM SM28", 3, 0],
           ["Charjabug", "SUM 51", 1, 0],
           ["Grubbin", "SUM 13", 3, 0],
-          ["Tapu Lele-gx", "GRI 60", 1, 2],
+          ["Tapu Lele-gx", "GRI 60", 3, 0],
           ["Tapu Koko", "PR-SM SM30", 1, 0],
           ["Mew", "FAC 29", 1, 0]
         ], "supporter": [
@@ -2446,22 +2446,23 @@ const decks = {
   
         }, 
         "pokemon": [
-          ["Houndoom", "BST 96", 0, 4],
+          ["Houndoom", "BST 96", 1, 3],
           ["Houndour", "BST 95", 0, 4],
-          ["Umbreon-v", "EVS 94", 0, 4],
+          ["Umbreon-v", "EVS 94", 0, 3],
           ["Umbreon-vmax", "EVS 95", 0, 3],
           ["Urshifu-v", "BST 85", 0, 2],
           ["Urshifu-vmax", "BST 86", 0, 2],
-          ["Crobat-v", "DAA 104", 0 , 2],
+          ["Crobat-v", "DAA 104", 2, 0],
+          ["Morpeko", "FST 179", 1, 0],
         ],
         "supporter": [
           ["Professor's Research", "", 0, 4],
-          ["Marnie", "", 0, 3],
+          ["Marnie", "", 1, 3],
           ["Boss's Orders", "", 0, 2],
         ],
         "item": [
-          ["Ultra Ball", "", 0, 4],
-          ["Quick Ball", "", 4, 0],
+          ["Ultra Ball", "", 4, 0],
+          ["Quick Ball", "", 0, 4],
           ["Battle VIP Pass", "", 4, 0],
           ["Urn of Vitality", "", 0, 4],
           ["Switch", "", 1, 0],
@@ -2470,11 +2471,11 @@ const decks = {
           ["Air Balloon", "", 2, 0],
         ],
         "stadium": [
-          ["Tower of Darkness", "", 0, 3],
+          ["Tower of Darkness", "", 0, 2],
         ],
         "energy": [
           ["Single Strike Energy", "", 0, 4],
-          ["Capture Energy", "", 0, 4],
+          ["Capture Energy", "", 4, 0],
         ]
       }, 
       "Zacian Zamazenta": {
@@ -2521,13 +2522,13 @@ const decks = {
           ["Cinccino", "SSH 147", 3, 0],
           ["Minccino", "BRS 124", 3, 0],
           ["Minccino", "SSH 145", 1, 0],
-          ["Snorlax", "VIV 131", 0, 2],
+          ["Snorlax", "VIV 131", 2, 0],
           ["Manaphy", "BRS 41", 1, 0],  
         ], "supporter": [
-          ["Boss's Orders", "", 0, 4],
+          ["Boss's Orders", "", 4, 0],
           ["Marnie", "", 3, 0],
           ["Bruno", "", 3, 0],
-          ["Peonia", "", 1, 1],
+          ["Peonia", "", 2, 0],
         ], "item": [
           ["Level Ball", "", 4, 0],
           ["Quick Ball", "", 4, 0],
@@ -2538,10 +2539,10 @@ const decks = {
         ], "tool": [
           ["Cursed Shovel", "", 4, 0],
         ], "stadium": [
-          ["Galar Mine", "", 2, 2]
+          ["Galar Mine", "", 4, 0]
         ], "energy": [
-          ["Double Turbo Energy", "", 0, 4],
-          ["Capture Energy", "", 2, 1],
+          ["Double Turbo Energy", "", 4, 0],
+          ["Capture Energy", "", 3, 0],
           ["Twin Energy", "", 1, 0],
         ]
       }, 
@@ -2557,7 +2558,7 @@ const decks = {
           ["Polteageist", "DAA 83", 4, 0],  
           ["Sinistea", "DAA 82", 3, 0],
           ["Crobat-v", "DAA 104", 1, 0],
-          ["Lumineon-v", "BRS 40", 0, 1],
+          ["Lumineon-v", "BRS 40", 1, 0],
           ["Oranguru", "SSH 148", 1, 0],  
           ["Manaphy", "BRS 41", 1, 0],  
         ], "supporter": [
