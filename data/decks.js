@@ -769,7 +769,7 @@ const decks = {
           ["Trubbish", "BKP 56", 4, 0],
           ["Garbodor", "BKP 57", 2, 0],
           ["Garbodor", "GRI 51", 2, 0],
-          ["Tapu Lele-gx", "GRI 60", 2, 1],
+          ["Tapu Lele-gx", "GRI 60", 3, 0],
           ["Drampa-gx", "GRI 115", 2, 0],
           ["Espeon-gx", "SUM 61", 1, 0],
           ["Eevee", "SUM 101", 1, 0],
