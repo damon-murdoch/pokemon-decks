@@ -2446,35 +2446,35 @@ const decks = {
   
         }, 
         "pokemon": [
-          ["Houndoom", "BST 96", 1, 3],
-          ["Houndour", "BST 95", 0, 4],
-          ["Umbreon-v", "EVS 94", 0, 3],
-          ["Umbreon-vmax", "EVS 95", 0, 3],
-          ["Urshifu-v", "BST 85", 0, 2],
-          ["Urshifu-vmax", "BST 86", 0, 2],
+          ["Houndoom", "BST 96", 4, 0],
+          ["Houndour", "BST 95", 4, 0],
+          ["Umbreon-v", "EVS 94", 3, 0],
+          ["Umbreon-vmax", "EVS 95", 3, 0],
+          ["Urshifu-v", "BST 85", 2, 0],
+          ["Urshifu-vmax", "BST 86", 2, 0],
           ["Crobat-v", "DAA 104", 2, 0],
           ["Morpeko", "FST 179", 1, 0],
         ],
         "supporter": [
-          ["Professor's Research", "", 0, 4],
-          ["Marnie", "", 1, 3],
-          ["Boss's Orders", "", 0, 2],
+          ["Professor's Research", "", 4, 0],
+          ["Marnie", "", 4, 0],
+          ["Boss's Orders", "", 2, 0],
         ],
         "item": [
           ["Ultra Ball", "", 4, 0],
-          ["Quick Ball", "", 0, 4],
+          ["Quick Ball", "", 4, 0],
           ["Battle VIP Pass", "", 4, 0],
-          ["Urn of Vitality", "", 0, 4],
+          ["Urn of Vitality", "", 4, 0],
           ["Switch", "", 1, 0],
         ],
         "tool": [
           ["Air Balloon", "", 2, 0],
         ],
         "stadium": [
-          ["Tower of Darkness", "", 0, 2],
+          ["Tower of Darkness", "", 2, 0],
         ],
         "energy": [
-          ["Single Strike Energy", "", 0, 4],
+          ["Single Strike Energy", "", 4, 0],
           ["Capture Energy", "", 4, 0],
         ]
       }, 
@@ -2490,7 +2490,7 @@ const decks = {
         ],
         "supporter": [
           ["Professor's Research", "", 4, 0],
-          ["Boss's Orders", "", 4, 0],
+          ["Boss's Orders", "", 2, 2],
           ["Marnie", "", 3, 0],
           ["Raihan", "", 1, 0]
         ],
@@ -2503,7 +2503,7 @@ const decks = {
         ],
         "tool": [
           ["Cape of Toughness", "", 4, 0],
-          ["Air Balloon", "", 2, 0]
+          ["Air Balloon", "", 0, 2]
         ],
         "stadium": [
           ["Crystal Cave", "", 4, 0]
