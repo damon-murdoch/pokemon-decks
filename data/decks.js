@@ -1524,7 +1524,6 @@ const decks = {
           ["Garbodor", "BKP 57", 2, 0],
           ["Garbodor", "GRI 51", 1, 0],
           ["Shaymin-ex", "ROS 77", 2, 0], 
-          ["Kartana-gx", "GRI 60", 1, 0], 
           ["Tapu Lele-gx", "GRI 60", 1, 0], 
           ["Kartana-gx", "GRI 60", 1, 0], 
         ], "supporter": [
