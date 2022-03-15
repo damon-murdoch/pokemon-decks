@@ -1,50 +1,6 @@
 // Old Format Deck Collection
 const decks = {
 
-  // Name, Count, Missing, Price (USD)
-  "Collection": {
-    "meta": {
-      "start": "Black_and_White",
-      "end": "Fusion_Strike"
-    }, 
-    "decks": {
-      "Zorua Collection": {
-
-        "variants": {
-
-        }, 
-        "pokemon": [
-          ["Zorua", "BLW 70", 1, 0],
-          ["Zorua", "MCD 9", 1, 0],
-          ["Zorua", "EPO 66", 1, 0],
-          ["Zorua", "PR-BW BW12", 1, 0],
-          ["Zorua", "DEX 69", 1, 0],
-          ["Zorua", "LTR 89", 1, 0],
-          ["Zorua", "DEX 70", 1, 0],
-          ["Zorua", "XY 72", 1, 0],
-          ["Zorua", "BKT 89", 1, 0],
-          ["Zorua", "BKT 90", 1, 0],
-          ["Zorua", "SLG 52", 1, 0],
-          ["Zorua", "PR-SM SM83", 1, 0],
-          ["Zorua", "HIF SV25", 1, 0],
-          ["Zorua", "TEU 90", 1, 0],
-          ["Zorua", "EVS 102", 1, 0],
-          ["Zorua", "FST 170", 1, 0],
-        ], "supporter": [
-
-        ], "item": [
-
-        ], "tool": [
-
-        ], "stadium": [
-
-        ], "energy": [
-
-        ]
-      }
-    }
-  },
-
   // 2016 Worlds
   // XY Base Set to XY Steam Siege
   "XY-STS": {
