@@ -2458,7 +2458,7 @@ const decks = {
         ],
         "tool": [
           ["Cape of Toughness", "", 4, 0],
-          ["Air Balloon", "", 0, 2]
+          ["Air Balloon", "", 2, 0]
         ],
         "stadium": [
           ["Crystal Cave", "", 4, 0]
@@ -2536,6 +2536,112 @@ const decks = {
           ["Double Turbo Energy", "", 3, 0]
         ]
       },
+      "Rapid Strike Malamar": {
+
+        "variants": {
+          
+        }, 
+        "pokemon": [
+          ["Malamar", "CRE 70", 0, 4],
+          ["Inkay", "CRE 69", 0, 4],
+          ["Minccino", "BRS 124", 0, 4],
+          ["Cinccino", "SSH 147", 0, 4],
+          ["Remoraid", "BST 36", 0, 3],
+          ["Octillery", "BST 37", 0, 2],
+          ["Manaphy", "BRS 41", 0, 1]
+        ], "supporter": [
+          ["Cynthia's Ambition", "", 2, 2],
+          ["Korrina's Focus", "", 3, 1]
+        ], "item": [
+          ["Evolution Incense", "", 4, 0],
+          ["Level Ball", "", 4, 0],
+          ["Fog Crystal", "", 0, 4],
+          ["Great Ball", "", 3, 0],
+          ["Battle VIP Pass", "", 1, 2],
+          ["Scoop Up Net", "", 0, 2],
+          ["Rescue Carrier", "", 0, 2],
+          ["Ordinary Rod", "", 1, 0]
+        ], "tool": [
+
+        ], "stadium": [
+          ["Tower of Waters", "", 1, 0]
+        ], "energy": [
+          ["Spiral Energy", "", 0, 4],
+          ["Psychic Energy", "", 2, 0],
+        ]
+      },
+      "Suicune Ludicolo": {
+
+        "variants": {
+          
+        }, 
+        "pokemon": [
+          ["Suicune-v", "EVS 31", 0, 4],
+          ["Sobble", "CRE 41", 0, 4],
+          ["Drizzile", "SSH 56", 0, 4],
+          ["Inteleon", "SSH 58", 0, 2],
+          ["Lotad", "EVS 32", 0, 3],
+          ["Ludicolo", "EVS 34", 0, 2]
+        ], "supporter": [
+          ["Melony", "", 0, 4],
+          ["Raihan", "", 0, 1]
+        ], "item": [
+          ["Cross Switcher", "", 0, 4],
+          ["Quick Ball", "", 0, 4],
+          ["Level Ball", "", 0, 4],
+          ["Evolution Incense", "", 0, 3],
+          ["Rare Candy", "", 0, 3],
+          ["Scoop up Net", "", 0, 3],
+          ["Capacious Bucket", "", 0, 3],
+          ["Ultra Ball", "", 0, 1],
+          ["Echoing Horn", "", 0, 1],
+        ], "tool": [
+          ["Choice Belt", "", 0, 1],
+          ["Cape of Toughness", "", 0, 1],
+        ], "stadium": [
+
+        ], "energy": [
+          ["Water Energy", "", 6, 0],
+          ["Capture Energy", "", 0, 2],
+        ]
+      }, 
+      "Zoroark Box": {
+
+        "variants": {
+          
+        }, 
+        "pokemon": [
+          ["Zoroark", "EVS 103", 3, 1],
+          ["Zorua", "EVS 102", 4, 0],
+          ["Cinccino", "SSH 147", 1, 3],
+          ["Minccino", "BRS 124", 3, 1],
+          ["Galarian Moltres", "EVS 93", 0, 2],
+          ["Wormadam", "BRS 77", 1, 0],
+          ["Wormadam", "BRS 98", 1, 0],
+          ["Galarian Weezing", "SHF 42", 0, 1],
+          ["Altaria", "EVS 106", 0, 1],
+          ["Flapple", "EVS 120", 0, 1],
+          ["Golisopod", "DAA 18", 0, 1]
+        ], "supporter": [
+          ["Professor's Research", "", 4, 0],
+          ["Boss's Orders", "", 0, 2],
+          ["Bird Keeper", "", 2, 0],
+          ["Klara", "", 0, 2]
+        ], "item": [
+          ["Level Ball", "", 4, 0],
+          ["Battle VIP Pass", "", 0, 4],
+          ["Evolution Incense", "", 4, 0],
+          ["Quick Ball", "", 2, 0],
+          ["Pal Pad", "", 1, 0]
+        ], "tool": [
+          ["Choice Belt", "", 2, 0]
+        ], "stadium": [
+
+        ], "energy": [
+          ["Darkness Energy", "", 5, 0],
+          ["Twin Energy", "", 0, 4],
+        ]
+      }
     }, 
   }
 }
