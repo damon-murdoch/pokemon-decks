@@ -2544,23 +2544,25 @@ const decks = {
         "pokemon": [
           ["Malamar", "CRE 70", 0, 4],
           ["Inkay", "CRE 69", 0, 4],
-          ["Minccino", "BRS 124", 0, 4],
-          ["Cinccino", "SSH 147", 0, 4],
-          ["Remoraid", "BST 36", 0, 3],
+          ["Inteleon", "SSH 58", 0, 2],
+          ["Drizzile", "SSH 57", 3, 0],
+          ["Sobble", "CRE 41", 4, 0],
+          ["Remoraid", "BST 36", 0, 2],
           ["Octillery", "BST 37", 0, 2],
           ["Manaphy", "BRS 41", 0, 1]
         ], "supporter": [
           ["Cynthia's Ambition", "", 2, 2],
-          ["Korrina's Focus", "", 3, 1]
+          ["Korrina's Focus", "", 3, 1],
+          ["Brawly", "", 0, 4],
         ], "item": [
           ["Evolution Incense", "", 4, 0],
           ["Level Ball", "", 4, 0],
-          ["Fog Crystal", "", 0, 4],
-          ["Great Ball", "", 3, 0],
-          ["Battle VIP Pass", "", 1, 2],
-          ["Scoop Up Net", "", 0, 2],
+          ["Scoop Up Net", "", 0, 3],
+          ["Fog Crystal", "", 0, 3],
           ["Rescue Carrier", "", 0, 2],
-          ["Ordinary Rod", "", 1, 0]
+          ["Ordinary Rod", "", 1, 0],
+          ["Escape Rope", "", 1, 0],
+          ["Ultra Ball", "", 1, 0],
         ], "tool": [
 
         ], "stadium": [
@@ -2576,33 +2578,33 @@ const decks = {
           
         }, 
         "pokemon": [
-          ["Suicune-v", "EVS 31", 0, 4],
-          ["Sobble", "CRE 41", 0, 4],
-          ["Drizzile", "SSH 56", 0, 4],
-          ["Inteleon", "SSH 58", 0, 2],
-          ["Lotad", "EVS 32", 0, 3],
-          ["Ludicolo", "EVS 34", 0, 2]
+          ["Suicune-v", "EVS 31", 4, 0],
+          ["Sobble", "CRE 41", 4, 0],
+          ["Drizzile", "SSH 56", 3, 0],
+          ["Inteleon", "SSH 58", 2, 0],
+          ["Lotad", "EVS 32", 3, 0],
+          ["Ludicolo", "EVS 34", 2, 0]
         ], "supporter": [
-          ["Melony", "", 0, 4],
-          ["Raihan", "", 0, 1]
+          ["Melony", "", 4, 0],
+          ["Raihan", "", 1, 0]
         ], "item": [
           ["Cross Switcher", "", 0, 4],
-          ["Quick Ball", "", 0, 4],
-          ["Level Ball", "", 0, 4],
-          ["Evolution Incense", "", 0, 3],
-          ["Rare Candy", "", 0, 3],
-          ["Scoop up Net", "", 0, 3],
-          ["Capacious Bucket", "", 0, 3],
-          ["Ultra Ball", "", 0, 1],
-          ["Echoing Horn", "", 0, 1],
+          ["Quick Ball", "", 4, 0],
+          ["Level Ball", "", 4, 0],
+          ["Evolution Incense", "", 3, 0],
+          ["Rare Candy", "", 3, 0],
+          ["Scoop up Net", "", 3, 0],
+          ["Capacious Bucket", "", 2, 0],
+          ["Ultra Ball", "", 1, 0],
+          ["Echoing Horn", "", 1, 0],
         ], "tool": [
           ["Choice Belt", "", 0, 1],
-          ["Cape of Toughness", "", 0, 1],
+          ["Cape of Toughness", "", 1, 0],
         ], "stadium": [
-
+          ["Path To The Peak", "", 2, 0]
         ], "energy": [
           ["Water Energy", "", 6, 0],
-          ["Capture Energy", "", 0, 2],
+          ["Capture Energy", "", 2, 0],
         ]
       }, 
       "Zoroark Box": {
