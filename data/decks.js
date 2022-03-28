@@ -2445,7 +2445,7 @@ const decks = {
         ],
         "supporter": [
           ["Professor's Research", "", 4, 0],
-          ["Boss's Orders", "", 2, 2],
+          ["Boss's Orders", "", 4, 0],
           ["Marnie", "", 3, 0],
           ["Raihan", "", 1, 0]
         ],
