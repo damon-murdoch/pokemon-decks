@@ -872,7 +872,7 @@ const decks = {
           ["Necrozma-gx", "BUS 63", 1, 0],
           ["Alolan Vulpix", "BUS 27", 1, 0]
         ], "supporter": [
-          ["Professor Sycamore", "", 2, 2],
+          ["Professor Sycamore", "", 4, 0],
           ["N", "", 4, 0],
           ["Guzma", "", 4, 0],
           ["Brigette", "", 2, 0],
@@ -2542,24 +2542,24 @@ const decks = {
           
         }, 
         "pokemon": [
-          ["Malamar", "CRE 70", 0, 4],
-          ["Inkay", "CRE 69", 0, 4],
+          ["Malamar", "CRE 70", 4, 0],
+          ["Inkay", "CRE 69", 4, 0],
           ["Inteleon", "SSH 58", 0, 2],
           ["Drizzile", "SSH 57", 3, 0],
           ["Sobble", "CRE 41", 4, 0],
-          ["Remoraid", "BST 36", 0, 2],
+          ["Remoraid", "BST 36", 2, 0],
           ["Octillery", "BST 37", 0, 2],
-          ["Manaphy", "BRS 41", 0, 1]
+          ["Manaphy", "BRS 41", 1, 0]
         ], "supporter": [
-          ["Cynthia's Ambition", "", 2, 2],
-          ["Korrina's Focus", "", 3, 1],
-          ["Brawly", "", 0, 4],
+          ["Cynthia's Ambition", "", 4, 0],
+          ["Korrina's Focus", "", 4, 0],
+          ["Brawly", "", 4, 0],
         ], "item": [
           ["Evolution Incense", "", 4, 0],
           ["Level Ball", "", 4, 0],
           ["Scoop Up Net", "", 0, 3],
-          ["Fog Crystal", "", 0, 3],
-          ["Rescue Carrier", "", 0, 2],
+          ["Fog Crystal", "", 3, 0],
+          ["Rescue Carrier", "", 2, 0],
           ["Ordinary Rod", "", 1, 0],
           ["Escape Rope", "", 1, 0],
           ["Ultra Ball", "", 1, 0],
@@ -2568,7 +2568,7 @@ const decks = {
         ], "stadium": [
           ["Tower of Waters", "", 1, 0]
         ], "energy": [
-          ["Spiral Energy", "", 0, 4],
+          ["Spiral Energy", "", 4, 0],
           ["Psychic Energy", "", 2, 0],
         ]
       },
@@ -2598,7 +2598,7 @@ const decks = {
           ["Ultra Ball", "", 1, 0],
           ["Echoing Horn", "", 1, 0],
         ], "tool": [
-          ["Choice Belt", "", 0, 1],
+          ["Choice Belt", "", 1, 0],
           ["Cape of Toughness", "", 1, 0],
         ], "stadium": [
           ["Path To The Peak", "", 2, 0]
@@ -2613,25 +2613,25 @@ const decks = {
           
         }, 
         "pokemon": [
-          ["Zoroark", "EVS 103", 3, 1],
+          ["Zoroark", "EVS 103", 4, 0],
           ["Zorua", "EVS 102", 4, 0],
           ["Cinccino", "SSH 147", 1, 3],
-          ["Minccino", "BRS 124", 3, 1],
+          ["Minccino", "BRS 124", 4, 0],
           ["Galarian Moltres", "EVS 93", 0, 2],
           ["Wormadam", "BRS 77", 1, 0],
           ["Wormadam", "BRS 98", 1, 0],
-          ["Galarian Weezing", "SHF 42", 0, 1],
-          ["Altaria", "EVS 106", 0, 1],
-          ["Flapple", "EVS 120", 0, 1],
-          ["Golisopod", "DAA 18", 0, 1]
+          ["Galarian Weezing", "SHF 42", 1, 0],
+          ["Altaria", "EVS 106", 1, 0],
+          ["Flapple", "EVS 120", 1, 0],
+          ["Golisopod", "DAA 18", 1, 0]
         ], "supporter": [
           ["Professor's Research", "", 4, 0],
           ["Boss's Orders", "", 0, 2],
           ["Bird Keeper", "", 2, 0],
-          ["Klara", "", 0, 2]
+          ["Klara", "", 2, 0]
         ], "item": [
           ["Level Ball", "", 4, 0],
-          ["Battle VIP Pass", "", 0, 4],
+          ["Battle VIP Pass", "", 1, 3],
           ["Evolution Incense", "", 4, 0],
           ["Quick Ball", "", 2, 0],
           ["Pal Pad", "", 1, 0]
