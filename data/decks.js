@@ -2544,11 +2544,11 @@ const decks = {
         "pokemon": [
           ["Malamar", "CRE 70", 4, 0],
           ["Inkay", "CRE 69", 4, 0],
-          ["Inteleon", "SSH 58", 0, 2],
+          ["Inteleon", "SSH 58", 2, 0],
           ["Drizzile", "SSH 57", 3, 0],
           ["Sobble", "CRE 41", 4, 0],
           ["Remoraid", "BST 36", 2, 0],
-          ["Octillery", "BST 37", 0, 2],
+          ["Octillery", "BST 37", 2, 0],
           ["Manaphy", "BRS 41", 1, 0]
         ], "supporter": [
           ["Cynthia's Ambition", "", 4, 0],
@@ -2557,7 +2557,7 @@ const decks = {
         ], "item": [
           ["Evolution Incense", "", 4, 0],
           ["Level Ball", "", 4, 0],
-          ["Scoop Up Net", "", 0, 3],
+          ["Scoop Up Net", "", 3, 0],
           ["Fog Crystal", "", 3, 0],
           ["Rescue Carrier", "", 2, 0],
           ["Ordinary Rod", "", 1, 0],
@@ -2588,7 +2588,7 @@ const decks = {
           ["Melony", "", 4, 0],
           ["Raihan", "", 1, 0]
         ], "item": [
-          ["Cross Switcher", "", 0, 4],
+          ["Cross Switcher", "", 4, 0],
           ["Quick Ball", "", 4, 0],
           ["Level Ball", "", 4, 0],
           ["Evolution Incense", "", 3, 0],
@@ -2615,9 +2615,9 @@ const decks = {
         "pokemon": [
           ["Zoroark", "EVS 103", 4, 0],
           ["Zorua", "EVS 102", 4, 0],
-          ["Cinccino", "SSH 147", 1, 3],
+          ["Cinccino", "SSH 147", 4, 0],
           ["Minccino", "BRS 124", 4, 0],
-          ["Galarian Moltres", "EVS 93", 0, 2],
+          ["Galarian Moltres", "EVS 93", 2, 0],
           ["Wormadam", "BRS 77", 1, 0],
           ["Wormadam", "BRS 98", 1, 0],
           ["Galarian Weezing", "SHF 42", 1, 0],
@@ -2626,12 +2626,12 @@ const decks = {
           ["Golisopod", "DAA 18", 1, 0]
         ], "supporter": [
           ["Professor's Research", "", 4, 0],
-          ["Boss's Orders", "", 0, 2],
+          ["Boss's Orders", "", 2, 0],
           ["Bird Keeper", "", 2, 0],
           ["Klara", "", 2, 0]
         ], "item": [
           ["Level Ball", "", 4, 0],
-          ["Battle VIP Pass", "", 1, 3],
+          ["Battle VIP Pass", "", 4, 0],
           ["Evolution Incense", "", 4, 0],
           ["Quick Ball", "", 2, 0],
           ["Pal Pad", "", 1, 0]
@@ -2641,7 +2641,7 @@ const decks = {
 
         ], "energy": [
           ["Darkness Energy", "", 5, 0],
-          ["Twin Energy", "", 0, 4],
+          ["Twin Energy", "", 4, 0],
         ]
       }
     }, 
