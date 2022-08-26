@@ -2349,15 +2349,83 @@ const decks = {
     }
   },
 
-  // Current Standard Format
-  // SWSH Base Set to SWSH Evolving Skies
-  "Standard": {
+  "SSH-BRS": {
     "meta": {
       "start": "Sword_and_Shield", 
       "end": "Brilliant_Stars"
-    },
+    }, 
     "decks": {
+      "Rapid Strike Malamar": {
 
+        "variants": {
+          
+        }, 
+        "pokemon": [
+          ["Malamar", "CRE 70", 4, 0],
+          ["Inkay", "CRE 69", 4, 0],
+          ["Inteleon", "SSH 58", 2, 0],
+          ["Drizzile", "SSH 57", 3, 0],
+          ["Sobble", "CRE 41", 4, 0],
+          ["Remoraid", "BST 36", 2, 0],
+          ["Octillery", "BST 37", 2, 0],
+          ["Manaphy", "BRS 41", 1, 0]
+        ], "supporter": [
+          ["Cynthia's Ambition", "", 4, 0],
+          ["Korrina's Focus", "", 4, 0],
+          ["Brawly", "", 4, 0],
+        ], "item": [
+          ["Evolution Incense", "", 4, 0],
+          ["Level Ball", "", 4, 0],
+          ["Scoop Up Net", "", 3, 0],
+          ["Fog Crystal", "", 3, 0],
+          ["Rescue Carrier", "", 2, 0],
+          ["Ordinary Rod", "", 1, 0],
+          ["Escape Rope", "", 1, 0],
+          ["Ultra Ball", "", 1, 0],
+        ], "tool": [
+
+        ], "stadium": [
+          ["Tower of Waters", "", 1, 0]
+        ], "energy": [
+          ["Spiral Energy", "", 4, 0],
+          ["Psychic Energy", "", 2, 0],
+        ]
+      },
+      "Suicune Ludicolo": {
+
+        "variants": {
+          
+        }, 
+        "pokemon": [
+          ["Suicune-v", "EVS 31", 4, 0],
+          ["Sobble", "CRE 41", 4, 0],
+          ["Drizzile", "SSH 56", 3, 0],
+          ["Inteleon", "SSH 58", 2, 0],
+          ["Lotad", "EVS 32", 3, 0],
+          ["Ludicolo", "EVS 34", 2, 0]
+        ], "supporter": [
+          ["Melony", "", 4, 0],
+          ["Raihan", "", 1, 0]
+        ], "item": [
+          ["Cross Switcher", "", 4, 0],
+          ["Quick Ball", "", 4, 0],
+          ["Level Ball", "", 4, 0],
+          ["Evolution Incense", "", 3, 0],
+          ["Rare Candy", "", 3, 0],
+          ["Scoop up Net", "", 3, 0],
+          ["Capacious Bucket", "", 2, 0],
+          ["Ultra Ball", "", 1, 0],
+          ["Echoing Horn", "", 1, 0],
+        ], "tool": [
+          ["Choice Belt", "", 1, 0],
+          ["Cape of Toughness", "", 1, 0],
+        ], "stadium": [
+          ["Path To The Peak", "", 2, 0]
+        ], "energy": [
+          ["Water Energy", "", 6, 0],
+          ["Capture Energy", "", 2, 0],
+        ]
+      }, 
       "Urshifu Inteleon Moltres": { 
 
         "variants": {
@@ -2536,77 +2604,6 @@ const decks = {
           ["Double Turbo Energy", "", 3, 0]
         ]
       },
-      "Rapid Strike Malamar": {
-
-        "variants": {
-          
-        }, 
-        "pokemon": [
-          ["Malamar", "CRE 70", 4, 0],
-          ["Inkay", "CRE 69", 4, 0],
-          ["Inteleon", "SSH 58", 2, 0],
-          ["Drizzile", "SSH 57", 3, 0],
-          ["Sobble", "CRE 41", 4, 0],
-          ["Remoraid", "BST 36", 2, 0],
-          ["Octillery", "BST 37", 2, 0],
-          ["Manaphy", "BRS 41", 1, 0]
-        ], "supporter": [
-          ["Cynthia's Ambition", "", 4, 0],
-          ["Korrina's Focus", "", 4, 0],
-          ["Brawly", "", 4, 0],
-        ], "item": [
-          ["Evolution Incense", "", 4, 0],
-          ["Level Ball", "", 4, 0],
-          ["Scoop Up Net", "", 3, 0],
-          ["Fog Crystal", "", 3, 0],
-          ["Rescue Carrier", "", 2, 0],
-          ["Ordinary Rod", "", 1, 0],
-          ["Escape Rope", "", 1, 0],
-          ["Ultra Ball", "", 1, 0],
-        ], "tool": [
-
-        ], "stadium": [
-          ["Tower of Waters", "", 1, 0]
-        ], "energy": [
-          ["Spiral Energy", "", 4, 0],
-          ["Psychic Energy", "", 2, 0],
-        ]
-      },
-      "Suicune Ludicolo": {
-
-        "variants": {
-          
-        }, 
-        "pokemon": [
-          ["Suicune-v", "EVS 31", 4, 0],
-          ["Sobble", "CRE 41", 4, 0],
-          ["Drizzile", "SSH 56", 3, 0],
-          ["Inteleon", "SSH 58", 2, 0],
-          ["Lotad", "EVS 32", 3, 0],
-          ["Ludicolo", "EVS 34", 2, 0]
-        ], "supporter": [
-          ["Melony", "", 4, 0],
-          ["Raihan", "", 1, 0]
-        ], "item": [
-          ["Cross Switcher", "", 4, 0],
-          ["Quick Ball", "", 4, 0],
-          ["Level Ball", "", 4, 0],
-          ["Evolution Incense", "", 3, 0],
-          ["Rare Candy", "", 3, 0],
-          ["Scoop up Net", "", 3, 0],
-          ["Capacious Bucket", "", 2, 0],
-          ["Ultra Ball", "", 1, 0],
-          ["Echoing Horn", "", 1, 0],
-        ], "tool": [
-          ["Choice Belt", "", 1, 0],
-          ["Cape of Toughness", "", 1, 0],
-        ], "stadium": [
-          ["Path To The Peak", "", 2, 0]
-        ], "energy": [
-          ["Water Energy", "", 6, 0],
-          ["Capture Energy", "", 2, 0],
-        ]
-      }, 
       "Zoroark Box": {
 
         "variants": {
@@ -2644,6 +2641,83 @@ const decks = {
           ["Twin Energy", "", 4, 0],
         ]
       }
+    }
+  }, 
+
+  "Standard": {
+    "meta": {
+      "start": "Sword_and_Shield", 
+      "end": "Astral_Radiance"
     }, 
+    "decks": {
+      "Mew Vmax": {
+
+        "variants": {
+          "Pokemon Catcher": {
+            "pokemon": [
+              ["Oricorio", "PR-SWSH 168", -1, 0],
+            ], 
+            "supporter": [
+
+            ], "item": [
+              ["Pokemon Catcher", "", 3, 0], 
+              ["Echoing Horn", "", -1, 0],
+              ["Pal Pad", "", -1, 0],
+            ], "tool": [
+
+            ], "stadium": [
+
+            ], "energy": [
+
+            ]
+          }, 
+          "Rotom Phone": {
+            "pokemon": [
+              ["Oricorio", "PR-SWSH 168", -1, 0],
+            ], 
+            "supporter": [
+
+            ], "item": [
+              ["Trekking Shoes", "", -3, 0],
+              ["Rotom Phone", "", 4, 0],
+            ], "tool": [
+
+            ], "stadium": [
+
+            ], "energy": [
+
+            ]
+          }
+        }, 
+        "pokemon": [
+          ["Mew Vmax", "FST 114", 3, 0],
+          ["Mew V", "FST 113", 4, 0],
+          ["Genesect V", "FST 185", 4, 0],
+          ["Meloetta", "FST 124", 2, 0],
+          ["Oricorio", "PR-SWSH 168", 1, 0],
+        ], "supporter": [
+          ["Elesa's Sparkle", "", 3, 0],
+          ["Boss's Orders", "", 3, 0],
+        ], "item": [
+          ["Battle VIP Pass", "", 4, 0],
+          ["Power Tablet", "", 4, 0],
+          ["Cram-o-Matic", "", 4, 0],
+          ["Quick Ball", "", 4, 0],
+          ["Ultra Ball", "", 4, 0],
+          ["Trekking Shoes", "", 3, 0],
+          ["Switch", "", 2, 0],
+          ["Echoing Horn", "", 1, 0],
+          ["Escape Rope", "", 1, 0],
+          ["Pal Pad", "", 1, 0],
+        ], "tool": [
+          ["Choice Belt", "", 2, 0],
+        ], "stadium": [
+          ["Rose Tower", "", 3, 0],
+        ], "energy": [
+          ["Fusion Strike Energy", "", 4, 0],
+          ["Double Turbo Energy", "", 3, 0],
+        ]
+      }
+    }
   }
 }
