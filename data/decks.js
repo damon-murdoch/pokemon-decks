@@ -1,5 +1,161 @@
 // Old Format Deck Collection
 const decks = {
+  // 2015 Worlds
+  // BW Boundaries Crossed to XY
+  "BCR-ROS": {
+    meta: {
+      start: "Boundaries_Crossed",
+      end: "Roaring_Skies",
+    },
+    decks: {
+      "Keldeo Blastoise": {
+        variants: {},
+        pokemon: [
+          ["Blastoise", "PLB 16", 2, 0],
+          ["Keldeo-Ex", "", 2, 1],
+          ["Jirachi-Ex", "", 2, 0],
+          ["Shaymin-Ex", "", 2, 0],
+          ["Exeggcute", "", 0, 2],
+          ["Articuno", "", 1, 0],
+          ["Mewtwo-Ex", "", 0, 1],
+          ["Wailord-Ex", "", 1, 0],
+        ],
+        supporter: [
+          ["Archie's Ace in the Hole", "", 2, 0],
+          ["Professor Juniper", "", 2, 0],
+          ["Lysandre", "", 1, 0],
+          ["N", "", 1, 0],
+        ],
+        item: [
+          ["Superior Energy Retrieval", "", 3, 1],
+          ["Battle Compressor", "", 4, 0],
+          ["Trainer's Mail", "", 1, 3],
+          ["Ultra Ball", "", 4, 0],
+          ["VS Seeker", "", 0, 4],
+          ["Acro Bike", "", 4, 0],
+          ["Computer Search", "", 1, 0],
+        ],
+        tool: [
+          ["Muscle Band", "", 1, 0],
+          ["Float Stone", "", 1, 0],
+        ],
+        stadium: [["Rough Seas", "", 2, 0]],
+        energy: [["Basic Water Energy", "", 11, 0]],
+      },
+      "Primal Groudon": {
+        variants: {},
+        pokemon: [
+          ["Primal Groudon Ex", "", 2, 1],
+          ["Groudon Ex", "", 3, 0],
+          ["Wobbuffet", "", 3, 0],
+          ["Landorus-Ex", "", 1, 0],
+          ["Bunnelby", "", 1, 0],
+        ],
+        supporter: [
+          ["Professor Juniper", "", 0, 4],
+          ["Korrina", "", 0, 4],
+          ["Pokemon Centre Lady", "", 2, 0],
+          ["Lysandre", "", 2, 0],
+          ["N", "", 0, 2],
+          ["Teammates", "", 1, 0],
+          ["Colress", "", 0, 1],
+        ],
+        item: [
+          ["Robo Substitute", "", 4, 0],
+          ["VS Seeker", "", 0, 4],
+          ["Professor's Letter", "", 1, 0],
+          ["Escape Rope", "", 1, 0],
+          ["Mega Turbo", "", 1, 0],
+          ["Ultra Ball", "", 1, 0],
+          ["Switch", "", 1, 0],
+          ["Computer Search", "", 1, 0],
+        ],
+        tool: [
+          ["Hard Charm", "", 2, 0],
+          ["Float Stone", "", 1, 0],
+          ["Focus Sash", "", 1, 0],
+        ],
+        stadium: [
+          ["Silent Lab", "", 3, 0],
+          ["Fighting Stadium", "", 1, 0],
+        ],
+        energy: [
+          ["Basic Fighting Energy", "", 7, 0],
+          ["Strong Energy", "", 0, 4],
+        ],
+      },
+      "Lucario Bats": {
+        variants: {},
+        pokemon: [
+          ["Zubat", "", 4, 0],
+          ["Golbat", "", 4, 0],
+          ["Crobat", "", 3, 0],
+          ["Lucario-Ex", "", 3, 0],
+          ["Hawlucha", "", 0, 2],
+          ["Landorus-Ex", "", 1, 0],
+          ["Jirachi-Ex", "", 0, 1],
+        ],
+        supporter: [
+          ["Professor Sycamore", "", 4, 0],
+          ["N", "", 0, 4],
+          ["Lysandre", "", 2, 0],
+          ["Colress", "", 0, 2],
+          ["Korrina", "", 0, 1],
+          ["AZ", "", 1, 0],
+        ],
+        item: [
+          ["Ultra Ball", "", 4, 0],
+          ["Super Scoop Up", "", 3, 0],
+          ["VS Seeker", "", 0, 3],
+          ["Repeat Ball", "", 2, 0],
+          ["Computer Search", "", 0, 1],
+        ],
+        tool: [["Muscle Band", "", 3, 0]],
+        stadium: [["Fighting Stadium", "", 3, 0]],
+        energy: [
+          ["Basic Fighting Energy", "", 5, 0],
+          ["Strong Energy", "", 0, 4],
+        ],
+      },
+      Donphan: {
+        variants: {},
+        pokemon: [
+          ["Phanphy", "", 4, 0],
+          ["Donphan", "", 4, 0],
+          ["Hawlucha", "", 4, 0],
+          ["Bunnelby", "", 1, 0],
+        ],
+        supporter: [
+          ["Professor Juniper", "", 0, 4],
+          ["Korrina", "", 0, 4],
+          ["N", "", 0, 4],
+          ["Lysandre", "", 3, 0],
+          ["Colress", "", 0, 1],
+        ],
+        item: [
+          ["Robo Substitute", "", 4, 0],
+          ["VS Seeker", "", 0, 3],
+          ["Ultra Ball", "", 1, 0],
+          ["Computer Search", "", 1, 0],
+        ],
+        tool: [
+          ["Focus Sash", "", 3, 0],
+          ["Muscle Band", "", 2, 0],
+          ["Silver Bangle", "", 0, 2],
+        ],
+        stadium: [
+          ["Fighting Stadium", "", 2, 0],
+          ["Silent Lab", "", 2, 0],
+        ],
+        energy: [
+          ["Basic Fighting Energy", "", 5, 0],
+          ["Strong Energy", "", 4, 0],
+          ["Double Colorless Energy", "", 2, 0],
+        ],
+      },
+    },
+  },
+
   // 2016 Worlds
   // XY Base Set to XY Steam Siege
   "XY-STS": {
