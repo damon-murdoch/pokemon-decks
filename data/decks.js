@@ -2630,7 +2630,7 @@ const decks = {
           ["Remoraid", "BST 36", 2, 0],
           ["Medicham-V", "EVS 83", 1, 0],
           ["Crobat-V", "DAA 104", 1, 0],
-          ["Passimian", "CRE 88", 1, 0],
+          ["Passimian", "CRE 88", 0, 1],
         ],
         supporter: [
           ["Melony", "", 3, 0],
@@ -2647,7 +2647,7 @@ const decks = {
           ["Escape Rope", "", 1, 0],
           ["Switch", "", 1, 0],
         ],
-        tool: [["Telescopic Sight", "", 0, 2]],
+        tool: [["Telescopic Sight", "", 2, 0]],
         stadium: [["Tower of Waters", "", 2, 0]],
         energy: [
           ["Rapid Strike Energy", "", 4, 0],
@@ -2693,7 +2693,7 @@ const decks = {
           ["Drizzile", "SSH 57", 4, 0],
           ["Sobble", "CRE 41", 4, 0],
           ["Jolteon-VMax", "EVS 51", 3, 0],
-          ["Jolteon-V", "SSP 183", 2, 2],
+          ["Jolteon-V", "SSP 183", 3, 1],
           ["Galarian Zigzagoon", "SSH 117", 2, 0],
         ],
         supporter: [
@@ -2724,7 +2724,7 @@ const decks = {
         pokemon: [
           ["Inteleon", "CRE 43", 2, 0],
           ["Inteleon", "SSH 58", 1, 0],
-          ["Drizzile", "SSH 57", 2, 2],
+          ["Drizzile", "SSH 57", 4, 0],
           ["Sobble", "CRE 41", 4, 0],
           ["Galarian Weezing", "SHF 42", 2, 0],
           ["Koffing", "SHF 41", 3, 0],
