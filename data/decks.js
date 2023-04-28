@@ -2693,7 +2693,7 @@ const decks = {
           ["Drizzile", "SSH 57", 4, 0],
           ["Sobble", "CRE 41", 4, 0],
           ["Jolteon-VMax", "EVS 51", 3, 0],
-          ["Jolteon-V", "SSP 183", 3, 1],
+          ["Jolteon-V", "SSP 183", 4, 0],
           ["Galarian Zigzagoon", "SSH 117", 2, 0],
         ],
         supporter: [
@@ -2738,6 +2738,7 @@ const decks = {
           ["Marnie", "", 3, 0],
           ["Professor's Research", "", 2, 0],
           ["Boss's Orders", "", 2, 0],
+          ["Raihan", "", 2, 0],
           ["Klara", "", 2, 0],
           ["Avery", "", 1, 0],
         ],
@@ -2804,7 +2805,7 @@ const decks = {
   // SS Sword and Shield to SS Astral Radiance
   "SSH-ASR": {
     meta: {
-      start: "Sword_And_Shield",
+      start: "Sword_and_Shield",
       end: "Astral_Radiance",
     },
     decks: {
