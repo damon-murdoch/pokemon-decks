@@ -8,6 +8,79 @@ const decks = {
       end: "Roaring_Skies",
     },
     decks: {
+      "Seismitoad Crobat": {
+        variants: {},
+        pokemon: [
+          ["Zubat", "", 4, 0],
+          ["Golbat", "", 3, 0],
+          ["Crobat", "", 2, 0],
+          ["Seismitoad-Ex", "", 0, 3],
+          ["Shaymin-Ex", "", 0, 2],
+          ["Mewtwo-Ex", "", 0, 1],
+        ],
+        supporter: [
+          ["Professor Juniper", "", 0, 4],
+          ["N", "", 0, 3],
+          ["Lysandre", "", 2, 0],
+          ["Pokemon Center Lady", "", 0, 1],
+          ["Xerosic", "", 1, 0],
+          ["Colress", "", 0, 1],
+          ["AZ", "", 1, 0],
+        ],
+        item: [
+          ["Hypnotoxic Lazer", "", 4, 0],
+          ["Ultra Ball", "", 4, 0],
+          ["VS Seeker", "", 0, 4],
+          ["Super Scoop Up", "", 3, 0],
+          ["Computer Search", "", 0, 1],
+        ],
+        tool: [
+          ["Muscle Band", "", 3, 0],
+          ["Head Ringer", "", 2, 0],
+        ],
+        stadium: [["Virbank City Gym", "", 3, 0]],
+        energy: [
+          ["Double Colorless Energy", "", 4, 0],
+          ["Basic Water Energy", "", 4, 0],
+        ],
+      },
+      "Virizion Genesect": {
+        variants: {},
+        pokemon: [
+          ["Genesect-Ex", "PLB 11", 0, 4],
+          ["Virizion-Ex", "PLB 9", 0, 4],
+          ["Jirachi-Ex", "PLB 60", 1, 0],
+          ["Shaymin-Ex", "ROS 77", 1, 0],
+          ["Deoxys-Ex", "PLF 53", 0, 1],
+          ["Illumise", "PRC 18", 0, 1],
+        ],
+        supporter: [
+          ["Professor Juniper", "", 4, 0],
+          ["N", "", 0, 4],
+          ["Skyla", "", 2, 0],
+          ["Shadow Triad", "", 0, 1],
+          ["Lysandre", "", 1, 0],
+          ["Colress", "", 0, 1],
+          ["Xerosic", "", 1, 0],
+          ["AZ", "", 1, 0],
+        ],
+        item: [
+          ["Ultra Ball", "", 4, 0],
+          ["VS Seeker", "", 0, 4],
+          ["Energy Switch", "", 3, 0],
+          ["Professor's Letter", "", 1, 0],
+          ["Colress Machine", "", 0, 1],
+          ["Escape Rope", "", 1, 0],
+          ["G Booster", "", 1, 0],
+          ["Switch", "", 1, 0],
+        ],
+        tool: [["Muscle Band", "", 3, 0]],
+        stadium: [],
+        energy: [
+          ["Basic Grass Energy", "", 10, 0],
+          ["Plasma Energy", "", 4, 0],
+        ],
+      },
       "Keldeo Blastoise": {
         variants: {},
         pokemon: [
@@ -84,7 +157,7 @@ const decks = {
           ["Strong Energy", "", 0, 4],
         ],
       },
-      "Lucario Bats": {
+      "Lucario Crobat": {
         variants: {},
         pokemon: [
           ["Zubat", "", 4, 0],
@@ -2630,7 +2703,7 @@ const decks = {
           ["Remoraid", "BST 36", 2, 0],
           ["Medicham-V", "EVS 83", 1, 0],
           ["Crobat-V", "DAA 104", 1, 0],
-          ["Passimian", "CRE 88", 0, 1],
+          ["Passimian", "CRE 88", 1, 0],
         ],
         supporter: [
           ["Melony", "", 3, 0],
@@ -2693,7 +2766,7 @@ const decks = {
           ["Drizzile", "SSH 57", 4, 0],
           ["Sobble", "CRE 41", 4, 0],
           ["Jolteon-VMax", "EVS 51", 3, 0],
-          ["Jolteon-V", "SSP 183", 3, 1],
+          ["Jolteon-V", "SSP 183", 4, 0],
           ["Galarian Zigzagoon", "SSH 117", 2, 0],
         ],
         supporter: [
@@ -2738,6 +2811,7 @@ const decks = {
           ["Marnie", "", 3, 0],
           ["Professor's Research", "", 2, 0],
           ["Boss's Orders", "", 2, 0],
+          ["Raihan", "", 2, 0],
           ["Klara", "", 2, 0],
           ["Avery", "", 1, 0],
         ],
@@ -2749,7 +2823,7 @@ const decks = {
           ["Energy Search", "", 2, 0],
         ],
         tool: [["Air Balloon", "", 1, 0]],
-        stadium: [["Training Court", "", 2, 0]],
+        stadium: [["Training Court", "", 1, 1]],
         energy: [["Basic Darkness Energy", "", 7, 0]],
       },
       "Dragapult Inteleon": {
@@ -2804,7 +2878,7 @@ const decks = {
   // SS Sword and Shield to SS Astral Radiance
   "SSH-ASR": {
     meta: {
-      start: "Sword_And_Shield",
+      start: "Sword_and_Shield",
       end: "Astral_Radiance",
     },
     decks: {
