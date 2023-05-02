@@ -2703,7 +2703,7 @@ const decks = {
           ["Remoraid", "BST 36", 2, 0],
           ["Medicham-V", "EVS 83", 1, 0],
           ["Crobat-V", "DAA 104", 1, 0],
-          ["Passimian", "CRE 88", 0, 1],
+          ["Passimian", "CRE 88", 1, 0],
         ],
         supporter: [
           ["Melony", "", 3, 0],
@@ -2823,7 +2823,7 @@ const decks = {
           ["Energy Search", "", 2, 0],
         ],
         tool: [["Air Balloon", "", 1, 0]],
-        stadium: [["Training Court", "", 2, 0]],
+        stadium: [["Training Court", "", 1, 1]],
         energy: [["Basic Darkness Energy", "", 7, 0]],
       },
       "Dragapult Inteleon": {
