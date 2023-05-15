@@ -2727,7 +2727,70 @@ const decks = {
           ["Basic Water Energy", "", 3, 0],
         ],
       },
-      "Ice Rider Calyrex": {
+      "Shadow Rider Calyrex": {
+        variants: {},
+        pokemon: [
+          ["Shadow Rider Calyrex-VMax", "CRE 75", 4, 0],
+          ["Shadow Rider Calyrex-V", "CRE 74", 4, 0],
+          ["Alcremie-VMax", "CPA-23", 0, 1],
+          ["Alcremie-V", "CPA-22", 0, 1],
+          ["Crobat V", "SIF 44", 1, 0],
+          ["Galarian Articuno", "EVS 63", 2, 0],
+          ["Pumpkaboo", "EVS 76", 1, 0],
+        ], 
+        supporter: [
+          ["Professor's Research", "", 4, 0],
+          ["Boss's Orders", "", 2, 0],
+          ["Marnie", "", 2, 0],
+        ], 
+        item: [
+          ["Evolution Incense", "", 4, 0],
+          ["Battle VIP Pass", "", 0, 4],
+          ["Fog Crystal", "", 4, 0],
+          ["Quick Ball", "", 4, 0],
+          ["Switch", "", 2, 0],
+        ], 
+        tool: [
+          ["Air Balloon", "", 2, 0],
+        ],
+        stadium: [
+          ["Training Court", "", 2, 0]
+        ],
+        energy: [
+          ["Basic Psychic Energy", "", 15, 1]
+        ]
+      },
+      "Ice Rider Inteleon": {
+        variants: {},
+        pokemon: [
+          ["Inteleon", "CRE 43", 2, 1],
+          ["Inteleon", "SSH 58", 1, 0],
+          ["Drizzile", "SSH 57", 4, 0],
+          ["Sobble", "CRE 41", 4, 0],
+          ["Ice Rider Calyrex-VMax", "CRE 46", 3, 0],
+          ["Ice Rider Calyrex-V", "CRE 45", 3, 1],
+        ],
+        supporter: [
+          ["Melony", "", 4, 0],
+          ["Marnie", "", 2, 0],
+          ["Boss's Orders", "", 2],
+          ["Professor's Research", "", 2, 0],
+        ],
+        item: [
+          ["Evolution Incense", "", 4, 0],
+          ["Quick Ball", "", 4, 0],
+          ["Level Ball", "", 3, 0],
+          ["Fan of Waves", "", 3, 0],
+          ["Capacious Bucket", "", 2, 0],
+          ["Tool Scrapper", "", 1, 0],
+          ["Scoop Up Net", "", 1, 0],
+          ["Escape Rope", "", 1, 0],
+        ],
+        tool: [["Air Balloon", "", 1, 0]],
+        stadium: [["Path to the Peak", "", 3]],
+        energy: [["Water Energy", "", 8, 0]],
+      },
+      "Ice Rider Suicune": {
         variants: {},
         pokemon: [
           ["Inteleon", "CRE 43", 2, 0],
@@ -2739,10 +2802,11 @@ const decks = {
           ["Suicune-V", "EVS 31", 1, 0],
         ],
         supporter: [
-          ["Melony", "", 4, 0],
-          ["Boss's Orders", "", 2, 0],
+          ["Melony", "", 3, 0],
           ["Marnie", "", 2, 0],
+          ["Boss's Orders", "", 2, 0],
           ["Professor's Research", "", 2, 0],
+          ["Raihan", "", 0, 1], 
         ],
         item: [
           ["Evolution Incense", "", 4, 0],
@@ -2792,7 +2856,7 @@ const decks = {
           ["Capture Energy", "", 1, 0],
         ],
       },
-      "Dark Inteleon": {
+      "Dark Box Inteleon": {
         variants: {},
         pokemon: [
           ["Inteleon", "CRE 43", 2, 0],
@@ -3048,6 +3112,7 @@ const decks = {
           ["Mew-VMax", "FST 114", 3, 0],
           ["Mew-V", "FST 113", 4, 0],
           ["Genesect-V", "FST 185", 4, 0],
+          ["Oricorio", "FST 42", 1, 0]
         ],
         supporter: [
           ["Judge", "", 3, 0],
@@ -3066,7 +3131,6 @@ const decks = {
           ["Escape Rope", "", 2, 0],
           ["Nest Ball", "", 2, 0],
           ["Switch", "", 2, 0],
-          ["Echoing Horn", "", 1, 0],
           ["Pal Pad", "", 1, 0],
         ],
         tool: [
@@ -3107,7 +3171,7 @@ const decks = {
           ["Rare Candy", "", 2, 0],
           ["Pal Pad", "", 1, 0],
         ],
-        tool: [["Sky Sealed Stone", "", 0, 1]],
+        tool: [["Sky Sealed Stone", "", 1, 0]],
         stadium: [
           ["Collapsed Stadium", "", 1, 0],
           ["Temple of Sinnoh", "", 1, 0],
@@ -3146,6 +3210,45 @@ const decks = {
         stadium: [["Gapejaw Bog", "", 4, 0]],
         energy: [["Double Turbo Energy", "", 4, 0]],
       },
+      "Origin Forme Palkia-Vstar": {
+        variants: {},
+        pokemon: [
+          ["Origin Forme Palkia-VStar", "", 3, 0],
+          ["Origin Forme Palkia-V", "", 4, 0],
+          ["Bibarel", "", 2, 0],
+          ["Bidoof", "", 2, 0],
+          ["Radiant Greninja", "", 1, 0],
+          ["Lumineon-V", "", 1, 0],
+          ["Drapion-V", "", 1, 0],
+          ["Articuno", "", 0, 1],
+          ["Manaphy", "", 1, 0],
+          ["Skwovet", "", 0, 1],
+        ],
+        supporter: [
+          ["Irida", "", 4, 0],
+          ["Melony", "", 2, 0],
+          ["Boss's Orders", "", 2, 0],
+          ["Roxanne", "", 1, 0],
+          ["Raihan", "", 0, 1],
+          ["Cheryl", "", 0, 1],
+          ["Judge", "", 0, 1],
+        ],
+        item: [
+          ["Cross Switcher", "", 4, 0],
+          ["Ultra Ball", "", 4, 0],
+          ["Battle VIP Pass", "", 3, 0],
+          ["Nest Ball", "", 0, 3],
+          ["Energy Search", "", 2, 0],
+          ["Switch", "", 1, 0],
+        ],
+        tool: [],
+        stadium: [
+          ["Lost City", "", 0, 3]
+        ],
+        energy: [
+          ["Basic Water Energy", "", 9, 2]
+        ],
+      }
     },
   },
 };
