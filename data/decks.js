@@ -2745,7 +2745,7 @@ const decks = {
         ], 
         item: [
           ["Evolution Incense", "", 4, 0],
-          ["Battle VIP Pass", "", 0, 4],
+          ["Battle VIP Pass", "", 4, 0],
           ["Fog Crystal", "", 4, 0],
           ["Quick Ball", "", 4, 0],
           ["Switch", "", 2, 0],
@@ -2757,23 +2757,23 @@ const decks = {
           ["Training Court", "", 2, 0]
         ],
         energy: [
-          ["Basic Psychic Energy", "", 15, 1]
+          ["Basic Psychic Energy", "", 16, 0]
         ]
       },
       "Ice Rider Inteleon": {
         variants: {},
         pokemon: [
-          ["Inteleon", "CRE 43", 2, 1],
+          ["Inteleon", "CRE 43", 3, 0],
           ["Inteleon", "SSH 58", 1, 0],
           ["Drizzile", "SSH 57", 4, 0],
           ["Sobble", "CRE 41", 4, 0],
           ["Ice Rider Calyrex-VMax", "CRE 46", 3, 0],
-          ["Ice Rider Calyrex-V", "CRE 45", 3, 1],
+          ["Ice Rider Calyrex-V", "CRE 45", 4, 0],
         ],
         supporter: [
           ["Melony", "", 4, 0],
           ["Marnie", "", 2, 0],
-          ["Boss's Orders", "", 2],
+          ["Boss's Orders", "", 2, 0],
           ["Professor's Research", "", 2, 0],
         ],
         item: [
@@ -2787,7 +2787,7 @@ const decks = {
           ["Escape Rope", "", 1, 0],
         ],
         tool: [["Air Balloon", "", 1, 0]],
-        stadium: [["Path to the Peak", "", 3]],
+        stadium: [["Path to the Peak", "", 3, 0]],
         energy: [["Water Energy", "", 8, 0]],
       },
       "Ice Rider Suicune": {
@@ -2806,14 +2806,14 @@ const decks = {
           ["Marnie", "", 2, 0],
           ["Boss's Orders", "", 2, 0],
           ["Professor's Research", "", 2, 0],
-          ["Raihan", "", 0, 1], 
+          ["Raihan", "", 1, 0], 
         ],
         item: [
           ["Evolution Incense", "", 4, 0],
           ["Quick Ball", "", 4, 0],
-          ["Level Ball", "", 4, 0],
+          ["Level Ball", "", 3, 0],
           ["Capacious Bucket", "", 2, 0],
-          ["Fan of Waves", "", 2, 0],
+          ["Fan of Waves", "", 3, 0],
           ["Tool Scrapper", "", 1, 0],
           ["Scoop Up Net", "", 1, 0],
           ["Escape Rope", "", 1, 0],
@@ -2843,7 +2843,7 @@ const decks = {
           ["Evolution Incense", "", 4, 0],
           ["Quick Ball", "", 4, 0],
           ["Level Ball", "", 4, 0],
-          ["Fan of Waves", "", 0, 2],
+          ["Fan of Waves", "", 2, 0],
           ["Scoop Up Net", "", 2, 0],
           ["Energy Search", "", 1, 0],
           ["Tool Scrapper", "", 1, 0],
@@ -2869,7 +2869,7 @@ const decks = {
           ["Galarian Zigzagoon", "SSH 117", 1, 0],
           ["Sableye V", "SSH 120", 1, 0],
           ["Tapu Koko", "DAA 61", 0, 1],
-          ["Hoopa", "DAA 111", 0, 1],
+          ["Hoopa", "DAA 111", 1, 0],
         ],
         supporter: [
           ["Marnie", "", 3, 0],
@@ -2887,44 +2887,32 @@ const decks = {
           ["Energy Search", "", 2, 0],
         ],
         tool: [["Air Balloon", "", 1, 0]],
-        stadium: [["Training Court", "", 1, 1]],
+        stadium: [["Training Court", "", 2, 0]],
         energy: [["Basic Darkness Energy", "", 7, 0]],
       },
       "Dragapult Inteleon": {
-        variants: {
-          "Crushing Hammer": {
-            pokemon: [["Inteleon", "CRE 43", -1, 0]],
-            supporter: [["Professor's Research", "", -1, 0]],
-            item: [
-              ["Crushing Hammer", "", 0, 4],
-              ["Quick Ball", "", -1, 0],
-              ["Level Ball", "", -1, 0],
-            ],
-            tool: [],
-            stadium: [],
-            energy: [],
-          },
-        },
+        variants: {},
         pokemon: [
           ["Dragapult-VMax", "", 3, 0],
           ["Dragapult-V", "", 4, 0],
-          ["Inteleon", "CRE 43", 3, 0],
+          ["Inteleon", "CRE 43", 2, 0],
           ["Inteleon", "SSH 58", 1, 0],
           ["Drizzile", "SSH 57", 4, 0],
           ["Sobble", "CRE 41", 4, 0],
           ["Galarian Zigzagoon", "SSH 117", 1, 0],
         ],
         supporter: [
-          ["Professor's Research", "", 4, 0],
+          ["Professor's Research", "", 3, 0],
           ["Marnie", "", 3, 0],
           ["Boss's Orders", "", 2, 0],
           ["Raihan", "", 1, 0],
         ],
         item: [
           ["Evolution Incense", "", 4, 0],
+          ["Crushing Hammer", "", 4, 0],
           ["Fog Crystal", "", 4, 0],
-          ["Quick Ball", "", 4, 0],
-          ["Level Ball", "", 4, 0],
+          ["Level Ball", "", 3, 0],
+          ["Quick Ball", "", 3, 0],
           ["Scoop Up Net", "", 2, 0],
           ["Tool Scrapper", "", 1, 0],
         ],
