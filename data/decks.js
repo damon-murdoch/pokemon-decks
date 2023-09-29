@@ -1,233 +1,28 @@
 // Old Format Deck Collection
 const decks = {
-  // 2015 Worlds
-  // BW Boundaries Crossed to XY
-  "BCR-ROS": {
-    meta: {
-      start: "Boundaries_Crossed",
-      end: "Roaring_Skies",
-    },
-    decks: {
-      "Seismitoad Crobat": {
-        variants: {},
-        pokemon: [
-          ["Zubat", "", 4, 0],
-          ["Golbat", "", 3, 0],
-          ["Crobat", "", 2, 0],
-          ["Seismitoad-Ex", "", 0, 3],
-          ["Shaymin-Ex", "", 0, 2],
-          ["Mewtwo-Ex", "", 0, 1],
-        ],
-        supporter: [
-          ["Professor Juniper", "", 0, 4],
-          ["N", "", 0, 3],
-          ["Lysandre", "", 2, 0],
-          ["Pokemon Center Lady", "", 0, 1],
-          ["Xerosic", "", 1, 0],
-          ["Colress", "", 0, 1],
-          ["AZ", "", 1, 0],
-        ],
-        item: [
-          ["Hypnotoxic Lazer", "", 4, 0],
-          ["Ultra Ball", "", 4, 0],
-          ["VS Seeker", "", 0, 4],
-          ["Super Scoop Up", "", 3, 0],
-          ["Computer Search", "", 0, 1],
-        ],
-        tool: [
-          ["Muscle Band", "", 3, 0],
-          ["Head Ringer", "", 2, 0],
-        ],
-        stadium: [["Virbank City Gym", "", 3, 0]],
-        energy: [
-          ["Double Colorless Energy", "", 4, 0],
-          ["Basic Water Energy", "", 4, 0],
-        ],
-      },
-      "Virizion Genesect": {
-        variants: {},
-        pokemon: [
-          ["Genesect-Ex", "PLB 11", 0, 4],
-          ["Virizion-Ex", "PLB 9", 0, 4],
-          ["Jirachi-Ex", "PLB 60", 1, 0],
-          ["Shaymin-Ex", "ROS 77", 1, 0],
-          ["Deoxys-Ex", "PLF 53", 0, 1],
-          ["Illumise", "PRC 18", 0, 1],
-        ],
-        supporter: [
-          ["Professor Juniper", "", 4, 0],
-          ["N", "", 0, 4],
-          ["Skyla", "", 2, 0],
-          ["Shadow Triad", "", 0, 1],
-          ["Lysandre", "", 1, 0],
-          ["Colress", "", 0, 1],
-          ["Xerosic", "", 1, 0],
-          ["AZ", "", 1, 0],
-        ],
-        item: [
-          ["Ultra Ball", "", 4, 0],
-          ["VS Seeker", "", 0, 4],
-          ["Energy Switch", "", 3, 0],
-          ["Professor's Letter", "", 1, 0],
-          ["Colress Machine", "", 0, 1],
-          ["Escape Rope", "", 1, 0],
-          ["G Booster", "", 1, 0],
-          ["Switch", "", 1, 0],
-        ],
-        tool: [["Muscle Band", "", 3, 0]],
-        stadium: [],
-        energy: [
-          ["Basic Grass Energy", "", 10, 0],
-          ["Plasma Energy", "", 4, 0],
-        ],
-      },
-      "Keldeo Blastoise": {
-        variants: {},
-        pokemon: [
-          ["Blastoise", "PLB 16", 2, 0],
-          ["Keldeo-Ex", "", 2, 1],
-          ["Jirachi-Ex", "", 2, 0],
-          ["Shaymin-Ex", "", 2, 0],
-          ["Exeggcute", "", 0, 2],
-          ["Articuno", "", 1, 0],
-          ["Mewtwo-Ex", "", 0, 1],
-          ["Wailord-Ex", "", 1, 0],
-        ],
-        supporter: [
-          ["Archie's Ace in the Hole", "", 2, 0],
-          ["Professor Juniper", "", 2, 0],
-          ["Lysandre", "", 1, 0],
-          ["N", "", 1, 0],
-        ],
-        item: [
-          ["Superior Energy Retrieval", "", 3, 1],
-          ["Battle Compressor", "", 4, 0],
-          ["Trainer's Mail", "", 1, 3],
-          ["Ultra Ball", "", 4, 0],
-          ["VS Seeker", "", 0, 4],
-          ["Acro Bike", "", 4, 0],
-          ["Computer Search", "", 1, 0],
-        ],
-        tool: [
-          ["Muscle Band", "", 1, 0],
-          ["Float Stone", "", 1, 0],
-        ],
-        stadium: [["Rough Seas", "", 2, 0]],
-        energy: [["Basic Water Energy", "", 11, 0]],
-      },
-      "Primal Groudon": {
-        variants: {},
-        pokemon: [
-          ["Primal Groudon Ex", "", 2, 1],
-          ["Groudon Ex", "", 3, 0],
-          ["Wobbuffet", "", 3, 0],
-          ["Landorus-Ex", "", 1, 0],
-          ["Bunnelby", "", 1, 0],
-        ],
-        supporter: [
-          ["Professor Juniper", "", 0, 4],
-          ["Korrina", "", 0, 4],
-          ["Pokemon Centre Lady", "", 2, 0],
-          ["Lysandre", "", 2, 0],
-          ["N", "", 0, 2],
-          ["Teammates", "", 1, 0],
-          ["Colress", "", 0, 1],
-        ],
-        item: [
-          ["Robo Substitute", "", 4, 0],
-          ["VS Seeker", "", 0, 4],
-          ["Professor's Letter", "", 1, 0],
-          ["Escape Rope", "", 1, 0],
-          ["Mega Turbo", "", 1, 0],
-          ["Ultra Ball", "", 1, 0],
-          ["Switch", "", 1, 0],
-          ["Computer Search", "", 1, 0],
-        ],
-        tool: [
-          ["Hard Charm", "", 2, 0],
-          ["Float Stone", "", 1, 0],
-          ["Focus Sash", "", 1, 0],
-        ],
-        stadium: [
-          ["Silent Lab", "", 3, 0],
-          ["Fighting Stadium", "", 1, 0],
-        ],
-        energy: [
-          ["Basic Fighting Energy", "", 7, 0],
-          ["Strong Energy", "", 0, 4],
-        ],
-      },
-      "Lucario Crobat": {
-        variants: {},
-        pokemon: [
-          ["Zubat", "", 4, 0],
-          ["Golbat", "", 4, 0],
-          ["Crobat", "", 3, 0],
-          ["Lucario-Ex", "", 3, 0],
-          ["Hawlucha", "", 0, 2],
-          ["Landorus-Ex", "", 1, 0],
-          ["Jirachi-Ex", "", 0, 1],
-        ],
-        supporter: [
-          ["Professor Sycamore", "", 4, 0],
-          ["N", "", 0, 4],
-          ["Lysandre", "", 2, 0],
-          ["Colress", "", 0, 2],
-          ["Korrina", "", 0, 1],
-          ["AZ", "", 1, 0],
-        ],
-        item: [
-          ["Ultra Ball", "", 4, 0],
-          ["Super Scoop Up", "", 3, 0],
-          ["VS Seeker", "", 0, 3],
-          ["Repeat Ball", "", 2, 0],
-          ["Computer Search", "", 0, 1],
-        ],
-        tool: [["Muscle Band", "", 3, 0]],
-        stadium: [["Fighting Stadium", "", 3, 0]],
-        energy: [
-          ["Basic Fighting Energy", "", 5, 0],
-          ["Strong Energy", "", 0, 4],
-        ],
-      },
-      Donphan: {
-        variants: {},
-        pokemon: [
-          ["Phanphy", "", 4, 0],
-          ["Donphan", "", 4, 0],
-          ["Hawlucha", "", 4, 0],
-          ["Bunnelby", "", 1, 0],
-        ],
-        supporter: [
-          ["Professor Juniper", "", 0, 4],
-          ["Korrina", "", 0, 4],
-          ["N", "", 0, 4],
-          ["Lysandre", "", 3, 0],
-          ["Colress", "", 0, 1],
-        ],
-        item: [
-          ["Robo Substitute", "", 4, 0],
-          ["VS Seeker", "", 0, 3],
-          ["Ultra Ball", "", 1, 0],
-          ["Computer Search", "", 1, 0],
-        ],
-        tool: [
-          ["Focus Sash", "", 3, 0],
-          ["Muscle Band", "", 2, 0],
-          ["Silver Bangle", "", 0, 2],
-        ],
-        stadium: [
-          ["Fighting Stadium", "", 2, 0],
-          ["Silent Lab", "", 2, 0],
-        ],
-        energy: [
-          ["Basic Fighting Energy", "", 5, 0],
-          ["Strong Energy", "", 4, 0],
-          ["Double Colorless Energy", "", 2, 0],
-        ],
-      },
-    },
-  },
+  /* Template: 
+  {
+    variants: {},
+    pokemon: [
+
+    ],
+    supporter: [
+
+    ],
+    item: [
+
+    ],
+    tool: [
+
+    ],
+    stadium: [
+
+    ],
+    energy: [
+
+    ],
+  }
+  */
 
   // 2016 Worlds
   // XY Base Set to XY Steam Siege
@@ -543,6 +338,42 @@ const decks = {
           ["Darkness Energy", "", 9, 0],
           ["Double Dragon Energy", "", 4, 0],
         ],
+      },
+      Houndoom: {
+        variants: {},
+        pokemon: [
+          ["Houndoom Ex", "BKT 21", 4, 0],
+          ["Shaymin Ex", "ROS 77", 2, 0],
+          ["Bunnelby", "PRC 121", 1, 0],
+        ],
+        supporter: [
+          ["N", "", 4, 0],
+          ["Team Rocket's Handiwork", "", 2, 0],
+          ["Team Flare Grunt", "", 2, 0],
+          ["Lysandre", "", 2, 0],
+          ["Professor Sycamore", "", 1, 0],
+          ["Delinquent", "", 1, 0],
+          ["Xerosic", "", 1, 0],
+          ["AZ", "", 1, 0],
+        ],
+        item: [
+          ["Trainers' Mail", "", 3, 1],
+          ["Ultra Ball", "", 4, 0],
+          ["VS Seeker", "", 4, 0],
+          ["Crushing Hammer", "", 3, 1],
+          ["Enhanced Hammer", "", 0, 3],
+          ["Max Potion", "", 3, 0],
+          ["Super Rod", "", 2, 0],
+        ],
+        tool: [
+          ["Fighting Fury Belt", "", 2, 1],
+          ["Float Stone", "", 1, 1],
+        ],
+        stadium: [
+          ["Team Aqua's Secret Base", "", 0, 2],
+          ["Parallel City", "", 1, 0],
+        ],
+        energy: [["Basic Fire Energy", "", 7, 0]],
       },
     },
   },
@@ -864,6 +695,38 @@ const decks = {
         tool: [["Float Stone", "", 2, 0]],
         stadium: [["Forest of Giant Plants", "", 2, 0]],
         energy: [["Double Colorless Energy", "", 4, 0]],
+      },
+      "Quad Lapras": {
+        variants: {},
+        pokemon: [
+          ["Lapras Gx", "SUM 35", 4, 0],
+          ["Wobbuffet", "GEN RC11", 1, 0],
+        ],
+        supporter: [
+          ["Team Flare Grunt", "", 2, 2],
+          ["N", "", 1, 2],
+          ["Steven", "", 0, 2],
+          ["Skyla", "", 2, 0],
+          ["Hex Maniac", "", 2, 0],
+          ["Team Rocket's Handiwork", "", 1, 0],
+          ["Team Skull Grunt", "", 1, 0],
+          ["Lysandre", "", 1, 0],
+          ["Delinquent", "", 1, 0],
+          ["Olympia", "", 1, 0],
+        ],
+        item: [
+          ["VS Seeker", "", 4, 0],
+          ["Puzzle of Time", "", 4, 0],
+          ["Crushing Hammer", "", 2, 2],
+          ["Enhanced Hammer", "", 0, 2],
+          ["Nest Ball", "", 2, 0],
+          ["Switch", "", 2, 0],
+          ["Energy Recycler", "", 1, 0],
+          ["Professor's Letter", "", 1, 0],
+        ],
+        tool: [["Fighting Fury Belt", "", 0, 3]],
+        stadium: [["Rough Seas", "", 3, 1]],
+        energy: [["Basic Water Energy", "", 10, 0]],
       },
     },
   },
@@ -1892,6 +1755,15 @@ const decks = {
         stadium: [["Rough Seas", "", 4, 0]],
         energy: [["Lightning Energy", "", 1, 0]],
       },
+      "Keldeo Blastoise": {
+        variants: {},
+        pokemon: [],
+        supporter: [],
+        item: [],
+        tool: [],
+        stadium: [],
+        energy: [],
+      },
     },
   },
 
@@ -2448,7 +2320,7 @@ const decks = {
     },
   },
 
-  // Mew Vmax Release Format :)
+  // Mew-Vmax Release Format :)
   // SS Sword and Shield to SS Fusion Strike
   "SSH-FST": {
     meta: {
@@ -2867,8 +2739,8 @@ const decks = {
           ["Koffing", "SHF 41", 3, 0],
           ["Galarian Moltres", "EVS 93", 2, 0],
           ["Galarian Zigzagoon", "SSH 117", 1, 0],
-          ["Sableye V", "SSH 120", 1, 0],
-          ["Tapu Koko", "DAA 61", 0, 1],
+          ["Sableye-V", "SSH 120", 1, 0],
+          ["Tapu Koko", "DAA 61", 1, 0],
           ["Hoopa", "DAA 111", 1, 0],
         ],
         supporter: [
@@ -2891,7 +2763,20 @@ const decks = {
         energy: [["Basic Darkness Energy", "", 7, 0]],
       },
       "Dragapult Inteleon": {
-        variants: {},
+        variants: {
+          "Crushing Hammer": {
+            pokemon: [["Inteleon", "CRE 43", -1, 0]],
+            supporter: [["Professor's Research", "", -1, 0]],
+            item: [
+              ["Crushing Hammer", "", 4, 0],
+              ["Quick Ball", "", -1, 0],
+              ["Level Ball", "", -1, 0],
+            ],
+            tool: [],
+            stadium: [],
+            energy: [],
+          },
+        },
         pokemon: [
           ["Dragapult-VMax", "", 3, 0],
           ["Dragapult-V", "", 4, 0],
@@ -2921,6 +2806,120 @@ const decks = {
         energy: [
           ["Horror Psychic Energy", "", 4, 0],
           ["Basic Psychic Energy", "", 4, 0],
+        ],
+      },
+      Eternatus: {
+        variants: {},
+        pokemon: [
+          ["Eternatus-Vmax", "DAA 117", 3, 0],
+          ["Eternatus-V", "DAA 116", 4, 0],
+          ["Crobat-V", "SIF 44", 4, 0],
+          ["Galarian Weezing", "SIF 42", 3, 0],
+          ["Koffing", "SIF 41", 4, 0],
+          ["Galarian Moltres-V", "CRE 97", 2, 0],
+          ["Galarian Zigzagoon", "SSH 117", 1, 0],
+        ],
+        supporter: [
+          ["Professor's Research", "", 4, 0],
+          ["Marnie", "", 4, 0],
+          ["Boss's Orders", "", 3, 0],
+        ],
+        item: [
+          ["Quick Ball", "", 4, 0],
+          ["Switch", "", 4, 0],
+          ["Evolution Incense", "", 3, 0],
+          ["Great Ball", "", 3, 0],
+          ["Energy Switch", "", 1, 0],
+        ],
+        tool: [],
+        stadium: [["Galar Mine", "", 3, 0]],
+        energy: [
+          ["Basic Darkness Energy", "", 6, 0],
+          ["Hiding Darkness Energy", "", 4, 0],
+        ],
+      },
+      "Sylveon Box": {
+        variants: {
+          "Korrina's Focus": {
+            variants: {},
+            pokemon: [["Eldegoss-V", "VIV 19", -1, 0]],
+            supporter: [["Korrina's Focus", "", 1, 0]],
+            item: [],
+            tool: [],
+            stadium: [],
+            energy: [],
+          },
+        },
+        pokemon: [
+          ["Sylveon-Vmax", "EVS 75", 2, 0],
+          ["Sylveon-V", "EVS 74", 3, 0],
+          ["Rapid Strike Urshifu-VMax", "BST 88", 2, 0],
+          ["Rapid Strike Urshifu-V", "BST 87", 2, 0],
+
+          ["Galarian Moltres-V", "CRE 97", 2, 0],
+          ["Octillery", "CRE 37", 2, 0],
+          ["Remoraid", "CRE 36", 2, 0],
+          ["Blaziken-Vmax", "CRE 21", 1, 0],
+          ["Blaziken-Vmax", "CRE 20", 1, 0],
+          ["Eldegoss-V", "VIV 19", 1, 0],
+          ["Crobat-V", "SIF 44", 1, 0],
+          ["Oranguru", "SSH 148", 1, 0],
+        ],
+        supporter: [
+          ["Professor's Research", "", 4, 0],
+          ["Boss's Orders", "", 3, 0],
+          ["Marnie", "", 3, 0],
+        ],
+        item: [
+          ["Quick Ball", "", 4, 0],
+          ["Evolution Incense", "", 3, 0],
+          ["Great Ball", "", 3, 0],
+          ["Energy Switch", "", 2, 0],
+          ["Fan of Waves", "", 1, 0],
+          ["Escape Rope", "", 1, 0],
+        ],
+        tool: [
+          ["Ribbon Badge", "", 1, 0],
+          ["Air Balloon", "", 1, 0],
+        ],
+        stadium: [
+          ["Tower of Waters", "", 2, 0],
+          ["Path to the Peak", "", 1, 0],
+        ],
+        energy: [
+          ["Basic Darkness Energy", "", 6, 0],
+          ["Rapid Strike Energy", "", 4, 0],
+          ["Capture Energy", "", 1, 0],
+        ],
+      },
+      "Duraludon-Vmax": {
+        variants: {},
+        pokemon: [
+          ["Duraludon-Vmax", "EVS 123", 3, 0],
+          ["Duraludon-V", "EVS 122", 3, 0],
+          ["Zacian-V", "SSH 138", 2, 0],
+        ],
+        supporter: [
+          ["Boss's Orders", "", 4, 0],
+          ["Professor's Research", "", 3, 0],
+          ["Adventurer's Discovery", "", 3, 0],
+          ["Avery", "", 3, 0],
+          ["Raihan", "", 2, 0],
+          ["Flannery", "", 1, 0],
+          ["Pokemon Center Lady", "", 1, 0],
+        ],
+        item: [
+          ["Crushing Hammer", "", 4, 0],
+          ["Pokegear 3.0", "", 4, 0],
+          ["Switch", "", 3, 0],
+          ["Team Yell Towel", "", 2, 0],
+          ["Tool Scrapper", "", 1, 0],
+        ],
+        tool: [["Big Charm", "", 3, 0]],
+        stadium: [["Crystal Cave", "", 4, 0]],
+        energy: [
+          ["Basic Metal Energy", "", 10, 0],
+          ["Basic Fighting Energy", "", 4, 0],
         ],
       },
     },
@@ -3088,19 +3087,31 @@ const decks = {
   },
 
   // Current Standard Format
-  Standard: {
+  "SSH-SIT": {
     meta: {
       start: "Battle_Styles",
-      end: "Scarlet_Violet",
+      end: "Silver_Tempest",
     },
     decks: {
       "Mew-VMax": {
-        variants: {},
+        variants: {
+          "Aerodactyl VStar": {
+            pokemon: [
+              ["Aerodactyl VStar", "LOT 93", 1, 0],
+              ["Aerodactyl-V", "LOT 92", 1, 0],
+            ],
+            supporter: [],
+            item: [["Lost Vacuum", "", -1, 0]],
+            tool: [],
+            stadium: [["Path To The Peak", "", -1, 0]],
+            energy: [],
+          },
+        },
         pokemon: [
           ["Mew-VMax", "FST 114", 3, 0],
           ["Mew-V", "FST 113", 4, 0],
           ["Genesect-V", "FST 185", 4, 0],
-          ["Oricorio", "FST 42", 1, 0]
+          ["Oricorio", "FST 42", 1, 0],
         ],
         supporter: [
           ["Judge", "", 3, 0],
@@ -3113,130 +3124,173 @@ const decks = {
           ["Power Tablet", "", 4, 0],
           ["Cram-o-Matic", "", 4, 0],
           ["Ultra Ball", "", 4, 0],
-          ["Lost Vacuum", "", 3, 0],
-          ["Trekking Shoes", "", 2, 0],
-          ["Feather Ball", "", 2, 0],
+          ["Quick Ball", "", 4, 0],
+          ["Lost Vacuum", "", 4, 0],
           ["Escape Rope", "", 2, 0],
-          ["Nest Ball", "", 2, 0],
-          ["Switch", "", 2, 0],
+          ["Switch", "", 1, 0],
+          ["Echoing Horn", "", 1, 0],
           ["Pal Pad", "", 1, 0],
         ],
         tool: [
           ["Forest Seal Stone", "", 2, 0],
           ["Choice Belt", "", 2, 0],
         ],
-        stadium: [["Path To The Peak", "", 3, 0]],
+        stadium: [["Path To The Peak", "", 4, 0]],
         energy: [["Double Turbo Energy", "", 4, 0]],
       },
+      "Zoroark-VStar": {
+        variants: {},
+        pokemon: [
+          ["Zoroark-VStar", "LOT 147", 4, 0],
+          ["Zoroark-V", "LOT 146", 4, 0],
+          ["Gengar", "LOT 66", 2, 0],
+          ["Radiant Hawlucha", "ASR 81", 1, 0],
+          ["Lumineon-V", "BST 40", 1, 0],
+          ["Crobat-V", "DAB 104", 1, 0],
+          ["Dunsparce", "FST 207", 1, 0],
+          ["Oranguru", "SSH 148", 1, 0],
+          ["Manaphy", "BST 41", 1, 0],
+        ],
+        supporter: [
+          ["Professor's Research", "", 4, 0],
+          ["Boss's Orders", "", 3, 0],
+          ["Marnie", "", 2, 0],
+          ["Cheren's Care", "", 2, 0],
+          ["Cyllene", "", 1, 0],
+        ],
+        item: [
+          ["Damage Pump", "", 4, 0],
+          ["Ultra Ball", "", 4, 0],
+          ["Quick Ball", "", 4, 0],
+          ["Trekking Shoes", "", 3, 0],
+          ["Evolution Incense", "", 2, 0],
+          ["Lost Blender", "", 1, 0],
+        ],
+        tool: [
+          ["Choice Belt", "", 2, 0],
+          ["Air Balloon", "", 2, 0],
+          ["Big Parasol", "", 2, 0],
+        ],
+        stadium: [["Gapejaw Bog", "", 4, 0]],
+        energy: [["Double Turbo Energy", "", 4, 0]],
+      },
+      "Palkia-VStar": {
+        variants: {},
+        pokemon: [
+          ["Origin Forme Palkia VStar", "ASR 40", 2, 0],
+          ["Origin Forme Palkia-V", "ASR 39", 2, 0],
+          ["Radiant Greninja", "ASR 46", 1, 0],
+          ["Drapion-V", "LOT 118", 1, 0],
+          ["Inteleon", "CRE 43", 2, 0],
+          ["Inteleon", "SSH 58", 1, 0],
+          ["Drizzile", "SSH 57", 2, 1],
+          ["Sobble", "CRE 41", 4, 0],
+          ["Articuno", "PGO 24", 2, 0],
+          ["Manaphy", "BST 41", 1, 0],
+          ["Eiscue", "EVS 47", 1, 0],
+        ],
+        supporter: [
+          ["Irida", "", 4, 0],
+          ["Boss's Orders", "", 2, 0],
+          ["Raihan", "", 2, 0],
+          ["Roxanne", "", 1, 0],
+          ["Thorton", "", 1, 0],
+        ],
+        item: [
+          ["Battle VIP Pass", "", 4, 0],
+          ["Evolution Incense", "", 3, 0],
+          ["Capacious Bucket", "", 0, 3],
+          ["Scoop-up Net", "", 3, 0],
+          ["Quick Ball", "", 3, 0],
+          ["Hisuian Heavy Ball", "", 1, 0],
+          ["Escape Rope", "", 1, 0],
+        ],
+        tool: [["Emergency Jelly", "", 2, 0]],
+        stadium: [["Training Court", "", 0, 2]],
+        energy: [
+          ["Basic Water Energy", "", 6, 0],
+          ["Wash Energy", "", 2, 0],
+        ],
+      },
+      "Lost Box": {
+        variants: {},
+        pokemon: [
+          ["Comfey", "LOT 79", 4, 0],
+          ["Cramorant", "LOT 50", 2, 0],
+          ["Sableye", "LOT 70", 1, 1],
+          ["Radiant Greninja", "ASR 46", 1, 0],
+          ["Raikou-V", "BRS 48", 1, 0],
+          ["Kyogre", "CEL 3", 1, 0],
+          ["Manaphy", "BST 41", 1, 0],
+          ["Snorlax", "VIV 131", 1, 0],
+          ["Oranguru", "SSH 148", 1, 0],
+          ["Zigzagoon", "SSH 117", 0, 1],
+        ],
+        supporter: [
+          ["Colress's Experiment", "", 4, 0],
+          ["Bird Keeper", "", 2, 0],
+          ["Roxanne", "", 1, 0],
+        ],
+        item: [
+          ["Battle VIP Pass", "", 4, 0],
+          ["Mirage Gate", "", 4, 0],
+          ["Scoop Up Net", "", 2, 2],
+          ["Energy Recycler", "", 3, 0],
+          ["Escape Rope", "", 2, 0],
+          ["Switch Cart", "", 2, 0],
+          ["Hisuian Heavy Ball", "", 1, 0],
+          ["Ordinary Rod", "", 1, 0],
+          ["Echoing Horn", "", 1, 0],
+          ["Lost Vacuum", "", 1, 0],
+          ["Quick Ball", "", 1, 0],
+        ],
+        tool: [],
+        stadium: [],
+        energy: [
+          ["Basic Water Energy", "", 5, 0],
+          ["Basic Psychic Energy", "", 4, 0],
+          ["Capture Energy", "", 3, 0],
+          ["Basic Lightning Energy", "", 2, 0],
+        ],
+      },
+    },
+  },
+  Standard: {
+    meta: {
+      start: "Battle_Styles",
+      end: "Obsidian_Flames",
+    },
+    decks: {
       "Gardevoir ex": {
         variants: {},
         pokemon: [
-          ["Gardevoir ex", "", 2, 0],
-          ["Gardevoir", "", 2, 0],
-          ["Kirlia", "", 4, 0],
-          ["Ralts", "", 4, 0],
-          ["Vacian-V", "", 2, 0],
-          ["Radiant Greninja", "", 0, 1],
-          ["Lumineon-V", "", 1, 0],
-          ["Cresselia", "", 1, 0],
+          ["Gardevoir ex", "SVI 86", 2, 0],
+          ["Gardevoir", "CRE 61", 2, 0],
+          ["Kirlia", "SIT 68", 4, 0],
+          ["Ralts", "SIT 67", 4, 0],
+          ["Vacian-V", "CEL 16", 2, 0],
+          ["Radiant Greninja", "ASR 46", 1, 0],
+          ["Cresselia", "LOT 74", 1, 0],
           ["Manaphy", "BRS 41", 1, 0],
-          ["Mew", "", 0, 1],
+          ["Mew", "CEL 11", 1, 0],
         ],
         supporter: [
-          ["Professor's Research", "", 3, 0],
-          ["Boss's Orders", "", 1, 0],
-          ["Penelope", "", 1, 0],
-          ["Roxanne", "", 1, 0],
-          ["Miriam", "", 1, 0],
-          ["Worker", "", 1, 0],
-          ["Judge", "", 1, 0],
+          ["Iono", "", 4, 0],
+          ["Worker", "", 3, 0],
+          ["Boss's Orders", "", 2, 0],
         ],
         item: [
           ["Battle VIP Pass", "", 4, 0],
           ["Level Ball", "", 4, 0],
           ["Fog Crystal", "", 3, 0],
-          ["Ultra Ball", "", 3, 0],
+          ["Ultra Ball", "", 2, 0],
           ["Rare Candy", "", 2, 0],
-          ["Pal Pad", "", 1, 0],
+          ["Super Rod", "", 2, 0],
         ],
-        tool: [["Sky Sealed Stone", "", 1, 0]],
-        stadium: [
-          ["Collapsed Stadium", "", 1, 0],
-          ["Temple of Sinnoh", "", 1, 0],
-        ],
+        tool: [["Forest Sealed Stone", "", 2, 0]],
+        stadium: [["Collapsed Stadium", "", 2, 0]],
         energy: [["Basic Psychic Energy", "", 12, 0]],
       },
-      "Zoroark-VStar": {
-        variants: {},
-        pokemon: [
-          ["Zoroark-VStar", "", 4, 0],
-          ["Zoroark-V", "", 4, 0],
-          ["Gengar", "", 2, 0],
-          ["Radiant Alakazam", "", 1, 0],
-          ["Lumineon-V", "", 1, 0],
-          ["Dunsparce", "", 1, 0],
-          ["Manaphy", "", 1, 0],
-        ],
-        supporter: [
-          ["Professor's Research", "", 4, 0],
-          ["Boss's Orders", "", 3, 0],
-          ["Judge", "", 3, 0],
-          ["Cheren's Care", "", 2, 0],
-          ["Cyllene", "", 1, 0],
-          ["Roxanne", "", 1, 0],
-        ],
-        item: [
-          ["Damage Pump", "", 4, 0],
-          ["Ultra Ball", "", 4, 0],
-          ["Great Ball", "", 4, 0],
-          ["Cancelling Cologne", "", 2, 0],
-          ["Escape Rope", "", 2, 0],
-          ["Nest Ball", "", 2, 0],
-          ["Switch", "", 2, 0],
-        ],
-        tool: [["Choice Belt", "", 2, 0]],
-        stadium: [["Gapejaw Bog", "", 4, 0]],
-        energy: [["Double Turbo Energy", "", 4, 0]],
-      },
-      "Origin Forme Palkia-Vstar": {
-        variants: {},
-        pokemon: [
-          ["Origin Forme Palkia-VStar", "", 3, 0],
-          ["Origin Forme Palkia-V", "", 4, 0],
-          ["Bibarel", "", 2, 0],
-          ["Bidoof", "", 2, 0],
-          ["Radiant Greninja", "", 1, 0],
-          ["Lumineon-V", "", 1, 0],
-          ["Drapion-V", "", 1, 0],
-          ["Articuno", "", 0, 1],
-          ["Manaphy", "", 1, 0],
-          ["Skwovet", "", 0, 1],
-        ],
-        supporter: [
-          ["Irida", "", 4, 0],
-          ["Melony", "", 2, 0],
-          ["Boss's Orders", "", 2, 0],
-          ["Roxanne", "", 1, 0],
-          ["Raihan", "", 0, 1],
-          ["Cheryl", "", 0, 1],
-          ["Judge", "", 0, 1],
-        ],
-        item: [
-          ["Cross Switcher", "", 4, 0],
-          ["Ultra Ball", "", 4, 0],
-          ["Battle VIP Pass", "", 3, 0],
-          ["Nest Ball", "", 0, 3],
-          ["Energy Search", "", 2, 0],
-          ["Switch", "", 1, 0],
-        ],
-        tool: [],
-        stadium: [
-          ["Lost City", "", 0, 3]
-        ],
-        energy: [
-          ["Basic Water Energy", "", 9, 2]
-        ],
-      }
     },
   },
 };
