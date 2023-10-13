@@ -339,11 +339,49 @@ const decks = {
           ["Double Dragon Energy", "", 4, 0],
         ],
       },
+      Lucario: {
+        variants: {},
+        pokemon: [
+          ["Crobat", "PHF 33", 2, 0],
+          ["Golbat", "PHF 34", 3, 0],
+          ["Zubat", "PHF 35", 4, 0],
+          ["Lucario-ex", "FFI 54", 3, 0],
+          ["Shaymin-ex", "ROS 77", 2, 0],
+          ["Hawlucha", "PR-XY 63", 2, 0],
+          ["Zygarde-ex", "PR-XY 151", 1, 0],
+        ],
+        supporter: [
+          ["Korrina", "", 3, 0],
+          ["Professor Sycamore", "", 2, 0],
+          ["Lysandre", "", 2, 0],
+          ["N", "", 2, 0],
+          ["Olympia", "", 1, 0],
+        ],
+        item: [
+          ["Super Scoop Up", "", 4, 0],
+          ["Level Ball", "", 4, 0],
+          ["Ultra Ball", "", 4, 0],
+          ["VS Seeker", "", 4, 0],
+          ["Escape Rope", "", 1, 0],
+          ["Super Rod", "", 1, 0],
+          ["Switch", "", 1, 0],
+        ],
+        tool: [
+          ["Muscle Band", "", 2, 0],
+        ],
+        stadium: [
+          ["Fighting Stadium", "", 3, 0],
+        ],
+        energy: [
+          ["Basic Fighting Energy", "", 5, 0],
+          ["Strong Energy", "", 4, 0],
+        ],
+      },
       Houndoom: {
         variants: {},
         pokemon: [
-          ["Houndoom Ex", "BKT 21", 4, 0],
-          ["Shaymin Ex", "ROS 77", 2, 0],
+          ["Houndoom-ex", "BKT 21", 4, 0],
+          ["Shaymin-ex", "ROS 77", 2, 0],
           ["Bunnelby", "PRC 121", 1, 0],
         ],
         supporter: [
@@ -354,6 +392,7 @@ const decks = {
           ["Professor Sycamore", "", 1, 0],
           ["Delinquent", "", 1, 0],
           ["Xerosic", "", 1, 0],
+          ["Olympia", "", 0, 1],
           ["AZ", "", 1, 0],
         ],
         item: [
@@ -367,7 +406,7 @@ const decks = {
         ],
         tool: [
           ["Fighting Fury Belt", "", 2, 1],
-          ["Float Stone", "", 1, 1],
+          ["Float Stone", "", 1, 0],
         ],
         stadium: [
           ["Team Aqua's Secret Base", "", 0, 2],
@@ -718,7 +757,7 @@ const decks = {
           ["VS Seeker", "", 4, 0],
           ["Puzzle of Time", "", 4, 0],
           ["Crushing Hammer", "", 2, 2],
-          ["Enhanced Hammer", "", 0, 2],
+          ["Enhanced Hammer", "", 2, 0],
           ["Nest Ball", "", 2, 0],
           ["Switch", "", 2, 0],
           ["Energy Recycler", "", 1, 0],
@@ -1402,7 +1441,7 @@ const decks = {
     },
   },
 
-  // Pre-Ban Expanded
+  // Pre-Ban-expanded
   // BW Base Set to SM Forbidden Light
   "BLW-FLI": {
     meta: {
@@ -2086,7 +2125,7 @@ const decks = {
           ["Blacephalon", "CEC 104", 1, 0],
         ],
         supporter: [
-          ["Green's Exploration", "", 4, 0],
+          ["Green's-exploration", "", 4, 0],
           ["Guzma & Hala Tag Team", "", 2, 0],
           ["Cynthia & Caitlyn Tag Team", "", 1, 0],
           ["Mallow & Lana Tag Team", "", 1, 0],
@@ -2226,7 +2265,7 @@ const decks = {
           ["Victini Prism Star", "DRM 7", 1, 0],
         ],
         supporter: [
-          ["Green's Exploration", "", 4, 0],
+          ["Green's-exploration", "", 4, 0],
           ["Welder", "", 4, 0],
         ],
         item: [
@@ -2604,9 +2643,9 @@ const decks = {
         pokemon: [
           ["Shadow Rider Calyrex-VMax", "CRE 75", 4, 0],
           ["Shadow Rider Calyrex-V", "CRE 74", 4, 0],
-          ["Alcremie-VMax", "CPA-23", 0, 1],
-          ["Alcremie-V", "CPA-22", 0, 1],
-          ["Crobat V", "SIF 44", 1, 0],
+          ["Alcremie-VMax", "CPA-23", 1, 0],
+          ["Alcremie-V", "CPA-22", 1, 0],
+          ["Crobat-V", "SIF 44", 1, 0],
           ["Galarian Articuno", "EVS 63", 2, 0],
           ["Pumpkaboo", "EVS 76", 1, 0],
         ], 
@@ -2922,6 +2961,38 @@ const decks = {
           ["Basic Fighting Energy", "", 4, 0],
         ],
       },
+      "Blissey Box": {
+        variants: {},
+        pokemon: [
+          ["Blissey-V", "CRE 119", 4, 0]
+        ],
+        supporter: [
+          ["Zinnia's Resolve", "", 4, 0],
+          ["Boss's Orders", "", 4, 0],
+          ["Allister", "", 1, 3],
+          ["Pokemon Center Lady", "", 3, 0],
+          ["Schoolgirl", "", 0, 2],
+        ],
+        item: [
+          ["Suspicious Food Tin", "", 0, 4],
+          ["Hyper Potion", "", 0, 4],
+          ["Potion", "", 0, 4],
+          ["Pokegear 3.0", "", 2, 2],
+          ["Team Yell Towel", "", 2, 0],
+        ],
+        tool: [
+          ["Cape of Toughness", "", 4, 0],
+        ],
+        stadium: [
+
+        ],
+        energy: [
+          ["Basic Psychic Energy", "", 8, 0],
+          ["Powerful Energy", "", 4, 0],
+          ["Lucky Energy", "", 3, 0],
+          ["Capture Energy", "", 2, 0],
+        ]
+      }
     },
   },
 
@@ -3199,7 +3270,7 @@ const decks = {
         item: [
           ["Battle VIP Pass", "", 4, 0],
           ["Evolution Incense", "", 3, 0],
-          ["Capacious Bucket", "", 0, 3],
+          ["Capacious Bucket", "", 3, 0],
           ["Scoop-up Net", "", 3, 0],
           ["Quick Ball", "", 3, 0],
           ["Hisuian Heavy Ball", "", 1, 0],
@@ -3227,7 +3298,7 @@ const decks = {
           ["Zigzagoon", "SSH 117", 0, 1],
         ],
         supporter: [
-          ["Colress's Experiment", "", 4, 0],
+          ["Colress's-experiment", "", 4, 0],
           ["Bird Keeper", "", 2, 0],
           ["Roxanne", "", 1, 0],
         ],
@@ -3261,10 +3332,10 @@ const decks = {
       end: "Obsidian_Flames",
     },
     decks: {
-      "Gardevoir ex": {
+      "Gardevoir-ex": {
         variants: {},
         pokemon: [
-          ["Gardevoir ex", "SVI 86", 2, 0],
+          ["Gardevoir-ex", "SVI 86", 2, 0],
           ["Gardevoir", "CRE 61", 2, 0],
           ["Kirlia", "SIT 68", 4, 0],
           ["Ralts", "SIT 67", 4, 0],
