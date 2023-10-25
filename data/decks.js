@@ -24,6 +24,55 @@ const decks = {
   }
   */
 
+  // 2014 Worlds
+  // Next Destinies to Flash Fire 
+  "NXD-FLF": {
+    meta: {
+      start: "Next_Destinies",
+      end: "Flashfire",
+    },
+    decks: {
+      "TrevGor (Worlds)": {
+        variants: {},
+        pokemon: [
+          ["Accelgor", "DEX 11", 3, 0],
+          ["Shelmet", "PLB 7", 3, 0],
+          ["Trevenant", "XY 55", 3, 0],
+          ["Phantump", "XY 54", 4, 0],
+          ["Dusknoir", "BCR 63", 2, 0],
+          ["Dusclops", "FLF 39", 2, 0],
+          ["Duskull", "FLF 38", 2, 0],
+          ["Mew-ex", "DEX 46", 2, 0],
+        ],
+        supporter: [
+          ["Professor Juniper", "", 4, 0],
+          ["N", "", 4, 0],
+          ["Skyla", "", 2, 0],
+          ["Colress", "", 1, 0],
+        ],
+        item: [
+          ["Level Ball", "", 4, 0],
+          ["Evosoda", "", 3, 0],
+          ["Ultra Ball", "", 2, 0],
+          ["Startling Megaphone", "", 2, 0],
+          ["Pokemon Catcher", "", 2, 0],
+          ["Town Map", "", 1, 0],
+          ["Sacred Ash", "", 1, 0],
+          ["Computer Search", "", 1, 0],
+        ],
+        tool: [
+          ["Float Stone", "", 4, 0],
+          ["Muscle Band", "", 2, 0],
+        ],
+        stadium: [
+          ["Tropical Beach", "", 2, 0]
+        ],
+        energy: [
+          ["Double Colorless Energy", "", 4, 0]
+        ],
+      }
+    }
+  },
   // 2016 Worlds
   // XY Base Set to XY Steam Siege
   "XY-STS": {
@@ -148,6 +197,45 @@ const decks = {
           ["M Audino-ex", "FAC 85", 3, 0],
           ["Audino-ex", "FAC 84", 4, 0],
           ["Hoopa-ex", "AOR 36", 1, 0],
+          ["Shaymin-ex", "ROS 77", 2, 0],
+          ["Magearna-ex", "STS 110", 1, 0],
+          ["Cobalion", "STS 74", 1, 0],
+          ["Absol", "ROS 40", 1, 0],
+        ],
+        supporter: [
+          ["Professor Sycamore", "", 4, 0],
+          ["N", "", 2, 0],
+          ["Lysandre", "", 2, 0],
+          ["AZ", "", 2, 0],
+          ["Hex Maniac", "", 1, 0],
+          ["Xerosic", "", 1, 0],
+          ["Pokemon Center Lady", "", 1, 0],
+        ],
+        item: [
+          ["VS Seeker", "", 4, 0],
+          ["Ultra Ball", "", 4, 0],
+          ["Trainers' Mail", "", 4, 0],
+          ["Mega Turbo", "", 1, 0],
+          ["Escape Rope", "", 1, 0],
+          ["Super Rod", "", 1, 0],
+          ["Startling Megaphone", "", 1, 0],
+        ],
+        tool: [
+          ["Audino Spirit Link", "", 4, 0],
+          ["Float Stone", "", 2, 0],
+        ],
+        stadium: [["Parallel City", "", 2, 0]],
+        energy: [
+          ["Metal Energy", "", 6, 0],
+          ["Double Colorless Energy", "", 4, 0],
+        ],
+      },
+      "Mega Audino (Worlds)": {
+        variants: {},
+        pokemon: [
+          ["M Audino-ex", "FAC 85", 3, 0],
+          ["Audino-ex", "FAC 84", 4, 0],
+          ["Hoopa-ex", "AOR 36", 0, 1],
           ["Shaymin-ex", "ROS 77", 2, 0],
           ["Magearna-ex", "STS 110", 1, 0],
           ["Cobalion", "STS 74", 1, 0],
@@ -378,7 +466,21 @@ const decks = {
         ],
       },
       Houndoom: {
-        variants: {},
+        variants: {
+          "Puzzles": {
+            pokemon: [],
+            supporter: [],
+            item: [
+              ["Puzzle of Time", "", 4, 0],
+              ["Max Potion", "", -1, 0],
+            ],
+            tool: [],
+            stadium: [
+              ["Silent Lab", "", -3, 0],
+            ], 
+            energy: []
+          }
+        },
         pokemon: [
           ["Houndoom-ex", "BKT 21", 4, 0],
           ["Shaymin-ex", "ROS 77", 2, 0],
@@ -1791,16 +1893,7 @@ const decks = {
         tool: [],
         stadium: [["Rough Seas", "", 4, 0]],
         energy: [["Lightning Energy", "", 1, 0]],
-      },
-      "Keldeo Blastoise": {
-        variants: {},
-        pokemon: [],
-        supporter: [],
-        item: [],
-        tool: [],
-        stadium: [],
-        energy: [],
-      },
+      }
     },
   },
 
@@ -2987,8 +3080,8 @@ const decks = {
         energy: [
           ["Basic Psychic Energy", "", 8, 0],
           ["Powerful Energy", "", 4, 0],
-          ["Lucky Energy", "", 2, 1],
-          ["Capture Energy", "", 0, 2],
+          ["Lucky Energy", "", 3, 0],
+          ["Capture Energy", "", 2, 0],
         ]
       }
     },
@@ -3248,7 +3341,7 @@ const decks = {
         pokemon: [
           ["Origin Forme Palkia VStar", "ASR 40", 2, 0],
           ["Origin Forme Palkia-V", "ASR 39", 2, 0],
-          ["Radiant Greninja", "ASR 46", 1, 0],
+          ["Radiant Greninja", "ASR 46", 0, 1],
           ["Drapion-V", "LOT 118", 1, 0],
           ["Inteleon", "CRE 43", 2, 0],
           ["Inteleon", "SSH 58", 1, 0],
@@ -3269,7 +3362,7 @@ const decks = {
           ["Battle VIP Pass", "", 4, 0],
           ["Evolution Incense", "", 3, 0],
           ["Capacious Bucket", "", 3, 0],
-          ["Scoop Up Net", "", 0, 3],
+          ["Scoop Up Net", "", 3, 0],
           ["Quick Ball", "", 3, 0],
           ["Hisuian Heavy Ball", "", 1, 0],
           ["Escape Rope", "", 1, 0],
@@ -3288,7 +3381,7 @@ const decks = {
           ["Cramorant", "LOT 50", 2, 0],
           ["Sableye", "LOT 70", 2, 0],
           ["Radiant Greninja", "ASR 46", 1, 0],
-          ["Raikou-V", "BRS 48", 1, 0],
+          ["Raikou-V", "BRS 48", 0, 1],
           ["Kyogre", "CEL 3", 1, 0],
           ["Manaphy", "BST 41", 1, 0],
           ["Snorlax", "VIV 131", 1, 0],
@@ -3303,7 +3396,7 @@ const decks = {
         item: [
           ["Battle VIP Pass", "", 4, 0],
           ["Mirage Gate", "", 4, 0],
-          ["Scoop Up Net", "", 2, 2],
+          ["Scoop Up Net", "", 4, 0],
           ["Energy Recycler", "", 3, 0],
           ["Escape Rope", "", 2, 0],
           ["Switch Cart", "", 2, 0],
