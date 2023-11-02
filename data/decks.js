@@ -235,7 +235,7 @@ const decks = {
         pokemon: [
           ["M Audino-ex", "FAC 85", 3, 0],
           ["Audino-ex", "FAC 84", 4, 0],
-          ["Hoopa-ex", "AOR 36", 0, 1],
+          ["Hoopa-ex", "AOR 36", 1, 0],
           ["Shaymin-ex", "ROS 77", 2, 0],
           ["Magearna-ex", "STS 110", 1, 0],
           ["Cobalion", "STS 74", 1, 0],
@@ -3341,7 +3341,7 @@ const decks = {
         pokemon: [
           ["Origin Forme Palkia VStar", "ASR 40", 2, 0],
           ["Origin Forme Palkia-V", "ASR 39", 2, 0],
-          ["Radiant Greninja", "ASR 46", 0, 1],
+          ["Radiant Greninja", "ASR 46", 1, 0],
           ["Drapion-V", "LOT 118", 1, 0],
           ["Inteleon", "CRE 43", 2, 0],
           ["Inteleon", "SSH 58", 1, 0],
@@ -3381,7 +3381,7 @@ const decks = {
           ["Cramorant", "LOT 50", 2, 0],
           ["Sableye", "LOT 70", 2, 0],
           ["Radiant Greninja", "ASR 46", 1, 0],
-          ["Raikou-V", "BRS 48", 0, 1],
+          ["Raikou-V", "BRS 48", 1, 0],
           ["Kyogre", "CEL 3", 1, 0],
           ["Manaphy", "BST 41", 1, 0],
           ["Snorlax", "VIV 131", 1, 0],
