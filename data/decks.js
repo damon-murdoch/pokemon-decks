@@ -73,6 +73,7 @@ const decks = {
       }
     }
   },
+
   // 2016 Worlds
   // XY Base Set to XY Steam Siege
   "XY-STS": {
@@ -1897,6 +1898,538 @@ const decks = {
     },
   },
 
+  "SUM-LOT": {
+    meta: {
+      start: "Sun_And_Moon",
+      end: "Lost_Thunder"
+    }, 
+    decks: {
+      "Zoroark Lycanroc": {
+        variants: {},
+        pokemon: [
+          ["Zoroark-gx", "PR-SM SM84", 4, 0],
+          ["Zorua", "PR-SM SM83", 4, 0],
+          ["Lycanroc-gx", "GRI 138", 2, 0],
+          ["Rockruff", "GRI 73", 3, 0],
+          ["Tapu Lele-gx", "GRI 137", 3, 0],
+          ["Alolan Muk", "SUM 58", 1, 0],
+          ["Ditto Prism Star", "LOT 154", 1, 0],
+          ["Giratina", "LOT 97", 1, 0],
+          ["Oranguru", "UPR 114", 1, 0],
+        ],
+        supporter: [
+          ["Professor Elm's Lecture", "", 4, 0],
+          ["Cynthia", "", 3, 0],
+          ["Guzma", "", 3, 0],
+          ["Acerola", "", 2, 0],
+          ["Judge", "", 2, 0],
+          ["Mallow", "", 1, 0],
+        ],
+        item: [
+          ["Ultra Ball", "", 4, 0],
+          ["Timer Ball", "", 3, 0],
+          ["Enhanced Hammer", "", 2, 0],
+          ["Rescue Stretcher", "", 1, 0],
+          ["Switch", "", 1, 0],
+        ],
+        tool: [
+          ["Choice Band", "", 2, 0],
+          ["Counter Gain", "", 1, 0],
+        ],
+        stadium: [
+          ["Devoured Field", "", 2, 0],
+        ],
+        energy: [
+          ["Double Colorless Energy", "", 4, 0],
+          ["Fighting Energy", "", 3, 0],
+          ["Rainbow Energy", "", 2, 0],
+        ],
+      }, 
+      "Zoroark Weavile": {
+        variants: {},
+        pokemon: [
+          ["Zoroark-gx", "PR-SM SM84", 4, 0],
+          ["Zorua", "PR-SM SM83", 4, 0],
+          ["Weavile", "UPR 74", 3, 0],
+          ["Sneasel", "UPR 86", 3, 0],
+          ["Tapu Lele-gx", "GRI 137", 3, 0],
+          ["Alolan Muk", "SUM 58", 1, 0],
+          ["Ditto Prism Star", "LOT 154", 1, 0],
+          ["Oranguru", "UPR 114", 1, 0],
+        ],
+        supporter: [
+          ["Professor Elm's Lecture", "", 4, 0],
+          ["Cynthia", "", 4, 0],
+          ["Guzma", "", 4, 0],
+          ["Acerola", "", 2, 0],
+          ["Judge", "", 1, 0],
+          ["Mallow", "", 1, 0],
+        ],
+        item: [
+          ["Ultra Ball", "", 4, 0],
+          ["Timer Ball", "", 4, 0],
+          ["Enhanced Hammer", "", 2, 0],
+          ["Rescue Stretcher", "", 1, 0],
+        ],
+        tool: [
+          ["Choice Band", "", 3, 0],
+        ],
+        stadium: [
+          ["Devoured Field", "", 2, 0],
+        ],
+        energy: [
+          ["Double Colorless Energy", "", 4, 0],
+          ["Darkness Energy", "", 2, 0],
+          ["Rainbow Energy", "", 2, 0],
+        ],
+      }, 
+      "Zoroark Gyarados": {
+        variants: {},
+        pokemon: [
+          ["Zoroark-gx", "SLG 53", 4, 0],
+          ["Zorua", "SLG 52", 4, 0],
+          ["Gyarados", "BRS 33", 2, 0],
+          ["Magikarp", "CIN 17", 3, 0],
+          ["Magikarp", "BRS 32", 1, 0],
+          ["Tapu Lele-gx", "GRI 60", 1, 1],
+          ["Alolan Muk", "SUM 58", 1, 0],
+          ["Ditto Prism Star", "LOT 154", 1, 0],
+          ["Marshadow", "PR-SM SM85", 1, 0],
+          ["Oranguru", "UPR 114", 1, 0],
+        ],
+        supporter: [
+          ["Professor Elm's Lecture", "", 4, 0],
+          ["Acerola", "", 3, 0],
+          ["Cynthia", "", 2, 0],
+          ["Guzma", "", 2, 0],
+          ["Judge", "", 2, 0],
+          ["Professor Kukui", "", 1, 0],
+          ["Tate & Liza", "", 1, 0],
+          ["Mallow", "", 1, 0],
+        ],
+        item: [
+          ["Ultra Ball", "", 4, 0],
+          ["Timer Ball", "", 4, 0],
+          ["Enhanced Hammer", "", 3, 0],
+          ["Rescue Stretcher", "", 2, 0],
+          ["Pal Pad", "", 2, 0],
+          ["Max Potion", "", 1, 0],
+          ["Switch", "", 1, 0],
+        ],
+        tool: [
+          ["Choice Band", "", 3, 0],
+        ],
+        stadium: [
+
+        ],
+        energy: [
+          ["Double Colorless Energy", "", 4, 0],
+        ],
+      },
+      "Zoroark Decidueye Ninetales": {
+        variants: {},
+        pokemon: [
+          ["Zoroark-gx", "SLG 53", 3, 0],
+          ["Zorua", "SLG 52", 3, 0],
+          ["Decidueye-gx", "SUM 12", 3, 0],
+          ["Rowlet", "SUM 9", 3, 0],
+          ["Alolan Ninetales-gx", "LOT 132", 2, 0],
+          ["Alolan Ninetales-gx", "GRI 22", 1, 0],
+          ["Alolan Vulpix", "GRI 21", 2, 0],
+          ["Ditto Prism Star", "LOT 154", 1, 0],
+          ["Tapu Lele-gx", "GRI 137", 2, 0],
+          ["Yveltal-gx", "FLI 79", 1, 0],
+        ],
+        supporter: [
+          ["Professor Elm's Lecture", "", 4, 0],
+          ["Cynthia", "", 4, 0],
+          ["Guzma", "", 3, 0],
+          ["Acerola", "", 1, 0],
+          ["Mallow", "", 1, 0],
+          ["Judge", "", 1, 0],
+        ],
+        item: [
+          ["Ultra Ball", "", 4, 0],
+          ["Rare Candy", "", 3, 0],
+          ["Enhanced Hammer", "", 2, 0],
+          ["Timer Ball", "", 2, 0],
+          ["Max Potion", "", 2, 0],
+          ["Rescue Stretcher", "", 1, 0],
+          ["Switch", "", 1, 0],
+        ],
+        tool: [
+          ["Choice Band", "", 2, 0],
+        ],
+        stadium: [
+
+        ],
+        energy: [
+          ["Double Colorless Energy", "", 4, 0],
+          ["Rainbow Energy", "", 4, 0],
+        ],
+      },
+      "Regigigas Walls": {
+        variants: {
+          "with Techs": {
+            pokemon: [
+              ["Regigigas", "CIN 84", -1, 0],
+              ["Registeel", "CES 96", -1, 0],
+              ["Noibat", "FLI 100", 0, 1],
+              ["Unown", "LOT 91", 1, 0],
+            ],
+            supporter: [],
+            item: [],
+            tool: [],
+            stadium: [],
+            energy: [],
+          }
+        },
+        pokemon: [
+          ["Regigigas", "CIN 84", 4, 0],
+          ["Registeel", "CES 96", 2, 0],
+          ["Hoopa", "SLG 55", 2, 0],
+          ["Lugia GX", "LOT 159", 0, 1],
+          ["Solgaleo Prism Star", "UPR 89", 1, 0],
+          ["Goomy", "FLI 91", 1, 0],
+          ["Girafarig", "LOT 94", 1, 0],
+        ],
+        supporter: [
+          ["Steven's Resolve", "", 4, 0],
+          ["Cynthia", "", 4, 0],
+          ["Lusamine", "", 3, 0],
+          ["Acerola", "", 3, 0],
+          ["Plumeria", "", 2, 0],
+          ["Gladion", "", 2, 0],
+          ["Faba", "", 2, 0],
+          ["Team Skull Grunt", "", 1, 0],
+          ["Tate & Liza", "", 1, 0],
+          ["Copycat", "", 1, 0],
+          ["Guzma", "", 1, 0],
+          ["Mars", "", 1, 0],
+        ],
+        item: [
+          ["Max Potion", "", 4, 0],
+          ["Enhanced Hammer", "", 3, 0],
+          ["Crushing Hammer", "", 0, 2],
+          ["Nest Ball", "", 2, 0],
+          ["Rescue Stretcher", "", 1, 0],
+          ["Counter Catcher", "", 1, 0],
+          ["Switch", "", 1, 0],
+        ],
+        tool: [
+          ["Metal Frying Pan", "", 2, 0],
+          ["Ancient Crystal", "", 2, 0],
+          ["Counter Gain", "", 1, 0],
+        ],
+        stadium: [
+          ["Shrine of Punishment", "", 2, 0]
+        ],
+        energy: [
+          ["Double Colorless Energy", "", 1, 0],
+          ["Rainbow Energy", "", 1, 0],
+        ],
+      },
+      "Passimian Spread": {
+        variants: {
+          /* "with Techs": {
+            pokemon: [],
+            supporter: [],
+            item: [],
+            tool: [],
+            stadium: [],
+            energy: [],
+          } */
+        },
+        pokemon: [
+          ["Tapu Koko", "PR-SM SM30a", 4, 0],
+          ["Passimian", "SUM 73", 2, 0],
+          ["Passimian", "UPR 70", 2, 0],
+          ["Magcargo", "CES 24", 2, 0],
+          ["Slugma", "LOT 43", 2, 0],
+          ["Tapu Lele", "UPR 94", 1, 0],
+          ["Oranguru", "SUM 113", 1, 0],
+        ],
+        supporter: [
+          ["Lillie", "", 4, 0],
+          ["Guzma", "", 4, 0],
+          ["Professor Kukui", "", 2, 0],
+          ["Cynthia", "", 2, 0],
+        ],
+        item: [
+          ["Ultra Ball", "", 4, 0],
+          ["Nest Ball", "", 4, 0],
+          ["Acro Bike", "", 4, 0],
+          ["Rescue Stretcher", "", 3, 0],
+          ["PokeNav", "", 2, 0],
+          ["Escape Rope", "", 1, 0],
+          ["Switch", "", 1, 0],
+        ],
+        tool: [
+          ["Choice Band", "", 3, 0],
+        ],
+        stadium: [
+          ["Shrine of Punishment", "", 4, 0]
+        ],
+        energy: [
+          ["Double Colorless Energy", "", 4, 0],
+          ["Counter Energy", "", 4, 0],
+        ],
+      },
+      "Malamar Necrozma": {
+        variants: {
+          /* "with Techs": {
+            pokemon: [],
+            supporter: [],
+            item: [],
+            tool: [],
+            stadium: [],
+            energy: [],
+          } */
+        },
+        pokemon: [
+          ["Malamar", "FLI 51", 4, 0],
+          ["Inkay", "FLI 50", 4, 0],
+          ["Necrozma-gx", "BRS 63", 1, 1],
+          ["Dawn Wings Necrozma-gx", "UPR 63", 1, 0],
+          ["Marshadow-gx", "BRS 80", 1, 0],
+          ["Tapu lele-gx", "GRI 137", 1, 0],
+          ["Marshadow", "PR-SM SM85", 1, 0],
+          ["Giratina", "LOT 97", 1, 0],
+          ["Chimeco", "CIN 43", 1, 0],
+          ["Mimikyu", "CEC 97", 1, 0],
+          ["Deoxys", "CES 67", 1, 0],
+        ],
+        supporter: [
+          ["Cynthia", "", 4, 0],
+          ["Lillie", "", 4, 0],
+          ["Guzma", "", 3, 0],
+        ],
+        item: [
+          ["Mysterious Treasure", "", 4, 0],
+          ["Ultra Ball", "", 4, 0],
+          ["Acro Bike", "", 4, 0],
+          ["Nest Ball", "", 2, 0],
+          ["Rescue Stretcher", "", 2, 0],
+          ["Escape Rope", "", 1, 0],
+        ],
+        tool: [
+          ["Escape Board", "", 4, 0],
+        ],
+        stadium: [
+
+        ],
+        energy: [
+          ["Psychic Energy", "", 10, 0],
+        ],
+      },
+      "Granbull": {
+        variants: {
+          /* "with Techs": {
+            pokemon: [],
+            supporter: [],
+            item: [],
+            tool: [],
+            stadium: [],
+            energy: [],
+          } */
+        },
+        pokemon: [
+          ["Granbull", "LOT 138", 4, 0],
+          ["Snubbull", "LOT 137", 4, 0],
+          ["Ditto Prism Star", "LOT 154", 1, 0],
+          ["Magcargo", "CES 24", 2, 0],
+          ["Slugma", "LOT 43", 2, 0],
+          ["Oranguru", "SUM 113", 3, 0],
+        ],
+        supporter: [
+          ["Apricorn Maker", "", 4, 0],
+          ["Diancie", "", 2, 0],
+          ["Guzma", "", 2, 0],
+        ],
+        item: [
+          ["Ultra Ball", "", 4, 0],
+          ["Great Ball", "", 4, 0],
+          ["Nest Ball", "", 4, 0],
+          ["Rescue Stretcher", "", 3, 0],
+          ["Mysterious Treasure", "", 2, 0],
+          ["PokeNav", "", 2, 0],
+          ["Field Blower", "", 1, 0],
+          ["Pal Pad", "", 1, 0],
+          ["Switch", "", 1, 0],
+        ],
+        tool: [
+          ["Choice Band", "", 3, 0],
+          ["Bodybuilding Dumbbells", "", 1, 0],
+        ],
+        stadium: [
+          ["Shrine of Punishment", "", 3, 0]
+        ],
+        energy: [
+          ["Fairy Energy", "", 7, 0],
+        ],
+      },
+      "Gardevoir Ninetales": {
+        variants: {
+          /* "with Techs": {
+            pokemon: [],
+            supporter: [],
+            item: [],
+            tool: [],
+            stadium: [],
+            energy: [],
+          } */
+        },
+        pokemon: [
+          ["Gardevoir-gx", "BRS 140", 3, 0],
+          ["Kirlia", "LOT 140", 1, 0],
+          ["Ralts", "BRS 91", 3, 0],
+          ["Alolan Ninetales-gx", "LOT 205", 2, 0],
+          ["Alolan Vulpix", "GRI 21", 2, 0],
+          ["Swampert", "CES 35", 2, 0],
+          ["Marshtomp", "CES 34", 1, 0],
+          ["Mudkip", "CES 32", 2, 0],
+          ["Solgaleo-gx", "PR-SM SM104", 1, 0],
+          ["Cosmog", "SUM 64", 1, 0],
+          ["Ditto Prism Star", "LOT 154", 1, 0],
+          ["Tapu Lele-gx", "GRI 137", 3, 0],
+        ],
+        supporter: [
+          ["Professor Elm's Lecture", "", 4, 0],
+          ["Cynthia", "", 4, 0],
+          ["Guzma", "", 3, 0],
+          ["Lillie", "", 1, 0],
+        ],
+        item: [
+          ["Ultra Ball", "", 4, 0],
+          ["Rare Candy", "", 4, 0],
+          ["Max Potion", "", 2, 0],
+          ["Energy Loto", "", 1, 0],
+          ["Timer Ball", "", 1, 0],
+        ],
+        tool: [
+          ["Choice Band", "", 2, 0],
+        ],
+        stadium: [
+
+        ],
+        energy: [
+          ["Fairy Energy", "", 7, 0],
+          ["Double Colorless Energy", "", 4, 0],
+          ["Super Boost Energy Prism Star", "", 1, 0],
+        ],
+      },
+      "Blacephalon-gx Naganadel": {
+        variants: {},
+        pokemon: [
+          ["Naganadel", "LOT 108", 4, 0],
+          ["Poipole", "FLI 55", 4, 0],
+          ["Blacephalon-gx", "LOT 52", 4, 0],
+          ["Tapu Lele-gx", "GRI 60", 1, 0],
+          ["Marshadow", "PR-SM SM85", 1, 0],
+        ],
+        supporter: [
+          ["Cynthia", "", 4, 0],
+          ["Guzma", "", 3, 0],
+          ["Sophocles", "", 2, 0],
+          ["Lillie", "", 2, 0],
+        ],
+        item: [
+          ["Mysterious Treasure", "", 4, 0],
+          ["Beast Ring", "", 4, 0],
+          ["Ultra Ball", "", 4, 0],
+          ["Energy Switch", "", 2, 0],
+        ],
+        tool: [
+          ["Choice Band", "", 2, 0]
+        ],
+        stadium: [
+          ["Ultra Space", "", 2, 0],
+          ["Heat Factory Prism Star", "", 1, 0],
+        ],
+        energy: [
+          ["Fire Energy", "", 15, 0],
+          ["Beast Energy Prism Star", "", 1, 0],
+        ],
+      },
+      "Lost March": {
+        variants: {},
+        pokemon: [
+          ["Jumpluff", "LOT 14", 4, 0],
+          ["Skiploom", "LOT 13", 4, 0],
+          ["Hoppip", "LOT 12", 4, 0],
+          ["Trumbeak", "LOT 165", 4, 0],
+          ["Natu", "LOT 87", 4, 0],
+          ["Tapu Lele-gx", "GRI 60", 0, 1],
+          ["Marshadow", "SHL 45", 1, 0],
+          ["Oranguru", "SUM 113", 1, 0],
+        ],
+        supporter: [
+          ["Professor Elm's Lecture", "", 4, 0],
+          ["Cynthia", "", 3, 0],
+          ["Guzma", "", 3, 0],
+          ["Lillie", "", 2, 0],
+        ],
+        item: [
+          ["Lost Blender", "", 4, 0],
+          ["Great Ball", "", 4, 0],
+          ["Net Ball", "", 4, 0],
+          ["Ultra Ball", "", 3, 0],
+          ["Rescue Stretcher", "", 2, 0],
+        ],
+        tool: [
+
+        ],
+        stadium: [
+
+        ],
+        energy: [
+          ["Double Colorless Energy", "", 4, 0],
+          ["Grass Energy", "", 3, 0],
+          ["Super Boost Energy Prism Star", "", 1, 0],
+        ],
+      },
+      "Buzzwole Lycanroc": {
+        variants: {},
+        pokemon: [
+          ["Buzzwole-gx", "CIN 57", 0, 4],
+          ["Lycanroc-gx", "GRI 74", 2, 0],
+          ["Rockruff", "FLI 75", 2, 0],
+          ["Alolan Ninetales-gx", "LOT 205", 2, 0],
+          ["Alolan Vulpix", "GRI 21", 2, 0],
+          ["Diancie Prism Star", "FLI 74", 1, 0],
+          ["Buzzwole", "FLI 77", 1, 0],
+          ["Tapu Lele-gx", "GRI 60", 2, 0],
+          ["Marshadow", "PR-SM SM85", 1, 0],
+        ],
+        supporter: [
+          ["Cynthia", "", 4, 0],
+          ["Guzma", "", 4, 0],
+          ["Professor Kukui", "", 3, 0],
+          ["Lillie", "", 2, 0],
+          ["Lisia", "", 1, 0],
+        ],
+        item: [
+          ["Ultra Ball", "", 4, 0],
+          ["Beast Ring", "", 3, 0],
+          ["Switch", "", 2, 0],
+          ["Energy Recycle System", "", 1, 0],
+          ["Field Blower", "", 1, 0],
+        ],
+        tool: [
+          ["Choice Band", "", 3, 0],
+        ],
+        stadium: [
+          ["Brooklet Hill", "", 3, 0],
+        ],
+        energy: [
+          ["Basic Fighting Energy", "", 7, 0],
+          ["Unit Energy FDY", "", 4, 0],
+          ["Beast Energy Prism Star", "", 1, 0],
+        ],
+      }
+    }
+  }, 
+
   // Brisbane Regionals 2019
   // SM Ultra Prism to SM Cosmic Eclipse
   "UPR-CEC": {
@@ -3417,6 +3950,7 @@ const decks = {
       },
     },
   },
+
   Standard: {
     meta: {
       start: "Battle_Styles",
