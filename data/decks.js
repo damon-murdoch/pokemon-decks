@@ -25,7 +25,7 @@ const decks = {
   */
 
   // 2014 Worlds
-  // Next Destinies to Flash Fire 
+  // Next Destinies to Flash Fire  
   "NXD-FLF": {
     meta: {
       start: "Next_Destinies",
@@ -478,7 +478,7 @@ const decks = {
             tool: [],
             stadium: [
               ["Silent Lab", "", -3, 0],
-            ], 
+            ],
             energy: []
           }
         },
@@ -1900,9 +1900,9 @@ const decks = {
 
   "SUM-LOT": {
     meta: {
-      start: "Sun_And_Moon",
+      start: "Sun_and_Moon",
       end: "Lost_Thunder"
-    }, 
+    },
     decks: {
       "Zoroark Lycanroc": {
         variants: {},
@@ -1944,7 +1944,7 @@ const decks = {
           ["Fighting Energy", "", 3, 0],
           ["Rainbow Energy", "", 2, 0],
         ],
-      }, 
+      },
       "Zoroark Weavile": {
         variants: {},
         pokemon: [
@@ -1982,7 +1982,7 @@ const decks = {
           ["Darkness Energy", "", 2, 0],
           ["Rainbow Energy", "", 2, 0],
         ],
-      }, 
+      },
       "Zoroark Gyarados": {
         variants: {},
         pokemon: [
@@ -2130,16 +2130,7 @@ const decks = {
         ],
       },
       "Passimian Spread": {
-        variants: {
-          /* "with Techs": {
-            pokemon: [],
-            supporter: [],
-            item: [],
-            tool: [],
-            stadium: [],
-            energy: [],
-          } */
-        },
+        variants: {},
         pokemon: [
           ["Tapu Koko", "PR-SM SM30a", 4, 0],
           ["Passimian", "SUM 73", 2, 0],
@@ -2176,16 +2167,7 @@ const decks = {
         ],
       },
       "Malamar Necrozma": {
-        variants: {
-          /* "with Techs": {
-            pokemon: [],
-            supporter: [],
-            item: [],
-            tool: [],
-            stadium: [],
-            energy: [],
-          } */
-        },
+        variants: {},
         pokemon: [
           ["Malamar", "FLI 51", 4, 0],
           ["Inkay", "FLI 50", 4, 0],
@@ -2223,16 +2205,7 @@ const decks = {
         ],
       },
       "Granbull": {
-        variants: {
-          /* "with Techs": {
-            pokemon: [],
-            supporter: [],
-            item: [],
-            tool: [],
-            stadium: [],
-            energy: [],
-          } */
-        },
+        variants: {},
         pokemon: [
           ["Granbull", "LOT 138", 4, 0],
           ["Snubbull", "LOT 137", 4, 0],
@@ -2269,16 +2242,7 @@ const decks = {
         ],
       },
       "Gardevoir Ninetales": {
-        variants: {
-          /* "with Techs": {
-            pokemon: [],
-            supporter: [],
-            item: [],
-            tool: [],
-            stadium: [],
-            energy: [],
-          } */
-        },
+        variants: {},
         pokemon: [
           ["Gardevoir-gx", "BRS 140", 3, 0],
           ["Kirlia", "LOT 140", 1, 0],
@@ -2428,7 +2392,7 @@ const decks = {
         ],
       }
     }
-  }, 
+  },
 
   // Brisbane Regionals 2019
   // SM Ultra Prism to SM Cosmic Eclipse
@@ -3272,19 +3236,19 @@ const decks = {
           ["Crobat-V", "SIF 44", 1, 0],
           ["Galarian Articuno", "EVS 63", 2, 0],
           ["Pumpkaboo", "EVS 76", 1, 0],
-        ], 
+        ],
         supporter: [
           ["Professor's Research", "", 4, 0],
           ["Boss's Orders", "", 2, 0],
           ["Marnie", "", 2, 0],
-        ], 
+        ],
         item: [
           ["Evolution Incense", "", 4, 0],
           ["Battle VIP Pass", "", 4, 0],
           ["Fog Crystal", "", 4, 0],
           ["Quick Ball", "", 4, 0],
           ["Switch", "", 2, 0],
-        ], 
+        ],
         tool: [
           ["Air Balloon", "", 2, 0],
         ],
@@ -3341,7 +3305,7 @@ const decks = {
           ["Marnie", "", 2, 0],
           ["Boss's Orders", "", 2, 0],
           ["Professor's Research", "", 2, 0],
-          ["Raihan", "", 1, 0], 
+          ["Raihan", "", 1, 0],
         ],
         item: [
           ["Evolution Incense", "", 4, 0],
