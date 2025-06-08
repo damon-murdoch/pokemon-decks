@@ -2355,7 +2355,7 @@ const decks = {
       "Buzzwole Lycanroc": {
         variants: {},
         pokemon: [
-          ["Buzzwole-gx", "CIN 57", 2, 2],
+          ["Buzzwole-gx", "CIN 57", 4, 0],
           ["Lycanroc-gx", "GRI 74", 2, 0],
           ["Rockruff", "FLI 75", 1, 1],
           ["Alolan Ninetales-gx", "LOT 205", 2, 0],
@@ -2388,7 +2388,7 @@ const decks = {
         ],
         energy: [
           ["Basic Fighting Energy", "", 7, 0],
-          ["Unit Energy FDY", "", 1, 0],
+          ["Unit Energy FDY", "", 1, 3],
           ["Beast Energy Prism Star", "", 1, 0],
         ],
       }
