@@ -25,7 +25,7 @@ const decks = {
   */
 
   // 2014 Worlds
-  // Next Destinies to Flash Fire  
+  // Next Destinies to Flash Fire
   "NXD-FLF": {
     meta: {
       start: "Next_Destinies",
@@ -64,14 +64,10 @@ const decks = {
           ["Float Stone", "", 4, 0],
           ["Muscle Band", "", 2, 0],
         ],
-        stadium: [
-          ["Tropical Beach", "", 2, 0]
-        ],
-        energy: [
-          ["Double Colorless Energy", "", 4, 0]
-        ],
-      }
-    }
+        stadium: [["Tropical Beach", "", 2, 0]],
+        energy: [["Double Colorless Energy", "", 4, 0]],
+      },
+    },
   },
 
   // 2016 Worlds
@@ -455,12 +451,8 @@ const decks = {
           ["Super Rod", "", 1, 0],
           ["Switch", "", 1, 0],
         ],
-        tool: [
-          ["Muscle Band", "", 2, 0],
-        ],
-        stadium: [
-          ["Fighting Stadium", "", 3, 0],
-        ],
+        tool: [["Muscle Band", "", 2, 0]],
+        stadium: [["Fighting Stadium", "", 3, 0]],
         energy: [
           ["Basic Fighting Energy", "", 5, 0],
           ["Strong Energy", "", 4, 0],
@@ -468,7 +460,7 @@ const decks = {
       },
       Houndoom: {
         variants: {
-          "Puzzles": {
+          Puzzles: {
             pokemon: [],
             supporter: [],
             item: [
@@ -476,11 +468,9 @@ const decks = {
               ["Max Potion", "", -1, 0],
             ],
             tool: [],
-            stadium: [
-              ["Silent Lab", "", -3, 0],
-            ],
-            energy: []
-          }
+            stadium: [["Silent Lab", "", -3, 0]],
+            energy: [],
+          },
         },
         pokemon: [
           ["Houndoom-ex", "BKT 21", 4, 0],
@@ -507,12 +497,8 @@ const decks = {
           ["Enhanced Hammer", "", 3, 0],
           ["Super Rod", "", 2, 0],
         ],
-        tool: [
-          ["Fighting Fury Belt", "", 3, 0],
-        ],
-        stadium: [
-          ["Silent Lab", "", 3, 0],
-        ],
+        tool: [["Fighting Fury Belt", "", 3, 0]],
+        stadium: [["Silent Lab", "", 3, 0]],
         energy: [["Basic Fire Energy", "", 8, 0]],
       },
     },
@@ -1894,14 +1880,14 @@ const decks = {
         tool: [],
         stadium: [["Rough Seas", "", 4, 0]],
         energy: [["Lightning Energy", "", 1, 0]],
-      }
+      },
     },
   },
 
   "SUM-LOT": {
     meta: {
       start: "Sun_and_Moon",
-      end: "Lost_Thunder"
+      end: "Lost_Thunder",
     },
     decks: {
       "Zoroark Lycanroc": {
@@ -1936,9 +1922,7 @@ const decks = {
           ["Choice Band", "", 2, 0],
           ["Counter Gain", "", 1, 0],
         ],
-        stadium: [
-          ["Devoured Field", "", 2, 0],
-        ],
+        stadium: [["Devoured Field", "", 2, 0]],
         energy: [
           ["Double Colorless Energy", "", 4, 0],
           ["Fighting Energy", "", 3, 0],
@@ -1971,12 +1955,8 @@ const decks = {
           ["Enhanced Hammer", "", 2, 0],
           ["Rescue Stretcher", "", 1, 0],
         ],
-        tool: [
-          ["Choice Band", "", 3, 0],
-        ],
-        stadium: [
-          ["Devoured Field", "", 2, 0],
-        ],
+        tool: [["Choice Band", "", 3, 0]],
+        stadium: [["Devoured Field", "", 2, 0]],
         energy: [
           ["Double Colorless Energy", "", 4, 0],
           ["Darkness Energy", "", 2, 0],
@@ -2016,15 +1996,9 @@ const decks = {
           ["Max Potion", "", 1, 0],
           ["Switch", "", 1, 0],
         ],
-        tool: [
-          ["Choice Band", "", 3, 0],
-        ],
-        stadium: [
-
-        ],
-        energy: [
-          ["Double Colorless Energy", "", 4, 0],
-        ],
+        tool: [["Choice Band", "", 3, 0]],
+        stadium: [],
+        energy: [["Double Colorless Energy", "", 4, 0]],
       },
       "Zoroark Decidueye Ninetales": {
         variants: {},
@@ -2057,48 +2031,31 @@ const decks = {
           ["Rescue Stretcher", "", 1, 0],
           ["Switch", "", 1, 0],
         ],
-        tool: [
-          ["Choice Band", "", 2, 0],
-        ],
-        stadium: [
-
-        ],
+        tool: [["Choice Band", "", 2, 0]],
+        stadium: [],
         energy: [
           ["Double Colorless Energy", "", 4, 0],
           ["Rainbow Energy", "", 4, 0],
         ],
       },
       "Regigigas Walls": {
-        variants: {
-          "with Techs": {
-            pokemon: [
-              ["Regigigas", "CIN 84", -1, 0],
-              ["Registeel", "CES 96", -1, 0],
-              ["Noibat", "FLI 100", 0, 1],
-              ["Unown", "LOT 91", 1, 0],
-            ],
-            supporter: [],
-            item: [],
-            tool: [],
-            stadium: [],
-            energy: [],
-          }
-        },
+        variants: {},
         pokemon: [
-          ["Regigigas", "CIN 84", 4, 0],
-          ["Registeel", "CES 96", 2, 0],
+          ["Regigigas", "CIN 84", 3, 0],
+          ["Registeel", "CES 96", 1, 0],
           ["Hoopa", "SLG 55", 2, 0],
-          ["Lugia GX", "LOT 159", 1, 0],
           ["Solgaleo Prism Star", "UPR 89", 1, 0],
-          ["Goomy", "FLI 91", 1, 0],
+          ["Necrozma GX", "BUS 134", 1, 0],
+          ["Lugia GX", "LOT 159", 1, 0],
           ["Girafarig", "LOT 94", 1, 0],
           ["Noibat", "FLI 100", 1, 0],
+          ["Goomy", "FLI 91", 1, 0],
         ],
         supporter: [
           ["Steven's Resolve", "", 4, 0],
           ["Cynthia", "", 4, 0],
           ["Lusamine", "", 3, 0],
-          ["Acerola", "", 4, 0],
+          ["Acerola", "", 3, 0],
           ["Plumeria", "", 2, 0],
           ["Gladion", "", 2, 0],
           ["Faba", "", 2, 0],
@@ -2110,10 +2067,11 @@ const decks = {
         ],
         item: [
           ["Max Potion", "", 4, 0],
-          ["Enhanced Hammer", "", 3, 0],
+          ["Enhanced Hammer", "", 2, 0],
+          ["Crushing Hammer", "", 1, 1],
+          ["Counter Catcher", "", 2, 0],
           ["Nest Ball", "", 2, 0],
           ["Rescue Stretcher", "", 1, 0],
-          ["Counter Catcher", "", 1, 0],
           ["Switch", "", 1, 0],
         ],
         tool: [
@@ -2121,12 +2079,9 @@ const decks = {
           ["Ancient Crystal", "", 2, 0],
           ["Counter Gain", "", 1, 0],
         ],
-        stadium: [
-          ["Shrine of Punishment", "", 2, 0]
-        ],
+        stadium: [["Shrine of Punishment", "", 2, 0]],
         energy: [
-          ["Double Colorless Energy", "", 1, 0],
-          ["Rainbow Energy", "", 1, 0],
+          ["Double Colorless Energy", "", 2, 0]
         ],
       },
       "Passimian Spread": {
@@ -2155,12 +2110,8 @@ const decks = {
           ["Escape Rope", "", 1, 0],
           ["Switch", "", 1, 0],
         ],
-        tool: [
-          ["Choice Band", "", 3, 0],
-        ],
-        stadium: [
-          ["Shrine of Punishment", "", 4, 0]
-        ],
+        tool: [["Choice Band", "", 3, 0]],
+        stadium: [["Shrine of Punishment", "", 4, 0]],
         energy: [
           ["Double Colorless Energy", "", 4, 0],
           ["Counter Energy", "", 4, 0],
@@ -2194,17 +2145,11 @@ const decks = {
           ["Rescue Stretcher", "", 2, 0],
           ["Escape Rope", "", 1, 0],
         ],
-        tool: [
-          ["Escape Board", "", 4, 0],
-        ],
-        stadium: [
-
-        ],
-        energy: [
-          ["Psychic Energy", "", 10, 0],
-        ],
+        tool: [["Escape Board", "", 4, 0]],
+        stadium: [],
+        energy: [["Psychic Energy", "", 10, 0]],
       },
-      "Granbull": {
+      Granbull: {
         variants: {},
         pokemon: [
           ["Granbull", "LOT 138", 4, 0],
@@ -2234,12 +2179,8 @@ const decks = {
           ["Choice Band", "", 3, 0],
           ["Bodybuilding Dumbbells", "", 1, 0],
         ],
-        stadium: [
-          ["Shrine of Punishment", "", 3, 0]
-        ],
-        energy: [
-          ["Fairy Energy", "", 7, 0],
-        ],
+        stadium: [["Shrine of Punishment", "", 3, 0]],
+        energy: [["Fairy Energy", "", 7, 0]],
       },
       "Gardevoir Ninetales": {
         variants: {},
@@ -2270,12 +2211,8 @@ const decks = {
           ["Energy Loto", "", 1, 0],
           ["Timer Ball", "", 1, 0],
         ],
-        tool: [
-          ["Choice Band", "", 2, 0],
-        ],
-        stadium: [
-
-        ],
+        tool: [["Choice Band", "", 2, 0]],
+        stadium: [],
         energy: [
           ["Fairy Energy", "", 7, 0],
           ["Double Colorless Energy", "", 4, 0],
@@ -2303,9 +2240,7 @@ const decks = {
           ["Ultra Ball", "", 4, 0],
           ["Energy Switch", "", 2, 0],
         ],
-        tool: [
-          ["Choice Band", "", 2, 0]
-        ],
+        tool: [["Choice Band", "", 2, 0]],
         stadium: [
           ["Ultra Space", "", 2, 0],
           ["Heat Factory Prism Star", "", 1, 0],
@@ -2340,12 +2275,8 @@ const decks = {
           ["Ultra Ball", "", 3, 0],
           ["Rescue Stretcher", "", 2, 0],
         ],
-        tool: [
-
-        ],
-        stadium: [
-
-        ],
+        tool: [],
+        stadium: [],
         energy: [
           ["Double Colorless Energy", "", 4, 0],
           ["Grass Energy", "", 3, 0],
@@ -2357,7 +2288,7 @@ const decks = {
         pokemon: [
           ["Buzzwole-gx", "CIN 57", 4, 0],
           ["Lycanroc-gx", "GRI 74", 2, 0],
-          ["Rockruff", "FLI 75", 1, 1],
+          ["Rockruff", "FLI 75", 2, 0],
           ["Alolan Ninetales-gx", "LOT 205", 2, 0],
           ["Alolan Vulpix", "GRI 21", 2, 0],
           ["Tapu Lele-gx", "GRI 60", 2, 0],
@@ -2366,7 +2297,7 @@ const decks = {
           ["Buzzwole", "FLI 77", 1, 0],
         ],
         supporter: [
-          ["Cynthia", "", 3, 1],
+          ["Cynthia", "", 4, 0],
           ["Guzma", "", 4, 0],
           ["Professor Kukui", "", 3, 0],
           ["Lillie", "", 2, 0],
@@ -2374,25 +2305,21 @@ const decks = {
         ],
         item: [
           ["Ultra Ball", "", 4, 0],
-          ["Beast Ring", "", 0, 3],
+          ["Beast Ring", "", 3, 0],
           ["Switch", "", 2, 0],
           ["Rescue Stretcher", "", 1, 0],
           ["Multi Switch", "", 1, 0],
           ["Field Blower", "", 1, 0],
         ],
-        tool: [
-          ["Choice Band", "", 2, 0],
-        ],
-        stadium: [
-          ["Brooklet Hill", "", 3, 0],
-        ],
+        tool: [["Choice Band", "", 2, 0]],
+        stadium: [["Brooklet Hill", "", 3, 0]],
         energy: [
           ["Basic Fighting Energy", "", 7, 0],
-          ["Unit Energy FDY", "", 1, 3],
+          ["Unit Energy FDY", "", 4, 0],
           ["Beast Energy Prism Star", "", 1, 0],
         ],
-      }
-    }
+      },
+    },
   },
 
   // Brisbane Regionals 2019
@@ -3250,15 +3177,9 @@ const decks = {
           ["Quick Ball", "", 4, 0],
           ["Switch", "", 2, 0],
         ],
-        tool: [
-          ["Air Balloon", "", 2, 0],
-        ],
-        stadium: [
-          ["Training Court", "", 2, 0]
-        ],
-        energy: [
-          ["Basic Psychic Energy", "", 16, 0]
-        ]
+        tool: [["Air Balloon", "", 2, 0]],
+        stadium: [["Training Court", "", 2, 0]],
+        energy: [["Basic Psychic Energy", "", 16, 0]],
       },
       "Ice Rider Inteleon": {
         variants: {},
@@ -3552,9 +3473,7 @@ const decks = {
       },
       "Blissey Box": {
         variants: {},
-        pokemon: [
-          ["Blissey-V", "CRE 119", 4, 0]
-        ],
+        pokemon: [["Blissey-V", "CRE 119", 4, 0]],
         supporter: [
           ["Zinnia's Resolve", "", 4, 0],
           ["Boss's Orders", "", 4, 0],
@@ -3569,19 +3488,15 @@ const decks = {
           ["Pokegear 3.0", "", 4, 0],
           ["Team Yell Towel", "", 2, 0],
         ],
-        tool: [
-          ["Cape of Toughness", "", 4, 0],
-        ],
-        stadium: [
-
-        ],
+        tool: [["Cape of Toughness", "", 4, 0]],
+        stadium: [],
         energy: [
           ["Basic Psychic Energy", "", 8, 0],
           ["Powerful Energy", "", 4, 0],
           ["Lucky Energy", "", 3, 0],
           ["Capture Energy", "", 2, 0],
-        ]
-      }
+        ],
+      },
     },
   },
 
@@ -3970,17 +3885,16 @@ const decks = {
           ["Pidgey", "MEW 16", 2, 0],
           ["Dusknoir", "SFA 20", 1, 0],
           ["Dusclops", "SFA 19", 1, 0],
-          ["Duskull", "SFA 18", 2, 0],
+          ["Duskull", "SFA 18", 1, 0],
           ["Fezandipiti-ex", "SFA 38", 1, 0],
-          ["Budew", "PRE 4", 1, 0],
+          ["Chi-yu", "PAR 29", 1, 0],
+          ["Cleffa", "OBF 80", 1, 0],
         ],
         supporter: [
-          ["Arven", "", 3, 0],
+          ["Arven", "", 4, 0],
+          ["Iono", "", 3, 0],
           ["Boss's Orders", "", 2, 0],
-          ["Iono", "", 2, 0],
           ["Professor Turo's Scenario", "", 1, 0],
-          ["Professor's Research", "", 1, 0],
-          ["Kieran", "", 1, 0],
           ["Briar", "", 1, 0],
         ],
         item: [
@@ -3988,18 +3902,20 @@ const decks = {
           ["Ultra Ball", "", 4, 0],
           ["Rare Candy", "", 4, 0],
           ["Counter Catcher", "", 2, 0],
-          ["Nest Ball", "", 2, 0],
           ["Super Rod", "", 2, 0],
-          ["Night Stretcher", "", 1, 0],
-          ["Pal Pad", "", 1, 0],
+          ["Energy Search", "", 1, 0],
+          ["Nest Ball", "", 1, 0],
           ["Unfair Stamp", "", 1, 0],
         ],
         tool: [
-          ["Technical Machine: Evolution", "", 1, 0],
+          ["Technical Machine: Evolution", "", 2, 0],
           ["Defiant Band", "", 1, 0],
         ],
-        stadium: [["Artazon", "", 1, 0]],
-        energy: [["Basic Fire Energy", "", 6, 0]],
+        stadium: [["Artazon", "", 2, 0]],
+        energy: [
+          ["Basic Fire Energy", "", 5, 0]
+          ["Mist Energy", "", 1, 0]
+        ],
       },
       "Gardevoir-ex": {
         variants: {},
@@ -4007,37 +3923,40 @@ const decks = {
           ["Gardevoir-ex", "SVI 86", 2, 0],
           ["Kirlia", "PAF 85", 2, 0],
           ["Ralts", "PAF 84", 3, 0],
-          ["Munkidori", "TWM 95", 2, 0],
-          ["Budew", "PRE 4", 2, 0],
-          ["Klefki", "SVI 96", 1, 0],
-          ["Flutter Mane", "TEF 78", 1, 0],
+          ["Munkidori", "TWM 95", 3, 0],
+          ["Lillie's Clefairy-ex", "JTG 184", 1, 0],
+          ["Fezandipiti-ex", "SFA 38", 1, 0],
           ["Scream Tail", "PAR 86", 1, 0],
           ["Drifloon", "SVI 89", 1, 0],
-          ["Fezandipiti-ex", "SFA 38", 1, 0],
           ["Mew-ex", "MEW 151", 1, 0],
+          ["Cleffa", "OBF 80", 1, 0],
         ],
         supporter: [
+          ["Professor's Research", "", 4, 0],
           ["Iono", "", 4, 0],
-          ["Professor's Research", "", 2, 0],
           ["Arven", "", 2, 0],
-          ["Boss's Orders", "", 1, 0],
-          ["Explorer's Guidance", "", 1, 0],
         ],
         item: [
-          ["Buddy-Buddy Poffin", "", 4, 0],
+          ["Earthen Vessel", "", 3, 0],
           ["Ultra Ball", "", 3, 0],
-          ["Rare Candy", "", 3, 0],
           ["Counter Catcher", "", 2, 0],
-          ["Earthen Vessel", "", 2, 0],
-          ["Nest Ball", "", 1, 0],
-          ["Night Stretcher", "", 4, 0],
-          ["Unfair Stamp", "", 1, 0],
+          ["Night Stretcher", "", 2, 0],
+          ["Rare Candy", "", 2, 0],
+          ["Nest Ball", "", 2, 0],
+          ["Buddy-Buddy Poffin", "", 1, 0],
+          ["Energy Switch", "", 1, 0],
+          ["Super Rod", "", 1, 0],
+          ["Secret Box", "", 1, 0],
         ],
         tool: [
+          ["Technical Machine: Evolution", "", 2, 0],
           ["Bravery Charm", "", 2, 0],
         ],
         stadium: [["Artazon", "", 2, 0]],
-        energy: [["Basic Psychic Energy", "", 7, 0], ["Basic Darkness Energy", "", 2, 0]],
+        energy: [
+          ["Basic Psychic Energy", "", 7, 0],
+          ["Basic Darkness Energy", "", 3, 0],
+        ],
       },
       "Dragapult-ex": {
         variants: {},
@@ -4051,32 +3970,30 @@ const decks = {
           ["Budew", "PRE 4", 2, 0],
           ["Blood Moon Ursaluna-ex", "TWM 141", 1, 0],
           ["Fezandipiti-ex", "SFA 38", 1, 0],
+          ["Latias-ex", "SSP 239", 1, 0],
           ["Hawlucha", "SVI 118", 1, 0],
+          ["Munkidori", "TWM 95", 1, 0],
         ],
         supporter: [
+          ["Professor's Research", "", 4, 0],
           ["Iono", "", 4, 0],
-          ["Arven", "", 3, 0],
           ["Boss's Orders", "", 2, 0],
-          ["Professor Turo's Scenario", "", 1, 0],
+          ["Hilda", "", 2, 0],
         ],
         item: [
           ["Buddy-Buddy Poffin", "", 4, 0],
-          ["Ultra Ball", "", 3, 0],
-          ["Night Stretcher", "", 2, 0],
+          ["Night Stretcher", "", 4, 0],
+          ["Ultra Ball", "", 4, 0],
           ["Counter Catcher", "", 3, 0],
-          ["Earthen Vessel", "", 3, 0],
-          ["Rare Candy", "", 2, 0],
-          ["Nest Ball", "", 1, 0],
-          ["Unfair Stamp", "", 1, 0],
+          ["Nest Ball", "", 2, 0],
         ],
-        tool: [
-          ["Rescue Board", "", 1, 0],
-          ["Exp. Share", "", 1, 0],
-        ],
-        stadium: [["Artazon", "", 2, 0]],
+        tool: [],
+        stadium: [["Jamming Tower", "", 1, 0]],
         energy: [
-          ["Basic Psychic Energy", "", 3, 0],
-          ["Basic Fire Energy", "", 3, 0],
+          ["Luminous Energy", "", 3, 0],
+          ["Basic Psychic Energy", "", 2, 0],
+          ["Basic Fire Energy", "", 1, 0],
+          ["Neo Upper Energy", "", 1, 0],
         ],
       },
       "Zoroark-ex": {
@@ -4084,38 +4001,37 @@ const decks = {
         pokemon: [
           ["N's Zoroark-ex", "JTG 98", 4, 0],
           ["N's Zorua", "JTG 97", 4, 0],
-          ["N's Reshiram", "JTG 116", 1, 1],
-          ["Munkidori", "TWM 95", 1, 1],
-          ["Fezandipiti-ex", "SFA 38", 0, 1],
+          ["N's Reshiram", "JTG 116", 2, 0],
+          ["Munkidori", "TWM 95", 2, 0],
+          ["Fezandipiti-ex", "SFA 38", 1, 0],
           ["Pecharunt-ex", "SFA 39", 1, 0],
-          ["Blood Moon Ursaluna-ex", "TWM 141", 0, 1],
+          ["Blood Moon Ursaluna-ex", "TWM 141", 1, 0],
+          ["Cleffa", "OBF 80", 1, 0],
         ],
         supporter: [
-          ["Arven", "", 4, 0],
-          ["Iono", "", 3, 0],
+          ["Professor's Research", "", 4, 0],
+          ["Iono", "", 4, 0],
+          ["Arven", "", 2, 0],
           ["Boss's Orders", "", 2, 0],
-          ["Professor Turo's Scenario", "", 1, 0],
         ],
         item: [
           ["Buddy-Buddy Poffin", "", 4, 0],
-          ["N's PP Up", "", 1, 2],
-          ["Team Rocket's Venture Bomb", "", 0, 2],
+          ["Ultra Ball", "", 4, 0],
           ["Night Stretcher", "", 2, 0],
-          ["Ultra Ball", "", 2, 0],
-          ["Nest Ball", "", 2, 0],
-          ["Counter Catcher", "", 1, 1],
+          ["Counter Catcher", "", 2, 0],
+          ["Earthen Vessel", "", 2, 0],
           ["Energy Switch", "", 2, 0],
-          ["Earthen Vessel", "", 1, 0],
+          ["N's PP Up", "", 2, 0],
+          ["Nest Ball", "", 2, 0],
           ["Super Rod", "", 1, 0],
-          ["Pal Pad", "", 1, 0],
-          ["Unfair Stamp", "", 0, 1],
+          ["Unfair Stamp", "", 1, 0],
         ],
         tool: [
-          ["Technical Machine: Evolution", "", 1, 1],
+          ["Technical Machine: Evolution", "", 1, 0],
           ["Binding Mochi", "", 1, 0],
         ],
         stadium: [["N's Castle", "", 2, 0]],
-        energy: [["Basic Darkness Energy", "", 7, 0]],
+        energy: [["Basic Darkness Energy", "", 6, 0]],
       },
     },
   },
